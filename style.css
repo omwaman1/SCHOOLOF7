@@ -2018,11 +2018,49 @@ button {
 
     .sticky-bar {
         bottom: 0;
+        left: 0;
+        right: 0;
         width: 100%;
         border-radius: 0;
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 15px;
+    }
+
+    .sticky-content {
+        gap: 8px;
+    }
+
+    .sticky-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sticky-info h5 {
+        font-size: 11px;
+    }
+
+    .sticky-info p {
+        display: none;
+    }
+
+    .sticky-actions {
+        gap: 8px;
+    }
+
+    .old-price {
+        font-size: 10px;
+    }
+
+    .new-price {
+        font-size: 13px;
+    }
+
+    .btn--red {
+        padding: 8px 12px;
+        font-size: 11px;
     }
 
     /* Testimonials Section Mobile */
