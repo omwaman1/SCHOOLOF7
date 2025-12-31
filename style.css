@@ -726,7 +726,7 @@ button {
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         gap: 15px;
-        padding: 0 20px 20px;
+        padding: 0 15px 10px;
         scrollbar-width: none;
     }
 
@@ -779,7 +779,7 @@ button {
         display: flex;
         justify-content: center;
         gap: 8px;
-        padding: 20px 0;
+        padding: 8px 0;
     }
 
     .carousel-dots .dot {
