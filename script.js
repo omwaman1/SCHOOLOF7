@@ -454,10 +454,73 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('hover-lift');
     });
 
-    // Add image-zoom to image containers
-    document.querySelectorAll('.feature-image, .curriculum-image, .mentor-image, .faq-image, .promise-image').forEach(el => {
-        el.classList.add('image-zoom');
+    // =========================================================================
+    // DIRECTIONAL SCROLL REVEAL FOR IMAGES
+    // Scrolling down: reveals from top to bottom
+    // Scrolling up: reveals from bottom to top
+    // =========================================================================
+    let lastScrollY = window.scrollY;
+    const parallaxImages = document.querySelectorAll('.feature-image img, .curriculum-image img, .mentor-image img, .faq-image img, .promise-image img');
+
+    // Initialize images with clip-path
+    parallaxImages.forEach(img => {
+        img.style.transition = 'clip-path 0.8s ease-out, transform 0.8s ease-out';
+        img.style.clipPath = 'inset(100% 0 0 0)'; // Hidden from bottom
+        img.dataset.revealed = 'false';
     });
+
+    const revealOnScroll = () => {
+        const currentScrollY = window.scrollY;
+        const scrollingDown = currentScrollY > lastScrollY;
+
+        parallaxImages.forEach(img => {
+            const rect = img.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Check if image is in viewport
+            if (rect.top < windowHeight * 0.85 && rect.bottom > 0) {
+                if (img.dataset.revealed === 'false') {
+                    // Reveal based on scroll direction
+                    if (scrollingDown) {
+                        // Reveal from top to bottom
+                        img.style.clipPath = 'inset(0 0 0 0)';
+                        img.style.transform = 'translateY(0)';
+                    } else {
+                        // Reveal from bottom to top
+                        img.style.clipPath = 'inset(0 0 0 0)';
+                        img.style.transform = 'translateY(0)';
+                    }
+                    img.dataset.revealed = 'true';
+                }
+            } else if (rect.top > windowHeight || rect.bottom < 0) {
+                // Reset when out of view
+                if (scrollingDown) {
+                    img.style.clipPath = 'inset(100% 0 0 0)'; // Hide from top (for reveal from top)
+                    img.style.transform = 'translateY(-30px)';
+                } else {
+                    img.style.clipPath = 'inset(0 0 100% 0)'; // Hide from bottom (for reveal from bottom)
+                    img.style.transform = 'translateY(30px)';
+                }
+                img.dataset.revealed = 'false';
+            }
+        });
+
+        lastScrollY = currentScrollY;
+    };
+
+    // Throttled scroll handler for performance
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(() => {
+                revealOnScroll();
+                scrollTimeout = null;
+            }, 16); // ~60fps
+        }
+    });
+
+    // Initial reveal for images already in view
+    setTimeout(revealOnScroll, 100);
 
     // =========================================================================
     // SMOOTH ENTRANCE FOR HERO
