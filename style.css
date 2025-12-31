@@ -680,7 +680,7 @@ button {
 
     .feature-section {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 20px 15px;
         gap: 15px;
     }
@@ -691,9 +691,15 @@ button {
         padding: 10px 0;
     }
 
+    .feature-title {
+        font-size: 14px;
+    }
+
     .feature-description {
-        margin: 0 auto 15px;
+        margin: 0 0 15px;
         max-width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
     }
 
     .feature-image {
@@ -933,12 +939,12 @@ button {
     }
 
     .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 3px;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
     }
 
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .pricing-grid {
