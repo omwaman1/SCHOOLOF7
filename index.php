@@ -13,6 +13,14 @@
 
 <body>
 
+    <!-- Preloader - Shows until website is fully loaded -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
     <!-- Notification Bar - At very top -->
     <div class="notification-bar">
         <span>JOIN 47,000+ STUDENTS • ENROLLMENT CLOSING SOON • <a href="#">SECURE YOUR SPOT</a></span>
