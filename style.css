@@ -2310,7 +2310,19 @@ button {
         border-radius: 12px;
         /* Override desktop slide animation on mobile */
         opacity: 1 !important;
-        transform: translateX(0) !important;
+        transform: none !important;
+    }
+
+    /* Override nth-child slide animations on mobile */
+    .course-card:nth-child(1),
+    .course-card:nth-child(2) {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .course-card.animate-visible {
+        opacity: 1 !important;
+        transform: none !important;
     }
 
     .card-icon {
