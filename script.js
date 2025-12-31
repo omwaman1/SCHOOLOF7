@@ -446,6 +446,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========================================================================
+    // COURSE PRICING CARDS SLIDE-IN ANIMATION
+    // =========================================================================
+    const courseCardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-visible');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    document.querySelectorAll('.course-card').forEach(card => {
+        courseCardObserver.observe(card);
+    });
+
+    // =========================================================================
     // ENHANCED HOVER EFFECTS
     // =========================================================================
 
