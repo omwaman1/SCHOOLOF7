@@ -768,12 +768,12 @@ button {
    SECTION 5: PRICING PLANS
 ----------------------------------------------------------------------------- */
 .pricing-section {
-    padding: 60px 40px;
+    padding: 35px 40px;
     background-color: var(--color-beige);
 }
 
 .section-header {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .section-title {
@@ -1101,7 +1101,7 @@ button {
    SECTION 7: TESTIMONIALS (UGC - Rhode Style)
 ----------------------------------------------------------------------------- */
 .testimonials-section {
-    padding: 60px 40px;
+    padding: 35px 40px;
     background-color: var(--color-beige);
     overflow: hidden;
 }
@@ -1251,9 +1251,9 @@ button {
 ----------------------------------------------------------------------------- */
 .curriculum-section {
     display: flex;
-    padding: 80px 40px;
+    padding: 40px 40px;
     background-color: var(--color-beige);
-    gap: 60px;
+    gap: 40px;
     align-items: flex-start;
 }
 
@@ -1348,7 +1348,7 @@ button {
    SECTION 9: AUDIENCE (Rhode Style Carousel)
 ----------------------------------------------------------------------------- */
 .audience-section {
-    padding: 60px 40px;
+    padding: 35px 40px;
     background-color: var(--color-beige);
 }
 
@@ -1489,7 +1489,7 @@ button {
 
 .mentor-content {
     flex: 1;
-    padding: 40px 60px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1554,7 +1554,7 @@ button {
    SECTION 11: COURSE PRICING (Gradient Cards)
 ----------------------------------------------------------------------------- */
 .course-pricing-section {
-    padding: 80px 40px;
+    padding: 40px 40px;
     background-color: var(--color-beige);
     scroll-margin-top: 80px;
 }
@@ -1762,13 +1762,13 @@ button {
 
 .faq-content {
     flex: 1;
-    padding: 60px 40px;
+    padding: 35px 30px;
     background: var(--color-beige);
 }
 
 .promise-content {
     flex: 1;
-    padding: 60px 40px;
+    padding: 35px 30px;
 }
 
 .faq-title {
