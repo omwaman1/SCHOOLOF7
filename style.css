@@ -1874,15 +1874,15 @@ button {
     width: calc(100% - 30px);
     max-width: none;
     transform: none;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: var(--color-beige);
     border-radius: 16px;
-    border: none;
+    border: 1px solid #ddd;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
-    box-shadow: 0 8px 32px rgba(15, 52, 96, 0.4);
+    color: #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     z-index: 2000;
     opacity: 0;
     transform: translateY(50px);
@@ -1933,19 +1933,19 @@ button {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #ccc;
 }
 
 .sticky-info h5 {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 2px;
-    color: #fff;
+    color: #333;
 }
 
 .sticky-info p {
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #666;
 }
 
 .sticky-actions {
@@ -1956,18 +1956,18 @@ button {
 
 .old-price {
     text-decoration: line-through;
-    color: rgba(255, 255, 255, 0.5);
+    color: #888;
     font-size: 13px;
 }
 
 .new-price {
     font-weight: 700;
     font-size: 18px;
-    color: #fff;
+    color: #333;
 }
 
 .btn--red {
-    background: linear-gradient(90deg, #e94560, #ff6b6b);
+    background: linear-gradient(90deg, #3f4e38, #5a6b4a);
     color: #fff;
     padding: 12px 25px;
     border: none;
@@ -1975,8 +1975,8 @@ button {
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(63, 78, 56, 0.3);
 }
 
 .btn--red:hover {
