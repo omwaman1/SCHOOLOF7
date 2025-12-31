@@ -57,11 +57,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-video-container">
-            <!-- Loading placeholder shown until video loads -->
-            <div class="video-placeholder" id="videoPlaceholder">
-                <div class="loading-spinner"></div>
-            </div>
-            <video autoplay loop muted playsinline class="hero-video" id="heroVideo" poster="images/feature-course.jpg" preload="auto">
+            <video autoplay loop muted playsinline class="hero-video" id="heroVideo" preload="auto">
                 <source src="https://pub-f50d30ee223d4536a0ce3f175f922495.r2.dev/hero-video.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
