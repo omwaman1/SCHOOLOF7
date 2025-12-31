@@ -311,4 +311,114 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         window.requestAnimationFrame(animateImagesOnScroll);
     });
+
+    // =========================================================================
+    // SCROLL REVEAL ANIMATIONS
+    // =========================================================================
+    
+    // Add animation classes to elements
+    const animateElements = () => {
+        // Section headers
+        document.querySelectorAll('.section-title, .section-subtitle').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+            el.classList.add(`delay-${(i % 3) + 1}`);
+        });
+
+        // Feature section
+        document.querySelectorAll('.feature-content, .feature-image').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+            if (i === 0) el.classList.add('from-left');
+            if (i === 1) el.classList.add('from-right');
+        });
+
+        // Cards - pricing, audience, course cards
+        document.querySelectorAll('.product-card, .audience-card, .course-card').forEach((el, i) => {
+            el.classList.add('animate-on-scroll', 'scale-in');
+            el.classList.add(`delay-${(i % 5) + 1}`);
+        });
+
+        // Curriculum section
+        document.querySelectorAll('.curriculum-content, .curriculum-image').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+            if (i === 0) el.classList.add('from-left');
+            if (i === 1) el.classList.add('from-right');
+        });
+
+        // Mentor section
+        document.querySelectorAll('.mentor-content, .mentor-image').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+            if (i === 0) el.classList.add('from-left');
+            if (i === 1) el.classList.add('from-right');
+        });
+
+        // FAQ and Promise sections
+        document.querySelectorAll('.faq-content, .faq-image, .promise-content, .promise-image').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+        });
+
+        // Accordion items with stagger
+        document.querySelectorAll('.accordion-item').forEach((el, i) => {
+            el.classList.add('animate-on-scroll');
+            el.classList.add(`delay-${(i % 5) + 1}`);
+        });
+
+        // Testimonials header
+        document.querySelectorAll('.testimonials-header, .testimonials-title').forEach(el => {
+            el.classList.add('animate-on-scroll');
+        });
+
+        // UGC items
+        document.querySelectorAll('.ugc-item').forEach((el, i) => {
+            el.classList.add('animate-on-scroll', 'scale-in');
+            el.classList.add(`delay-${(i % 5) + 1}`);
+        });
+
+        // Hero content
+        document.querySelectorAll('.hero-content').forEach(el => {
+            el.classList.add('animate-on-scroll');
+        });
+    };
+
+    // Initialize animations
+    animateElements();
+
+    // Intersection Observer for scroll reveal
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all animate-on-scroll elements
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        scrollObserver.observe(el);
+    });
+
+    // =========================================================================
+    // ENHANCED HOVER EFFECTS
+    // =========================================================================
+    
+    // Add hover-lift to cards
+    document.querySelectorAll('.product-card, .course-card, .audience-card').forEach(el => {
+        el.classList.add('hover-lift');
+    });
+
+    // Add image-zoom to image containers
+    document.querySelectorAll('.feature-image, .curriculum-image, .mentor-image, .faq-image, .promise-image').forEach(el => {
+        el.classList.add('image-zoom');
+    });
+
+    // =========================================================================
+    // SMOOTH ENTRANCE FOR HERO
+    // =========================================================================
+    
+    setTimeout(() => {
+        document.querySelector('.hero-content')?.classList.add('visible');
+    }, 300);
+
 });

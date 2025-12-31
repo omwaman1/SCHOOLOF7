@@ -34,6 +34,223 @@ body {
     margin: 20px 15px;
 }
 
+/* =========================================================================
+   ANIMATIONS - Scroll Reveal & Hover Effects
+   ========================================================================= */
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Gentle Float Animation */
+@keyframes gentleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Scroll Reveal Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.from-left {
+    transform: translateX(-30px);
+}
+
+.animate-on-scroll.from-left.visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.from-right {
+    transform: translateX(30px);
+}
+
+.animate-on-scroll.from-right.visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.scale-in {
+    transform: scale(0.9);
+}
+
+.animate-on-scroll.scale-in.visible {
+    transform: scale(1);
+}
+
+/* Stagger Animation Delays */
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+.delay-5 {
+    transition-delay: 0.5s;
+}
+
+/* Hover Lift Effect for Cards */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Glow Effect */
+.hover-glow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 25px rgba(74, 144, 226, 0.4);
+}
+
+/* Button Hover Effects */
+.btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Image Hover Zoom */
+.image-zoom {
+    overflow: hidden;
+}
+
+.image-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.image-zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Text Gradient Animation */
+.text-gradient-animate {
+    background: linear-gradient(90deg, #333, #666, #333);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+/* Floating Badge Animation */
+.floating-badge {
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+/* Notification Bar Animation */
+.notification-bar {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
 /* Typography */
 a {
     text-decoration: none;
