@@ -4,19 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Video play/pause toggle if needed
     const videoBtn = document.getElementById('video-toggle');
     const heroVideo = document.querySelector('.hero-video');
-    const videoPlaceholder = document.getElementById('videoPlaceholder');
 
-    // Hide placeholder when video is ready to play
-    if (heroVideo && videoPlaceholder) {
-        // Check if video is already loaded (cached)
+    // Force video to play immediately when enough buffer is available
+    if (heroVideo) {
+        // Try to play as soon as possible
+        const tryPlay = () => {
+            heroVideo.play().catch(() => {
+                // Autoplay blocked - will play on user interaction
+                console.log('Autoplay blocked, waiting for user interaction');
+            });
+        };
+
+        // Play when video can start (enough buffer)
+        heroVideo.addEventListener('canplay', tryPlay);
+
+        // Also try immediately in case video is cached
         if (heroVideo.readyState >= 3) {
-            videoPlaceholder.classList.add('hidden');
+            tryPlay();
         }
-
-        // Listen for when video can play
-        heroVideo.addEventListener('canplay', () => {
-            videoPlaceholder.classList.add('hidden');
-        });
     }
 
     if (videoBtn && heroVideo) {
