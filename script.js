@@ -1,19 +1,5 @@
-// =========================================================================
-// PRELOADER - Hide when page is fully loaded
-// =========================================================================
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        preloader.classList.add('loaded');
-        // Remove from DOM after fade out animation
-        setTimeout(() => {
-            preloader.remove();
-        }, 600);
-    }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('School of 7 Website Loaded');
+    console.log('Rhode Skin Fresh Build Loaded');
 
     // Video play/pause toggle if needed
     const videoBtn = document.getElementById('video-toggle');
