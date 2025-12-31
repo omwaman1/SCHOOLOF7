@@ -104,7 +104,6 @@
                         <img src="images/audience-2.jpg" alt="Basic Access Hover" class="card-img-hover">
                         <button class="buy-btn">BUY BASIC - $199</button>
                     </div>
-                    <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="rating">★★★★☆ (2,002)</div>
@@ -125,7 +124,6 @@
                         <img src="images/audience-4.jpg" alt="Pro Hover" class="card-img-hover">
                         <button class="buy-btn">BUY PRO - $299</button>
                     </div>
-                    <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="rating">★★★★½ (15,318)</div>
@@ -146,7 +144,6 @@
                         <img src="images/feature-course.jpg" alt="Elite Hover" class="card-img-hover">
                         <button class="buy-btn">BUY ELITE - $999</button>
                     </div>
-                    <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="rating">★★★★★ (13)</div>
