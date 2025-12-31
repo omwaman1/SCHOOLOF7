@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Video play/pause toggle if needed
     const videoBtn = document.getElementById('video-toggle');
     const heroVideo = document.querySelector('.hero-video');
+    const videoPlaceholder = document.getElementById('videoPlaceholder');
+
+    // Hide placeholder when video is ready to play
+    if (heroVideo && videoPlaceholder) {
+        // Check if video is already loaded (cached)
+        if (heroVideo.readyState >= 3) {
+            videoPlaceholder.classList.add('hidden');
+        }
+
+        // Listen for when video can play
+        heroVideo.addEventListener('canplay', () => {
+            videoPlaceholder.classList.add('hidden');
+        });
+    }
 
     if (videoBtn && heroVideo) {
         videoBtn.addEventListener('click', () => {
@@ -315,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     // SCROLL REVEAL ANIMATIONS
     // =========================================================================
-    
+
     // Add animation classes to elements
     const animateElements = () => {
         // Section headers
@@ -402,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     // ENHANCED HOVER EFFECTS
     // =========================================================================
-    
+
     // Add hover-lift to cards
     document.querySelectorAll('.product-card, .course-card, .audience-card').forEach(el => {
         el.classList.add('hover-lift');
@@ -416,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     // SMOOTH ENTRANCE FOR HERO
     // =========================================================================
-    
+
     setTimeout(() => {
         document.querySelector('.hero-content')?.classList.add('visible');
     }, 300);
