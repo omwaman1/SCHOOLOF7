@@ -308,22 +308,23 @@
         <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
 
         <div class="course-pricing-grid">
-            <!-- Basic Video Plan -->
-            <div class="course-card basic">
+            <!-- Basic Video Plan - BEST VALUE -->
+            <div class="course-card premium">
+                <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Basic Video Plan</h3>
                 <p class="plan-lang">English & Hindi | Limited Access</p>
                 <div class="plan-price">₹1,799/-</div>
                 <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">"Learn With AI" Sections in Every Module</li>
+                    <li class="check-icon">Pre-recorded Video Lectures</li>
+                    <li class="cross">\"Learn With AI\" Sections in Every Module</li>
                     <li class="cross">Assignments & Evaluation Guide</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
                     <li class="cross">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Completion</li>
+                    <li class="check-icon">Certificate of Completion</li>
                 </ul>
-                <button class="btn btn--blue-light">Enroll Now</button>
+                <button class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">100% Refund Policy</p>
             </div>
 
@@ -335,7 +336,7 @@
                 <div class="plan-price">₹2,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">"Learn With AI" Sections in Every Module</li>
+                    <li class="cross">\"Learn With AI\" Sections in Every Module</li>
                     <li class="check">Assignments & Evaluation Guide</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
@@ -344,26 +345,6 @@
                 </ul>
                 <button class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">100% Refund Policy</p>
-            </div>
-
-            <!-- Premium Plan -->
-            <div class="course-card premium">
-                <div class="best-value-badge">BEST VALUE</div>
-                <div class="card-icon star">★</div>
-                <h3 class="plan-title">Premium AI-Advantage Plan</h3>
-                <p class="plan-lang">English & Hindi | Complete Access</p>
-                <div class="plan-price">₹2,999/-</div>
-                <ul class="plan-features">
-                    <li class="check-icon">Pre-recorded Video Lectures</li>
-                    <li class="check-icon">"Learn With AI" Sections in Every Module</li>
-                    <li class="check-icon">Assignments & Evaluation Guide</li>
-                    <li class="check-icon">Downloadable PDF Course Notes</li>
-                    <li class="check-icon">Course Virtual Community</li>
-                    <li class="check-icon">Course Upgrades at Zero Cost</li>
-                    <li class="check-icon">Certificate of Completion</li>
-                </ul>
-                <button class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">100% Refund Policy | Lifetime Access</p>
             </div>
         </div>
     </section>
