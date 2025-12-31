@@ -465,16 +465,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Scroll DOWN = images scale DOWN (zoom out)
     // =========================================================================
     let parallaxLastScrollY = window.scrollY;
+    let targetScale = 1;
     let currentScale = 1;
-    const minScale = 0.95;
-    const maxScale = 1.08;
-    const scaleSpeed = 0.002;
+    const minScale = 0.97;
+    const maxScale = 1.05;
+    const scaleSpeed = 0.0003; // Much slower for smoother effect
+    const smoothing = 0.08; // Lerp smoothing factor (lower = smoother)
 
     const parallaxImages = document.querySelectorAll('.feature-image img, .curriculum-image img, .mentor-image img, .faq-image img, .promise-image img');
 
-    // Set initial styles
+    // Set initial styles with longer transition
     parallaxImages.forEach(img => {
-        img.style.transition = 'transform 0.3s ease-out';
+        img.style.transition = 'transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1)';
         img.style.willChange = 'transform';
     });
 
@@ -485,11 +487,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Scroll DOWN = scale down, Scroll UP = scale up
         if (scrollDelta > 0) {
             // Scrolling down - zoom out
-            currentScale = Math.max(minScale, currentScale - (scrollDelta * scaleSpeed));
+            targetScale = Math.max(minScale, targetScale - (scrollDelta * scaleSpeed));
         } else if (scrollDelta < 0) {
             // Scrolling up - zoom in
-            currentScale = Math.min(maxScale, currentScale - (scrollDelta * scaleSpeed));
+            targetScale = Math.min(maxScale, targetScale - (scrollDelta * scaleSpeed));
         }
+
+        // Smooth interpolation (lerp) towards target
+        currentScale += (targetScale - currentScale) * smoothing;
 
         // Apply scale to all parallax images that are in viewport
         parallaxImages.forEach(img => {
@@ -498,23 +503,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Only animate images in viewport
             if (rect.top < windowHeight && rect.bottom > 0) {
-                img.style.transform = `scale(${currentScale})`;
+                img.style.transform = `scale(${currentScale.toFixed(4)})`;
             }
         });
 
         parallaxLastScrollY = currentScrollY;
+
+        // Continue animation loop for smooth interpolation
+        if (Math.abs(targetScale - currentScale) > 0.001) {
+            requestAnimationFrame(updateParallaxZoom);
+        }
     };
 
-    // Throttled scroll handler for smooth 60fps
-    let parallaxTicking = false;
+    // Scroll event triggers the animation
     window.addEventListener('scroll', () => {
-        if (!parallaxTicking) {
-            requestAnimationFrame(() => {
-                updateParallaxZoom();
-                parallaxTicking = false;
-            });
-            parallaxTicking = true;
-        }
+        requestAnimationFrame(updateParallaxZoom);
     });
 
     // =========================================================================
