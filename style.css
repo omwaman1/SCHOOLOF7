@@ -2303,14 +2303,11 @@ button {
 
     .course-card {
         flex: 0 0 85% !important;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         min-width: 260px;
         flex-shrink: 0 !important;
         padding: 25px 18px;
         border-radius: 12px;
-        /* Override desktop slide animation on mobile */
-        opacity: 1 !important;
-        transform: translateX(0) !important;
     }
 
     .card-icon {
