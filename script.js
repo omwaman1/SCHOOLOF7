@@ -460,6 +460,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========================================================================
+    // CONTINUOUS PARALLAX ZOOM EFFECT
+    // Scroll UP = images scale UP (zoom in)
+    // Scroll DOWN = images scale DOWN (zoom out)
+    // =========================================================================
+    let parallaxLastScrollY = window.scrollY;
+    let currentScale = 1;
+    const minScale = 0.95;
+    const maxScale = 1.08;
+    const scaleSpeed = 0.002;
+
+    const parallaxImages = document.querySelectorAll('.feature-image img, .curriculum-image img, .mentor-image img, .faq-image img, .promise-image img');
+
+    // Set initial styles
+    parallaxImages.forEach(img => {
+        img.style.transition = 'transform 0.3s ease-out';
+        img.style.willChange = 'transform';
+    });
+
+    const updateParallaxZoom = () => {
+        const currentScrollY = window.scrollY;
+        const scrollDelta = currentScrollY - parallaxLastScrollY;
+
+        // Scroll DOWN = scale down, Scroll UP = scale up
+        if (scrollDelta > 0) {
+            // Scrolling down - zoom out
+            currentScale = Math.max(minScale, currentScale - (scrollDelta * scaleSpeed));
+        } else if (scrollDelta < 0) {
+            // Scrolling up - zoom in
+            currentScale = Math.min(maxScale, currentScale - (scrollDelta * scaleSpeed));
+        }
+
+        // Apply scale to all parallax images that are in viewport
+        parallaxImages.forEach(img => {
+            const rect = img.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Only animate images in viewport
+            if (rect.top < windowHeight && rect.bottom > 0) {
+                img.style.transform = `scale(${currentScale})`;
+            }
+        });
+
+        parallaxLastScrollY = currentScrollY;
+    };
+
+    // Throttled scroll handler for smooth 60fps
+    let parallaxTicking = false;
+    window.addEventListener('scroll', () => {
+        if (!parallaxTicking) {
+            requestAnimationFrame(() => {
+                updateParallaxZoom();
+                parallaxTicking = false;
+            });
+            parallaxTicking = true;
+        }
+    });
+
+    // =========================================================================
     // SMOOTH ENTRANCE FOR HERO
     // =========================================================================
 
