@@ -1657,15 +1657,15 @@ button {
     width: calc(100% - 30px);
     max-width: none;
     transform: none;
-    background-color: var(--color-beige);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     border-radius: 16px;
-    border: 1px solid #ddd;
+    border: none;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #333;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(15, 52, 96, 0.4);
     z-index: 2000;
     opacity: 0;
     transform: translateY(50px);
@@ -1716,19 +1716,19 @@ button {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .sticky-info h5 {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 2px;
-    color: #333;
+    color: #fff;
 }
 
 .sticky-info p {
     font-size: 11px;
-    color: #666;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .sticky-actions {
@@ -1739,18 +1739,18 @@ button {
 
 .old-price {
     text-decoration: line-through;
-    color: #888;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
 }
 
 .new-price {
     font-weight: 700;
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 .btn--red {
-    background: linear-gradient(90deg, #4a90e2, #5ba3f5);
+    background: linear-gradient(90deg, #e94560, #ff6b6b);
     color: #fff;
     padding: 12px 25px;
     border: none;
@@ -1760,6 +1760,7 @@ button {
     cursor: pointer;
     animation: pulseGlow 2s ease-in-out infinite;
     transition: transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
 }
 
 .btn--red:hover {
@@ -1770,11 +1771,11 @@ button {
 
     0%,
     100% {
-        box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+        box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
     }
 
     50% {
-        box-shadow: 0 0 20px rgba(74, 144, 226, 0.8), 0 0 30px rgba(91, 163, 245, 0.5);
+        box-shadow: 0 4px 25px rgba(233, 69, 96, 0.7), 0 0 35px rgba(255, 107, 107, 0.5);
     }
 }
 
