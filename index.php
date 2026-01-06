@@ -165,10 +165,11 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video controls poster="images/feature-course.jpg">
-                <source src="images/hero-video.mp4" type="video/mp4">
+            <video controls preload="metadata" id="coursePreviewVideo">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="video-play-btn" id="videoPlayBtn">▶</div>
             <h3 class="video-caption">" Your Blueprint to Online Success "</h3>
         </div>
     </section>

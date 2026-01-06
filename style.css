@@ -1088,6 +1088,7 @@ button {
 .video-container-framed {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
 .video-container-framed video {
@@ -1096,6 +1097,35 @@ button {
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 5px;
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.video-play-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-play-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .video-caption {
@@ -2464,8 +2494,9 @@ button {
 }
 
 .footer-logo {
+    font-family: 'Luckiest Guy', cursive;
     font-size: calc(100vw / 5.5);
-    font-weight: 900;
+    font-weight: 400;
     color: #5a5a5a;
     letter-spacing: -0.04em;
     text-transform: lowercase;

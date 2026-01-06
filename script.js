@@ -36,6 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Course Preview Video Play Button
+    const coursePreviewVideo = document.getElementById('coursePreviewVideo');
+    const videoPlayBtn = document.getElementById('videoPlayBtn');
+
+    if (coursePreviewVideo && videoPlayBtn) {
+        videoPlayBtn.addEventListener('click', () => {
+            coursePreviewVideo.play();
+            videoPlayBtn.classList.add('hidden');
+        });
+
+        coursePreviewVideo.addEventListener('pause', () => {
+            videoPlayBtn.classList.remove('hidden');
+        });
+
+        coursePreviewVideo.addEventListener('ended', () => {
+            videoPlayBtn.classList.remove('hidden');
+        });
+    }
+
     // Mobile Hamburger Menu Toggle
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
