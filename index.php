@@ -312,9 +312,9 @@
             <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
             <button class="btn btn--outline-dark btn--sm">OUR VALUES</button>
             <div class="mentor-links">
-                <div class="mentor-link">mission</div>
-                <div class="mentor-link">philosophy</div>
-                <div class="mentor-link">sustainability</div>
+                <div class="mentor-link active" data-text="To <span class='highlight'>INSPIRE</span>, <span class='highlight'>EDUCATE</span>, and <span class='highlight'>EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.">mission</div>
+                <div class="mentor-link" data-text="We believe in <span class='highlight'>LEARNING BY DOING</span>. Our philosophy centers on practical knowledge, real-world applications, and building a mindset that embraces <span class='highlight'>INNOVATION</span> and continuous growth.">philosophy</div>
+                <div class="mentor-link" data-text="Building businesses that <span class='highlight'>LAST</span>. We focus on sustainable growth strategies, ethical practices, and creating <span class='highlight'>LONG-TERM VALUE</span> for entrepreneurs and communities alike.">sustainability</div>
             </div>
         </div>
         <div class="mentor-image">

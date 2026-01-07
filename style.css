@@ -1590,6 +1590,7 @@ button {
     max-width: 420px;
     font-family: var(--font-main);
     font-style: normal;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .mentor-headline .highlight {
@@ -1608,14 +1609,20 @@ button {
     border-bottom: 1px solid #ccc;
     font-weight: 700;
     font-size: 14px;
-    color: #67635f;
+    color: #999;
     text-transform: lowercase;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 .mentor-link:hover {
     color: #67635f;
+    padding-left: 10px;
+}
+
+.mentor-link.active {
+    color: #67635f;
+    padding-left: 10px;
 }
 
 .mentor-image {

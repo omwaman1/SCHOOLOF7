@@ -548,4 +548,56 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.hero-content')?.classList.add('visible');
     }, 300);
 
+    // =========================================================================
+    // MENTOR SECTION - DYNAMIC HEADLINE ON HOVER
+    // =========================================================================
+    const mentorHeadline = document.querySelector('.mentor-headline');
+    const mentorLinks = document.querySelectorAll('.mentor-link');
+    const defaultHeadlineText = mentorHeadline ? mentorHeadline.innerHTML : '';
+
+    if (mentorHeadline && mentorLinks.length > 0) {
+        mentorLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                // Remove active class from all links
+                mentorLinks.forEach(l => l.classList.remove('active'));
+                // Add active class to current link
+                link.classList.add('active');
+
+                // Get the text from data attribute
+                const newText = link.getAttribute('data-text');
+                if (newText) {
+                    mentorHeadline.style.opacity = '0';
+                    mentorHeadline.style.transform = 'translateY(10px)';
+
+                    setTimeout(() => {
+                        mentorHeadline.innerHTML = newText;
+                        mentorHeadline.style.opacity = '1';
+                        mentorHeadline.style.transform = 'translateY(0)';
+                    }, 200);
+                }
+            });
+        });
+
+        // Reset to default on mouse leave from the entire links container
+        const mentorLinksContainer = document.querySelector('.mentor-links');
+        if (mentorLinksContainer) {
+            mentorLinksContainer.addEventListener('mouseleave', () => {
+                // Set mission as active (first link)
+                mentorLinks.forEach((l, i) => {
+                    if (i === 0) l.classList.add('active');
+                    else l.classList.remove('active');
+                });
+
+                mentorHeadline.style.opacity = '0';
+                mentorHeadline.style.transform = 'translateY(10px)';
+
+                setTimeout(() => {
+                    mentorHeadline.innerHTML = defaultHeadlineText;
+                    mentorHeadline.style.opacity = '1';
+                    mentorHeadline.style.transform = 'translateY(0)';
+                }, 200);
+            });
+        }
+    }
+
 });
