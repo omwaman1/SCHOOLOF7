@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Om Waman
+Contact: +91 8669702031
+Email: Softwebtechnologies2021@gmail.com
+GitHub: https://github.com/omwaman1
+Location: India
+
+/* SITE */
+Last update: 2026/01/07
+Standards: HTML5, CSS3, JavaScript, PHP
+Software: VS Code, XAMPP
