@@ -1178,6 +1178,14 @@ button {
     color: #fff;
 }
 
+.video-help-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #67635f;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 /* -----------------------------------------------------------------------------
    SECTION 7: TESTIMONIALS (UGC - Rhode Style)
 ----------------------------------------------------------------------------- */
