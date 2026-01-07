@@ -1808,23 +1808,35 @@ button {
 }
 
 .btn--blue-light {
-    background: linear-gradient(90deg, #4a90e2, #5ba3f5);
-    color: #fff;
+    background: transparent;
+    color: #67635f;
     width: 100%;
-    border: none;
+    border: 1px solid #333;
     padding: 14px 20px;
     font-size: 14px;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn--blue-light:hover {
+    background: #333;
+    color: #fff;
 }
 
 .btn--blue-brand {
-    background: linear-gradient(90deg, #4a90e2, #5ba3f5);
+    background: transparent;
     color: #fff;
     width: 100%;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     padding: 14px 20px;
     font-size: 14px;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn--blue-brand:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
 .refund-policy {
