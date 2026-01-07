@@ -1557,6 +1557,10 @@ button {
     .audience-card img {
         height: 280px;
     }
+
+    .audience-info {
+        padding-left: 5px;
+    }
 }
 
 /* -----------------------------------------------------------------------------
