@@ -79,13 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
     accordions.forEach(acc => {
         acc.addEventListener('click', function () {
             const item = this.parentElement;
+            const icon = this.querySelector('.icon-circle');
 
-            // Close others (Optional, usually requested for clean UI)
+            // Close others and reset their icons to plus
             document.querySelectorAll('.accordion-item').forEach(i => {
-                if (i !== item) i.classList.remove('active');
+                if (i !== item) {
+                    i.classList.remove('active');
+                    const otherIcon = i.querySelector('.icon-circle');
+                    if (otherIcon) otherIcon.textContent = '+';
+                }
             });
 
+            // Toggle current item
             item.classList.toggle('active');
+
+            // Toggle icon between plus and minus
+            if (icon) {
+                icon.textContent = item.classList.contains('active') ? '-' : '+';
+            }
         });
     });
 

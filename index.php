@@ -35,14 +35,8 @@
             <a href="#">SCHOOL OF 7</a>
         </div>
         <div class="nav-right">
+            <a href="#">INQUIRE NOW</a>
             <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
-            <a href="#pricing">ENROLL NOW</a>
-            <a href="#" class="cart-icon">🛒 (0)</a>
-        </div>
-        
-        <!-- Mobile Icons -->
-        <div class="mobile-icons">
-            <a href="#" class="cart-icon">🛒</a>
         </div>
     </header>
     
@@ -50,15 +44,20 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
+        <a href="#">INQUIRE NOW</a>
         <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
-        <a href="#pricing">ENROLL NOW</a>
     </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-video-container">
-            <video autoplay loop muted playsinline class="hero-video" id="heroVideo" preload="auto">
-                <source src="https://pub-f50d30ee223d4536a0ce3f175f922495.r2.dev/hero-video.mp4" type="video/mp4">
+            <!-- Desktop Video -->
+            <video autoplay loop muted playsinline class="hero-video hero-video-desktop" id="heroVideoDesktop" preload="auto">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/home%20banner%20desktop.mp4" type="video/mp4">
+            </video>
+            <!-- Mobile Video -->
+            <video autoplay loop muted playsinline class="hero-video hero-video-mobile" id="heroVideoMobile" preload="auto">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/Home%20banner%20mbl.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
@@ -81,7 +80,7 @@
             <button class="btn btn--outline-dark btn--sm">Let's Learn</button>
         </div>
         <div class="feature-image">
-            <img src="images/feature-course.jpg" alt="Digital Workshop">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.webp" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
@@ -98,9 +97,9 @@
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
                     <h3 class="card-big-title">product</h3>
-                    <img src="images/audience-1.jpg" alt="Building Product" class="card-img-default">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Building Product" class="card-img-default">
                     <div class="card-hover-overlay">
-                        <img src="images/audience-2.jpg" alt="Basic Access Hover" class="card-img-hover">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Basic Access Hover" class="card-img-hover">
                         <button class="buy-btn">Join the Program</button>
                     </div>
                     <span class="swipe-hint">swipe</span>
@@ -119,9 +118,9 @@
                 <div class="card-image-wrapper">
                     <span class="badge">ideas noise</span>
                     <h3 class="card-big-title">idea</h3>
-                    <img src="images/audience-3.jpg" alt="Figuring Startup Idea" class="card-img-default">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
-                        <img src="images/audience-4.jpg" alt="Pro Hover" class="card-img-hover">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Pro Hover" class="card-img-hover">
                         <button class="buy-btn">Let's Validate Ideas</button>
                     </div>
                     <span class="swipe-hint">swipe</span>
@@ -140,9 +139,9 @@
                 <div class="card-image-wrapper">
                     <span class="badge">money</span>
                     <h3 class="card-big-title">finance</h3>
-                    <img src="images/mentor.jpg" alt="Fund Raising" class="card-img-default">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
                     <div class="card-hover-overlay">
-                        <img src="images/feature-course.jpg" alt="Elite Hover" class="card-img-hover">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Elite Hover" class="card-img-hover">
                         <button class="buy-btn">Learn to Scale</button>
                     </div>
                     <span class="swipe-hint">swipe</span>
@@ -172,6 +171,7 @@
             <div class="video-play-btn" id="videoPlayBtn">▶</div>
             <h3 class="video-caption">" Your Blueprint to Online Success "</h3>
         </div>
+        <p class="video-help-quote">" Your startup playbook - Simplified "</p>
     </section>
 
     <!-- Section 7: Testimonials -->
@@ -224,8 +224,8 @@
         <div class="curriculum-content">
             <h2 class="curriculum-heading"><span class="heading-bold">COURSE </span><br><span class="heading-bold">CURRICULUM</span> </h2>
             <div class="accordion curriculum-accordion">
-                <div class="accordion-item">
-                    <button class="accordion-header">MODULE 1: Shortlisting Startup Ideas <span class="icon-circle">+</span></button>
+                <div class="accordion-item active">
+                    <button class="accordion-header">MODULE 1: Shortlisting Startup Ideas <span class="icon-circle">-</span></button>
                     <div class="accordion-body">✓ How to find ideas in the first place?
 ✓ 4 categories of startup ideas
 ✓ How to improve your research abilities?
