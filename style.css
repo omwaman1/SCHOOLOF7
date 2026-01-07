@@ -1581,6 +1581,23 @@ button {
     background-color: var(--color-beige);
 }
 
+.mentor-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+
+.mentor-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #67635f;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 .mentor-headline {
     font-size: 1.3rem;
     font-weight: 400;

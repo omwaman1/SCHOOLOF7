@@ -309,7 +309,9 @@
     <!-- Section 10: Mentor -->
     <section class="section mentor-section">
         <div class="mentor-content">
+            <h3 class="mentor-label">Your Mentor</h3>
             <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
+            <p class="mentor-name">Mr 7</p>
             <button class="btn btn--outline-dark btn--sm">OUR VALUES</button>
             <div class="mentor-links">
                 <div class="mentor-link active" data-text="To <span class='highlight'>INSPIRE</span>, <span class='highlight'>EDUCATE</span>, and <span class='highlight'>EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.">mission</div>
@@ -318,7 +320,7 @@
             </div>
         </div>
         <div class="mentor-image">
-            <img src="images/mentor-image.jpg" alt="Your Instructor">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" alt="Mr 7 - Your Mentor">
         </div>
     </section>
 
