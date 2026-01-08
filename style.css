@@ -1649,14 +1649,14 @@ button {
 }
 
 .mentor-name {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h2);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 20px;
 }
 
 .mentor-headline {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
     font-weight: 400;
     color: #67635f;
     line-height: 1.5;
