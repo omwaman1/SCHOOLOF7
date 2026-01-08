@@ -75,7 +75,7 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Your Masterclass To STARTUP</h3>
+            <h3 class="feature-title">Your<br>Masterclass<br>To Startup</h3>
             <p class="feature-description">" Don't Start a Business Blind - Buy the Map "</p>
             <button class="btn btn--outline-dark btn--sm">Let's Learn</button>
         </div>

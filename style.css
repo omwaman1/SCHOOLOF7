@@ -702,31 +702,27 @@ button {
     flex: 0 0 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    padding: 50px 40px;
-    background-color: #f5a623;
-    border-radius: 16px 0 0 16px;
-    min-height: 350px;
+    padding: 30px 30px 20px 0;
 }
 
 .feature-title {
-    font-family: Georgia, serif;
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: var(--font-size-h2);
+    font-weight: 600;
     margin-bottom: 20px;
-    text-transform: none;
-    letter-spacing: 0;
-    color: #1a5f7a;
-    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #3f4e38;
+    line-height: 1.1;
 }
 
 .feature-description {
-    font-size: var(--font-size-base);
-    font-style: italic;
+    font-size: var(--font-size-lg);
     line-height: 1.5;
-    color: #333;
+    color: #67635f;
     margin-bottom: 30px;
     max-width: 100%;
 }
