@@ -97,9 +97,9 @@
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
                     <h3 class="card-big-title">product</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Building Product" class="card-img-default">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
                     <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Basic Access Hover" class="card-img-hover">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Basic Access Hover" class="card-img-hover">
                         <button class="buy-btn">Join the Program</button>
                     </div>
                     <span class="swipe-hint">swipe</span>
@@ -118,9 +118,9 @@
                 <div class="card-image-wrapper">
                     <span class="badge">ideas noise</span>
                     <h3 class="card-big-title">idea</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Figuring Startup Idea" class="card-img-default">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Pro Hover" class="card-img-hover">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Pro Hover" class="card-img-hover">
                         <button class="buy-btn">Let's Validate Ideas</button>
                     </div>
                     <span class="swipe-hint">swipe</span>
