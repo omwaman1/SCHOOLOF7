@@ -2638,6 +2638,20 @@ button {
         margin-bottom: 20px;
     }
 
+    /* Accordion body - increase max-height to show all content */
+    .active .accordion-body {
+        max-height: 500px;
+    }
+
+    /* Keep icon-circle circular on mobile */
+    .icon-circle {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        flex-shrink: 0;
+        font-size: var(--font-size-sm);
+    }
+
     /* Video Help Section Mobile */
     .video-help-title {
         font-size: var(--font-size-h3);
