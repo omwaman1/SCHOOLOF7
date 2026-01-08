@@ -1260,7 +1260,7 @@ button {
 .testimonials-title {
     font-size: var(--font-size-h1);
     font-weight: 400;
-    color: #67635f;
+    color: #555;
     font-family: serif;
 }
 
