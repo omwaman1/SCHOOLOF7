@@ -1585,7 +1585,7 @@ button {
 
 .mentor-content {
     flex: 1;
-    padding: 0 40px 30px 40px;
+    padding: 20px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1596,7 +1596,7 @@ button {
     font-size: 2rem;
     font-weight: 700;
     color: #555;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.02em;
     margin-bottom: 20px;
     line-height: 1.3;
