@@ -816,6 +816,7 @@ button {
         flex: none;
         width: 100%;
         padding: 10px 0;
+        align-items: flex-start;
     }
 
     .feature-title {
