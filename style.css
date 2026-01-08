@@ -2418,19 +2418,21 @@ button {
         gap: 10px;
         padding: 0 15px 10px;
         scrollbar-width: none;
-        max-width: 100%;
+        max-width: 100% !important;
         margin: 15px 0 0 0;
-        grid-template-columns: none !important;
+        justify-content: flex-start !important;
     }
 
     .course-pricing-grid::-webkit-scrollbar {
         display: none;
     }
 
-    .course-card {
+    .course-card,
+    .course-pricing-grid .course-card {
         flex: 0 0 85% !important;
         scroll-snap-align: center;
         min-width: 260px;
+        max-width: none !important;
         flex-shrink: 0 !important;
         padding: 25px 18px;
         border-radius: 12px;
