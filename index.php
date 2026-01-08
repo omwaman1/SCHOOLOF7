@@ -408,7 +408,7 @@
     <!-- Section 13: Promise (Certificate) -->
     <section class="section promise-section">
         <div class="promise-image">
-            <img src="images/promise.jpg" alt="Certificate of Completion">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.webp" alt="Certificate of Completion">
         </div>
         <div class="promise-content">
             <h2 class="promise-title">GET certified</h2>
