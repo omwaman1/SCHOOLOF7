@@ -2168,20 +2168,22 @@ button {
 }
 
 .btn--red {
-    background: transparent;
-    color: #67635f;
+    background: linear-gradient(90deg, #4a5e42, #3f4e38);
+    color: #fff;
     padding: 12px 25px;
-    border: 1px solid #333;
+    border: none;
     border-radius: 30px;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(63, 78, 56, 0.3);
 }
 
 .btn--red:hover {
-    background: #333;
+    background: linear-gradient(90deg, #3f4e38, #2e3b29);
     color: #fff;
+    transform: scale(1.05);
 }
 
 @keyframes pulseGlow {
