@@ -661,7 +661,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    text-align: right;
+    text-align: left;
     padding: 20px 30px 20px 0;
 }
 
