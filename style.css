@@ -648,7 +648,7 @@ button {
     padding: 40px 50px;
     max-width: 100%;
     margin: 20px 15px;
-    gap: 20px;
+    gap: 0;
     background-color: #fff;
     border-radius: 16px;
     min-height: auto;
@@ -660,7 +660,9 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px 30px 20px 0;
 }
 
 .feature-title {
