@@ -893,9 +893,9 @@ button {
 
 /* Default Product Image */
 .card-img-default {
-    width: 70%;
-    height: auto;
-    max-height: 85%;
+    width: auto;
+    height: 90%;
+    max-width: 70%;
     object-fit: contain;
     transition: opacity 0.4s ease;
 }
