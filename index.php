@@ -263,7 +263,7 @@
             </div>
         </div>
         <div class="curriculum-image">
-            <img src="images/feature-course.jpg" alt="Course Syllabus">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/course-curriculom.webp" alt="Course Syllabus">
         </div>
     </section>
 
