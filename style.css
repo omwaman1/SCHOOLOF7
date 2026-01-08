@@ -1,14 +1,39 @@
 /* Resets and Variables */
 :root {
+    /* Colors */
     --color-beige: #f1f0ed;
     --color-light-gray: #f5f5f5;
     --color-blue-gray: #d6dde6;
     --color-text: #67635f;
     --color-text-light: #67635f;
+
+    /* Fonts */
     --font-main: 'Inter', sans-serif;
     --font-accent: 'Barlow Condensed', sans-serif;
+
+    /* Typography Scale - Standardized */
+    --font-size-h1: 2.5rem;
+    /* 40px - Hero headlines, main section titles */
+    --font-size-h2: 2rem;
+    /* 32px - Section headings */
+    --font-size-h3: 1.5rem;
+    /* 24px - Sub-headings, card titles */
+    --font-size-h4: 1.25rem;
+    /* 20px - Small headings */
+
+    --font-size-lg: 1.125rem;
+    /* 18px - Large body text, descriptions */
+    --font-size-base: 1rem;
+    /* 16px - Base body text */
+    --font-size-sm: 0.875rem;
+    /* 14px - Small text, buttons */
+    --font-size-xs: 0.75rem;
+    /* 12px - Captions, labels */
+    --font-size-xxs: 0.6875rem;
+    /* 11px - Navigation, micro text */
+
+    /* Layout */
     --header-height: 80px;
-    /* Approx including notification */
 }
 
 html {
@@ -284,7 +309,7 @@ body::after {
 a {
     text-decoration: none;
     color: inherit;
-    font-size: 15px;
+    font-size: var(--font-size-sm);
     font-weight: 500;
     letter-spacing: 0.05em;
 }
@@ -300,7 +325,7 @@ button {
     text-align: center;
     padding: 15px 20px;
     font-family: var(--font-accent);
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -354,7 +379,7 @@ button {
 }
 
 .site-header .logo h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-h1);
     font-weight: 600;
     letter-spacing: -0.03em;
     color: #595750;
@@ -384,7 +409,7 @@ button {
 .logo a {
     color: #fff;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 400;
     letter-spacing: 0.05em;
     transition: color 0.3s ease;
@@ -420,7 +445,7 @@ button {
 }
 
 .mobile-icons a {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     text-decoration: none;
 }
 
@@ -452,7 +477,7 @@ button {
 .mobile-menu a {
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: #67635f;
     text-transform: uppercase;
@@ -570,7 +595,7 @@ button {
 }
 
 .hero-title {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 400;
     margin-bottom: 1rem;
     color: #fff;
@@ -614,7 +639,7 @@ button {
 .btn {
     padding: 12px 24px;
     border-radius: 30px;
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -649,7 +674,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     cursor: pointer;
     z-index: 10;
     transition: transform 0.2s ease;
@@ -684,7 +709,7 @@ button {
 }
 
 .feature-title {
-    font-size: 24px;
+    font-size: var(--font-size-h3);
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -693,7 +718,7 @@ button {
 }
 
 .feature-description {
-    font-size: 22px;
+    font-size: var(--font-size-lg);
     line-height: 1.5;
     color: #67635f;
     margin-bottom: 30px;
@@ -900,7 +925,7 @@ button {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 2.5rem;
+    font-size: var(--font-size-h1);
     font-weight: 900;
     font-style: italic;
     color: #5a5a58;
@@ -958,7 +983,7 @@ button {
     background: #fff;
     border: 1px solid #333;
     border-radius: 30px;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -984,7 +1009,7 @@ button {
     background: #555;
     color: #fff;
     font-family: var(--font-accent);
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     font-weight: 600;
     padding: 6px 12px;
     border-radius: 20px;
@@ -999,7 +1024,7 @@ button {
 }
 
 .rating {
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     color: #67635f;
     margin-bottom: 8px;
 }
@@ -1012,19 +1037,19 @@ button {
 }
 
 .product-name {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     font-weight: 700;
     text-transform: uppercase;
     color: #222;
 }
 
 .price {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     font-weight: 600;
 }
 
 .product-desc {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     color: #67635f;
 }
 
@@ -1048,12 +1073,12 @@ button {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: var(--font-size-h2);
         margin-bottom: 5px;
     }
 
     .section-subtitle {
-        font-size: 1.2rem;
+        font-size: var(--font-size-base);
     }
 
     .pricing-grid {
@@ -1082,7 +1107,7 @@ button {
     }
 
     .card-big-title {
-        font-size: 2rem;
+        font-size: var(--font-size-h2);
     }
 
     /* Show swipe hint on mobile */
@@ -1176,7 +1201,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: var(--font-size-h3);
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1194,13 +1219,13 @@ button {
 }
 
 .video-caption {
-    font-size: 1.5rem;
+    font-size: var(--font-size-h3);
     font-weight: 600;
     color: #fff;
 }
 
 .video-help-quote {
-    font-size: 1.2rem;
+    font-size: var(--font-size-base);
     font-style: normal;
     color: #67635f;
     margin-top: 10px;
@@ -1230,7 +1255,7 @@ button {
 }
 
 .testimonials-title {
-    font-size: 1.8rem;
+    font-size: var(--font-size-h2);
     font-weight: 400;
     color: #67635f;
     font-family: serif;
@@ -1242,7 +1267,7 @@ button {
 }
 
 .students-counter {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     color: #67635f;
     white-space: nowrap;
 }
@@ -1337,7 +1362,7 @@ button {
     border-radius: 50%;
     border: 1px solid #ccc;
     background: #fff;
-    font-size: 20px;
+    font-size: var(--font-size-h4);
     color: #67635f;
     cursor: pointer;
     display: flex;
@@ -1353,7 +1378,7 @@ button {
 
 .btn--xs {
     padding: 8px 16px;
-    font-size: 10px;
+    font-size: var(--font-size-xs);
 }
 
 /* -----------------------------------------------------------------------------
@@ -1373,7 +1398,7 @@ button {
 }
 
 .curriculum-heading {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     line-height: 1.3;
     color: #555;
     margin-bottom: 50px;
@@ -1400,7 +1425,7 @@ button {
     background: none;
     border: none;
     padding: 18px 0;
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     font-weight: 600;
     color: #67635f;
     text-transform: uppercase;
@@ -1421,7 +1446,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     font-weight: 400;
     transition: transform 0.3s ease;
 }
@@ -1434,7 +1459,7 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     color: #67635f;
     line-height: 1.5;
 }
@@ -1463,7 +1488,7 @@ button {
 }
 
 .audience-title {
-    font-size: 1.8rem;
+    font-size: var(--font-size-h2);
     color: #555;
     margin-bottom: 30px;
     font-weight: 400;
@@ -1540,7 +1565,7 @@ button {
 }
 
 .audience-info h4 {
-    font-size: 13px;
+    font-size: var(--font-size-sm);
     font-weight: 700;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1548,7 +1573,7 @@ button {
 }
 
 .audience-info p {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     color: #67635f;
     line-height: 1.4;
 }
@@ -1561,7 +1586,7 @@ button {
 
     .audience-title {
         padding: 0 15px;
-        font-size: 1.4rem;
+        font-size: var(--font-size-h3);
         margin-bottom: 15px;
     }
 
@@ -1611,7 +1636,7 @@ button {
 }
 
 .mentor-label {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 700;
     color: #555;
     text-transform: none;
@@ -1621,7 +1646,7 @@ button {
 }
 
 .mentor-name {
-    font-size: 1.5rem;
+    font-size: var(--font-size-h3);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 20px;
@@ -1629,7 +1654,7 @@ button {
 }
 
 .mentor-headline {
-    font-size: 1.3rem;
+    font-size: var(--font-size-base);
     font-weight: 400;
     color: #67635f;
     line-height: 1.5;
@@ -1655,7 +1680,7 @@ button {
     padding: 18px 0;
     border-bottom: 1px solid #ccc;
     font-weight: 700;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     color: #999;
     text-transform: lowercase;
     cursor: pointer;
@@ -1759,7 +1784,7 @@ button {
 }
 
 .card-icon {
-    font-size: 32px;
+    font-size: var(--font-size-h2);
     margin-bottom: 15px;
     color: #4a90e2;
 }
@@ -1769,13 +1794,13 @@ button {
 }
 
 .plan-title {
-    font-size: 1.3rem;
+    font-size: var(--font-size-h4);
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .plan-lang {
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     color: #888;
     margin-bottom: 20px;
 }
@@ -1785,7 +1810,7 @@ button {
 }
 
 .plan-price {
-    font-size: 2.8rem;
+    font-size: var(--font-size-h1);
     font-weight: 700;
     margin-bottom: 25px;
     color: #67635f;
@@ -1799,7 +1824,7 @@ button {
     list-style: none;
     text-align: left;
     margin-bottom: 25px;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
 }
 
 .plan-features li {
@@ -1813,14 +1838,14 @@ button {
     content: '✓';
     color: #4a90e2;
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
 }
 
 .cross:before {
     content: '✕';
     color: #cc6666;
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
 }
 
 .cross {
@@ -1869,7 +1894,7 @@ button {
     width: 100%;
     border: 1px solid #333;
     padding: 14px 20px;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -1932,14 +1957,14 @@ button {
 }
 
 .faq-title {
-    font-size: 3rem;
+    font-size: var(--font-size-h1);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 15px;
 }
 
 .faq-subtitle {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     color: #67635f;
     margin-bottom: 30px;
 }
@@ -1959,7 +1984,7 @@ button {
     background: none;
     border: none;
     padding: 20px 0;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: #67635f;
     text-transform: uppercase;
@@ -1976,7 +2001,7 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    font-size: 13px;
+    font-size: var(--font-size-sm);
     color: #67635f;
     line-height: 1.5;
 }
@@ -2001,7 +2026,7 @@ button {
 }
 
 .promise-title {
-    font-size: 2.2rem;
+    font-size: var(--font-size-h2);
     font-weight: 700;
     color: #3f4e38;
     margin-bottom: 5px;
@@ -2010,7 +2035,7 @@ button {
 }
 
 .promise-subtitle {
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     font-weight: 600;
     color: #67635f;
     margin-bottom: 30px;
@@ -2041,7 +2066,7 @@ button {
 }
 
 .promise-details p {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     color: #67635f;
     line-height: 1.5;
 }
@@ -2684,13 +2709,13 @@ button {
 }
 
 .newsletter-text {
-    font-size: 13px;
+    font-size: var(--font-size-sm);
     color: #67635f;
     margin-bottom: 10px;
 }
 
 .newsletter-subtext {
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     color: #67635f;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -2707,7 +2732,7 @@ button {
     background: none;
     border: none;
     padding: 10px 0;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     color: #67635f;
 }
 
@@ -2718,7 +2743,7 @@ button {
 .newsletter-btn {
     background: none;
     border: none;
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     font-weight: 700;
     color: #67635f;
     cursor: pointer;
@@ -2726,7 +2751,7 @@ button {
 }
 
 .privacy-note {
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     color: #888;
 }
 
@@ -2742,7 +2767,7 @@ button {
 }
 
 .footer-column h4 {
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 15px;
@@ -2758,7 +2783,7 @@ button {
 }
 
 .footer-column a {
-    font-size: 11px;
+    font-size: var(--font-size-xxs);
     color: #67635f;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -2769,7 +2794,7 @@ button {
 }
 
 .support-text {
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     color: #67635f;
     margin-bottom: 5px;
     line-height: 1.4;
