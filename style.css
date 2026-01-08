@@ -2310,6 +2310,10 @@ button {
         text-align: center;
     }
 
+    .logo a {
+        font-size: var(--font-size-h3);
+    }
+
     .site-header.transparent .hamburger-btn span,
     .site-header.scrolled .hamburger-btn span {
         background-color: #67635f;
