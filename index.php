@@ -76,7 +76,7 @@
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Your Masterclass To STARTUP</h3>
-            <p class="feature-description">" Don't Start a Business Blind - <br> Buy the Map "</p>
+            <p class="feature-description">" Don't Start a Business Blind - Buy the Map "</p>
             <button class="btn btn--outline-dark btn--sm">Let's Learn</button>
         </div>
         <div class="feature-image">
