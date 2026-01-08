@@ -2117,7 +2117,6 @@ button {
     right: 1.5rem;
     width: calc(100% - 3rem);
     max-width: none;
-    transform: none;
     background: var(--color-beige);
     border-radius: 16px;
     border: 1px solid #ddd;
@@ -2126,9 +2125,10 @@ button {
     justify-content: space-between;
     align-items: center;
     color: #67635f;
-    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.15);
     z-index: 2000;
     opacity: 0;
+    transform: translateY(20px);
     pointer-events: none;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -2137,33 +2137,6 @@ button {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    animation: subtleFloat 3s ease-in-out infinite;
-}
-
-/* Entrance animation */
-@keyframes floatIn {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Subtle floating effect */
-@keyframes subtleFloat {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-3px);
-    }
 }
 
 .sticky-content {
