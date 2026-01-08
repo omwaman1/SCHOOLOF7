@@ -26,7 +26,7 @@ body {
     color: var(--color-text);
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 /* Section Styling - Rounded corners with gaps */
