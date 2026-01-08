@@ -164,7 +164,7 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video controls preload="metadata" id="coursePreviewVideo">
+            <video controls preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
                 <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -447,7 +447,7 @@
     <!-- Sticky Enroll Bar -->
     <div class="sticky-bar">
         <div class="sticky-content">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" alt="Mr 7" class="sticky-avatar">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/smalll%20circle%20image.webp" alt="Mr 7" class="sticky-avatar">
             <div class="sticky-info">
                 <h5>Startup Masterclass</h5>
                 <p>47K+ Students Enrolled</p>
