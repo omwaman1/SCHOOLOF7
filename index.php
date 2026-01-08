@@ -274,28 +274,28 @@
             <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
             <div class="audience-grid" id="audienceCarousel">
                 <div class="audience-card">
-                    <img src="images/audience-1.jpg" alt="Entrepreneurs">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" alt="Entrepreneurs">
                     <div class="audience-info">
                         <h4>ENTREPRENEURS</h4>
                         <p>business owners looking to scale online</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="images/audience-2.jpg" alt="Freelancers">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" alt="Freelancers">
                     <div class="audience-info">
                         <h4>FREELANCERS</h4>
                         <p>marketers wanting to upskill & charge more</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="images/audience-3.jpg" alt="Students">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" alt="Students">
                     <div class="audience-info">
                         <h4>STUDENTS</h4>
                         <p>building a career in digital media</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="images/audience-4.jpg" alt="Creatives">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" alt="Creatives">
                     <div class="audience-info">
                         <h4>CREATIVES</h4>
                         <p>artists wanting to sell their work online</p>
