@@ -1985,7 +1985,7 @@ button {
     background: none;
     border: none;
     padding: 20px 0;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: #67635f;
     text-transform: uppercase;
