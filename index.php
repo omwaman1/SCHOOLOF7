@@ -178,7 +178,7 @@
     <section class="section testimonials-section" id="testimonials">
         <div class="testimonials-header">
             <div class="testimonials-title-group">
-                <h3 class="testimonials-title">school of 7<span class="plus">+</span> testimonials</h3>
+                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
                 <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
             </div>
             <a href="#" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>

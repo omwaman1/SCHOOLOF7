@@ -1258,7 +1258,7 @@ button {
 }
 
 .testimonials-title {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h1);
     font-weight: 400;
     color: #67635f;
     font-family: serif;
@@ -1270,7 +1270,7 @@ button {
 }
 
 .students-counter {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: #67635f;
     white-space: nowrap;
 }
