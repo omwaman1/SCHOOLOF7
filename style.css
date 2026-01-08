@@ -2258,8 +2258,13 @@ button {
         padding: 0.5rem;
     }
 
-    /* Hide white frame strips on mobile - not needed with smaller padding */
-    body::before,
+    /* Keep top white strip on mobile to hide content behind scrolled header */
+    body::before {
+        display: block;
+        height: 0.5rem;
+    }
+
+    /* Hide side strips on mobile */
     body::after {
         display: none;
     }
@@ -2314,13 +2319,13 @@ button {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Hero Section Mobile - Taller video, cropped from sides */
+    /* Hero Section Mobile - Full width matching body padding */
     .hero-section {
         height: 65vh;
         min-height: 400px;
         padding: 0;
-        margin: 0 15px;
-        width: calc(100% - 30px);
+        margin: 0 0 0.5rem 0;
+        width: 100%;
     }
 
     .hero-video-container {
