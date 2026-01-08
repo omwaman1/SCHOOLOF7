@@ -666,19 +666,19 @@ button {
 }
 
 .feature-title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #67635f;
 }
 
 .feature-description {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 22px;
+    line-height: 1.5;
     color: #67635f;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     max-width: 100%;
 }
 
