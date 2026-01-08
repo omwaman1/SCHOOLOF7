@@ -299,14 +299,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollingUp = currentScrollY < lastScrollY;
 
         // Only switch to transparent when very close to top of video
-        if (currentScrollY < 150) {
+        if (currentScrollY < 50) {
             // Remove hidden state, transition to transparent
             header.classList.remove('hidden');
             header.classList.remove('scrolled');
             header.classList.add('transparent');
 
             // If scrolling down from very top, hide
-            if (!scrollingUp && currentScrollY > 20) {
+            if (!scrollingUp && currentScrollY > 10) {
                 header.classList.add('hidden');
             }
         }
