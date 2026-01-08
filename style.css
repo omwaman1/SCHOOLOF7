@@ -411,7 +411,7 @@ button {
     font-family: 'Luckiest Guy', cursive;
     font-size: var(--font-size-h2);
     font-weight: 400;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.02em;
     transition: color 0.3s ease;
 }
 
