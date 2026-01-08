@@ -1721,17 +1721,17 @@ button {
 }
 
 .course-card.premium {
-    background: linear-gradient(180deg, #2a3a8f 0%, #1a2355 100%);
+    background: linear-gradient(180deg, #4a5e42 0%, #3f4e38 100%);
     color: #fff;
     border: none;
-    box-shadow: 0 15px 40px rgba(26, 35, 85, 0.3);
+    box-shadow: 0 15px 40px rgba(63, 78, 56, 0.4);
 }
 
 .best-value-badge {
     position: absolute;
     top: 15px;
     right: -35px;
-    background: linear-gradient(90deg, #4a90e2, #6ba3f5);
+    background: linear-gradient(90deg, #5a6b4a, #3f4e38);
     color: #fff;
     padding: 6px 45px;
     transform: rotate(45deg);
