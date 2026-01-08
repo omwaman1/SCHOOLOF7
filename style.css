@@ -2590,6 +2590,32 @@ button {
         padding: 0 15px 20px;
         margin-bottom: 20px;
     }
+
+    /* Promise/Get Certified Section Mobile */
+    .promise-section {
+        flex-direction: column;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .promise-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .promise-image img {
+        border-radius: 12px;
+    }
+
+    .promise-content {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .promise-title {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
 }
 
 /* -----------------------------------------------------------------------------
