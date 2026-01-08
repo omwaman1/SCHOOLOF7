@@ -281,14 +281,12 @@ button {
     border-radius: 12px;
 }
 
-/* Header - Rhode Style with gap at top */
+/* Header - Rhode Style - Static initially, fixed when scrolled */
 .site-header {
-    position: fixed;
-    top: 1rem;
-    left: 0;
-    right: 0;
+    position: relative;
+    top: 0;
     width: calc(100% - 2rem);
-    margin: 0 1rem;
+    margin: 1rem;
     background-color: var(--color-beige);
     display: flex;
     justify-content: space-between;
@@ -300,9 +298,12 @@ button {
     transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-/* When scrolled - sticks to top with no gap */
+/* When scrolled - becomes fixed at top */
 .site-header.scrolled {
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     margin: 0;
     background-color: var(--color-beige);
@@ -458,7 +459,7 @@ button {
     width: calc(100% - 30px);
     overflow: hidden;
     padding: 0;
-    margin: 70px 15px 0 15px;
+    margin: 0 15px;
     background-color: #fff;
     border-radius: 16px;
 }
