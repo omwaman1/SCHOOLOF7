@@ -2028,7 +2028,7 @@ button {
 }
 
 .promise-title {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h1);
     font-weight: 700;
     color: #3f4e38;
     margin-bottom: 5px;
@@ -2037,7 +2037,7 @@ button {
 }
 
 .promise-subtitle {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: #67635f;
     margin-bottom: 30px;
@@ -2059,7 +2059,7 @@ button {
 }
 
 .promise-details h4 {
-    font-size: 9px;
+    font-size: var(--font-size-xs);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 5px;
@@ -2068,7 +2068,7 @@ button {
 }
 
 .promise-details p {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     color: #67635f;
     line-height: 1.5;
 }
