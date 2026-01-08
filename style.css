@@ -2705,7 +2705,7 @@ button {
     font-size: clamp(3rem, 18vw, 12rem);
     font-weight: 400;
     color: #5a5a5a;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.02em;
     text-transform: lowercase;
     width: 100%;
     display: block;
