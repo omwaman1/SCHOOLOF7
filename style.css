@@ -1693,9 +1693,12 @@ button {
     margin: 40px auto 0;
 }
 
-.course-pricing-grid .course-card {
-    flex: 0 0 380px;
-    max-width: 400px;
+/* Desktop only - cards side by side centered */
+@media (min-width: 769px) {
+    .course-pricing-grid .course-card {
+        flex: 0 0 380px;
+        max-width: 400px;
+    }
 }
 
 .course-card {
