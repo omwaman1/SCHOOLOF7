@@ -447,7 +447,7 @@
     <!-- Sticky Enroll Bar -->
     <div class="sticky-bar">
         <div class="sticky-content">
-            <img src="images/mentor.jpg" alt="Instructor" class="sticky-avatar">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" alt="Mr 7" class="sticky-avatar">
             <div class="sticky-info">
                 <h5>Startup Masterclass</h5>
                 <p>47K+ Students Enrolled</p>
