@@ -55,21 +55,12 @@ body {
 }
 
 /* White overlay to hide content behind fixed header gap and corners */
-body::before,
 body::after {
     content: '';
     position: fixed;
     background-color: #fff;
     z-index: 999;
     pointer-events: none;
-}
-
-/* Top white strip */
-body::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1.5rem;
 }
 
 /* Left and right white strips */
@@ -344,7 +335,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 40px;
+    padding: 1.1rem 40px;
     border-radius: 12px 12px 0 0;
     z-index: 1000;
     box-sizing: border-box;
@@ -354,15 +345,15 @@ button {
 /* When scrolled - becomes fixed at top */
 .site-header.scrolled {
     position: fixed;
-    top: 1.5rem;
+    top: 0;
     left: 1.5rem;
     right: 1.5rem;
     width: calc(100% - 3rem);
     margin: 0;
     background-color: var(--color-beige);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px 12px 0 0;
-    padding: 0.6rem 40px;
+    border-radius: 0;
+    padding: 1.1rem 40px;
 }
 
 /* Hidden state when scrolling down */
@@ -508,7 +499,7 @@ button {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
     width: 100%;
     overflow: hidden;
     padding: 0;
@@ -530,6 +521,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
 }
 
 /* Responsive video - Desktop video shown by default, mobile hidden */
@@ -647,14 +639,15 @@ button {
 }
 
 .btn--outline-dark {
-    background: transparent;
+    background: #333;
     border: 1px solid #333;
-    color: #67635f;
+    color: #fff;
+    font-size: var(--font-size-sm);
 }
 
 .btn--outline-dark:hover {
-    background: #333;
-    color: #fff;
+    background: transparent;
+    color: #67635f;
 }
 
 .btn--sm {
@@ -702,7 +695,7 @@ button {
     flex: 0 0 40%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     text-align: left;
     padding: 30px 30px 20px 0;
@@ -710,7 +703,7 @@ button {
 
 .feature-title {
     font-family: 'Oswald', sans-serif;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h1);
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -725,6 +718,7 @@ button {
     color: #67635f;
     margin-bottom: 30px;
     max-width: 100%;
+    text-align: left;
 }
 
 .feature-image {
@@ -1228,7 +1222,7 @@ button {
 }
 
 .video-help-quote {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
     font-style: normal;
     color: #67635f;
     margin-top: 10px;
@@ -1270,7 +1264,7 @@ button {
 }
 
 .students-counter {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
     color: #67635f;
     white-space: nowrap;
 }
@@ -1682,7 +1676,7 @@ button {
     padding: 18px 0;
     border-bottom: 1px solid #ccc;
     font-weight: 700;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: #999;
     text-transform: lowercase;
     cursor: pointer;
@@ -1766,17 +1760,17 @@ button {
 }
 
 .course-card.premium {
-    background: linear-gradient(180deg, #4a5e42 0%, #3f4e38 100%);
+    background: linear-gradient(180deg, #1a2b4a 0%, #0f1729 100%);
     color: #fff;
     border: none;
-    box-shadow: 0 15px 40px rgba(63, 78, 56, 0.4);
+    box-shadow: 0 15px 40px rgba(15, 23, 41, 0.4);
 }
 
 .best-value-badge {
     position: absolute;
     top: 15px;
     right: -35px;
-    background: linear-gradient(90deg, #5a6b4a, #3f4e38);
+    background: linear-gradient(90deg, #3B82F6, #2563EB);
     color: #fff;
     padding: 6px 45px;
     transform: rotate(45deg);
@@ -1891,35 +1885,74 @@ button {
 }
 
 .btn--blue-light {
-    background: transparent;
-    color: #67635f;
+    background: #333;
+    color: #fff;
     width: 100%;
     border: 1px solid #333;
     padding: 14px 20px;
     font-size: var(--font-size-sm);
     font-weight: 600;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--blue-light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    animation: stripSweep 3s ease-in-out infinite;
 }
 
 .btn--blue-light:hover {
-    background: #333;
-    color: #fff;
+    background: transparent;
+    color: #67635f;
 }
 
 .btn--blue-brand {
-    background: transparent;
+    background: #3B82F6;
     color: #fff;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: none;
     padding: 14px 20px;
     font-size: 14px;
     font-weight: 600;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--blue-brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    animation: stripSweep 3s ease-in-out infinite;
 }
 
 .btn--blue-brand:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #2563EB;
     color: #fff;
+}
+
+@keyframes stripSweep {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 150%;
+    }
 }
 
 .refund-policy {
@@ -2028,7 +2061,7 @@ button {
 }
 
 .promise-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #3f4e38;
     margin-bottom: 5px;
@@ -2037,7 +2070,7 @@ button {
 }
 
 .promise-subtitle {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: #67635f;
     margin-bottom: 30px;
@@ -2059,7 +2092,7 @@ button {
 }
 
 .promise-details h4 {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     font-weight: 700;
     color: #67635f;
     margin-bottom: 5px;
@@ -2068,7 +2101,7 @@ button {
 }
 
 .promise-details p {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: #67635f;
     line-height: 1.5;
 }
@@ -2113,14 +2146,15 @@ button {
 ----------------------------------------------------------------------------- */
 .sticky-bar {
     position: fixed;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    width: calc(100% - 3rem);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     max-width: none;
     background: var(--color-beige);
-    border-radius: 16px;
-    border: 1px solid #ddd;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #ddd;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -2129,7 +2163,7 @@ button {
     box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.15);
     z-index: 2000;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100%);
     pointer-events: none;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -2185,7 +2219,7 @@ button {
 }
 
 .btn--red {
-    background: linear-gradient(90deg, #4a5e42, #3f4e38);
+    background: linear-gradient(90deg, #3B82F6, #2563EB);
     color: #fff;
     padding: 14px 30px;
     border: none;
@@ -2194,11 +2228,25 @@ button {
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(63, 78, 56, 0.3);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--red::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    animation: stripSweep 3s ease-in-out infinite;
 }
 
 .btn--red:hover {
-    background: linear-gradient(90deg, #3f4e38, #2e3b29);
+    background: linear-gradient(90deg, #2563EB, #1D4ED8);
     color: #fff;
     transform: scale(1.05);
 }
@@ -2354,10 +2402,10 @@ button {
     /* Sticky Bar Mobile - Compact */
     .sticky-bar {
         padding: 10px 15px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        width: calc(100% - 20px);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
     }
 
     .sticky-avatar {

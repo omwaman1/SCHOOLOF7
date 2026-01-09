@@ -220,7 +220,7 @@
     </section>
 
     <!-- Section 8: Curriculum -->
-    <section class="section curriculum-section">
+    <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
             <h2 class="curriculum-heading"><span class="heading-bold">COURSE </span><br><span class="heading-bold">CURRICULUM</span> </h2>
             <div class="accordion curriculum-accordion">
@@ -307,7 +307,7 @@
     </section>
 
     <!-- Section 10: Mentor -->
-    <section class="section mentor-section">
+    <section class="section mentor-section" id="mentor">
         <div class="mentor-content">
             <h3 class="mentor-label">Your Mentor</h3>
             <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
@@ -346,7 +346,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check-icon">Certificate of Completion</li>
                 </ul>
-                <button class="btn btn--blue-brand">Enroll Now</button>
+                <a href="https://login.schoolof7.com/single-checkout/68931526451db512e4d1e1cd?pid=p2" class="btn btn--blue-brand">Enroll Now</a>
                 <p class="refund-policy">100% Refund Policy</p>
             </div>
 
@@ -365,14 +365,14 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <button class="btn btn--blue-light">Enroll Now</button>
+                <a href="https://login.schoolof7.com/single-checkout/68931526451db512e4d1e1cd?pid=p2" class="btn btn--blue-light">Enroll Now</a>
                 <p class="refund-policy">100% Refund Policy</p>
             </div>
         </div>
     </section>
 
     <!-- Section 12: FAQ -->
-    <section class="section faq-section">
+    <section class="section faq-section" id="faq">
         <div class="faq-content">
             <h2 class="faq-title">FAQ</h2>
             <p class="faq-subtitle">Find out more about the Masterclass.</p>
@@ -481,12 +481,12 @@
                 <div class="footer-column">
                     <h4>NAVIGATE</h4>
                     <ul>
-                        <li><a href="#">Courses</a></li>
+                        <li><a href="#pricing">Courses</a></li>
                         <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Mentors</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#mentor">Mentors</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
 
