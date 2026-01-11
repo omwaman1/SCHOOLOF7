@@ -61,6 +61,11 @@
             </video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
+            <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
+                <svg class="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+            </button>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">UNLEASH THE FOUNDER <br>WITHIN YOU</h1>
@@ -75,7 +80,7 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Your<br>Masterclass<br>To Startup</h3>
+            <h3 class="feature-title">Your Masterclass<br>To Startup</h3>
             <p class="feature-description">" Don't Start a Business Blind - Buy the Map "</p>
             <button class="btn btn--outline-dark btn--sm">Let's Learn</button>
         </div>
@@ -164,7 +169,7 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video controls preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
+            <video controls muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
                 <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -365,7 +370,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <a href="https://login.schoolof7.com/single-checkout/68931526451db512e4d1e1cd?pid=p2" class="btn btn--blue-light">Enroll Now</a>
+                <a href="https://login.schoolof7.com/single-checkout/6960be0b7329203cbf6e7630?pid=p2" class="btn btn--blue-light">Enroll Now</a>
                 <p class="refund-policy">100% Refund Policy</p>
             </div>
         </div>
@@ -454,8 +459,8 @@
             </div>
         </div>
         <div class="sticky-actions">
-            <span class="old-price">$7999</span>
-            <span class="new-price">$1499</span>
+            <span class="old-price">₹7999</span>
+            <span class="new-price">₹1499</span>
             <a href="#pricing" class="btn btn--red">Enroll Now</a>
         </div>
     </div>
