@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .mentor-section, #mentor, section.mentor-section, section#mentor {
+            background-color: #e7eef8 !important;
+            background: #e7eef8 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -311,7 +317,7 @@
     </section>
 
     <!-- Section 10: Mentor -->
-    <section class="section mentor-section" id="mentor" style="background-color: #e7eef8 !important;">
+    <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
         <div class="mentor-content">
             <h3 class="mentor-label">Your Mentor</h3>
             <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
@@ -466,8 +472,8 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-brand">
-            <h2 class="footer-logo">School of 7</h2>
+        <div class="footer-brand" style="width: 100%; overflow: hidden; padding: 0;">
+            <h2 class="footer-logo" style="font-size: 19vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: -0.06em; text-transform: uppercase;">School of 7</h2>
         </div>
         
         <div class="footer-main">

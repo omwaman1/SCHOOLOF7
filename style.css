@@ -3052,6 +3052,11 @@ button {
 }
 
 /* Mentor Section Background Override */
-#mentor.mentor-section {
+#mentor.mentor-section,
+.mentor-section,
+section.mentor-section,
+section#mentor {
+    --color-beige: #e7eef8 !important;
     background-color: #e7eef8 !important;
+    background: #e7eef8 !important;
 }
