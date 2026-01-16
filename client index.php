@@ -15,8 +15,6 @@
             background: #e7eef8 !important;
         }
     </style>
-    <!-- Razorpay Checkout Script -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
 <body>
@@ -52,7 +50,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#curriculum">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
-        <a href="#">INQUIRE NOW</a>
+        <a href="#">ENQUIRE NOW</a>
         <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
     </div>
 
@@ -129,7 +127,7 @@
             <!-- Card 2 -->
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">ideas noise</span>
+                    <span class="badge">idea noise</span>
                     <h3 class="card-big-title">idea</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
@@ -190,36 +188,36 @@
     <section class="section testimonials-section" id="testimonials">
         <div class="testimonials-header">
             <div class="testimonials-title-group">
-                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
+                <h3 class="testimonials-title">school of 7  <span class="plus">+</span>  testimonials</h3>
                 <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
             </div>
-            <a href="#" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
+            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
         </div>
         <div class="ugc-carousel-wrapper">
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" muted loop playsinline></video>
+                    <video src="images/hero-video.mp4" poster="images/audience-1.jpg" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" muted loop playsinline></video>
+                    <video src="images/hero-video.mp4" poster="images/audience-2.jpg" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" muted loop playsinline></video>
+                    <video src="images/hero-video.mp4" poster="images/audience-3.jpg" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" muted loop playsinline></video>
+                    <video src="images/hero-video.mp4" poster="images/audience-4.jpg" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" muted loop playsinline></video>
+                    <video src="images/hero-video.mp4" poster="images/mentor.jpg" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
             </div>
@@ -338,8 +336,8 @@
         <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
 
         <div class="course-pricing-grid">
-            <!-- Basic Video Plan - BEST VALUE -->
-            <div class="course-card premium" style="background: linear-gradient(to bottom, #000000, #4e6a47);">
+            <!-- Advanced Learning Plan - BEST VALUE -->
+            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Basic Video Plan</h3>
@@ -347,7 +345,7 @@
                 <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">"Learn With AI" Sections in Every Module</li>
+                    <li class="check">\"Learn With AI\" Sections in Every Module</li>
                     <li class="check">Assignments & Evaluation Guide</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="check">Course Virtual Community</li>
@@ -366,7 +364,7 @@
                 <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">"Learn With AI" Sections in Every Module</li>
+                    <li class="cross">\"Learn With AI\" Sections in Every Module</li>
                     <li class="check">Assignments & Evaluation Guide</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
@@ -433,7 +431,7 @@
             </div>
         </div>
         <div class="faq-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.webp" alt="Masterclass FAQ">
+            <img src="images/faq.jpg" alt="Masterclass FAQ">
         </div>
     </section>
 
@@ -454,12 +452,12 @@
 
                 <div class="detail-item">
                     <h4>WHERE IT FITS IN YOUR CAREER</h4>
-                    <p>• In Business - will help to strategize<br>• At Job - Validate your skills to Employeers & Clients</p>
+                    <p>• In Business - will help to strategize<br>• In Business - will help to raise funds</p>
                 </div>
 
                 <div class="detail-item">
                     <h4>THE IMPACT</h4>
-                    <p>• DEVELOP Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p>
+                    <p>• Develop Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p>
                 </div>
 
                 <div class="detail-item">
@@ -494,8 +492,8 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-brand" style="width: 100%; padding: 0;">
-            <h2 class="footer-logo" style="font-size: 16vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: 0.02em; text-transform: uppercase;">School of 7</h2>
+        <div class="footer-brand" style="width: 100%; overflow: hidden; padding: 0;">
+            <h2 class="footer-logo" style="font-size: 19vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: -0.06em; text-transform: uppercase;">School of 7</h2>
         </div>
         
         <div class="footer-main">
@@ -543,12 +541,12 @@
                 <div class="footer-column">
                     <h4>OFFICIAL</h4>
                     <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="https://vividh.graphy.com/privacypolicy">Privacy Policy</a></li>
+                        <li><a href="https://vividh.graphy.com/termsofuse">Terms & Conditions</a></li>
+                        <li><a href="https://vividh.graphy.com/refundpolicy">Refund Policy</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://vividh.graphy.com/contactus">Enquire Now</a></li>
+                        <li><a href="#">About Us</a></li>
                     </ul>
                 </div>
 
@@ -569,129 +567,6 @@
     </footer>
 
     <script src="script.js"></script>
-
-    <!-- Razorpay Integration - Commented Out
-    <!-- Contact Form Modal -->
-    <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
-        <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
-            <h2 style="color: #4e6a47; font-size: 24px; margin-bottom: 8px;">Complete Your Enrollment</h2>
-            <p id="formPlanName" style="color: #67635f; font-size: 14px; margin-bottom: 20px;"></p>
-            <form id="enrollForm" onsubmit="return submitEnrollForm(event)">
-                <input type="text" id="customerName" placeholder="Full Name" required 
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="email" id="customerEmail" placeholder="Email Address" required 
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="tel" id="customerPhone" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}" 
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <button type="submit" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">
-                    Proceed to Payment
-                </button>
-            </form>
-            <button onclick="closeContactModal()" style="background: none; border: none; color: #999; margin-top: 15px; cursor: pointer; font-size: 13px;">Cancel</button>
-        </div>
-    </div>
-
-    <!-- Success Modal -->
-    <div id="successModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
-        <div style="background: #fff; padding: 40px 50px; border-radius: 16px; text-align: center; max-width: 500px; margin: 20px;">
-            <div style="font-size: 60px; margin-bottom: 20px;">🎉</div>
-            <h2 style="color: #4e6a47; font-size: 28px; margin-bottom: 15px;">Thank You!</h2>
-            <p style="color: #67635f; font-size: 16px; margin-bottom: 10px;">Your enrollment is successful!</p>
-            <p id="successPlanName" style="color: #333; font-weight: 600; font-size: 18px; margin-bottom: 20px;"></p>
-            <p style="color: #67635f; font-size: 14px; margin-bottom: 25px;">You will receive a confirmation email shortly with your login details.</p>
-            <button onclick="closeSuccessModal()" style="background: #4e6a47; color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer;">Continue</button>
-        </div>
-    </div>
-
-    <!-- Razorpay Payment Script -->
-    <script>
-        let currentAmount = 0;
-        let currentPlanName = '';
-        
-        function initiatePayment(amountInPaise, planName) {
-            currentAmount = amountInPaise;
-            currentPlanName = planName;
-            document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
-            document.getElementById('enrollForm').reset();
-            document.getElementById('contactModal').style.display = 'flex';
-        }
-        
-        function closeContactModal() {
-            document.getElementById('contactModal').style.display = 'none';
-        }
-        
-        async function submitEnrollForm(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('customerName').value;
-            const email = document.getElementById('customerEmail').value;
-            const phone = document.getElementById('customerPhone').value;
-            
-            closeContactModal();
-            
-            try {
-                const response = await fetch('create-order.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: currentAmount, plan_name: currentPlanName })
-                });
-                
-                const data = await response.json();
-                
-                if (!data.success) {
-                    alert('Error creating order. Please try again.');
-                    return;
-                }
-                
-                const options = {
-                    key: data.key_id,
-                    amount: data.amount,
-                    currency: data.currency,
-                    name: 'School of 7',
-                    description: currentPlanName,
-                    order_id: data.order_id,
-                    prefill: {
-                        name: name,
-                        email: email,
-                        contact: phone
-                    },
-                    theme: {
-                        color: '#4e6a47'
-                    },
-                    handler: function(response) {
-                        showSuccessModal(currentPlanName);
-                    },
-                    modal: {
-                        ondismiss: function() {
-                            console.log('Checkout closed');
-                        }
-                    }
-                };
-                
-                const rzp = new Razorpay(options);
-                rzp.on('payment.failed', function(response) {
-                    alert('Payment failed. Please try again.');
-                });
-                rzp.open();
-                
-            } catch (error) {
-                console.error('Payment error:', error);
-                alert('Something went wrong. Please try again.');
-            }
-            
-            return false;
-        }
-        
-        function showSuccessModal(planName) {
-            document.getElementById('successPlanName').textContent = planName;
-            document.getElementById('successModal').style.display = 'flex';
-        }
-        
-        function closeSuccessModal() {
-            document.getElementById('successModal').style.display = 'none';
-        }
-    </script>
-    -->
 </body>
 
 </html>
