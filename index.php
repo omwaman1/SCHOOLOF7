@@ -472,8 +472,8 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-brand" style="width: 100%; overflow: hidden; padding: 0;">
-            <h2 class="footer-logo" style="font-size: 19vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: -0.06em; text-transform: uppercase;">School of 7</h2>
+        <div class="footer-brand" style="width: 100%; padding: 0;">
+            <h2 class="footer-logo" style="font-size: 16vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: 0.02em; text-transform: uppercase;">School of 7</h2>
         </div>
         
         <div class="footer-main">
