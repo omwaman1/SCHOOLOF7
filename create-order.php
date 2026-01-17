@@ -14,9 +14,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
 }
 
-// Razorpay API credentials
-$keyId = 'rzp_live_S4Z6WZF67zacdJ';
-$keySecret = 'F9g7seSKMJ1ZtMBdGGfYnKTJ';
+// Load environment variables from .env file
+$envFile = __DIR__ . '/.env';
+if (file_exists($envFile)) {
+    $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0) continue; // Skip comments
+        if (strpos($line, '=') !== false) {
+            list($key, $value) = explode('=', $line, 2);
+            $_ENV[trim($key)] = trim($value);
+        }
+    }
+}
+
+// Get Razorpay credentials based on mode
+$mode = isset($_ENV['RAZORPAY_MODE']) ? $_ENV['RAZORPAY_MODE'] : 'test';
+if ($mode === 'live') {
+    $keyId = $_ENV['RAZORPAY_LIVE_KEY_ID'];
+    $keySecret = $_ENV['RAZORPAY_LIVE_KEY_SECRET'];
+} else {
+    $keyId = $_ENV['RAZORPAY_TEST_KEY_ID'];
+    $keySecret = $_ENV['RAZORPAY_TEST_KEY_SECRET'];
+}
 
 // Get POST data
 $input = json_decode(file_get_contents('php://input'), true);
@@ -29,6 +48,7 @@ if (!$input || !isset($input['amount']) || !isset($input['plan_name'])) {
 
 $amount = (int) $input['amount']; // Amount in paise
 $planName = $input['plan_name'];
+$courseUrl = isset($input['course_url']) ? $input['course_url'] : '';
 $currency = 'INR';
 
 // Create Razorpay order
@@ -37,7 +57,8 @@ $orderData = [
     'currency' => $currency,
     'receipt' => 'rcpt_' . time() . '_' . rand(1000, 9999),
     'notes' => [
-        'plan_name' => $planName
+        'plan_name' => $planName,
+        'course_url' => $courseUrl
     ]
 ];
 

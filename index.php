@@ -354,7 +354,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <button onclick="initiatePayment(189900, 'Basic Video Plan')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(189900, 'Basic Video Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -373,7 +373,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -607,10 +607,12 @@
     <script>
         let currentAmount = 0;
         let currentPlanName = '';
-        
-        function initiatePayment(amountInPaise, planName) {
+        let currentCourseUrl = '';
+
+        function initiatePayment(amountInPaise, planName, courseUrl) {
             currentAmount = amountInPaise;
             currentPlanName = planName;
+            currentCourseUrl = courseUrl;
             document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm').reset();
             document.getElementById('contactModal').style.display = 'flex';
@@ -633,7 +635,11 @@
                 const response = await fetch('create-order.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: currentAmount, plan_name: currentPlanName })
+                    body: JSON.stringify({
+                        amount: currentAmount,
+                        plan_name: currentPlanName,
+                        course_url: currentCourseUrl
+                    })
                 });
                 
                 const data = await response.json();
