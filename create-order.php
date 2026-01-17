@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Razorpay API credentials
-$keyId = 'rzp_live_RrqH1rKPqejvOQ';
-$keySecret = 'n25EPEXV9V6N5hMgb5tcgdXV';
+$keyId = 'rzp_live_S4Z6WZF67zacdJ';
+$keySecret = 'F9g7seSKMJ1ZtMBdGGfYnKTJ';
 
 // Get POST data
 $input = json_decode(file_get_contents('php://input'), true);

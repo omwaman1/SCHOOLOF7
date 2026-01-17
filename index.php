@@ -129,7 +129,7 @@
             <!-- Card 2 -->
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">ideas noise</span>
+                    <span class="badge">idea noise</span>
                     <h3 class="card-big-title">idea</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
@@ -193,7 +193,7 @@
                 <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
                 <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
             </div>
-            <a href="#" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
+            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
         </div>
         <div class="ugc-carousel-wrapper">
             <div class="ugc-carousel" id="ugcCarousel">
@@ -339,7 +339,7 @@
 
         <div class="course-pricing-grid">
             <!-- Basic Video Plan - BEST VALUE -->
-            <div class="course-card premium" style="background: linear-gradient(to bottom, #000000, #4e6a47);">
+            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Basic Video Plan</h3>
@@ -354,7 +354,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <a href="https://login.schoolof7.com/single-checkout/68931526451db512e4d1e1cd?pid=p2" class="btn btn--blue-brand">Enroll Now</a>
+                <button onclick="initiatePayment(189900, 'Basic Video Plan')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -373,7 +373,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <a href="https://login.schoolof7.com/single-checkout/6960be0b7329203cbf6e7630?pid=p2" class="btn btn--blue-light">Enroll Now</a>
+                <button onclick="initiatePayment(149900, 'Standard Learning Plan')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -433,7 +433,7 @@
             </div>
         </div>
         <div class="faq-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.webp" alt="Masterclass FAQ">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/faq.jpg" alt="Masterclass FAQ">
         </div>
     </section>
 
@@ -454,7 +454,7 @@
 
                 <div class="detail-item">
                     <h4>WHERE IT FITS IN YOUR CAREER</h4>
-                    <p>• In Business - will help to strategize<br>• At Job - Validate your skills to Employeers & Clients</p>
+                    <p>• In Business - will help to strategize<br>• In Business - will help to raise funds</p>
                 </div>
 
                 <div class="detail-item">
@@ -543,12 +543,12 @@
                 <div class="footer-column">
                     <h4>OFFICIAL</h4>
                     <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="https://vividh.graphy.com/privacypolicy">Privacy Policy</a></li>
+                        <li><a href="https://vividh.graphy.com/termsofuse">Terms & Conditions</a></li>
+                        <li><a href="https://vividh.graphy.com/refundpolicy">Refund Policy</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://vividh.graphy.com/contactus">Enquire Now</a></li>
+                        <li><a href="#">About Us</a></li>
                     </ul>
                 </div>
 
@@ -570,7 +570,7 @@
 
     <script src="script.js"></script>
 
-    <!-- Razorpay Integration - Commented Out
+    <!-- Razorpay Integration -->
     <!-- Contact Form Modal -->
     <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
@@ -599,7 +599,7 @@
             <p style="color: #67635f; font-size: 16px; margin-bottom: 10px;">Your enrollment is successful!</p>
             <p id="successPlanName" style="color: #333; font-weight: 600; font-size: 18px; margin-bottom: 20px;"></p>
             <p style="color: #67635f; font-size: 14px; margin-bottom: 25px;">You will receive a confirmation email shortly with your login details.</p>
-            <button onclick="closeSuccessModal()" style="background: #4e6a47; color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer;">Continue</button>
+            <a href="https://login.schoolof7.com/s/authenticate?url=/t/allcourses" style="display: inline-block; background: #4e6a47; color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none;">Continue</a>
         </div>
     </div>
 
@@ -691,7 +691,6 @@
             document.getElementById('successModal').style.display = 'none';
         }
     </script>
-    -->
 </body>
 
 </html>
