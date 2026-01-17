@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded', () => {
             videoPlayBtn.classList.add('hidden');
         });
 
+        // Click on video to toggle play/pause (since controls are removed)
+        coursePreviewVideo.addEventListener('click', () => {
+            if (coursePreviewVideo.paused) {
+                coursePreviewVideo.play();
+                videoPlayBtn.classList.add('hidden');
+            } else {
+                coursePreviewVideo.pause();
+                videoPlayBtn.classList.remove('hidden');
+            }
+        });
+
         coursePreviewVideo.addEventListener('pause', () => {
             videoPlayBtn.classList.remove('hidden');
         });

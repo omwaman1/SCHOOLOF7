@@ -42,7 +42,7 @@ $input = json_decode(file_get_contents('php://input'), true);
 
 if (!$input || !isset($input['amount']) || !isset($input['plan_name'])) {
     http_response_code(400);
-    echo json_encode(['error' => 'Invalid request. Amount and plan_name required.']);
+    echo json_encode(['success' => false, 'error' => 'Invalid request. Amount and plan_name required.']);
     exit;
 }
 
@@ -73,11 +73,18 @@ curl_setopt($ch, CURLOPT_USERPWD, $keyId . ':' . $keySecret);
 
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlError = curl_error($ch);
 curl_close($ch);
+
+if ($curlError) {
+    http_response_code(500);
+    echo json_encode(['success' => false, 'error' => 'cURL error: ' . $curlError]);
+    exit;
+}
 
 if ($httpCode !== 200) {
     http_response_code(500);
-    echo json_encode(['error' => 'Failed to create order', 'details' => $response]);
+    echo json_encode(['success' => false, 'error' => 'Razorpay API error', 'http_code' => $httpCode, 'details' => json_decode($response, true)]);
     exit;
 }
 
@@ -90,3 +97,4 @@ echo json_encode([
     'currency' => $order['currency'],
     'key_id' => $keyId
 ]);
+

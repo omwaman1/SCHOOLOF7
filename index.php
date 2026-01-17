@@ -15,8 +15,6 @@
             background: #e7eef8 !important;
         }
     </style>
-    <!-- Razorpay Checkout Script -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
 <body>
@@ -177,7 +175,7 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video controls muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
+            <video muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
                 <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -354,7 +352,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <button onclick="initiatePayment(189900, 'Basic Video Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(100, 'Basic Video Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -373,7 +371,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Completion</li>
                 </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(200, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -569,6 +567,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Razorpay Checkout Script - Load before payment code -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
     <!-- Razorpay Integration -->
     <!-- Contact Form Modal -->
@@ -603,16 +603,46 @@
         </div>
     </div>
 
-    <!-- Razorpay Payment Script -->
     <script>
         let currentAmount = 0;
         let currentPlanName = '';
         let currentCourseUrl = '';
-
+        let customerName = '';
+        let customerEmail = '';
+        let customerPhone = '';
+        let razorpayLoaded = false;
+        
+        // Dynamic Razorpay Loader
+        function loadRazorpay() {
+            return new Promise((resolve, reject) => {
+                if (typeof Razorpay !== 'undefined') {
+                    razorpayLoaded = true;
+                    resolve();
+                    return;
+                }
+                
+                const script = document.createElement('script');
+                script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+                script.onload = () => {
+                    razorpayLoaded = true;
+                    console.log('Razorpay SDK loaded successfully');
+                    resolve();
+                };
+                script.onerror = () => {
+                    console.error('Failed to load Razorpay SDK');
+                    reject(new Error('Failed to load payment system. Please disable ad blocker and refresh the page.'));
+                };
+                document.body.appendChild(script);
+            });
+        }
+        
+        // Try to load Razorpay when page loads
+        loadRazorpay().catch(err => console.warn('Initial Razorpay load failed:', err.message));
+        
         function initiatePayment(amountInPaise, planName, courseUrl) {
             currentAmount = amountInPaise;
             currentPlanName = planName;
-            currentCourseUrl = courseUrl;
+            currentCourseUrl = courseUrl || '';
             document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm').reset();
             document.getElementById('contactModal').style.display = 'flex';
@@ -625,13 +655,15 @@
         async function submitEnrollForm(e) {
             e.preventDefault();
             
-            const name = document.getElementById('customerName').value;
-            const email = document.getElementById('customerEmail').value;
-            const phone = document.getElementById('customerPhone').value;
+            customerName = document.getElementById('customerName').value;
+            customerEmail = document.getElementById('customerEmail').value;
+            customerPhone = document.getElementById('customerPhone').value;
             
             closeContactModal();
             
             try {
+                console.log('Starting payment for:', currentPlanName, 'Amount:', currentAmount);
+                
                 const response = await fetch('create-order.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -642,10 +674,30 @@
                     })
                 });
                 
-                const data = await response.json();
+                console.log('Response status:', response.status);
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('HTTP Error:', response.status, errorText);
+                    alert('Server error (' + response.status + '): ' + errorText);
+                    return;
+                }
+                
+                let data;
+                try {
+                    data = await response.json();
+                } catch (jsonError) {
+                    const responseText = await response.text();
+                    console.error('JSON Parse Error:', jsonError, 'Response:', responseText);
+                    alert('Invalid server response. Check console for details.');
+                    return;
+                }
+                
+                console.log('Order response:', data);
                 
                 if (!data.success) {
-                    alert('Error creating order. Please try again.');
+                    console.error('Order creation failed:', data);
+                    alert('Error creating order: ' + (data.error || 'Unknown error'));
                     return;
                 }
                 
@@ -657,15 +709,35 @@
                     description: currentPlanName,
                     order_id: data.order_id,
                     prefill: {
-                        name: name,
-                        email: email,
-                        contact: phone
+                        name: customerName,
+                        email: customerEmail,
+                        contact: customerPhone
                     },
                     theme: {
                         color: '#4e6a47'
                     },
-                    handler: function(response) {
-                        showSuccessModal(currentPlanName);
+                    handler: async function(response) {
+                        // Send data to webhook via server-side PHP
+                        try {
+                            await fetch('send-webhook.php', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    name: customerName,
+                                    email: customerEmail,
+                                    phone: customerPhone,
+                                    plan_name: currentPlanName,
+                                    amount: currentAmount / 100,
+                                    payment_id: response.razorpay_payment_id,
+                                    order_id: response.razorpay_order_id
+                                })
+                            });
+                        } catch (webhookError) {
+                            console.error('Webhook error:', webhookError);
+                        }
+                        
+                        // Redirect to thank you page
+                        window.location.href = '/thankyou';
                     },
                     modal: {
                         ondismiss: function() {
@@ -673,6 +745,18 @@
                         }
                     }
                 };
+                
+                // Check if Razorpay is loaded, try to load if not
+                if (typeof Razorpay === 'undefined') {
+                    console.log('Razorpay not found, attempting to load...');
+                    try {
+                        await loadRazorpay();
+                    } catch (loadError) {
+                        alert('Unable to load payment system. Please:\n1. Disable any ad blocker\n2. Check your internet connection\n3. Refresh the page and try again');
+                        console.error('Razorpay load failed:', loadError);
+                        return;
+                    }
+                }
                 
                 const rzp = new Razorpay(options);
                 rzp.on('payment.failed', function(response) {
@@ -682,19 +766,10 @@
                 
             } catch (error) {
                 console.error('Payment error:', error);
-                alert('Something went wrong. Please try again.');
+                alert('Something went wrong: ' + error.message + '\n\nPlease check the browser console (F12) for details.');
             }
             
             return false;
-        }
-        
-        function showSuccessModal(planName) {
-            document.getElementById('successPlanName').textContent = planName;
-            document.getElementById('successModal').style.display = 'flex';
-        }
-        
-        function closeSuccessModal() {
-            document.getElementById('successModal').style.display = 'none';
         }
     </script>
 </body>
