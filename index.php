@@ -197,27 +197,27 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4" preload="metadata" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4" preload="metadata" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4" preload="metadata" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4" preload="metadata" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
             </div>
