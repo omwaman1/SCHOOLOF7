@@ -59,11 +59,11 @@
         <div class="hero-video-container">
             <!-- Desktop Video -->
             <video autoplay loop muted playsinline class="hero-video hero-video-desktop" id="heroVideoDesktop" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/home%20banner%20desktop.mp4" type="video/mp4">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideodesktop.mp4" type="video/mp4">
             </video>
             <!-- Mobile Video -->
             <video autoplay loop muted playsinline class="hero-video hero-video-mobile" id="heroVideoMobile" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/Home%20banner%20mbl.mp4" type="video/mp4">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideomobile.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
@@ -176,7 +176,7 @@
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
             <video controls muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/howthiscoursewillhelpyou.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="video-play-btn" id="videoPlayBtn">▶</div>
