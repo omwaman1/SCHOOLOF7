@@ -896,10 +896,7 @@ button {
     }
 
     .zoom-btn {
-        bottom: 15px;
-        right: 15px;
-        width: 35px;
-        height: 35px;
+        display: none;
     }
 
     /* New Section Mobile Adjustments */
@@ -1185,12 +1182,12 @@ button {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Show hover overlay on mobile by default (tap behavior) */
-    .product-card:active .card-hover-overlay {
+    /* Show hover overlay on mobile when touched (toggle behavior) */
+    .product-card.touched .card-hover-overlay {
         opacity: 1;
     }
 
-    .product-card:active .card-img-default {
+    .product-card.touched .card-img-default {
         opacity: 0;
     }
 

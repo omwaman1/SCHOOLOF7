@@ -175,7 +175,7 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
+            <video controls muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
                 <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -197,27 +197,27 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4" preload="metadata" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4" preload="metadata" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4" preload="metadata" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4" preload="metadata" muted loop playsinline></video>
                     <div class="play-icon">▶</div>
                 </div>
             </div>

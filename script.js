@@ -3,34 +3,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Video play/pause toggle if needed
     const videoBtn = document.getElementById('video-toggle');
-    const heroVideo = document.querySelector('.hero-video');
+    const heroVideoDesktopEl = document.getElementById('heroVideoDesktop');
+    const heroVideoMobileEl = document.getElementById('heroVideoMobile');
+
+    // Helper function to get the currently visible hero video
+    const getVisibleHeroVideo = () => {
+        // Check if mobile video is visible (display: block and actually visible)
+        if (heroVideoMobileEl && window.getComputedStyle(heroVideoMobileEl).display !== 'none') {
+            return heroVideoMobileEl;
+        }
+        // Otherwise return desktop video
+        return heroVideoDesktopEl;
+    };
 
     // Force video to play immediately when enough buffer is available
-    if (heroVideo) {
-        // Try to play as soon as possible
+    const setupAutoPlay = (video) => {
+        if (!video) return;
+
         const tryPlay = () => {
-            heroVideo.play().catch(() => {
+            video.play().catch(() => {
                 // Autoplay blocked - will play on user interaction
                 console.log('Autoplay blocked, waiting for user interaction');
             });
         };
 
         // Play when video can start (enough buffer)
-        heroVideo.addEventListener('canplay', tryPlay);
+        video.addEventListener('canplay', tryPlay);
 
         // Also try immediately in case video is cached
-        if (heroVideo.readyState >= 3) {
+        if (video.readyState >= 3) {
             tryPlay();
         }
-    }
+    };
 
-    if (videoBtn && heroVideo) {
+    // Setup autoplay for both videos
+    setupAutoPlay(heroVideoDesktopEl);
+    setupAutoPlay(heroVideoMobileEl);
+
+    if (videoBtn) {
         videoBtn.addEventListener('click', () => {
-            if (heroVideo.paused) {
-                heroVideo.play();
+            const visibleVideo = getVisibleHeroVideo();
+            if (!visibleVideo) return;
+
+            if (visibleVideo.paused) {
+                visibleVideo.play();
                 videoBtn.textContent = 'II';
             } else {
-                heroVideo.pause();
+                visibleVideo.pause();
                 videoBtn.textContent = '▶';
             }
         });
@@ -85,6 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 coursePreviewVideo.pause();
                 videoPlayBtn.classList.remove('hidden');
             }
+        });
+
+        // Unmute video when it starts playing
+        coursePreviewVideo.addEventListener('play', () => {
+            coursePreviewVideo.muted = false;
         });
 
         coursePreviewVideo.addEventListener('pause', () => {
@@ -195,9 +219,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // =========================================================================
     // MOUSE TRACKING 3D TILT EFFECT FOR PRODUCT CARDS (Desktop Only)
+    // TOUCH TOGGLE FOR MOBILE
     // =========================================================================
     const productCards = document.querySelectorAll('.product-card');
 
+    // Mobile: Toggle card on touch
+    if (window.innerWidth <= 768) {
+        productCards.forEach(card => {
+            card.addEventListener('touchstart', (e) => {
+                // Check if the touch is on the buy button - if so, don't toggle
+                if (e.target.closest('.buy-btn')) {
+                    return;
+                }
+
+                // Check if this card is already touched
+                const isCurrentlyTouched = card.classList.contains('touched');
+
+                // Remove 'touched' class from all cards
+                productCards.forEach(c => c.classList.remove('touched'));
+
+                // If the card wasn't touched before, add the class
+                if (!isCurrentlyTouched) {
+                    card.classList.add('touched');
+                }
+            });
+        });
+
+        // Close card when tapping outside
+        document.addEventListener('touchstart', (e) => {
+            if (!e.target.closest('.product-card')) {
+                productCards.forEach(c => c.classList.remove('touched'));
+            }
+        });
+    }
+
+    // Desktop: 3D tilt effect
     if (window.innerWidth > 768) {
         productCards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -253,29 +309,69 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('ugcNext');
 
     // Click to play/pause videos
+    // Track if user manually triggered playback (for unmute logic)
+    let userTriggeredPlay = false;
+
     ugcItems.forEach(item => {
         const video = item.querySelector('video');
+        const playIcon = item.querySelector('.play-icon');
+
         if (video) {
-            item.addEventListener('click', () => {
+            // Click on play icon to start video (user interaction - unmute)
+            if (playIcon) {
+                playIcon.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    userTriggeredPlay = true;
+
+                    // Pause all other videos and mute them
+                    ugcItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            const otherVideo = otherItem.querySelector('video');
+                            if (otherVideo) {
+                                otherVideo.pause();
+                                otherVideo.muted = true;
+                                otherItem.classList.remove('playing');
+                            }
+                        }
+                    });
+
+                    // Play the current video
+                    video.play();
+                    item.classList.add('playing');
+                });
+            }
+
+            // Sync play state with native controls
+            video.addEventListener('play', () => {
+                item.classList.add('playing');
+
+                // Only unmute if user manually triggered (not autoplay)
+                if (userTriggeredPlay) {
+                    video.muted = false;
+                }
+                // Reset flag after handling
+                userTriggeredPlay = false;
+
                 // Pause all other videos
                 ugcItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         const otherVideo = otherItem.querySelector('video');
-                        if (otherVideo) {
+                        if (otherVideo && !otherVideo.paused) {
                             otherVideo.pause();
+                            otherVideo.muted = true;
                             otherItem.classList.remove('playing');
                         }
                     }
                 });
+            });
 
-                // Toggle current video
-                if (video.paused) {
-                    video.play();
-                    item.classList.add('playing');
-                } else {
-                    video.pause();
-                    item.classList.remove('playing');
-                }
+            video.addEventListener('pause', () => {
+                item.classList.remove('playing');
+            });
+
+            // User clicking native play button should unmute
+            video.addEventListener('click', () => {
+                userTriggeredPlay = true;
             });
         }
     });
