@@ -1398,18 +1398,50 @@ button {
     display: block;
 }
 
-/* Play Icon - Hidden since we now use native video controls */
+/* Play Icon - Show on mobile with smaller size */
 .play-icon {
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .ugc-item.playing .play-icon {
     opacity: 0;
+    pointer-events: none;
 }
 
 .ugc-item:hover .play-icon {
     transform: translate(-50%, -50%) scale(1.1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Smaller play icons on mobile for all videos except hero banner */
+@media (max-width: 768px) {
+    .play-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .video-play-btn {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
 }
 
 /* Divider Line */
@@ -2830,10 +2862,10 @@ button {
     text-transform: lowercase;
     width: 100%;
     display: block;
-    line-height: 0.85;
+    line-height: 1;
+    padding-top: 0.1em;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
 }
 
 .footer-main {

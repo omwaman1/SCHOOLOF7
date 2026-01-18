@@ -303,6 +303,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Click to play/pause videos
     // Track if user manually triggered playback (for unmute logic)
     let userTriggeredPlay = false;
+    // Track if user manually paused video (to prevent auto-play on scroll back)
+    let userPausedVideo = false;
 
     ugcItems.forEach(item => {
         const video = item.querySelector('video');
@@ -327,6 +329,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     });
 
+                    // Unmute BEFORE playing to ensure audio works on mobile
+                    video.muted = false;
                     // Play the current video
                     video.play();
                     item.classList.add('playing');
@@ -359,6 +363,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             video.addEventListener('pause', () => {
                 item.classList.remove('playing');
+                // Track that user manually paused (not auto-paused by leaving section)
+                userPausedVideo = true;
             });
 
             // User clicking native play button should unmute
@@ -391,9 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Animate counter every time section comes into view
                     counters.forEach(counter => animateCounter(counter));
 
-                    // Auto-play first video
+                    // Auto-play first video only if user hasn't manually paused
                     const firstVideo = ugcItems[0]?.querySelector('video');
-                    if (firstVideo && firstVideo.paused) {
+                    if (firstVideo && firstVideo.paused && !userPausedVideo) {
                         firstVideo.play();
                         ugcItems[0].classList.add('playing');
                     }
@@ -404,6 +410,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                     // Pause all videos when section is not visible
+                    // But don't set userPausedVideo flag - this is automatic
+                    const wasUserPaused = userPausedVideo;
                     ugcItems.forEach(item => {
                         const video = item.querySelector('video');
                         if (video) {
@@ -411,6 +419,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             item.classList.remove('playing');
                         }
                     });
+                    // Restore the userPausedVideo state (ignore auto-pause triggers)
+                    userPausedVideo = wasUserPaused;
                 }
             });
         }, { threshold: 0.3 });
