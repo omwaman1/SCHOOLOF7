@@ -1728,7 +1728,8 @@ button {
     color: #67635f;
     line-height: 1.5;
     margin-bottom: 30px;
-    max-width: 420px;
+    width: 100%;
+    min-height: 120px;
     font-family: var(--font-main);
     font-style: normal;
     transition: opacity 0.2s ease, transform 0.2s ease;
