@@ -90,25 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoPlayBtn = document.getElementById('videoPlayBtn');
 
     if (coursePreviewVideo && videoPlayBtn) {
-        videoPlayBtn.addEventListener('click', () => {
+        // Click on center play button to start video
+        videoPlayBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            coursePreviewVideo.muted = false;
             coursePreviewVideo.play();
-            videoPlayBtn.classList.add('hidden');
         });
 
-        // Click on video to toggle play/pause (since controls are removed)
-        coursePreviewVideo.addEventListener('click', () => {
-            if (coursePreviewVideo.paused) {
-                coursePreviewVideo.play();
-                videoPlayBtn.classList.add('hidden');
-            } else {
-                coursePreviewVideo.pause();
-                videoPlayBtn.classList.remove('hidden');
-            }
-        });
-
-        // Unmute video when it starts playing
+        // Sync play button visibility with video state
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
+            videoPlayBtn.classList.add('hidden');
         });
 
         coursePreviewVideo.addEventListener('pause', () => {
