@@ -1428,20 +1428,14 @@ button {
     background: rgba(0, 0, 0, 0.8);
 }
 
-/* Custom play icons on mobile - smaller size, needed for unmute logic */
-/* Native controls visible for seek bar/pause, custom button hides when playing */
+/* Hide custom play icons on mobile - using native controls with unmute on play */
 @media (max-width: 768px) {
     .play-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
+        display: none;
     }
 
     .video-play-btn {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
+        display: none;
     }
 }
 

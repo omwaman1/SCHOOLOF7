@@ -85,30 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Course Preview Video Play Button
+    // Course Preview Video - Unmute on native play
     const coursePreviewVideo = document.getElementById('coursePreviewVideo');
-    const videoPlayBtn = document.getElementById('videoPlayBtn');
 
-    if (coursePreviewVideo && videoPlayBtn) {
-        // Click on center play button to start video
-        videoPlayBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            coursePreviewVideo.muted = false;
-            coursePreviewVideo.play();
-        });
-
-        // Sync play button visibility with video state
+    if (coursePreviewVideo) {
+        // Unmute when user plays video via native controls
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
-            videoPlayBtn.classList.add('hidden');
-        });
-
-        coursePreviewVideo.addEventListener('pause', () => {
-            videoPlayBtn.classList.remove('hidden');
-        });
-
-        coursePreviewVideo.addEventListener('ended', () => {
-            videoPlayBtn.classList.remove('hidden');
         });
     }
 
@@ -337,16 +320,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Sync play state with native controls
+            // Sync play state with native controls - always unmute on play
             video.addEventListener('play', () => {
                 item.classList.add('playing');
-
-                // Only unmute if user manually triggered (not autoplay)
-                if (userTriggeredPlay) {
-                    video.muted = false;
-                }
-                // Reset flag after handling
-                userTriggeredPlay = false;
+                // Unmute when user plays via native controls
+                video.muted = false;
 
                 // Pause all other videos
                 ugcItems.forEach(otherItem => {
@@ -365,11 +343,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.classList.remove('playing');
                 // Track that user manually paused (not auto-paused by leaving section)
                 userPausedVideo = true;
-            });
-
-            // User clicking native play button should unmute
-            video.addEventListener('click', () => {
-                userTriggeredPlay = true;
             });
         }
     });
