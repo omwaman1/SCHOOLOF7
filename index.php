@@ -87,7 +87,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#curriculum">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
-        <a href="#">INQUIRE NOW</a>
+        <a href="#">ENQUIRE NOW</a>
         <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
     </div>
 
@@ -494,7 +494,7 @@
 
                 <div class="detail-item">
                     <h4>THE IMPACT</h4>
-                    <p>• DEVELOP Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p>
+                    <p>• Develop Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p>
                 </div>
 
                 <div class="detail-item">
