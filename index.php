@@ -892,6 +892,7 @@
                                     email: customerEmail,
                                     phone: customerPhone,
                                     plan_name: currentPlanName,
+                                    course_url: currentCourseUrl,
                                     amount: currentAmount / 100,
                                     payment_id: response.razorpay_payment_id,
                                     order_id: response.razorpay_order_id

@@ -32,6 +32,7 @@ $webhookData = [
     'email' => $input['email'] ?? '',
     'phone' => $input['phone'] ?? '',
     'plan_name' => $input['plan_name'] ?? '',
+    'course_url' => $input['course_url'] ?? '',
     'amount' => $input['amount'] ?? 0,
     'payment_id' => $input['payment_id'] ?? '',
     'order_id' => $input['order_id'] ?? '',
