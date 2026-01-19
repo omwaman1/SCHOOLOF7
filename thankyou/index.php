@@ -5,6 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | School of 7</title>
+
+    <!-- DataLayer Initialization -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // Replace YOUR_PIXEL_ID with your actual Pixel ID
+        fbq('track', 'PageView');
+
+        // Facebook Pixel: Purchase - Payment successful
+        window.dataLayer.push({
+            'event': 'purchase',
+            'content_name': 'Startup Masterclass',
+            'content_category': 'Course',
+            'currency': 'INR'
+        });
+        fbq('track', 'Purchase', {
+            content_name: 'Startup Masterclass',
+            content_category: 'Course',
+            currency: 'INR'
+        });
+        console.log('FB Pixel: Purchase fired');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace G-XXXXXXXXXX with your GA4 Measurement ID
+
+        // GA4 Event: purchase
+        gtag('event', 'purchase', {
+            currency: 'INR',
+            transaction_id: 'TXN_' + Date.now(),
+            items: [{
+                item_name: 'Startup Masterclass',
+                item_category: 'Course'
+            }]
+        });
+        console.log('GA4: Purchase fired');
+    </script>
+    <!-- End Google Analytics 4 -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -188,12 +248,32 @@
                 <li>Start learning at your own pace</li>
                 <li>Join our community of founders</li>
             </ul>
+            <p style="margin-top: 15px; padding: 12px; background: #fff3cd; border-radius: 8px; font-size: 13px; color: #856404;">
+                <strong>📧 Important:</strong> If you don't see your credentials in your inbox, please check your <strong>Spam</strong> or <strong>Promotions</strong> folder.
+            </p>
         </div>
         
-        <a href="https://login.schoolof7.com/t/allcourses" class="cta-button">Access Your Course</a>
-        
+        <a href="https://login.schoolof7.com" class="cta-button">Access Your Course</a>
+
+        <p class="footer-note" style="margin-top: 20px;">Redirecting to login in <span id="countdown">3</span> seconds...</p>
         <p class="footer-note">Need help? <a href="mailto:support@schoolof7.com">Contact Support</a></p>
     </div>
+
+    <script>
+        // Auto-redirect to login page after 3 seconds
+        let seconds = 3;
+        const countdownEl = document.getElementById('countdown');
+
+        const countdown = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://login.schoolof7.com';
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>

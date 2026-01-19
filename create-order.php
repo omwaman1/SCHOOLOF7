@@ -49,6 +49,9 @@ if (!$input || !isset($input['amount']) || !isset($input['plan_name'])) {
 $amount = (int) $input['amount']; // Amount in paise
 $planName = $input['plan_name'];
 $courseUrl = isset($input['course_url']) ? $input['course_url'] : '';
+$customerName = isset($input['customer_name']) ? $input['customer_name'] : '';
+$customerEmail = isset($input['customer_email']) ? $input['customer_email'] : '';
+$customerPhone = isset($input['customer_phone']) ? $input['customer_phone'] : '';
 $currency = 'INR';
 
 // Create Razorpay order
@@ -58,7 +61,10 @@ $orderData = [
     'receipt' => 'rcpt_' . time() . '_' . rand(1000, 9999),
     'notes' => [
         'plan_name' => $planName,
-        'course_url' => $courseUrl
+        'course_url' => $courseUrl,
+        'customer_name' => $customerName,
+        'customer_email' => $customerEmail,
+        'customer_phone' => $customerPhone
     ]
 ];
 
