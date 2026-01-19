@@ -1429,7 +1429,7 @@ button {
 }
 
 /* Custom play icons on mobile - smaller size, needed for unmute logic */
-/* Hide native video controls on mobile to prevent duplicate buttons */
+/* Native controls visible for seek bar/pause, custom button hides when playing */
 @media (max-width: 768px) {
     .play-icon {
         width: 50px;
@@ -1442,32 +1442,6 @@ button {
         width: 50px;
         height: 50px;
         font-size: 20px;
-    }
-
-    /* Hide native controls on testimonial videos - use custom play icon */
-    .ugc-item video::-webkit-media-controls {
-        display: none !important;
-    }
-
-    .ugc-item video::-webkit-media-controls-enclosure {
-        display: none !important;
-    }
-
-    .ugc-item video::-webkit-media-controls-panel {
-        display: none !important;
-    }
-
-    /* Hide native controls on course preview video - use custom play button */
-    .video-container-framed video::-webkit-media-controls {
-        display: none !important;
-    }
-
-    .video-container-framed video::-webkit-media-controls-enclosure {
-        display: none !important;
-    }
-
-    .video-container-framed video::-webkit-media-controls-panel {
-        display: none !important;
     }
 }
 
