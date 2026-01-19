@@ -896,10 +896,7 @@ button {
     }
 
     .zoom-btn {
-        bottom: 15px;
-        right: 15px;
-        width: 35px;
-        height: 35px;
+        display: none;
     }
 
     /* New Section Mobile Adjustments */
@@ -1185,12 +1182,12 @@ button {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Show hover overlay on mobile by default (tap behavior) */
-    .product-card:active .card-hover-overlay {
+    /* Show hover overlay on mobile when touched (toggle behavior) */
+    .product-card.touched .card-hover-overlay {
         opacity: 1;
     }
 
-    .product-card:active .card-img-default {
+    .product-card.touched .card-img-default {
         opacity: 0;
     }
 
@@ -1401,32 +1398,50 @@ button {
     display: block;
 }
 
-/* Play Icon */
+/* Play Icon - Show on mobile with smaller size */
 .play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    color: #67635f;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
     transition: all 0.3s ease;
-    pointer-events: none;
+    z-index: 10;
 }
 
 .ugc-item.playing .play-icon {
     opacity: 0;
+    pointer-events: none;
 }
 
 .ugc-item:hover .play-icon {
     transform: translate(-50%, -50%) scale(1.1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Smaller play icons on mobile for all videos except hero banner */
+@media (max-width: 768px) {
+    .play-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .video-play-btn {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
 }
 
 /* Divider Line */
@@ -1745,7 +1760,8 @@ button {
     color: #67635f;
     line-height: 1.5;
     margin-bottom: 30px;
-    max-width: 420px;
+    width: 100%;
+    min-height: 120px;
     font-family: var(--font-main);
     font-style: normal;
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -2846,10 +2862,10 @@ button {
     text-transform: lowercase;
     width: 100%;
     display: block;
-    line-height: 0.85;
+    line-height: 1;
+    padding-top: 0.1em;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
 }
 
 .footer-main {

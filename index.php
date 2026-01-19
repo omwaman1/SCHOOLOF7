@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Masterclass | School of 7</title>
+    <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
+    <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
 
     <!-- DataLayer Initialization -->
     <script>
@@ -94,11 +96,11 @@
         <div class="hero-video-container">
             <!-- Desktop Video -->
             <video autoplay loop muted playsinline class="hero-video hero-video-desktop" id="heroVideoDesktop" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/home%20banner%20desktop.mp4" type="video/mp4">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideodesktop.mp4" type="video/mp4">
             </video>
             <!-- Mobile Video -->
             <video autoplay loop muted playsinline class="hero-video hero-video-mobile" id="heroVideoMobile" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/Home%20banner%20mbl.mp4" type="video/mp4">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideomobile.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
@@ -210,8 +212,8 @@
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
-            <video muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" type="video/mp4">
+            <video controls muted preload="metadata" id="coursePreviewVideo" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
+                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/howthiscoursewillhelpyou.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="video-play-btn" id="videoPlayBtn">▶</div>
@@ -232,27 +234,27 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/The_Reasons_why_you_should_choose_our_Masterclass_to_Startup_1080P.mp4" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" muted loop playsinline></video>
+                    <video controls src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
                     <div class="play-icon">▶</div>
                 </div>
             </div>
