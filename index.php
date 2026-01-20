@@ -8,44 +8,11 @@
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
     <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
 
-    <!-- DataLayer Initialization -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-    </script>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879330084480824');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=879330084480824&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <!-- Google Analytics 4 (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QJHLP6W66"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-6QJHLP6W66');
-    </script>
-    <!-- End Google Analytics 4 -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="style.css">
     <style>
         .mentor-section, #mentor, section.mentor-section, section#mentor {
             background-color: #e7eef8 !important;
@@ -94,14 +61,8 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-video-container">
-            <!-- Desktop Video -->
-            <video autoplay loop muted playsinline class="hero-video hero-video-desktop" id="heroVideoDesktop" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideodesktop.mp4" type="video/mp4">
-            </video>
-            <!-- Mobile Video -->
-            <video autoplay loop muted playsinline class="hero-video hero-video-mobile" id="heroVideoMobile" preload="auto">
-                <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideomobile.mp4" type="video/mp4">
-            </video>
+            <!-- Single video element - source loaded by JS based on device -->
+            <video autoplay loop muted playsinline class="hero-video" id="heroVideo" preload="none"></video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
             <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
@@ -213,10 +174,7 @@
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
-                <video muted preload="metadata" id="coursePreviewVideo" playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp">
-                    <source src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/howthiscoursewillhelpyou.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <video muted preload="none" id="coursePreviewVideo" playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
                 <div class="video-play-btn" id="videoPlayBtn">▶</div>
                 <div class="custom-controls" id="courseControls">
                     <button class="ctrl-mute" id="courseCtrlMute" title="Mute">🔊</button>
@@ -243,7 +201,7 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video autoplay src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
+                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
                         <button class="ctrl-mute" title="Unmute">�</button>
@@ -255,7 +213,7 @@
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
+                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
                         <button class="ctrl-mute" title="Mute">🔊</button>
@@ -267,7 +225,7 @@
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
+                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
                         <button class="ctrl-mute" title="Mute">🔊</button>
@@ -279,7 +237,7 @@
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
+                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
                         <button class="ctrl-mute" title="Mute">🔊</button>
@@ -291,7 +249,7 @@
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
+                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
                         <button class="ctrl-mute" title="Mute">🔊</button>
@@ -1012,6 +970,41 @@
             return false;
         }
     </script>
+
+    <!-- Analytics Scripts - Loaded at bottom for performance -->
+    <!-- DataLayer Initialization -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '879330084480824');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=879330084480824&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QJHLP6W66"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QJHLP6W66');
+    </script>
+    <!-- End Google Analytics 4 -->
 </body>
 
 </html>

@@ -1,44 +1,105 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Rhode Skin Fresh Build Loaded');
 
-    // Video play/pause toggle if needed
+    // =========================================================
+    // SEQUENTIAL VIDEO LOADING - One at a time for performance
+    // =========================================================
+    const heroVideo = document.getElementById('heroVideo');
+    const coursePreviewVideo = document.getElementById('coursePreviewVideo');
+    const testimonialVideos = document.querySelectorAll('.ugc-item video');
     const videoBtn = document.getElementById('video-toggle');
-    const heroVideoDesktopEl = document.getElementById('heroVideoDesktop');
-    const heroVideoMobileEl = document.getElementById('heroVideoMobile');
 
-    // Helper function to get the currently visible hero video
-    const getVisibleHeroVideo = () => {
-        // Check if mobile video is visible (display: block and actually visible)
-        if (heroVideoMobileEl && window.getComputedStyle(heroVideoMobileEl).display !== 'none') {
-            return heroVideoMobileEl;
-        }
-        // Otherwise return desktop video
-        return heroVideoDesktopEl;
+    // Detect if mobile device
+    const isMobile = () => {
+        return window.innerWidth <= 768 ||
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     };
 
-    // Force video to play immediately when enough buffer is available
-    const setupAutoPlay = (video) => {
-        if (!video) return;
+    // Sequential video loader - loads videos one after another
+    const videoQueue = [];
+    let isLoadingVideo = false;
 
-        const tryPlay = () => {
+    const loadNextVideo = () => {
+        if (isLoadingVideo || videoQueue.length === 0) return;
+
+        isLoadingVideo = true;
+        const { video, src, autoplay } = videoQueue.shift();
+
+        if (!video || !src) {
+            isLoadingVideo = false;
+            loadNextVideo();
+            return;
+        }
+
+        console.log('Loading video:', src.split('/').pop());
+
+        video.addEventListener('canplaythrough', function onCanPlay() {
+            video.removeEventListener('canplaythrough', onCanPlay);
+            console.log('Video loaded:', src.split('/').pop());
+            isLoadingVideo = false;
+            // Load next video after a small delay
+            setTimeout(loadNextVideo, 100);
+        }, { once: true });
+
+        video.addEventListener('error', function onError() {
+            console.log('Video error, skipping:', src.split('/').pop());
+            isLoadingVideo = false;
+            loadNextVideo();
+        }, { once: true });
+
+        video.src = src;
+        video.load();
+
+        if (autoplay) {
             video.play().catch(() => {
-                // Autoplay blocked - will play on user interaction
-                console.log('Autoplay blocked, waiting for user interaction');
+                console.log('Autoplay blocked');
             });
-        };
-
-        // Play when video can start (enough buffer)
-        video.addEventListener('canplay', tryPlay);
-
-        // Also try immediately in case video is cached
-        if (video.readyState >= 3) {
-            tryPlay();
         }
     };
 
-    // Setup autoplay for both videos
-    setupAutoPlay(heroVideoDesktopEl);
-    setupAutoPlay(heroVideoMobileEl);
+    const queueVideo = (video, src, autoplay = false) => {
+        videoQueue.push({ video, src, autoplay });
+    };
+
+    // 1. Queue Hero Video (loads first)
+    if (heroVideo) {
+        const heroSrc = isMobile()
+            ? 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideomobile.mp4'
+            : 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideodesktop.mp4';
+        const heroPoster = isMobile()
+            ? 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannermobile_thumb.webp'
+            : 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannerdesktop_thumb.webp';
+        heroVideo.poster = heroPoster;
+        queueVideo(heroVideo, heroSrc, true);
+    }
+
+    // 2. Queue Course Preview Video (loads after hero)
+    if (coursePreviewVideo) {
+        const courseSrc = 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/howthiscoursewillhelpyou.mp4';
+        queueVideo(coursePreviewVideo, courseSrc, false);
+    }
+
+    // 3. Queue Testimonial Videos (load one by one)
+    const testimonialSources = [
+        'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4',
+        'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.mp4',
+        'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.mp4',
+        'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.mp4',
+        'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.mp4'
+    ];
+
+    testimonialVideos.forEach((video, index) => {
+        if (testimonialSources[index]) {
+            // First testimonial autoplays muted
+            queueVideo(video, testimonialSources[index], index === 0);
+        }
+    });
+
+    // Start loading videos sequentially
+    loadNextVideo();
+
+    // Helper function to get hero video
+    const getVisibleHeroVideo = () => heroVideo;
 
     if (videoBtn) {
         videoBtn.addEventListener('click', () => {
@@ -86,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Course Preview Video - Unmute on native play
-    const coursePreviewVideo = document.getElementById('coursePreviewVideo');
     const videoPlayBtn = document.getElementById('videoPlayBtn');
 
     if (coursePreviewVideo) {
