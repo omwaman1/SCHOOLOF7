@@ -251,17 +251,21 @@
             <p style="margin-top: 15px; padding: 12px; background: #fff3cd; border-radius: 8px; font-size: 13px; color: #856404;">
                 <strong>📧 Important:</strong> If you don't see your credentials in your inbox, please check your <strong>Spam</strong> or <strong>Promotions</strong> folder.
             </p>
+
+            <p style="margin-top: 10px; padding: 12px; background: #d1ecf1; border-radius: 8px; font-size: 13px; color: #0c5460;">
+                <strong>🔑 First Time Login:</strong> Please use your <strong>Email only</strong> to login for the first time.
+            </p>
         </div>
         
-        <a href="https://login.schoolof7.com" class="cta-button">Access Your Course</a>
+        <a href="https://login.schoolof7.com/t/u/activeCourses" class="cta-button">Access Your Course</a>
 
-        <p class="footer-note" style="margin-top: 20px;">Redirecting to login in <span id="countdown">3</span> seconds...</p>
+        <p class="footer-note" style="margin-top: 20px;">Redirecting to login in <span id="countdown">10</span> seconds...</p>
         <p class="footer-note">Need help? <a href="mailto:support@schoolof7.com">Contact Support</a></p>
     </div>
 
     <script>
-        // Auto-redirect to login page after 3 seconds
-        let seconds = 3;
+        // Auto-redirect to login page after 10 seconds
+        let seconds = 10;
         const countdownEl = document.getElementById('countdown');
 
         const countdown = setInterval(() => {
@@ -270,7 +274,7 @@
 
             if (seconds <= 0) {
                 clearInterval(countdown);
-                window.location.href = 'https://login.schoolof7.com';
+                window.location.href = 'https://login.schoolof7.com/t/u/activeCourses';
             }
         }, 1000);
     </script>
