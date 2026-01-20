@@ -246,7 +246,7 @@
                     <video autoplay src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.mp4" preload="metadata" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
                     <div class="play-icon">▶</div>
                     <div class="custom-controls">
-                        <button class="ctrl-mute" title="Mute">🔊</button>
+                        <button class="ctrl-mute" title="Unmute">�</button>
                         <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
                         <span class="ctrl-time">0:00</span>
                         <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
