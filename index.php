@@ -79,7 +79,7 @@
         </div>
         <div class="nav-right">
             <a href="https://login.schoolof7.com/contactus">ENQUIRE NOW</a>
-            <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
+            <a href="https://login.schoolof7.com/t/u/activeCourses">LOGIN</a>
         </div>
     </header>
     
@@ -88,7 +88,7 @@
         <a href="#curriculum">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
         <a href="https://login.schoolof7.com/contactus">ENQUIRE NOW</a>
-        <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
+        <a href="https://login.schoolof7.com/t/u/activeCourses">LOGIN</a>
     </div>
 
     <!-- Hero Section -->
