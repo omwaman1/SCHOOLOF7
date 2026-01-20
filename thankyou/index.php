@@ -67,7 +67,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Oswald:wght@400;500;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -119,14 +119,13 @@
             100% { transform: scale(1); opacity: 1; }
         }
 
-        .brand {
-            font-family: 'Oswald', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 3px;
+        .brand-logo {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
             color: #4e6a47;
             margin-bottom: 20px;
-            text-transform: uppercase;
         }
 
         h1 {
@@ -236,7 +235,7 @@
             </svg>
         </div>
         
-        <p class="brand">School of 7</p>
+        <p class="brand-logo">SCHOOL OF 7</p>
         <h1>Thank You!</h1>
         <p class="subtitle">Your enrollment is successful! Welcome to the Startup Masterclass.</p>
         
