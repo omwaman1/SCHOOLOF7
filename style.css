@@ -1320,6 +1320,10 @@ button {
     pointer-events: none;
 }
 
+.video-play-btn.playing {
+    opacity: 0.7;
+}
+
 @media (max-width: 768px) {
     .video-play-btn {
         display: flex;
@@ -1480,10 +1484,10 @@ button {
     z-index: 10;
 }
 
-/* Keep play icon visible during playback for pause functionality */
+/* Hide play icon during playback */
 .ugc-item.playing .play-icon {
-    opacity: 0.7;
-    pointer-events: auto;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .ugc-item:hover .play-icon {

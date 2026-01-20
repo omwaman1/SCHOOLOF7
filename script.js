@@ -90,17 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoPlayBtn = document.getElementById('videoPlayBtn');
 
     if (coursePreviewVideo) {
-        // When video plays - add controls and hide custom button
+        // When video plays - hide play button
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
-            coursePreviewVideo.setAttribute('controls', ''); // Add native controls
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '❚❚';
                 videoPlayBtn.classList.add('hidden');
             }
         });
 
-        // When video pauses - show custom button (keep controls for seek)
+        // When video pauses - show play button
         coursePreviewVideo.addEventListener('pause', () => {
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '▶';
@@ -108,12 +107,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // When video ends - remove controls and show custom button
+        // When video ends - show play button
         coursePreviewVideo.addEventListener('ended', () => {
-            coursePreviewVideo.removeAttribute('controls');
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '▶';
                 videoPlayBtn.classList.remove('hidden');
+            }
+        });
+
+        // Click on video to pause (when playing)
+        coursePreviewVideo.addEventListener('click', () => {
+            if (!coursePreviewVideo.paused) {
+                coursePreviewVideo.pause();
             }
         });
     }
