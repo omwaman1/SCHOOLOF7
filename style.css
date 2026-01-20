@@ -702,7 +702,13 @@ button {
 
 @media (max-width: 768px) {
     .video-control {
-        display: block;
+        display: flex;
+        z-index: 100;
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
     }
 
     .hero-mute-btn {
