@@ -1,0 +1,15 @@
+open 93.127.208.183
+u122332128.schoolof7.com
+Hostinger#293330
+cd public_html
+lcd c:\xampp\htdocs\schoolof7
+put index.php
+put style.css
+put script.js
+put create-order.php
+put send-webhook.php
+mkdir thankyou
+cd thankyou
+lcd c:\xampp\htdocs\schoolof7\thankyou
+put index.php
+quit

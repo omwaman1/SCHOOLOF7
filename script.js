@@ -87,11 +87,123 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Course Preview Video - Unmute on native play
     const coursePreviewVideo = document.getElementById('coursePreviewVideo');
+    const videoPlayBtn = document.getElementById('videoPlayBtn');
 
     if (coursePreviewVideo) {
-        // Unmute when user plays video via native controls
+        // When video plays - add controls and hide custom button
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
+            coursePreviewVideo.setAttribute('controls', ''); // Add native controls
+            if (videoPlayBtn) {
+                videoPlayBtn.textContent = '❚❚';
+                videoPlayBtn.classList.add('hidden');
+            }
+        });
+
+        // When video pauses - show custom button (keep controls for seek)
+        coursePreviewVideo.addEventListener('pause', () => {
+            if (videoPlayBtn) {
+                videoPlayBtn.textContent = '▶';
+                videoPlayBtn.classList.remove('hidden');
+            }
+        });
+
+        // When video ends - remove controls and show custom button
+        coursePreviewVideo.addEventListener('ended', () => {
+            coursePreviewVideo.removeAttribute('controls');
+            if (videoPlayBtn) {
+                videoPlayBtn.textContent = '▶';
+                videoPlayBtn.classList.remove('hidden');
+            }
+        });
+    }
+
+    // Play button click handler for course preview video
+    if (videoPlayBtn && coursePreviewVideo) {
+        videoPlayBtn.addEventListener('click', () => {
+            if (coursePreviewVideo.paused) {
+                coursePreviewVideo.muted = false;
+                coursePreviewVideo.play();
+            } else {
+                coursePreviewVideo.pause();
+            }
+        });
+    }
+
+    // =========================================================
+    // COURSE PREVIEW VIDEO - CUSTOM CONTROLS
+    // =========================================================
+    const courseSeekBar = document.getElementById('courseCtrlSeek');
+    const courseMuteBtn = document.getElementById('courseCtrlMute');
+    const courseVolumeBar = document.getElementById('courseCtrlVolume');
+    const courseTimeDisplay = document.getElementById('courseCtrlTime');
+    const courseFullscreenBtn = document.getElementById('courseCtrlFullscreen');
+    const courseControlsContainer = document.getElementById('courseControls');
+
+    // Format time as M:SS
+    const formatCourseTime = (seconds) => {
+        if (isNaN(seconds)) return '0:00';
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
+
+    if (coursePreviewVideo) {
+        // Update seek bar and time display as video plays
+        coursePreviewVideo.addEventListener('timeupdate', () => {
+            if (courseSeekBar && coursePreviewVideo.duration) {
+                const progress = (coursePreviewVideo.currentTime / coursePreviewVideo.duration) * 100;
+                courseSeekBar.value = progress;
+            }
+            if (courseTimeDisplay) {
+                courseTimeDisplay.textContent = formatCourseTime(coursePreviewVideo.currentTime);
+            }
+        });
+
+        // Sync mute button with video state
+        coursePreviewVideo.addEventListener('volumechange', () => {
+            if (courseMuteBtn) {
+                courseMuteBtn.textContent = coursePreviewVideo.muted ? '🔇' : '🔊';
+            }
+            if (courseVolumeBar) {
+                courseVolumeBar.value = coursePreviewVideo.muted ? 0 : coursePreviewVideo.volume * 100;
+            }
+        });
+    }
+
+    // Seek bar
+    if (courseSeekBar && coursePreviewVideo) {
+        courseSeekBar.addEventListener('input', () => {
+            const seekTo = (parseFloat(courseSeekBar.value) / 100) * coursePreviewVideo.duration;
+            coursePreviewVideo.currentTime = seekTo;
+        });
+    }
+
+    // Mute button
+    if (courseMuteBtn && coursePreviewVideo) {
+        courseMuteBtn.addEventListener('click', () => {
+            coursePreviewVideo.muted = !coursePreviewVideo.muted;
+        });
+    }
+
+    // Volume slider
+    if (courseVolumeBar && coursePreviewVideo) {
+        courseVolumeBar.addEventListener('input', () => {
+            coursePreviewVideo.volume = parseFloat(courseVolumeBar.value) / 100;
+            coursePreviewVideo.muted = coursePreviewVideo.volume === 0;
+        });
+    }
+
+    // Fullscreen button
+    if (courseFullscreenBtn && coursePreviewVideo) {
+        courseFullscreenBtn.addEventListener('click', () => {
+            if (coursePreviewVideo.requestFullscreen) {
+                coursePreviewVideo.requestFullscreen();
+            } else if (coursePreviewVideo.webkitEnterFullscreen) {
+                coursePreviewVideo.webkitEnterFullscreen();
+            } else if (coursePreviewVideo.webkitRequestFullscreen) {
+                coursePreviewVideo.webkitRequestFullscreen();
+            }
         });
     }
 
@@ -283,31 +395,74 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('ugcPrev');
     const nextBtn = document.getElementById('ugcNext');
 
+    // Force autoplay first testimonial video on page load (muted)
+    const firstTestimonialVideo = ugcItems[0]?.querySelector('video');
+    if (firstTestimonialVideo) {
+        // Ensure it's muted for autoplay to work
+        firstTestimonialVideo.muted = true;
+
+        // Try to play immediately
+        const tryPlayFirstVideo = () => {
+            firstTestimonialVideo.play().then(() => {
+                console.log('First testimonial video autoplay started');
+                ugcItems[0].classList.add('playing');
+            }).catch((err) => {
+                console.log('Autoplay blocked, retrying...', err);
+                // Retry on user interaction
+                document.addEventListener('click', function retryPlay() {
+                    firstTestimonialVideo.play();
+                    ugcItems[0].classList.add('playing');
+                    document.removeEventListener('click', retryPlay);
+                }, { once: true });
+            });
+        };
+
+        // Play when video can start
+        if (firstTestimonialVideo.readyState >= 3) {
+            tryPlayFirstVideo();
+        } else {
+            firstTestimonialVideo.addEventListener('canplay', tryPlayFirstVideo, { once: true });
+        }
+    }
+
     // Click to play/pause videos
     // Track if user manually triggered playback (for unmute logic)
     let userTriggeredPlay = false;
     // Track if user manually paused video (to prevent auto-play on scroll back)
     let userPausedVideo = false;
+    // Track if it's an auto-play (to prevent unmute on autoplay)
+    let isAutoPlay = true;
 
     ugcItems.forEach(item => {
         const video = item.querySelector('video');
         const playIcon = item.querySelector('.play-icon');
 
         if (video) {
-            // Click on play icon to start video (user interaction - unmute)
+            // Click on play icon to toggle play/pause (user interaction - unmute)
             if (playIcon) {
                 playIcon.addEventListener('click', (e) => {
                     e.stopPropagation();
                     userTriggeredPlay = true;
+                    isAutoPlay = false;
+
+                    // If video is playing, pause it
+                    if (!video.paused) {
+                        video.pause();
+                        item.classList.remove('playing');
+                        playIcon.textContent = '▶';
+                        return;
+                    }
 
                     // Pause all other videos and mute them
                     ugcItems.forEach(otherItem => {
                         if (otherItem !== item) {
                             const otherVideo = otherItem.querySelector('video');
+                            const otherPlayIcon = otherItem.querySelector('.play-icon');
                             if (otherVideo) {
                                 otherVideo.pause();
                                 otherVideo.muted = true;
                                 otherItem.classList.remove('playing');
+                                if (otherPlayIcon) otherPlayIcon.textContent = '▶';
                             }
                         }
                     });
@@ -317,23 +472,45 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Play the current video
                     video.play();
                     item.classList.add('playing');
+                    playIcon.textContent = '❚❚';
                 });
             }
 
-            // Sync play state with native controls - always unmute on play
+            // Also allow clicking on the video itself to toggle play/pause
+            video.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (playIcon) {
+                    playIcon.click(); // Trigger the same logic as play icon
+                }
+            });
+
+            // Sync play state with native controls
             video.addEventListener('play', () => {
                 item.classList.add('playing');
-                // Unmute when user plays via native controls
-                video.muted = false;
+                if (playIcon) playIcon.textContent = '❚❚';
+
+                // Only unmute if this is a user-triggered play (not autoplay)
+                // Check if this is the first video and it's autoplaying
+                const isFirstVideo = item === ugcItems[0];
+                if (!isFirstVideo || !isAutoPlay) {
+                    // Unmute when user plays via native controls
+                    video.muted = false;
+                }
+                // After first user interaction, mark autoplay as complete
+                if (userTriggeredPlay) {
+                    isAutoPlay = false;
+                }
 
                 // Pause all other videos
                 ugcItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         const otherVideo = otherItem.querySelector('video');
+                        const otherPlayIcon = otherItem.querySelector('.play-icon');
                         if (otherVideo && !otherVideo.paused) {
                             otherVideo.pause();
                             otherVideo.muted = true;
                             otherItem.classList.remove('playing');
+                            if (otherPlayIcon) otherPlayIcon.textContent = '▶';
                         }
                     }
                 });
@@ -341,9 +518,100 @@ document.addEventListener('DOMContentLoaded', () => {
 
             video.addEventListener('pause', () => {
                 item.classList.remove('playing');
+                if (playIcon) playIcon.textContent = '▶';
                 // Track that user manually paused (not auto-paused by leaving section)
                 userPausedVideo = true;
             });
+
+            // =========================================================
+            // CUSTOM CONTROLS FUNCTIONALITY
+            // =========================================================
+            const customControls = item.querySelector('.custom-controls');
+            const seekBar = item.querySelector('.ctrl-seek');
+            const muteBtn = item.querySelector('.ctrl-mute');
+            const volumeBar = item.querySelector('.ctrl-volume');
+            const timeDisplay = item.querySelector('.ctrl-time');
+            const fullscreenBtn = item.querySelector('.ctrl-fullscreen');
+
+            // Format time as M:SS
+            const formatTime = (seconds) => {
+                if (isNaN(seconds)) return '0:00';
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs.toString().padStart(2, '0')}`;
+            };
+
+            // Update seek bar and time display as video plays
+            video.addEventListener('timeupdate', () => {
+                if (seekBar && video.duration) {
+                    const progress = (video.currentTime / video.duration) * 100;
+                    seekBar.value = progress;
+                }
+                if (timeDisplay) {
+                    timeDisplay.textContent = formatTime(video.currentTime);
+                }
+            });
+
+            // Seek when user drags/clicks seek bar
+            if (seekBar) {
+                seekBar.addEventListener('input', (e) => {
+                    e.stopPropagation();
+                    const seekTo = (parseFloat(seekBar.value) / 100) * video.duration;
+                    video.currentTime = seekTo;
+                });
+                seekBar.addEventListener('click', (e) => e.stopPropagation());
+            }
+
+            // Mute/unmute toggle
+            if (muteBtn) {
+                muteBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    video.muted = !video.muted;
+                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
+                });
+            }
+
+            // Volume control
+            if (volumeBar) {
+                volumeBar.addEventListener('input', (e) => {
+                    e.stopPropagation();
+                    video.volume = parseFloat(volumeBar.value) / 100;
+                    video.muted = video.volume === 0;
+                    if (muteBtn) {
+                        muteBtn.textContent = video.muted ? '🔇' : '🔊';
+                    }
+                });
+                volumeBar.addEventListener('click', (e) => e.stopPropagation());
+            }
+
+            // Fullscreen toggle
+            if (fullscreenBtn) {
+                fullscreenBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.webkitEnterFullscreen) {
+                        video.webkitEnterFullscreen(); // iOS Safari
+                    } else if (video.webkitRequestFullscreen) {
+                        video.webkitRequestFullscreen();
+                    }
+                });
+            }
+
+            // Sync mute button with actual video state
+            video.addEventListener('volumechange', () => {
+                if (muteBtn) {
+                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
+                }
+                if (volumeBar) {
+                    volumeBar.value = video.muted ? 0 : video.volume * 100;
+                }
+            });
+
+            // Prevent custom controls clicks from triggering video play/pause
+            if (customControls) {
+                customControls.addEventListener('click', (e) => e.stopPropagation());
+            }
         }
     });
 
