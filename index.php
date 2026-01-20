@@ -78,7 +78,7 @@
             <a href="#">SCHOOL OF 7</a>
         </div>
         <div class="nav-right">
-            <a href="https://login.schoolof7.com/s/page/cb1/edit?url=contactus&theme=theme3">ENQUIRE NOW</a>
+            <a href="https://login.schoolof7.com/contactus">ENQUIRE NOW</a>
             <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
         </div>
     </header>
@@ -87,7 +87,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#curriculum">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
-        <a href="#">ENQUIRE NOW</a>
+        <a href="https://login.schoolof7.com/contactus">ENQUIRE NOW</a>
         <a href="https://login.schoolof7.com/t/allcourses">LOGIN</a>
     </div>
 
@@ -156,7 +156,7 @@
                     <div class="rating">★★★★☆ (2,002)</div>
                     <div class="card-row">
                         <h4 class="product-name">BUILDING PRODUCT</h4>
-                        <span class="price">$199</span>
+                        <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Approach to Product Market Fit</p>
                 </div>
@@ -177,7 +177,7 @@
                     <div class="rating">★★★★½ (15,318)</div>
                     <div class="card-row">
                         <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
-                        <span class="price">$299</span>
+                        <span class="price">GROW</span>
                     </div>
                     <p class="product-desc">Learn Frameworks & Tools To Analyse Your Idea</p>
                 </div>
@@ -198,7 +198,7 @@
                     <div class="rating">★★★★★ (13,231)</div>
                     <div class="card-row">
                         <h4 class="product-name">FUND RAISING</h4>
-                        <span class="price">$999</span>
+                        <span class="price">SCALE</span>
                     </div>
                     <p class="product-desc">Right Time & How to Raise Funds</p>
                 </div>
@@ -272,7 +272,7 @@
             <h2 class="curriculum-heading"><span class="heading-bold">COURSE </span><br><span class="heading-bold">CURRICULUM</span> </h2>
             <div class="accordion curriculum-accordion">
                 <div class="accordion-item active">
-                    <button class="accordion-header">MODULE 1: Shortlisting Startup Ideas <span class="icon-circle">-</span></button>
+                    <button class="accordion-header">MODULE 1: Funneling Startup Ideas <span class="icon-circle">-</span></button>
                     <div class="accordion-body">• How to find ideas in the first place?<br>• 4 categories of startup ideas<br>• How to improve your research abilities?<br>• Your personal assessment as a founder<br>• Home Work</div>
                 </div>
                 <div class="accordion-item">
@@ -319,29 +319,29 @@
                 <div class="audience-card">
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" alt="Entrepreneurs">
                     <div class="audience-info">
-                        <h4>ENTREPRENEURS</h4>
-                        <p>business owners looking to scale online</p>
+                        <h4> ENTREPRENEURS</h4>
+                        <p> business owners looking to scale online</p>
                     </div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" alt="Freelancers">
                     <div class="audience-info">
-                        <h4>FREELANCERS</h4>
-                        <p>wanting to upskill & charge more</p>
+                        <h4> FREELANCERS</h4>
+                        <p> wanting to upskill & charge more</p>
                     </div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" alt="Students">
                     <div class="audience-info">
-                        <h4>STUDENTS</h4>
-                        <p>building a global brand</p>
+                        <h4> STUDENTS</h4>
+                        <p> building a global brand</p>
                     </div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" alt="Creatives">
                     <div class="audience-info">
-                        <h4>CREATIVES</h4>
-                        <p>artists wanting to sell their work online</p>
+                        <h4> CREATIVES</h4>
+                        <p> artists wanting to sell their work online</p>
                     </div>
                 </div>
             </div>
@@ -359,7 +359,7 @@
             <div class="mentor-links">
                 <div class="mentor-link active" data-text="To <span class='highlight'>INSPIRE</span>, <span class='highlight'>EDUCATE</span>, and <span class='highlight'>EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.">mission</div>
                 <div class="mentor-link" data-text="We believe that <span class='highlight'>MOST STARTUP LAGS</span>, because the founders were never taught about the fundamentals of building a business. Our philosophy centers on <span class='highlight'>FRAMEWORKS, CASE STUDIES, PROBLEMS & SOLUTIONS</span> which makes the founder BUSINESS READY.">philosophy</div>
-                <div class="mentor-link" data-text="He is an <span class='highlight'>ENTREPRENEUR & INVESTOR</span>and is an MBA graduate from XLRI Jamshedpur. He has 10+ years of experience in CONSULTING & MENTORING Startups. He is the <span class='highlight'>FOUNDER</span> of School of 7.">about</div>
+                <div class="mentor-link" data-text="He is an <span class='highlight'>ENTREPRENEUR & INVESTOR </span>and is an MBA graduate from XLRI Jamshedpur. He has 10+ years of experience in CONSULTING & MENTORING Startups. He is the <span class='highlight'>FOUNDER</span> of School of 7.">about</div>
             </div>
         </div>
         <div class="mentor-image">
@@ -382,12 +382,10 @@
                 <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">"Learn With AI" Sections in Every Module</li>
-                    <li class="check">Assignments & Evaluation Guide</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="check">Course Virtual Community</li>
                     <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Completion</li>
+                    <li class="check">Certificate of Achievement</li>
                 </ul>
                 <button onclick="initiatePayment(100, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
@@ -401,12 +399,10 @@
                 <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">"Learn With AI" Sections in Every Module</li>
-                    <li class="check">Assignments & Evaluation Guide</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
+                    <li class="cross">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
                     <li class="cross">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Completion</li>
+                    <li class="cross">Certificate of Achievement</li>
                 </ul>
                 <button onclick="initiatePayment(200, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
@@ -427,7 +423,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG WILL IT TAKE TO GET ACCESS TO THE COURSE?</button>
-                    <div class="accordion-body">Your credentials to access the course, will be delivered to your inbox within 5–10 minutes of your purchase. Please check your promotions/updates tab and spam folder as well.</div>
+                    <div class="accordion-body">Your credentials to access the course, will be delivered to your email inbox within 5–10 minutes of your purchase. Please check your promotions/updates tab and spam folder as well.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHAT IS THE TIME COMMITMENT REQUIRED FOR THIS COURSE?</button>
@@ -447,7 +443,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW CAN I CONTACT YOU IN CASE OF DOUBTS OR CONCERNS?</button>
-                    <div class="accordion-body">You can mail us at ...</div>
+                    <div class="accordion-body">You can mail us at Mr7@schoolof7.com</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG DO I HAVE ACCESS TO THIS COURSE?</button>
@@ -455,11 +451,15 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">IS THERE A CERTIFICATE?</button>
-                    <div class="accordion-body">Yes, you will receive a verified certificate upon completion from School of 7</div>
+                    <div class="accordion-body">Yes, you will receive a verified certificate upon completion from School of 7.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHAT IS THE REFUND POLICY?</button>
                     <div class="accordion-body">There is no refund policy for this course.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">WHERE WILL I GET THE RECEIPT OF THE COURSE?</button>
+                    <div class="accordion-body">You can download the receipt from 'Purschase Histroy' section as you login in your account. </div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WILL MORE MODULES BE ADDED?</button>
@@ -517,7 +517,7 @@
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar" style="width: 70px; height: 70px; border: none; border-radius: 0; margin-top: -35px; object-fit: contain; box-shadow: none;">
             <div class="sticky-info">
                 <h5>Startup Masterclass</h5>
-                <p>62K+ Students Enrolled</p>
+                <p>63K+ Students Enrolled</p>
             </div>
         </div>
         <div class="sticky-actions">
@@ -541,7 +541,7 @@
                     <input type="email" placeholder="Email Address" class="newsletter-input">
                     <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
                 </form>
-                <p class="privacy-note">By signing up, you agree to our <a href="#">Privacy Policy</a>.</p>
+                <p class="privacy-note">By signing up, you agree to our <a href="https://login.schoolof7.com/privacypolicy">Privacy Policy</a>.</p>
             </div>
 
             <div class="footer-links">
@@ -578,11 +578,11 @@
                 <div class="footer-column">
                     <h4>OFFICIAL</h4>
                     <ul>
-                        <li><a href="https://vividh.graphy.com/privacypolicy">Privacy Policy</a></li>
-                        <li><a href="https://vividh.graphy.com/termsofuse">Terms & Conditions</a></li>
-                        <li><a href="https://vividh.graphy.com/refundpolicy">Refund Policy</a></li>
+                        <li><a href="https://login.schoolof7.com/privacypolicy">Privacy Policy</a></li>
+                        <li><a href="https://login.schoolof7.com/termsofuse">Terms & Conditions</a></li>
+                        <li><a href="https://login.schoolof7.com/refundpolicy">Refund Policy</a></li>
                         <li><a href="#faq">FAQ</a></li>
-                        <li><a href="https://vividh.graphy.com/contactus">Enquire Now</a></li>
+                        <li><a href="https://login.schoolof7.com/contactus">Enquire Now</a></li>
                         <li><a href="#">About Us</a></li>
                     </ul>
                 </div>
