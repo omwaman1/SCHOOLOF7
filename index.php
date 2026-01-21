@@ -98,7 +98,7 @@
     <section class="section pricing-section">
         <div class="section-header">
             <h2 class="section-title">Are You Struggling With?</h2>
-            <p class="section-subtitle">Choose The Path That Fits Your <em>goals</em></p>
+            <p class="section-subtitle">Challenges <em>like</em></p>
         </div>
         <div class="pricing-grid" id="pricingCarousel">
             <!-- Card 1 -->
@@ -118,7 +118,7 @@
                         <h4 class="product-name">BUILDING PRODUCT</h4>
                         <span class="price">PREP</span>
                     </div>
-                    <p class="product-desc">Approach to Product Market Fit</p>
+                    <p class="product-desc">Learners rated this course</p>
                     <div class="rating">★★★★☆ (2,002)</div>
                 </div>
             </div>
@@ -135,12 +135,12 @@
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
-                    <div class="rating">★★★★½ (15,318)</div>
                     <div class="card-row">
                         <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
                         <span class="price">GROW</span>
                     </div>
-                    <p class="product-desc">Learn Frameworks & Tools To Analyse Your Idea</p>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
             <!-- Card 3 -->
@@ -156,12 +156,12 @@
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
-                    <div class="rating">★★★★★ (13,231)</div>
                     <div class="card-row">
                         <h4 class="product-name">FUND RAISING</h4>
                         <span class="price">SCALE</span>
                     </div>
-                    <p class="product-desc">Right Time & How to Raise Funds</p>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★★ (13,231)</div>
                 </div>
             </div>
         </div>
@@ -342,6 +342,7 @@
                 <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">3 Years Access to Course</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="check">Course Virtual Community</li>
                     <li class="check">Course Upgrades at Zero Cost</li>
@@ -359,6 +360,7 @@
                 <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">3 Years Access to Course</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
                     <li class="cross">Course Upgrades at Zero Cost</li>
@@ -407,7 +409,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG DO I HAVE ACCESS TO THIS COURSE?</button>
-                    <div class="accordion-body">You get lifetime access to the course content.</div>
+                    <div class="accordion-body">You get 3 years access to course content.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">IS THERE A CERTIFICATE?</button>
@@ -419,7 +421,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHERE WILL I GET THE RECEIPT OF THE COURSE?</button>
-                    <div class="accordion-body">You can download the receipt from 'Purschase Histroy' section as you login in your account. </div>
+                    <div class="accordion-body">You can download the receipt from 'Purchase Histroy' section as you login in your account. </div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WILL MORE MODULES BE ADDED?</button>
@@ -549,6 +551,7 @@
 
                 <div class="footer-column">
                     <h4>SUPPORT</h4>
+                    <p class="support-text">Email: Mr7@schoolof7.com</p>
                     <p class="support-text">We're here M-F 9am - 5pm IST.</p>
                     <p class="support-text">Drop us a note anytime.</p>
                     <p class="support-text">Do Not Sell or Share My Personal Information</p>
