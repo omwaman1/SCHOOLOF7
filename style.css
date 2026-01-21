@@ -38,6 +38,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -52,6 +53,7 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     padding: 1.5rem;
+    overflow-x: hidden;
 }
 
 /* White overlay to hide content behind fixed header gap and corners */
@@ -1798,7 +1800,7 @@ button {
 }
 
 .active .accordion-body {
-    max-height: 200px;
+    max-height: 300px;
     padding-bottom: 20px;
 }
 

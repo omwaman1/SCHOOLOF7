@@ -1022,46 +1022,61 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultHeadlineText = mentorHeadline ? mentorHeadline.innerHTML : '';
 
     if (mentorHeadline && mentorLinks.length > 0) {
-        mentorLinks.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                // Remove active class from all links
-                mentorLinks.forEach(l => l.classList.remove('active'));
-                // Add active class to current link
-                link.classList.add('active');
+        // Function to handle tab change (used by both click and hover)
+        const handleTabChange = (link) => {
+            // Remove active class from all links
+            mentorLinks.forEach(l => l.classList.remove('active'));
+            // Add active class to current link
+            link.classList.add('active');
 
-                // Get the text from data attribute
-                const newText = link.getAttribute('data-text');
-                if (newText) {
-                    mentorHeadline.style.opacity = '0';
-                    mentorHeadline.style.transform = 'translateY(10px)';
-
-                    setTimeout(() => {
-                        mentorHeadline.innerHTML = newText;
-                        mentorHeadline.style.opacity = '1';
-                        mentorHeadline.style.transform = 'translateY(0)';
-                    }, 200);
-                }
-            });
-        });
-
-        // Reset to default on mouse leave from the entire links container
-        const mentorLinksContainer = document.querySelector('.mentor-links');
-        if (mentorLinksContainer) {
-            mentorLinksContainer.addEventListener('mouseleave', () => {
-                // Set mission as active (first link)
-                mentorLinks.forEach((l, i) => {
-                    if (i === 0) l.classList.add('active');
-                    else l.classList.remove('active');
-                });
-
+            // Get the text from data attribute
+            const newText = link.getAttribute('data-text');
+            if (newText) {
                 mentorHeadline.style.opacity = '0';
                 mentorHeadline.style.transform = 'translateY(10px)';
 
                 setTimeout(() => {
-                    mentorHeadline.innerHTML = defaultHeadlineText;
+                    mentorHeadline.innerHTML = newText;
                     mentorHeadline.style.opacity = '1';
                     mentorHeadline.style.transform = 'translateY(0)';
                 }, 200);
+            }
+        };
+
+        mentorLinks.forEach(link => {
+            // Desktop: hover effect
+            link.addEventListener('mouseenter', () => {
+                handleTabChange(link);
+            });
+
+            // Mobile: click/tap effect
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                handleTabChange(link);
+            });
+        });
+
+        // Reset to default on mouse leave from the entire links container (desktop only)
+        const mentorLinksContainer = document.querySelector('.mentor-links');
+        if (mentorLinksContainer) {
+            mentorLinksContainer.addEventListener('mouseleave', () => {
+                // Only reset on desktop (not touch devices)
+                if (window.innerWidth > 768) {
+                    // Set mission as active (first link)
+                    mentorLinks.forEach((l, i) => {
+                        if (i === 0) l.classList.add('active');
+                        else l.classList.remove('active');
+                    });
+
+                    mentorHeadline.style.opacity = '0';
+                    mentorHeadline.style.transform = 'translateY(10px)';
+
+                    setTimeout(() => {
+                        mentorHeadline.innerHTML = defaultHeadlineText;
+                        mentorHeadline.style.opacity = '1';
+                        mentorHeadline.style.transform = 'translateY(0)';
+                    }, 200);
+                }
             });
         }
     }
