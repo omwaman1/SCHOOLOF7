@@ -114,12 +114,12 @@
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
-                    <div class="rating">★★★★☆ (2,002)</div>
                     <div class="card-row">
                         <h4 class="product-name">BUILDING PRODUCT</h4>
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Approach to Product Market Fit</p>
+                    <div class="rating">★★★★☆ (2,002)</div>
                 </div>
             </div>
             <!-- Card 2 -->
