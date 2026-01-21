@@ -146,150 +146,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Course Preview Video - Unmute on native play
+    // Course Preview Video - Play button and unmute on play
     const videoPlayBtn = document.getElementById('videoPlayBtn');
 
     if (coursePreviewVideo) {
-        // When video plays - hide play button
+        // When video plays - unmute and show pause icon
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '❚❚';
-                videoPlayBtn.classList.add('hidden');
+                videoPlayBtn.classList.add('playing');
             }
         });
 
-        // When video pauses - show play button
+        // When video pauses - show play icon
         coursePreviewVideo.addEventListener('pause', () => {
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '▶';
-                videoPlayBtn.classList.remove('hidden');
+                videoPlayBtn.classList.remove('playing');
             }
         });
 
-        // When video ends - show play button
+        // When video ends - show play icon
         coursePreviewVideo.addEventListener('ended', () => {
             if (videoPlayBtn) {
                 videoPlayBtn.textContent = '▶';
-                videoPlayBtn.classList.remove('hidden');
-            }
-        });
-
-        // Click on video to pause (when playing)
-        coursePreviewVideo.addEventListener('click', () => {
-            if (!coursePreviewVideo.paused) {
-                coursePreviewVideo.pause();
+                videoPlayBtn.classList.remove('playing');
             }
         });
     }
 
     // Play button click handler for course preview video
     if (videoPlayBtn && coursePreviewVideo) {
-        videoPlayBtn.addEventListener('click', () => {
+        const toggleCourseVideo = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             if (coursePreviewVideo.paused) {
                 coursePreviewVideo.muted = false;
                 coursePreviewVideo.play();
             } else {
                 coursePreviewVideo.pause();
             }
-        });
-    }
-
-    // =========================================================
-    // COURSE PREVIEW VIDEO - CUSTOM CONTROLS
-    // =========================================================
-    const courseSeekBar = document.getElementById('courseCtrlSeek');
-    const courseMuteBtn = document.getElementById('courseCtrlMute');
-    const courseVolumeBar = document.getElementById('courseCtrlVolume');
-    const courseTimeDisplay = document.getElementById('courseCtrlTime');
-    const courseFullscreenBtn = document.getElementById('courseCtrlFullscreen');
-    const courseControlsContainer = document.getElementById('courseControls');
-
-    // Format time as M:SS
-    const formatCourseTime = (seconds) => {
-        if (isNaN(seconds)) return '0:00';
-        const mins = Math.floor(seconds / 60);
-        const secs = Math.floor(seconds % 60);
-        return `${mins}:${secs.toString().padStart(2, '0')}`;
-    };
-
-    if (coursePreviewVideo) {
-        // Update seek bar and time display as video plays
-        coursePreviewVideo.addEventListener('timeupdate', () => {
-            if (courseSeekBar && coursePreviewVideo.duration) {
-                const progress = (coursePreviewVideo.currentTime / coursePreviewVideo.duration) * 100;
-                courseSeekBar.value = progress;
-            }
-            if (courseTimeDisplay) {
-                courseTimeDisplay.textContent = formatCourseTime(coursePreviewVideo.currentTime);
-            }
-        });
-
-        // Sync mute button with video state
-        coursePreviewVideo.addEventListener('volumechange', () => {
-            if (courseMuteBtn) {
-                courseMuteBtn.textContent = coursePreviewVideo.muted ? '🔇' : '🔊';
-            }
-            if (courseVolumeBar) {
-                courseVolumeBar.value = coursePreviewVideo.muted ? 0 : coursePreviewVideo.volume * 100;
-            }
-        });
-    }
-
-    // Seek bar
-    if (courseSeekBar && coursePreviewVideo) {
-        courseSeekBar.addEventListener('input', () => {
-            const seekTo = (parseFloat(courseSeekBar.value) / 100) * coursePreviewVideo.duration;
-            coursePreviewVideo.currentTime = seekTo;
-        });
-    }
-
-    // Mute button
-    if (courseMuteBtn && coursePreviewVideo) {
-        courseMuteBtn.addEventListener('click', () => {
-            coursePreviewVideo.muted = !coursePreviewVideo.muted;
-        });
-    }
-
-    // Volume slider
-    if (courseVolumeBar && coursePreviewVideo) {
-        courseVolumeBar.addEventListener('input', () => {
-            coursePreviewVideo.volume = parseFloat(courseVolumeBar.value) / 100;
-            coursePreviewVideo.muted = coursePreviewVideo.volume === 0;
-        });
-    }
-
-    // Fullscreen button
-    if (courseFullscreenBtn && coursePreviewVideo) {
-        courseFullscreenBtn.addEventListener('click', () => {
-            if (coursePreviewVideo.requestFullscreen) {
-                coursePreviewVideo.requestFullscreen();
-            } else if (coursePreviewVideo.webkitEnterFullscreen) {
-                coursePreviewVideo.webkitEnterFullscreen();
-            } else if (coursePreviewVideo.webkitRequestFullscreen) {
-                coursePreviewVideo.webkitRequestFullscreen();
-            }
-        });
-    }
-
-    // Sound Toggle Button for Course Preview Video
-    const soundToggleBtn = document.getElementById('soundToggleBtn');
-
-    if (coursePreviewVideo && soundToggleBtn) {
-        const mutedSvgCourse = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>';
-        const unmutedSvgCourse = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>';
-
-        soundToggleBtn.addEventListener('click', () => {
-            if (coursePreviewVideo.muted) {
-                coursePreviewVideo.muted = false;
-                soundToggleBtn.innerHTML = unmutedSvgCourse;
-                soundToggleBtn.title = 'Mute';
-            } else {
-                coursePreviewVideo.muted = true;
-                soundToggleBtn.innerHTML = mutedSvgCourse;
-                soundToggleBtn.title = 'Unmute';
-            }
-        });
+        };
+        videoPlayBtn.addEventListener('click', toggleCourseVideo);
+        videoPlayBtn.addEventListener('touchend', toggleCourseVideo);
     }
 
     // Mobile Hamburger Menu Toggle
@@ -503,62 +403,35 @@ document.addEventListener('DOMContentLoaded', () => {
         const playIcon = item.querySelector('.play-icon');
 
         if (video) {
-            // Click on play icon to toggle play/pause (user interaction - unmute)
+            // Play icon click/touch handler
             if (playIcon) {
-                playIcon.addEventListener('click', (e) => {
+                const toggleTestimonialVideo = (e) => {
+                    e.preventDefault();
                     e.stopPropagation();
                     userTriggeredPlay = true;
                     isAutoPlay = false;
 
-                    // If video is playing, pause it
-                    if (!video.paused) {
+                    if (video.paused) {
+                        // Unmute and play
+                        video.muted = false;
+                        video.play();
+                    } else {
                         video.pause();
-                        item.classList.remove('playing');
-                        playIcon.textContent = '▶';
-                        return;
                     }
-
-                    // Pause all other videos and mute them
-                    ugcItems.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            const otherVideo = otherItem.querySelector('video');
-                            const otherPlayIcon = otherItem.querySelector('.play-icon');
-                            if (otherVideo) {
-                                otherVideo.pause();
-                                otherVideo.muted = true;
-                                otherItem.classList.remove('playing');
-                                if (otherPlayIcon) otherPlayIcon.textContent = '▶';
-                            }
-                        }
-                    });
-
-                    // Unmute BEFORE playing to ensure audio works on mobile
-                    video.muted = false;
-                    // Play the current video
-                    video.play();
-                    item.classList.add('playing');
-                    playIcon.textContent = '❚❚';
-                });
+                };
+                playIcon.addEventListener('click', toggleTestimonialVideo);
+                playIcon.addEventListener('touchend', toggleTestimonialVideo);
             }
 
-            // Also allow clicking on the video itself to toggle play/pause
-            video.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (playIcon) {
-                    playIcon.click(); // Trigger the same logic as play icon
-                }
-            });
-
-            // Sync play state with native controls
+            // Sync play state with native controls - unmute when user plays
             video.addEventListener('play', () => {
                 item.classList.add('playing');
                 if (playIcon) playIcon.textContent = '❚❚';
 
-                // Only unmute if this is a user-triggered play (not autoplay)
-                // Check if this is the first video and it's autoplaying
+                // Only unmute if this is NOT the first video's autoplay
                 const isFirstVideo = item === ugcItems[0];
                 if (!isFirstVideo || !isAutoPlay) {
-                    // Unmute when user plays via native controls
+                    // Unmute when user plays via native controls or play button
                     video.muted = false;
                 }
                 // After first user interaction, mark autoplay as complete
@@ -587,96 +460,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Track that user manually paused (not auto-paused by leaving section)
                 userPausedVideo = true;
             });
-
-            // =========================================================
-            // CUSTOM CONTROLS FUNCTIONALITY
-            // =========================================================
-            const customControls = item.querySelector('.custom-controls');
-            const seekBar = item.querySelector('.ctrl-seek');
-            const muteBtn = item.querySelector('.ctrl-mute');
-            const volumeBar = item.querySelector('.ctrl-volume');
-            const timeDisplay = item.querySelector('.ctrl-time');
-            const fullscreenBtn = item.querySelector('.ctrl-fullscreen');
-
-            // Format time as M:SS
-            const formatTime = (seconds) => {
-                if (isNaN(seconds)) return '0:00';
-                const mins = Math.floor(seconds / 60);
-                const secs = Math.floor(seconds % 60);
-                return `${mins}:${secs.toString().padStart(2, '0')}`;
-            };
-
-            // Update seek bar and time display as video plays
-            video.addEventListener('timeupdate', () => {
-                if (seekBar && video.duration) {
-                    const progress = (video.currentTime / video.duration) * 100;
-                    seekBar.value = progress;
-                }
-                if (timeDisplay) {
-                    timeDisplay.textContent = formatTime(video.currentTime);
-                }
-            });
-
-            // Seek when user drags/clicks seek bar
-            if (seekBar) {
-                seekBar.addEventListener('input', (e) => {
-                    e.stopPropagation();
-                    const seekTo = (parseFloat(seekBar.value) / 100) * video.duration;
-                    video.currentTime = seekTo;
-                });
-                seekBar.addEventListener('click', (e) => e.stopPropagation());
-            }
-
-            // Mute/unmute toggle
-            if (muteBtn) {
-                muteBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    video.muted = !video.muted;
-                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
-                });
-            }
-
-            // Volume control
-            if (volumeBar) {
-                volumeBar.addEventListener('input', (e) => {
-                    e.stopPropagation();
-                    video.volume = parseFloat(volumeBar.value) / 100;
-                    video.muted = video.volume === 0;
-                    if (muteBtn) {
-                        muteBtn.textContent = video.muted ? '🔇' : '🔊';
-                    }
-                });
-                volumeBar.addEventListener('click', (e) => e.stopPropagation());
-            }
-
-            // Fullscreen toggle
-            if (fullscreenBtn) {
-                fullscreenBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                    } else if (video.webkitEnterFullscreen) {
-                        video.webkitEnterFullscreen(); // iOS Safari
-                    } else if (video.webkitRequestFullscreen) {
-                        video.webkitRequestFullscreen();
-                    }
-                });
-            }
-
-            // Sync mute button with actual video state
-            video.addEventListener('volumechange', () => {
-                if (muteBtn) {
-                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
-                }
-                if (volumeBar) {
-                    volumeBar.value = video.muted ? 0 : video.volume * 100;
-                }
-            });
-
-            // Prevent custom controls clicks from triggering video play/pause
-            if (customControls) {
-                customControls.addEventListener('click', (e) => e.stopPropagation());
-            }
         }
     });
 

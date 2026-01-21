@@ -1271,33 +1271,7 @@ button {
     transform: translate(-50%, -50%);
 }
 
-/* Hide ALL native video overlay play buttons on iOS/Safari/Chrome */
-.video-container-framed video::-webkit-media-controls-start-playback-button,
-.video-container-framed video::-webkit-media-controls-play-button,
-.video-container-framed video::-webkit-media-controls-overlay-play-button {
-    display: none !important;
-    -webkit-appearance: none;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-/* Hide the native overlay enclosure completely */
-.video-container-framed video::-webkit-media-controls-enclosure,
-.video-container-framed video::-webkit-media-controls-overlay-enclosure {
-    display: none !important;
-    opacity: 0 !important;
-}
-
-/* For videos without controls attribute - hide everything */
-.video-container-framed video:not([controls])::-webkit-media-controls {
-    display: none !important;
-    -webkit-appearance: none;
-}
-
-.video-container-framed video:not([controls])::-webkit-media-controls-panel {
-    display: none !important;
-    -webkit-appearance: none;
-}
+/* Native controls are now visible - no hiding */
 
 .video-play-btn {
     position: absolute;
@@ -1324,12 +1298,13 @@ button {
 }
 
 .video-play-btn.hidden {
+    display: none !important;
     opacity: 0;
     pointer-events: none;
 }
 
 .video-play-btn.playing {
-    opacity: 0.7;
+    opacity: 0;
 }
 
 @media (max-width: 768px) {
@@ -1460,16 +1435,21 @@ button {
     display: block;
 }
 
-/* Hide ALL native video controls on testimonial videos */
-.ugc-item video::-webkit-media-controls,
-.ugc-item video::-webkit-media-controls-enclosure,
-.ugc-item video::-webkit-media-controls-panel,
-.ugc-item video::-webkit-media-controls-start-playback-button,
-.ugc-item video::-webkit-media-controls-overlay-play-button {
+/* Hide native overlay play button only - keep bottom controls visible */
+.video-container-framed video::-webkit-media-controls-overlay-play-button,
+.video-container-framed video::-webkit-media-controls-start-playback-button {
     display: none !important;
     -webkit-appearance: none;
     opacity: 0 !important;
-    pointer-events: none !important;
+}
+
+/* Native controls are now visible on testimonial videos */
+/* Hide native overlay play button only - keep bottom controls visible */
+.ugc-item video::-webkit-media-controls-overlay-play-button,
+.ugc-item video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0 !important;
 }
 
 /* Play Icon - Show on mobile with smaller size */
@@ -1492,10 +1472,9 @@ button {
     z-index: 10;
 }
 
-/* Hide play icon during playback */
+/* Hide play icon during playback but keep clickable for pause */
 .ugc-item.playing .play-icon {
     opacity: 0;
-    pointer-events: none;
 }
 
 .ugc-item:hover .play-icon {

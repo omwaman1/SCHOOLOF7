@@ -174,15 +174,8 @@
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
-                <video muted preload="none" id="coursePreviewVideo" playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
+                <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
                 <div class="video-play-btn" id="videoPlayBtn">▶</div>
-                <div class="custom-controls" id="courseControls">
-                    <button class="ctrl-mute" id="courseCtrlMute" title="Mute">🔊</button>
-                    <input type="range" class="ctrl-seek" id="courseCtrlSeek" value="0" min="0" max="100" step="0.1">
-                    <span class="ctrl-time" id="courseCtrlTime">0:00</span>
-                    <input type="range" class="ctrl-volume" id="courseCtrlVolume" value="100" min="0" max="100" title="Volume">
-                    <button class="ctrl-fullscreen" id="courseCtrlFullscreen" title="Fullscreen">⛶</button>
-                </div>
             </div>
             <h3 class="video-caption" style="color: #67635f;">" Don't Start a Business Blind - Buy the Map "</h3>
         </div>
@@ -201,63 +194,28 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
                     <div class="play-icon">▶</div>
-                    <div class="custom-controls">
-                        <button class="ctrl-mute" title="Unmute">�</button>
-                        <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
-                        <span class="ctrl-time">0:00</span>
-                        <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
-                        <button class="ctrl-fullscreen" title="Fullscreen">⛶</button>
-                    </div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
                     <div class="play-icon">▶</div>
-                    <div class="custom-controls">
-                        <button class="ctrl-mute" title="Mute">🔊</button>
-                        <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
-                        <span class="ctrl-time">0:00</span>
-                        <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
-                        <button class="ctrl-fullscreen" title="Fullscreen">⛶</button>
-                    </div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
                     <div class="play-icon">▶</div>
-                    <div class="custom-controls">
-                        <button class="ctrl-mute" title="Mute">🔊</button>
-                        <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
-                        <span class="ctrl-time">0:00</span>
-                        <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
-                        <button class="ctrl-fullscreen" title="Fullscreen">⛶</button>
-                    </div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
                     <div class="play-icon">▶</div>
-                    <div class="custom-controls">
-                        <button class="ctrl-mute" title="Mute">🔊</button>
-                        <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
-                        <span class="ctrl-time">0:00</span>
-                        <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
-                        <button class="ctrl-fullscreen" title="Fullscreen">⛶</button>
-                    </div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video preload="none" muted loop playsinline poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
                     <div class="play-icon">▶</div>
-                    <div class="custom-controls">
-                        <button class="ctrl-mute" title="Mute">🔊</button>
-                        <input type="range" class="ctrl-seek" value="0" min="0" max="100" step="0.1">
-                        <span class="ctrl-time">0:00</span>
-                        <input type="range" class="ctrl-volume" value="100" min="0" max="100" title="Volume">
-                        <button class="ctrl-fullscreen" title="Fullscreen">⛶</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -389,7 +347,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(100, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -406,7 +364,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(200, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
