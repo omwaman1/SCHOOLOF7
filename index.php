@@ -119,7 +119,7 @@
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★☆ (2,002)</div>
+                    <div class="rating">★★★★☆ (20,002)</div>
                 </div>
             </div>
             <!-- Card 2 -->
