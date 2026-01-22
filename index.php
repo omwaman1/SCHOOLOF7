@@ -342,7 +342,6 @@
                 <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">3 Years Access to Course</li>
                     <li class="check">Downloadable PDF Course Notes</li>
                     <li class="check">Course Virtual Community</li>
                     <li class="check">Course Upgrades at Zero Cost</li>
@@ -360,7 +359,6 @@
                 <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">3 Years Access to Course</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
                     <li class="cross">Course Virtual Community</li>
                     <li class="cross">Course Upgrades at Zero Cost</li>
