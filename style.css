@@ -1452,6 +1452,18 @@ button {
     opacity: 0 !important;
 }
 
+/* Hide native play button in control bar on mobile - use custom center button instead */
+@media (max-width: 768px) {
+
+    .video-container-framed video::-webkit-media-controls-play-button,
+    .ugc-item video::-webkit-media-controls-play-button {
+        opacity: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
 /* Play Icon - Show on mobile with smaller size */
 .play-icon {
     position: absolute;
