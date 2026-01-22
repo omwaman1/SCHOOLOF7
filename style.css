@@ -1308,10 +1308,11 @@ button {
 }
 
 @media (max-width: 768px) {
-
-    /* Hide custom play button on mobile - native controls handle playback */
     .video-play-btn {
-        display: none !important;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
     }
 }
 
@@ -1481,10 +1482,12 @@ button {
     background: rgba(0, 0, 0, 0.8);
 }
 
-/* Hide custom play icon on mobile - native controls handle playback */
+/* Custom play icons sized for mobile */
 @media (max-width: 768px) {
     .play-icon {
-        display: none !important;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
 }
 
