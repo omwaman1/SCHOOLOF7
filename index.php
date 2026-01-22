@@ -11,6 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload the logo font to prevent flash of unstyled text -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVvHOtOGkgUQJPPI.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -18,7 +20,27 @@
             background-color: #e7eef8 !important;
             background: #e7eef8 !important;
         }
+        /* Hide logo text until font loads to prevent FOUT */
+        .logo a, .footer-logo {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .fonts-loaded .logo a,
+        .fonts-loaded .footer-logo {
+            opacity: 1;
+        }
     </style>
+    <script>
+        // Check if Luckiest Guy font is loaded
+        if (document.fonts) {
+            document.fonts.ready.then(function() {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        } else {
+            // Fallback for browsers without Font Loading API
+            document.documentElement.classList.add('fonts-loaded');
+        }
+    </script>
 </head>
 
 <body>
@@ -177,7 +199,7 @@
                 <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
                 <div class="video-play-btn" id="videoPlayBtn">▶</div>
             </div>
-            <h3 class="video-caption" style="color: #67635f;">" Don't Start a Business Blind - Buy the Map "</h3>
+            <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" Don't Start a Business Blind - Buy the Map "</h3>
         </div>
     </section>
 

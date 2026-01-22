@@ -15,9 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
             /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     };
 
-    // Sequential video loader - loads videos one after another
+    // Sequential video loader - loads videos one after another (iOS-friendly)
     const videoQueue = [];
     let isLoadingVideo = false;
+    let loadTimeout = null;
 
     const loadNextVideo = () => {
         if (isLoadingVideo || videoQueue.length === 0) return;
@@ -33,26 +34,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log('Loading video:', src.split('/').pop());
 
-        video.addEventListener('canplaythrough', function onCanPlay() {
-            video.removeEventListener('canplaythrough', onCanPlay);
-            console.log('Video loaded:', src.split('/').pop());
+        // Track if we've already moved to next video
+        let hasProceeded = false;
+        const proceedToNext = () => {
+            if (hasProceeded) return;
+            hasProceeded = true;
+            clearTimeout(loadTimeout);
             isLoadingVideo = false;
+            console.log('Video ready:', src.split('/').pop());
             // Load next video after a small delay
             setTimeout(loadNextVideo, 100);
-        }, { once: true });
+        };
+
+        // iOS-friendly: Listen to multiple events since iOS doesn't always fire canplaythrough
+        const eventHandler = () => proceedToNext();
+
+        // canplay is more reliable on iOS than canplaythrough
+        video.addEventListener('canplay', eventHandler, { once: true });
+        video.addEventListener('loadeddata', eventHandler, { once: true });
+        video.addEventListener('canplaythrough', eventHandler, { once: true });
 
         video.addEventListener('error', function onError() {
             console.log('Video error, skipping:', src.split('/').pop());
-            isLoadingVideo = false;
-            loadNextVideo();
+            proceedToNext();
         }, { once: true });
 
+        // Fallback timeout - if video doesn't load in 8 seconds, move on
+        // This prevents the queue from getting stuck on slow connections or iOS issues
+        loadTimeout = setTimeout(() => {
+            console.log('Video load timeout, proceeding:', src.split('/').pop());
+            proceedToNext();
+        }, 8000);
+
+        // Set source and attempt to load
         video.src = src;
+
+        // iOS needs explicit load() call
         video.load();
 
         if (autoplay) {
             video.play().catch(() => {
-                console.log('Autoplay blocked');
+                console.log('Autoplay blocked for:', src.split('/').pop());
             });
         }
     };
@@ -798,14 +820,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
 
     // =========================================================================
-    // MENTOR SECTION - DYNAMIC HEADLINE ON HOVER
+    // MENTOR SECTION - DYNAMIC HEADLINE ON TAP/CLICK (Touch-friendly)
     // =========================================================================
     const mentorHeadline = document.querySelector('.mentor-headline');
     const mentorLinks = document.querySelectorAll('.mentor-link');
     const defaultHeadlineText = mentorHeadline ? mentorHeadline.innerHTML : '';
 
+    // Detect if device supports touch (used to disable mouseenter on touch devices)
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
     if (mentorHeadline && mentorLinks.length > 0) {
-        // Function to handle tab change (used by both click and hover)
+        // Function to handle tab change
         const handleTabChange = (link) => {
             // Remove active class from all links
             mentorLinks.forEach(l => l.classList.remove('active'));
@@ -827,39 +852,49 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         mentorLinks.forEach(link => {
-            // Desktop: hover effect
-            link.addEventListener('mouseenter', () => {
+            // Desktop only: hover effect (disabled on touch devices to prevent iOS auto-touch issues)
+            if (!isTouchDevice) {
+                link.addEventListener('mouseenter', () => {
+                    handleTabChange(link);
+                });
+            }
+
+            // Touch devices: use touchend for reliable tap detection
+            link.addEventListener('touchend', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 handleTabChange(link);
             });
 
-            // Mobile: click/tap effect
+            // Also handle click for non-touch and accessibility (keyboard users)
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                handleTabChange(link);
+                // On touch devices, touchend already handled it, but click still fires
+                // This is mainly for keyboard/accessibility on desktop
+                if (!isTouchDevice) {
+                    handleTabChange(link);
+                }
             });
         });
 
-        // Reset to default on mouse leave from the entire links container (desktop only)
+        // Reset to default on mouse leave from the entire links container (desktop only, non-touch)
         const mentorLinksContainer = document.querySelector('.mentor-links');
-        if (mentorLinksContainer) {
+        if (mentorLinksContainer && !isTouchDevice) {
             mentorLinksContainer.addEventListener('mouseleave', () => {
-                // Only reset on desktop (not touch devices)
-                if (window.innerWidth > 768) {
-                    // Set mission as active (first link)
-                    mentorLinks.forEach((l, i) => {
-                        if (i === 0) l.classList.add('active');
-                        else l.classList.remove('active');
-                    });
+                // Set mission as active (first link)
+                mentorLinks.forEach((l, i) => {
+                    if (i === 0) l.classList.add('active');
+                    else l.classList.remove('active');
+                });
 
-                    mentorHeadline.style.opacity = '0';
-                    mentorHeadline.style.transform = 'translateY(10px)';
+                mentorHeadline.style.opacity = '0';
+                mentorHeadline.style.transform = 'translateY(10px)';
 
-                    setTimeout(() => {
-                        mentorHeadline.innerHTML = defaultHeadlineText;
-                        mentorHeadline.style.opacity = '1';
-                        mentorHeadline.style.transform = 'translateY(0)';
-                    }, 200);
-                }
+                setTimeout(() => {
+                    mentorHeadline.innerHTML = defaultHeadlineText;
+                    mentorHeadline.style.opacity = '1';
+                    mentorHeadline.style.transform = 'translateY(0)';
+                }, 200);
             });
         }
     }
