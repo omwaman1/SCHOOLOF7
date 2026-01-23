@@ -2,20 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Rhode Skin Fresh Build Loaded');
 
     // =========================================================
-    // SAFARI DETECTION & POSTER FIX
-    // Safari has issues with preload="none" not showing poster
-    // =========================================================
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    // Fix Safari poster issue - change preload from "none" to "metadata"
-    if (isSafari) {
-        document.querySelectorAll('video[preload="none"]').forEach(video => {
-            video.preload = 'metadata';
-            console.log('Safari: Changed preload to metadata for poster visibility');
-        });
-    }
-
-    // =========================================================
     // SEQUENTIAL VIDEO LOADING - One at a time for performance
     // =========================================================
     const heroVideo = document.getElementById('heroVideo');
