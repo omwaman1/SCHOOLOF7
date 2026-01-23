@@ -197,7 +197,6 @@
         <div class="video-container-framed">
             <div class="video-wrapper">
                 <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
-                <div class="center-play-btn">▶</div>
             </div>
             <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" Don't Start a Business Blind - Buy the Map "</h3>
         </div>
@@ -217,27 +216,22 @@
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
                     <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
-                    <div class="center-play-btn">▶</div>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
                     <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
-                    <div class="center-play-btn">▶</div>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
                     <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
-                    <div class="center-play-btn">▶</div>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
                     <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
-                    <div class="center-play-btn">▶</div>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
                     <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
-                    <div class="center-play-btn">▶</div>
                 </div>
             </div>
         </div>
