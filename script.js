@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Rhode Skin Fresh Build Loaded');
 
     // =========================================================
+    // SAFARI DETECTION - Hide custom center play buttons on Safari
+    // Safari has native center play button, other browsers don't
+    // =========================================================
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari) {
+        document.documentElement.classList.add('is-safari');
+        console.log('Safari detected - using native center play button');
+    }
+
+    // =========================================================
     // SEQUENTIAL VIDEO LOADING - One at a time for performance
     // =========================================================
     const heroVideo = document.getElementById('heroVideo');
@@ -169,37 +179,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Course Preview Video - Play button and unmute on play
-    const videoPlayBtn = document.getElementById('videoPlayBtn');
+    const coursePlayBtn = document.querySelector('.video-wrapper .center-play-btn');
+    const videoWrapper = document.querySelector('.video-wrapper');
 
     if (coursePreviewVideo) {
-        // When video plays - unmute and show pause icon
+        // When video plays - unmute and hide center button
         coursePreviewVideo.addEventListener('play', () => {
             coursePreviewVideo.muted = false;
-            if (videoPlayBtn) {
-                videoPlayBtn.textContent = '❚❚';
-                videoPlayBtn.classList.add('playing');
-            }
+            if (videoWrapper) videoWrapper.classList.add('video-playing');
+            if (coursePlayBtn) coursePlayBtn.textContent = '❚❚';
         });
 
-        // When video pauses - show play icon
+        // When video pauses - show center button
         coursePreviewVideo.addEventListener('pause', () => {
-            if (videoPlayBtn) {
-                videoPlayBtn.textContent = '▶';
-                videoPlayBtn.classList.remove('playing');
-            }
+            if (videoWrapper) videoWrapper.classList.remove('video-playing');
+            if (coursePlayBtn) coursePlayBtn.textContent = '▶';
         });
 
-        // When video ends - show play icon
+        // When video ends - show center button
         coursePreviewVideo.addEventListener('ended', () => {
-            if (videoPlayBtn) {
-                videoPlayBtn.textContent = '▶';
-                videoPlayBtn.classList.remove('playing');
-            }
+            if (videoWrapper) videoWrapper.classList.remove('video-playing');
+            if (coursePlayBtn) coursePlayBtn.textContent = '▶';
         });
     }
 
-    // Play button click handler for course preview video
-    if (videoPlayBtn && coursePreviewVideo) {
+    // Center play button click handler for course preview video
+    if (coursePlayBtn && coursePreviewVideo) {
         const toggleCourseVideo = (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -210,9 +215,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 coursePreviewVideo.pause();
             }
         };
-        videoPlayBtn.addEventListener('click', toggleCourseVideo);
-        videoPlayBtn.addEventListener('touchend', toggleCourseVideo);
+        coursePlayBtn.addEventListener('click', toggleCourseVideo);
+        coursePlayBtn.addEventListener('touchend', toggleCourseVideo);
     }
+
+    // Testimonial video center play buttons
+    document.querySelectorAll('.ugc-item').forEach(item => {
+        const video = item.querySelector('video');
+        const playBtn = item.querySelector('.center-play-btn');
+
+        if (video && playBtn) {
+            // Click handler for center play button
+            const toggleVideo = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (video.paused) {
+                    video.muted = false;
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            };
+            playBtn.addEventListener('click', toggleVideo);
+            playBtn.addEventListener('touchend', toggleVideo);
+
+            // Update button state on play/pause
+            video.addEventListener('play', () => {
+                item.classList.add('playing');
+                playBtn.textContent = '❚❚';
+            });
+            video.addEventListener('pause', () => {
+                item.classList.remove('playing');
+                playBtn.textContent = '▶';
+            });
+        }
+    });
 
     // Mobile Hamburger Menu Toggle
     const hamburgerBtn = document.getElementById('hamburgerBtn');

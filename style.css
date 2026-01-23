@@ -1436,7 +1436,53 @@ button {
 }
 
 /* Native video controls - show default browser controls */
-/* No custom play buttons - using native controls only */
+/* Center play button for non-Safari browsers (Safari has native center button) */
+
+/* Center Play Button - Fallback for non-Safari browsers */
+.center-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.center-play-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Hide center play button when video is playing */
+.video-playing .center-play-btn,
+.ugc-item.playing .center-play-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hide on Safari - class added by JavaScript */
+.is-safari .center-play-btn {
+    display: none !important;
+}
+
+/* Mobile sizing */
+@media (max-width: 768px) {
+    .center-play-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
 
 /* =============================================================================
    CUSTOM VIDEO CONTROLS - Native-like styling
