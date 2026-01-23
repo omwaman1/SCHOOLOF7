@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ? 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideomobile.mp4'
             : 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannervideodesktop.mp4';
         const heroPoster = isMobile()
-            ? 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannermobile_thumb.webp'
-            : 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannerdesktop_thumb.webp';
+            ? 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannermobile_thumb.png'
+            : 'https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/bannerdesktop_thumb.png';
         heroVideo.poster = heroPoster;
         queueVideo(heroVideo, heroSrc, true);
     }

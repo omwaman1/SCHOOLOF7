@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Masterclass | School of 7</title>
-    <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
-    <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.webp">
+    <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.png">
+    <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,7 +111,7 @@
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Learn</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.webp" alt="Digital Workshop">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
@@ -196,7 +196,7 @@
         <h2 class="video-help-title">How This Course Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
-                <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.webp"></video>
+                <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail%20video%20image.png"></video>
             </div>
             <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" Don't Start a Business Blind - Buy the Map "</h3>
         </div>
@@ -215,23 +215,23 @@
             <div class="ugc-carousel" id="ugcCarousel">
                 <!-- UGC Video Item 1 -->
                 <div class="ugc-item" data-index="0">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
                 </div>
                 <!-- UGC Video Item 2 -->
                 <div class="ugc-item" data-index="1">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
                 </div>
                 <!-- UGC Video Item 3 -->
                 <div class="ugc-item" data-index="2">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
                 </div>
                 <!-- UGC Video Item 4 -->
                 <div class="ugc-item" data-index="3">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
                 </div>
                 <!-- UGC Video Item 5 -->
                 <div class="ugc-item" data-index="4">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.webp"></video>
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
                 </div>
             </div>
         </div>
@@ -282,7 +282,7 @@
             </div>
         </div>
         <div class="curriculum-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/course-curriculom.webp" alt="Course Syllabus">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/course-curriculom.png" alt="Course Syllabus">
         </div>
     </section>
 
@@ -293,28 +293,28 @@
             <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
             <div class="audience-grid" id="audienceCarousel">
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.webp" alt="Entrepreneurs">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.png" alt="Entrepreneurs">
                     <div class="audience-info">
                         <h4> ENTREPRENEURS</h4>
                         <p> business owners looking to scale online</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.webp" alt="Freelancers">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.png" alt="Freelancers">
                     <div class="audience-info">
                         <h4> FREELANCERS</h4>
                         <p> wanting to upskill & charge more</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.webp" alt="Students">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.png" alt="Students">
                     <div class="audience-info">
                         <h4> STUDENTS</h4>
                         <p> building a global brand</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.webp" alt="Creatives">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.png" alt="Creatives">
                     <div class="audience-info">
                         <h4> CREATIVES</h4>
                         <p> artists wanting to sell their work online</p>
@@ -339,7 +339,7 @@
             </div>
         </div>
         <div class="mentor-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.webp" alt="Mr 7 - Your Mentor">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.png" alt="Mr 7 - Your Mentor">
         </div>
     </section>
 
@@ -451,7 +451,7 @@
     <!-- Section 13: Promise (Certificate) -->
     <section class="section promise-section">
         <div class="promise-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.webp" alt="Certificate of Completion">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.png" alt="Certificate of Completion">
         </div>
         <div class="promise-content">
             <h2 class="promise-title">GET certified</h2>
