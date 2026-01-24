@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Masterclass | School of 7</title>
-    <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.png">
-    <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/favicon.png">
+    <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
+    <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
