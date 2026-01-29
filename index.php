@@ -418,8 +418,12 @@
                     <div class="accordion-body">The course language is English.</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">HOW CAN I CONTACT YOU IN CASE OF DOUBTS OR CONCERNS?</button>
+                    <button class="accordion-header">HOW CAN I CONTACT IN CASE OF DOUBTS OR CONCERNS?</button>
                     <div class="accordion-body">You can mail us at Mr7@schoolof7.com</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">HOW CAN I CONTACT MR7 IN CASE OF DOUBTS RELATED TO COURSE CONCEPTS?</button>
+                    <div class="accordion-body">You can mail us your doubts/queries at Mr7@schoolof7.com</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG DO I HAVE ACCESS TO THIS COURSE?</button>
