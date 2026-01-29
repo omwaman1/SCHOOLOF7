@@ -422,7 +422,7 @@
                     <div class="accordion-body">You can mail us at Mr7@schoolof7.com</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">HOW CAN I CONTACT MR7 IN CASE OF DOUBTS RELATED TO COURSE CONCEPTS?</button>
+                    <button class="accordion-header">HOW CAN I CONTACT Mr 7 IN CASE OF DOUBTS RELATED TO COURSE CONCEPTS?</button>
                     <div class="accordion-body">You can mail us your doubts/queries at Mr7@schoolof7.com</div>
                 </div>
                 <div class="accordion-item">
