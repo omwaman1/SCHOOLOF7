@@ -25,12 +25,6 @@
         fbq('track', 'PageView');
 
         // Facebook Pixel: Purchase - Payment successful
-        window.dataLayer.push({
-            'event': 'purchase',
-            'content_name': 'Startup Masterclass',
-            'content_category': 'Course',
-            'currency': 'INR'
-        });
         fbq('track', 'Purchase', {
             content_name: 'Startup Masterclass',
             content_category: 'Course',
