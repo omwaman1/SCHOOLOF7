@@ -883,8 +883,14 @@
                             console.error('Webhook error:', webhookError);
                         }
                         
-                        // Redirect to thank you page
-                        window.location.href = '/thankyou';
+                        // Redirect to thank you page with purchase data
+                        const params = new URLSearchParams({
+                            plan: currentPlanName,
+                            amount: (currentAmount / 100),
+                            pid: response.razorpay_payment_id,
+                            oid: response.razorpay_order_id
+                        });
+                        window.location.href = '/thankyou?' + params.toString();
                     },
                     modal: {
                         ondismiss: function() {

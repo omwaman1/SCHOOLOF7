@@ -24,13 +24,36 @@
         fbq('init', '879330084480824');
         fbq('track', 'PageView');
 
-        // Facebook Pixel: Purchase - Payment successful
-        fbq('track', 'Purchase', {
-            content_name: 'Startup Masterclass',
-            content_category: 'Course',
-            currency: 'INR'
-        });
-        console.log('FB Pixel: Purchase fired');
+        // Get purchase data from URL parameters
+        var urlParams = new URLSearchParams(window.location.search);
+        var purchasePlan = urlParams.get('plan');
+        var purchaseAmount = parseFloat(urlParams.get('amount'));
+        var paymentId = urlParams.get('pid');
+        var orderId = urlParams.get('oid');
+
+        // Only fire Purchase event if we have valid purchase data (not direct page visit)
+        if (paymentId && purchaseAmount > 0) {
+            // Facebook Pixel: Purchase - Payment successful
+            fbq('track', 'Purchase', {
+                content_name: purchasePlan || 'Startup Masterclass',
+                content_category: 'Course',
+                value: purchaseAmount,
+                currency: 'INR'
+            }, {eventID: paymentId});
+            console.log('FB Pixel: Purchase fired - Amount:', purchaseAmount, 'Plan:', purchasePlan, 'PaymentID:', paymentId);
+
+            // Push to dataLayer
+            window.dataLayer.push({
+                'event': 'purchase',
+                'content_name': purchasePlan || 'Startup Masterclass',
+                'value': purchaseAmount,
+                'currency': 'INR',
+                'payment_id': paymentId,
+                'order_id': orderId
+            });
+        } else {
+            console.warn('FB Pixel: Purchase NOT fired - missing payment data (direct page visit?)');
+        }
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
@@ -46,16 +69,22 @@
         gtag('js', new Date());
         gtag('config', 'G-6QJHLP6W66');
 
-        // GA4 Event: purchase
-        gtag('event', 'purchase', {
-            currency: 'INR',
-            transaction_id: 'TXN_' + Date.now(),
-            items: [{
-                item_name: 'Startup Masterclass',
-                item_category: 'Course'
-            }]
-        });
-        console.log('GA4: Purchase fired');
+        // Only fire GA4 purchase if we have valid purchase data
+        if (paymentId && purchaseAmount > 0) {
+            gtag('event', 'purchase', {
+                currency: 'INR',
+                value: purchaseAmount,
+                transaction_id: paymentId,
+                items: [{
+                    item_name: purchasePlan || 'Startup Masterclass',
+                    item_category: 'Course',
+                    price: purchaseAmount
+                }]
+            });
+            console.log('GA4: Purchase fired');
+        } else {
+            console.warn('GA4: Purchase NOT fired - missing payment data');
+        }
     </script>
     <!-- End Google Analytics 4 -->
 
