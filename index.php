@@ -137,7 +137,7 @@
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
-                    <h3 class="card-big-title">product</h3>
+                    <h3 class="card-big-title">inconsistent cash-flow</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Basic Access Hover" class="card-img-hover">
@@ -147,18 +147,18 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">BUILDING PRODUCT</h4>
+                        <h4 class="product-name">FUND RAISING</h4>
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★☆ (20,002)</div>
+                    <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">idea noise</span>
-                    <h3 class="card-big-title">idea</h3>
+                    <h3 class="card-big-title">idea validation</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Pro Hover" class="card-img-hover">
@@ -179,7 +179,7 @@
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">money</span>
-                    <h3 class="card-big-title">finance</h3>
+                    <h3 class="card-big-title">product building</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Elite Hover" class="card-img-hover">
@@ -189,11 +189,11 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">FUND RAISING</h4>
+                        <h4 class="product-name">SCALING PRODUCT</h4>
                         <span class="price">SCALE</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★★ (13,231)</div>
+                    <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
         </div>
