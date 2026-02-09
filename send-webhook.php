@@ -24,7 +24,7 @@ if (!$input) {
 }
 
 // Pabbly webhook URL
-$webhookUrl = 'https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjcwNTZjMDYzNzA0MzA1MjZkNTUzNjUxMzIi_pc';
+$webhookUrl = 'https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjcwNTZjMDYzNzA0MzQ1MjY1NTUzZDUxM2Ei_pc';
 
 // Prepare data for webhook
 $webhookData = [
@@ -36,6 +36,14 @@ $webhookData = [
     'amount' => $input['amount'] ?? 0,
     'payment_id' => $input['payment_id'] ?? '',
     'order_id' => $input['order_id'] ?? '',
+    'event_type' => $input['event_type'] ?? 'payment_completed',
+    'page_url' => $input['page_url'] ?? '',
+    'utm_source' => $input['utm_source'] ?? '',
+    'utm_medium' => $input['utm_medium'] ?? '',
+    'utm_campaign' => $input['utm_campaign'] ?? '',
+    'utm_term' => $input['utm_term'] ?? '',
+    'utm_content' => $input['utm_content'] ?? '',
+    'referrer' => $input['referrer'] ?? '',
     'timestamp' => date('Y-m-d H:i:s')
 ];
 

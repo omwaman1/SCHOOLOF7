@@ -905,6 +905,40 @@
                 });
             }
 
+            // Fire webhook when user submits contact details (before payment)
+            try {
+                // Capture full page URL with UTM parameters
+                const pageUrl = window.location.href;
+                const urlParams = new URLSearchParams(window.location.search);
+
+                await fetch('send-webhook.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: customerName,
+                        email: customerEmail,
+                        phone: customerPhone,
+                        plan_name: currentPlanName,
+                        course_url: currentCourseUrl,
+                        amount: currentAmount / 100,
+                        payment_id: 'pending',
+                        order_id: 'pending',
+                        event_type: 'lead_submitted',
+                        page_url: pageUrl,
+                        utm_source: urlParams.get('utm_source') || '',
+                        utm_medium: urlParams.get('utm_medium') || '',
+                        utm_campaign: urlParams.get('utm_campaign') || '',
+                        utm_term: urlParams.get('utm_term') || '',
+                        utm_content: urlParams.get('utm_content') || '',
+                        referrer: document.referrer || ''
+                    })
+                });
+                console.log('Lead webhook sent successfully with UTM data');
+            } catch (webhookError) {
+                console.error('Lead webhook error:', webhookError);
+                // Don't block the flow if webhook fails
+            }
+
             closeContactModal();
             
             try {
@@ -966,26 +1000,6 @@
                         color: '#4e6a47'
                     },
                     handler: async function(response) {
-                        // Send data to webhook via server-side PHP
-                        try {
-                            await fetch('send-webhook.php', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({
-                                    name: customerName,
-                                    email: customerEmail,
-                                    phone: customerPhone,
-                                    plan_name: currentPlanName,
-                                    course_url: currentCourseUrl,
-                                    amount: currentAmount / 100,
-                                    payment_id: response.razorpay_payment_id,
-                                    order_id: response.razorpay_order_id
-                                })
-                            });
-                        } catch (webhookError) {
-                            console.error('Webhook error:', webhookError);
-                        }
-                        
                         // Redirect to thank you page with purchase data
                         const params = new URLSearchParams({
                             plan: currentPlanName,
