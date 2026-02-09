@@ -30,7 +30,15 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879330084480824');
+
+        // Initialize with automatic advanced matching enabled
+        fbq('init', '879330084480824', {
+            em: 'enable',
+            ph: 'enable',
+            external_id: 'enable'
+        });
+
+        // Track PageView
         fbq('track', 'PageView');
 
         // Get purchase data from URL parameters
@@ -42,23 +50,72 @@
 
         // Only fire Purchase event if we have valid purchase data (not direct page visit)
         if (paymentId && purchaseAmount > 0) {
-            // Facebook Pixel: Purchase - Payment successful
+            // Determine product ID
+            var productId = (purchasePlan && purchasePlan.includes('Advanced'))
+                ? 'advanced-plan-2026'
+                : 'standard-plan-2026';
+
+            // Facebook Pixel: Purchase - Payment successful with complete data
             fbq('track', 'Purchase', {
                 content_name: purchasePlan || 'Startup Masterclass',
                 content_category: 'Course',
+                content_ids: [productId],
+                content_type: 'product',
                 value: purchaseAmount,
-                currency: 'INR'
-            }, {eventID: paymentId});
-            console.log('FB Pixel: Purchase fired - Amount:', purchaseAmount, 'Plan:', purchasePlan, 'PaymentID:', paymentId);
+                currency: 'INR',
+                num_items: 1,
+                // Optional: Include predicted_ltv for value optimization
+                predicted_ltv: purchaseAmount * 1.5 // Estimate customer lifetime value
+            }, {
+                eventID: paymentId // Use payment ID for deduplication with server events
+            });
+            console.log('FB Pixel: Purchase fired - Amount:', purchaseAmount, 'Plan:', purchasePlan, 'EventID:', paymentId);
 
-            // Push to dataLayer
+            // Push to dataLayer for GTM/GA4
             window.dataLayer.push({
                 'event': 'purchase',
                 'content_name': purchasePlan || 'Startup Masterclass',
+                'content_ids': [productId],
+                'content_type': 'product',
                 'value': purchaseAmount,
                 'currency': 'INR',
+                'num_items': 1,
                 'payment_id': paymentId,
-                'order_id': orderId
+                'order_id': orderId,
+                'transaction_id': paymentId
+            });
+
+            // Send server-side event via PHP for deduplication
+            // This sends the same event to Facebook Conversions API to prevent ad blocker issues
+            fetch('/send-fb-conversion.php', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    event_name: 'Purchase',
+                    event_id: paymentId,
+                    event_time: Math.floor(Date.now() / 1000),
+                    action_source: 'website',
+                    event_source_url: window.location.href,
+                    custom_data: {
+                        content_name: purchasePlan || 'Startup Masterclass',
+                        content_category: 'Course',
+                        content_ids: [productId],
+                        content_type: 'product',
+                        value: purchaseAmount,
+                        currency: 'INR',
+                        num_items: 1
+                    },
+                    order_id: orderId,
+                    payment_id: paymentId
+                })
+            }).then(res => {
+                if (res.ok) {
+                    console.log('Server-side Purchase event sent to Facebook Conversions API');
+                } else {
+                    console.warn('Server-side event failed:', res.status);
+                }
+            }).catch(err => {
+                console.error('Server-side conversion error:', err);
             });
         } else {
             console.warn('FB Pixel: Purchase NOT fired - missing payment data (direct page visit?)');
@@ -80,17 +137,27 @@
 
         // Only fire GA4 purchase if we have valid purchase data
         if (paymentId && purchaseAmount > 0) {
+            var productId = (purchasePlan && purchasePlan.includes('Advanced'))
+                ? 'advanced-plan-2026'
+                : 'standard-plan-2026';
+
             gtag('event', 'purchase', {
                 currency: 'INR',
                 value: purchaseAmount,
                 transaction_id: paymentId,
+                affiliation: 'School of 7 Website',
+                tax: 0,
+                shipping: 0,
                 items: [{
+                    item_id: productId,
                     item_name: purchasePlan || 'Startup Masterclass',
                     item_category: 'Course',
-                    price: purchaseAmount
+                    item_category2: 'Online Education',
+                    price: purchaseAmount,
+                    quantity: 1
                 }]
             });
-            console.log('GA4: Purchase fired');
+            console.log('GA4: Purchase fired with transaction_id:', paymentId);
         } else {
             console.warn('GA4: Purchase NOT fired - missing payment data');
         }

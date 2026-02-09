@@ -667,6 +667,11 @@
         // Try to load Razorpay when page loads
         loadRazorpay().catch(err => console.warn('Initial Razorpay load failed:', err.message));
 
+        // Utility: Generate unique event ID for deduplication
+        function generateEventID() {
+            return 'evt_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+
         // Facebook Pixel: ViewContent - Track when user views pricing section
         let pricingViewed = false;
         const pricingSection = document.getElementById('pricing');
@@ -675,33 +680,48 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting && !pricingViewed) {
                         pricingViewed = true;
+                        const eventID = generateEventID();
+
                         // DataLayer push
                         window.dataLayer.push({
                             'event': 'viewContent',
                             'content_name': 'Startup Masterclass Pricing',
                             'content_category': 'Course',
-                            'content_type': 'product'
+                            'content_type': 'product',
+                            'content_ids': ['startup-masterclass-2026'],
+                            'value': 1899,
+                            'currency': 'INR',
+                            'eventID': eventID
                         });
+
                         // Facebook Pixel
                         if (typeof fbq !== 'undefined') {
                             fbq('track', 'ViewContent', {
                                 content_name: 'Startup Masterclass Pricing',
                                 content_category: 'Course',
-                                content_type: 'product'
-                            });
+                                content_type: 'product',
+                                content_ids: ['startup-masterclass-2026'],
+                                value: 1899,
+                                currency: 'INR'
+                            }, {eventID: eventID});
+                            console.log('FB Pixel: ViewContent fired with eventID:', eventID);
+                        } else {
+                            console.warn('FB Pixel blocked - ViewContent event lost');
                         }
+
                         // GA4 Event
                         if (typeof gtag !== 'undefined') {
                             gtag('event', 'view_item', {
                                 currency: 'INR',
                                 value: 1899,
                                 items: [{
+                                    item_id: 'startup-masterclass-2026',
                                     item_name: 'Startup Masterclass Pricing',
-                                    item_category: 'Course'
+                                    item_category: 'Course',
+                                    price: 1899
                                 }]
                             });
                         }
-                        console.log('FB Pixel & GA4: ViewContent fired');
                     }
                 });
             }, { threshold: 0.3 });
@@ -713,65 +733,98 @@
             currentPlanName = planName;
             currentCourseUrl = courseUrl || '';
 
+            // Determine product ID based on plan
+            const productId = planName.includes('Advanced') ? 'advanced-plan-2026' : 'standard-plan-2026';
+            const eventIDCheckout = generateEventID();
+
             // Facebook Pixel: InitiateCheckout - User clicked Enroll Now
             window.dataLayer.push({
                 'event': 'initiateCheckout',
                 'content_name': planName,
+                'content_ids': [productId],
+                'content_type': 'product',
                 'value': amountInPaise / 100,
-                'currency': 'INR'
+                'currency': 'INR',
+                'num_items': 1,
+                'eventID': eventIDCheckout
             });
+
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'InitiateCheckout', {
                     content_name: planName,
+                    content_category: 'Course',
+                    content_ids: [productId],
+                    content_type: 'product',
                     value: amountInPaise / 100,
-                    currency: 'INR'
-                });
+                    currency: 'INR',
+                    num_items: 1
+                }, {eventID: eventIDCheckout});
+                console.log('FB Pixel: InitiateCheckout fired with eventID:', eventIDCheckout);
+            } else {
+                console.warn('FB Pixel blocked - InitiateCheckout event lost');
             }
+
             // GA4 Event: begin_checkout
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'begin_checkout', {
                     currency: 'INR',
                     value: amountInPaise / 100,
                     items: [{
+                        item_id: productId,
                         item_name: planName,
                         item_category: 'Course',
-                        price: amountInPaise / 100
+                        price: amountInPaise / 100,
+                        quantity: 1
                     }]
                 });
             }
-            console.log('FB Pixel & GA4: InitiateCheckout fired');
 
             document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm').reset();
             document.getElementById('contactModal').style.display = 'flex';
 
             // Facebook Pixel: AddToCart - Modal opened
+            const eventIDCart = generateEventID();
             window.dataLayer.push({
                 'event': 'addToCart',
                 'content_name': planName,
+                'content_ids': [productId],
+                'content_type': 'product',
                 'value': amountInPaise / 100,
-                'currency': 'INR'
+                'currency': 'INR',
+                'num_items': 1,
+                'eventID': eventIDCart
             });
+
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'AddToCart', {
                     content_name: planName,
+                    content_category: 'Course',
+                    content_ids: [productId],
+                    content_type: 'product',
                     value: amountInPaise / 100,
-                    currency: 'INR'
-                });
+                    currency: 'INR',
+                    num_items: 1
+                }, {eventID: eventIDCart});
+                console.log('FB Pixel: AddToCart fired with eventID:', eventIDCart);
+            } else {
+                console.warn('FB Pixel blocked - AddToCart event lost');
             }
+
             // GA4 Event: add_to_cart
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'add_to_cart', {
                     currency: 'INR',
                     value: amountInPaise / 100,
                     items: [{
+                        item_id: productId,
                         item_name: planName,
                         item_category: 'Course',
-                        price: amountInPaise / 100
+                        price: amountInPaise / 100,
+                        quantity: 1
                     }]
                 });
             }
-            console.log('FB Pixel & GA4: AddToCart fired');
         }
         
         function closeContactModal() {
@@ -785,32 +838,72 @@
             customerEmail = document.getElementById('customerEmail').value;
             customerPhone = document.getElementById('customerPhone').value;
 
-            // Facebook Pixel: Lead - User submitted contact form
+            const productId = currentPlanName.includes('Advanced') ? 'advanced-plan-2026' : 'standard-plan-2026';
+            const eventIDLead = generateEventID();
+
+            // Hash email and phone for advanced matching (SHA-256)
+            async function hashData(data) {
+                const msgBuffer = new TextEncoder().encode(data.toLowerCase().trim());
+                const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            }
+
+            let hashedEmail = '';
+            let hashedPhone = '';
+            try {
+                hashedEmail = await hashData(customerEmail);
+                hashedPhone = await hashData(customerPhone.replace(/\D/g, '')); // Remove non-digits
+            } catch (err) {
+                console.warn('Hashing error:', err);
+            }
+
+            // Facebook Pixel: Lead - User submitted contact form with advanced matching
             window.dataLayer.push({
                 'event': 'lead',
                 'content_name': currentPlanName,
+                'content_ids': [productId],
+                'content_type': 'product',
                 'value': currentAmount / 100,
-                'currency': 'INR'
+                'currency': 'INR',
+                'eventID': eventIDLead,
+                'user_data': {
+                    'em': hashedEmail,
+                    'ph': hashedPhone
+                }
             });
+
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'Lead', {
                     content_name: currentPlanName,
+                    content_category: 'Course',
+                    content_ids: [productId],
+                    content_type: 'product',
                     value: currentAmount / 100,
                     currency: 'INR'
+                }, {
+                    eventID: eventIDLead,
+                    // Advanced matching for better conversion attribution
+                    em: hashedEmail,
+                    ph: hashedPhone
                 });
+                console.log('FB Pixel: Lead fired with eventID:', eventIDLead);
+            } else {
+                console.warn('FB Pixel blocked - Lead event lost');
             }
+
             // GA4 Event: generate_lead
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'generate_lead', {
                     currency: 'INR',
                     value: currentAmount / 100,
                     items: [{
+                        item_id: productId,
                         item_name: currentPlanName,
                         item_category: 'Course'
                     }]
                 });
             }
-            console.log('FB Pixel & GA4: Lead fired');
 
             closeContactModal();
             
@@ -927,33 +1020,48 @@
                 });
 
                 // Facebook Pixel: AddPaymentInfo - Razorpay checkout opened
+                const productId = currentPlanName.includes('Advanced') ? 'advanced-plan-2026' : 'standard-plan-2026';
+                const eventIDPayment = generateEventID();
+
                 window.dataLayer.push({
                     'event': 'addPaymentInfo',
                     'content_name': currentPlanName,
+                    'content_ids': [productId],
+                    'content_type': 'product',
                     'value': currentAmount / 100,
                     'currency': 'INR',
-                    'order_id': data.order_id
+                    'order_id': data.order_id,
+                    'eventID': eventIDPayment
                 });
+
                 if (typeof fbq !== 'undefined') {
                     fbq('track', 'AddPaymentInfo', {
                         content_name: currentPlanName,
+                        content_category: 'Course',
+                        content_ids: [productId],
+                        content_type: 'product',
                         value: currentAmount / 100,
                         currency: 'INR'
-                    });
+                    }, {eventID: eventIDPayment});
+                    console.log('FB Pixel: AddPaymentInfo fired with eventID:', eventIDPayment);
+                } else {
+                    console.warn('FB Pixel blocked - AddPaymentInfo event lost');
                 }
+
                 // GA4 Event: add_payment_info
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'add_payment_info', {
                         currency: 'INR',
                         value: currentAmount / 100,
                         items: [{
+                            item_id: productId,
                             item_name: currentPlanName,
                             item_category: 'Course',
-                            price: currentAmount / 100
+                            price: currentAmount / 100,
+                            quantity: 1
                         }]
                     });
                 }
-                console.log('FB Pixel & GA4: AddPaymentInfo fired');
 
                 rzp.open();
                 
@@ -982,8 +1090,20 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879330084480824');
-        fbq('track', 'PageView');
+
+        // Initialize with automatic advanced matching enabled
+        fbq('init', '879330084480824', {
+            em: 'enable',  // Enable automatic email matching
+            ph: 'enable',  // Enable automatic phone matching
+            external_id: 'enable'  // Enable external ID tracking
+        });
+
+        // Track PageView with eventID for deduplication
+        fbq('track', 'PageView', {}, {
+            eventID: 'pageview_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9)
+        });
+
+        console.log('FB Pixel initialized - Pixel ID: 879330084480824');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
