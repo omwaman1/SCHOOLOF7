@@ -136,7 +136,7 @@
             <!-- Card 1 -->
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">product chef</span>
+                    <span class="badge">money</span>
                     <h3 class="card-big-title">cash-flow inconsistency</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
                     <div class="card-hover-overlay">
@@ -158,7 +158,7 @@
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">idea noise</span>
-                    <h3 class="card-big-title">idea    validation</h3>
+                    <h3 class="card-big-title">idea<br>validation</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Pro Hover" class="card-img-hover">
@@ -178,7 +178,7 @@
             <!-- Card 3 -->
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">money</span>
+                    <span class="badge">product chef</span>
                     <h3 class="card-big-title">product building</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
                     <div class="card-hover-overlay">
