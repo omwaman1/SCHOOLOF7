@@ -447,8 +447,8 @@
 
             <div class="accordion faq-accordion">
                 <div class="accordion-item">
-                    <button class="accordion-header">DO I NEED PRIOR EXPERIENCE? How this business course will help me?</button>
-                    <div class="accordion-body">No, this course starts from the basics and covers all the advanced topics. The course discusses about the basic common mistakes founders generally make during their entrepreneurial journey. From basic topics like idea validation, how to scale revenue, optimize cash-flow, how to market & build content to advanced topics like customer segmentation, generational fatigue, methods to scale the business, GTM, ESOPS, equity split, fundraising are discussed at length substantiated with real life examples.</div>
+                    <button class="accordion-header">DO I NEED PRIOR EXPERIENCE? HOW THIS BUSINESS COURSE WILL HELP ME?</button>
+                    <div class="accordion-body">No, you don't require any prior experience. This course starts from the basics and covers all the advanced topics. The course discusses about the basic common mistakes founders generally make during their entrepreneurial journey. From basic topics like idea validation, how to scale revenue, optimize cash-flow, how to market & build content to advanced topics like customer segmentation, generational fatigue, methods to scale the business, GTM, ESOPS, equity split, fundraising are discussed at length substantiated with real life examples.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG WILL IT TAKE TO GET ACCESS TO THE COURSE?</button>
