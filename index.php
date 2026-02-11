@@ -104,7 +104,7 @@
             </button>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">UNLEASH THE FOUNDER <br>WITHIN YOU</h1>
+            <h1 class="hero-title">The cost of waiting is high. Start & Scale<br>your business RIGHT - not random.</h1>
             <p class="hero-subtitle">The ultimate guide to scaling your business online.
             </p>
             <div class="hero-actions">
@@ -116,7 +116,7 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Idea → Launch → Marketing → Scaling<br>Funding</h3>
+            <h3 class="feature-title">Ideation → Launching → Marketing → Scaling<br>Funding</h3>
             <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
         </div>
@@ -137,7 +137,7 @@
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">money</span>
-                    <h3 class="card-big-title">cash-flow inconsistency</h3>
+                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Basic Access Hover" class="card-img-hover">
@@ -179,7 +179,7 @@
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
-                    <h3 class="card-big-title">product building</h3>
+                    <h3 class="card-big-title">product<br>building</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Elite Hover" class="card-img-hover">
