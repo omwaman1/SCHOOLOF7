@@ -116,9 +116,9 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Idea | Launch | Marketing<br> Scaling | Funding</h3>
+            <h3 class="feature-title">Idea → Launch Marketing → Scaling<br>Funding <em>all covered in</em></h3>
             <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Learn</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
