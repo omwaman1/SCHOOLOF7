@@ -447,8 +447,8 @@
 
             <div class="accordion faq-accordion">
                 <div class="accordion-item">
-                    <button class="accordion-header">DO I NEED PRIOR EXPERIENCE?</button>
-                    <div class="accordion-body">No, this course starts from the basics and covers all the advanced topics.</div>
+                    <button class="accordion-header">DO I NEED PRIOR EXPERIENCE? How this business course will help me?</button>
+                    <div class="accordion-body">No, this course starts from the basics and covers all the advanced topics. The course discusses about the basic common mistakes founders generally make during their entrepreneurial journey. From basic topics like idea validation, how to scale revenue, optimize cash-flow, how to market & build content to advanced topics like customer segmentation, generational fatigue, methods to scale the business, GTM, ESOPS, equity split, fundraising are discussed at length substantiated with real life examples.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG WILL IT TAKE TO GET ACCESS TO THE COURSE?</button>
@@ -472,7 +472,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW CAN I CONTACT IN CASE OF DOUBTS OR CONCERNS?</button>
-                    <div class="accordion-body">You can mail us at Mr7@schoolof7.com</div>
+                    <div class="accordion-body">You can write to us at Mr7@schoolof7.com or +91 9529245492</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW CAN I CONTACT Mr 7 IN CASE OF DOUBTS RELATED TO COURSE CONCEPTS?</button>
@@ -554,7 +554,7 @@
             </div>
         </div>
         <div class="sticky-actions">
-            <span class="old-price" style="text-decoration: line-through; font-size: inherit;">₹7999</span>
+            <span class="old-price" style="text-decoration: line-through; font-size: inherit;">₹8999</span>
             <span class="new-price">₹1899</span>
             <a href="#pricing" class="btn btn--red">Enroll Now</a>
         </div>
@@ -623,6 +623,7 @@
                 <div class="footer-column">
                     <h4>SUPPORT</h4>
                     <p class="support-text">Email: Mr7@schoolof7.com</p>
+                    <p class="support-text">Message at: +91 9529245492</p>
                     <p class="support-text">We're here M-F 9am - 5pm IST.</p>
                     <p class="support-text">Drop us a note anytime.</p>
                     <p class="support-text">Do Not Sell or Share My Personal Information</p>
