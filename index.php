@@ -116,7 +116,7 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Idea -> Launch -> Marketing<br>-> Scaling -> Funding</h3>
+            <h3 class="feature-title">Idea | Launch | Marketing<br> Scaling | Funding</h3>
             <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Learn</a>
         </div>
