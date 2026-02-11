@@ -104,7 +104,7 @@
             </button>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">The cost of waiting is high. Start & Scale <br>your business RIGHT - not random.</h1>
+            <h1 class="hero-title">The cost of waiting is high. Start & Scale your<br>business RIGHT - not random.</h1>
             <p class="hero-subtitle">The ultimate guide to scaling your business online.
             </p>
             <div class="hero-actions">
