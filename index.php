@@ -116,7 +116,7 @@
     <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launching → Marketing → Scaling<br>Funding</h3>
+            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling<br>Funding</h3>
             <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
         </div>
@@ -208,7 +208,7 @@
             <div class="video-wrapper">
                 <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail_video_image.png"></video>
             </div>
-            <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" The cost of waiting is high.<br>Start & Scale your business right - not random. "</h3>
+            <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" The cost of waiting is high.<br>Start & Scale your business right<br> - not random. "</h3>
         </div>
     </section>
 
