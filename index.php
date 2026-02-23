@@ -113,6 +113,19 @@
         </div>
     </section>
 
+            <!-- Feature Section: Why This Course -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Funding</h3>
+            <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
+        </div>
+        <div class="feature-image">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
+            <button class="zoom-btn">+</button>
+        </div>
+    </section>
+
     <!-- Section 5: Pricing Plans -->
     <section class="section pricing-section">
         <div class="section-header">
@@ -199,18 +212,7 @@
         </div>
     </section>
 
-        <!-- Feature Section: Why This Course -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Funding</h3>
-            <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
+
 
         <!-- Section 11: Course Pricing (Blue Cards) -->
     <section class="section course-pricing-section" id="pricing">
