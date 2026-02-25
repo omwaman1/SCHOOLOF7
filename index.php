@@ -348,17 +348,17 @@
             <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
             <div class="audience-grid" id="audienceCarousel">
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.png" alt="Corporate Employees">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.png" alt="Entrepreneurs">
                     <div class="audience-info">
-                        <h4> ENTREPRENEURS</h4>
-                        <p> business owners looking to scale online</p>
+                        <h4> CORPORATE EMPLOYEES</h4>
+                        <p> looking to startup</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.png" alt="Business Owners">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.png" alt="Freelancers">
                     <div class="audience-info">
-                        <h4> FREELANCERS</h4>
-                        <p> wanting to upskill & charge more</p>
+                        <h4> BUSINESS OWNERS</h4>
+                        <p> looking to scale online</p>
                     </div>
                 </div>
                 <div class="audience-card">
@@ -369,9 +369,9 @@
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.png" alt="Freelancers">
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.png" alt="Creatives">
                     <div class="audience-info">
-                        <h4> CREATIVES</h4>
+                        <h4> FREELANCERS</h4>
                         <p> artists wanting to sell their work online</p>
                     </div>
                 </div>
