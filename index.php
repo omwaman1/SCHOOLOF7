@@ -357,7 +357,7 @@
                 <div class="audience-card">
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.png" alt="Freelancers">
                     <div class="audience-info">
-                        <h4> BUSINESS OWNERS</h4>
+                        <h4> BUSINESS OWNERS</h4> 
                         <p> looking to scale online</p>
                     </div>
                 </div>
