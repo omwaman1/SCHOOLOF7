@@ -550,16 +550,19 @@
     <div class="sticky-bar" style="background-color: #ffffff;">
         <div class="sticky-content">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar" style="width: 70px; height: 70px; border: none; border-radius: 0; margin-top: -35px; object-fit: contain; box-shadow: none;">
-            <div class="sticky-info">
-                <h5>Startup Masterclass</h5>
-                <p>63K+ Students Enrolled</p>
+            <div class="sticky-offer">
+                <div class="sticky-offer-row">
+                    <span class="new-price">Rs 1899</span>
+                    <span class="old-price">Rs 8999</span>
+                    <span class="sticky-discount">90% Off</span>
+                </div>
+                <div class="sticky-deadline"><strong>Deadline</strong>&nbsp; <?php echo date('jS M'); ?></div>
             </div>
         </div>
         <div class="sticky-actions">
-            <span class="old-price" style="text-decoration: line-through; font-size: inherit;">₹8999</span>
-            <span class="new-price">₹1899</span>
-            <a href="#pricing" class="btn btn--red">Enroll Now</a>
+            <a href="#pricing" class="btn btn--red">ENROLL NOW</a>
         </div>
+        <div class="sticky-bottom-label">Business Masterclass</div>
     </div>
 
     <!-- Footer -->

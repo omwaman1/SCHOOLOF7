@@ -2416,12 +2416,13 @@ button {
     right: 0;
     width: 100%;
     max-width: none;
-    background: var(--color-beige);
+    background: #ffffff;
     border-radius: 0;
     border: none;
     border-top: 1px solid #ddd;
-    padding: 12px 25px;
+    padding: 12px 25px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: #67635f;
@@ -2453,6 +2454,63 @@ button {
     object-fit: cover;
 }
 
+.sticky-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sticky-offer-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: var(--font-size-base);
+}
+
+.new-price {
+    font-weight: 700;
+    font-size: var(--font-size-h3);
+    color: #333;
+}
+
+.sticky-discount {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    font-style: italic;
+    color: #67635f;
+}
+
+.sticky-deadline {
+    font-size: var(--font-size-base);
+    color: #333;
+    font-weight: 700;
+}
+
+.sticky-deadline strong {
+    font-weight: 800;
+}
+
+.sticky-bottom-label {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 10px;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: #67635f;
+    background-color: #f0f0f0;
+    margin-left: -25px;
+    margin-right: -25px;
+    width: calc(100% + 50px);
+    letter-spacing: 0.02em;
+}
+
 .sticky-info h5 {
     font-size: var(--font-size-h4);
     font-weight: 700;
@@ -2471,31 +2529,20 @@ button {
     gap: 25px;
 }
 
-.old-price {
-    text-decoration: line-through;
-    color: #888;
-    font-size: var(--font-size-base);
-}
-
-.new-price {
-    font-weight: 700;
-    font-size: var(--font-size-h3);
-    color: #67635f;
-}
-
 .btn--red {
     background: linear-gradient(90deg, #3B82F6, #2563EB);
     color: #fff;
     padding: 14px 35px;
     border: none;
     border-radius: 30px;
-    font-weight: 600;
-    font-size: var(--font-size-base);
+    font-weight: 700;
+    font-size: var(--font-size-h4);
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
     position: relative;
     overflow: hidden;
+    letter-spacing: 0.05em;
 }
 
 .btn--red::before {
@@ -2839,11 +2886,11 @@ button {
         right: 0;
         width: 100%;
         border-radius: 0;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        gap: 8px;
-        padding: 12px 15px;
+        gap: 0;
+        padding: 10px 15px 0;
     }
 
     .sticky-content {
@@ -2852,6 +2899,35 @@ button {
 
     .sticky-avatar {
         display: none;
+    }
+
+    .sticky-offer-row {
+        gap: 6px;
+    }
+
+    .new-price {
+        font-size: var(--font-size-h4);
+    }
+
+    .old-price {
+        font-size: var(--font-size-xs);
+    }
+
+    .sticky-discount {
+        font-size: var(--font-size-xs);
+    }
+
+    .sticky-deadline {
+        font-size: var(--font-size-sm);
+    }
+
+    .sticky-bottom-label {
+        margin-top: 8px;
+        padding: 6px 0;
+        font-size: var(--font-size-sm);
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
     }
 
     .sticky-info h5 {
@@ -2866,17 +2942,10 @@ button {
         gap: 8px;
     }
 
-    .old-price {
-        font-size: var(--font-size-xs);
-    }
-
-    .new-price {
-        font-size: var(--font-size-sm);
-    }
-
     .btn--red {
-        padding: 10px 16px;
-        font-size: var(--font-size-xs);
+        padding: 12px 20px;
+        font-size: var(--font-size-sm);
+        border-radius: 30px;
     }
 
     /* Testimonials Section Mobile */
