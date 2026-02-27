@@ -554,7 +554,7 @@
                 <div class="sticky-offer-row">
                     <span class="new-price">Rs 1899</span>
                     <span class="old-price">Rs 8999</span>
-                    <span class="sticky-discount">90% Off</span>
+                    <span class="sticky-discount">79% Off</span>
                 </div>
                 <div class="sticky-deadline"><strong>Deadline</strong>&nbsp; <?php echo date('jS M'); ?></div>
             </div>
