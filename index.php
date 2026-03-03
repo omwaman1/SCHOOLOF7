@@ -1,3 +1,4 @@
+<?php date_default_timezone_set('Asia/Kolkata'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -244,6 +245,7 @@
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
                 <div class="plan-price">₹1,499/-</div>
+                <div class="plan-price-original">₹6,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -428,6 +430,7 @@
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
                 <div class="plan-price">₹1,499/-</div>
+                <div class="plan-price-original">₹6,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>

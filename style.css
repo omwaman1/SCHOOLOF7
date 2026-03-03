@@ -2077,6 +2077,16 @@ button {
     color: #67635f;
 }
 
+.plan-price-original {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
 .course-card.premium .plan-price {
     color: #fff;
 }
@@ -2581,6 +2591,43 @@ button {
         height: 50vh;
         min-height: 400px;
     }
+
+    /* Sticky Bar Tablet */
+    .sticky-bar {
+        padding: clamp(8px, 1.2vw, 14px) clamp(15px, 2.5vw, 25px) 0;
+    }
+
+    .sticky-avatar {
+        width: clamp(45px, 6vw, 65px);
+        height: clamp(45px, 6vw, 65px);
+    }
+
+    .new-price {
+        font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    }
+
+    .old-price {
+        font-size: clamp(0.75rem, 1.4vw, 1rem);
+    }
+
+    .sticky-discount {
+        font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+    }
+
+    .sticky-deadline {
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+    }
+
+    .btn--red {
+        padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3.5vw, 35px);
+        font-size: clamp(0.85rem, 1.6vw, 1.25rem);
+    }
+
+    .sticky-bottom-label {
+        font-size: clamp(0.8rem, 1.4vw, 1rem);
+        padding: clamp(5px, 0.8vw, 8px) 0;
+        margin-top: clamp(6px, 1vw, 10px);
+    }
 }
 
 /* Responsive Adjustments */
@@ -2711,9 +2758,9 @@ button {
         height: auto;
     }
 
-    /* Sticky Bar Mobile - Compact */
+    /* Sticky Bar Mobile - Compact with relative sizing */
     .sticky-bar {
-        padding: 10px 15px;
+        padding: clamp(6px, 2.5vw, 12px) clamp(10px, 4vw, 20px) 0;
         bottom: 0;
         left: 0;
         right: 0;
@@ -2721,33 +2768,49 @@ button {
     }
 
     .sticky-avatar {
-        width: 35px;
-        height: 35px;
+        width: clamp(30px, 9vw, 50px);
+        height: clamp(30px, 9vw, 50px);
+    }
+
+    .sticky-content {
+        gap: clamp(6px, 2vw, 12px);
     }
 
     .sticky-info h5 {
-        font-size: var(--font-size-xs);
+        font-size: clamp(0.65rem, 2.8vw, 0.85rem);
     }
 
     .sticky-info p {
-        font-size: var(--font-size-xs);
+        font-size: clamp(0.6rem, 2.5vw, 0.75rem);
     }
 
     .sticky-actions {
-        gap: 10px;
+        gap: clamp(6px, 2.5vw, 12px);
+    }
+
+    .sticky-offer-row {
+        gap: clamp(4px, 1.5vw, 8px);
     }
 
     .old-price {
-        font-size: var(--font-size-xxs);
+        font-size: clamp(0.6rem, 2.8vw, 0.85rem);
     }
 
     .new-price {
-        font-size: var(--font-size-sm);
+        font-size: clamp(0.9rem, 5vw, 1.4rem);
+    }
+
+    .sticky-discount {
+        font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+    }
+
+    .sticky-deadline {
+        font-size: clamp(0.7rem, 3vw, 0.95rem);
     }
 
     .btn--red {
-        padding: 8px 15px;
-        font-size: var(--font-size-xs);
+        padding: clamp(8px, 2.5vw, 14px) clamp(14px, 5vw, 28px);
+        font-size: clamp(0.7rem, 3vw, 1rem);
     }
 
     .faq-section,
@@ -2890,11 +2953,11 @@ button {
         justify-content: space-between;
         align-items: center;
         gap: 0;
-        padding: 10px 15px 0;
+        padding: clamp(6px, 2.5vw, 12px) clamp(10px, 4vw, 20px) 0;
     }
 
     .sticky-content {
-        gap: 8px;
+        gap: clamp(6px, 2vw, 10px);
     }
 
     .sticky-avatar {
@@ -2902,36 +2965,36 @@ button {
     }
 
     .sticky-offer-row {
-        gap: 6px;
+        gap: clamp(4px, 1.5vw, 8px);
     }
 
     .new-price {
-        font-size: var(--font-size-h4);
+        font-size: clamp(0.9rem, 5vw, 1.4rem);
     }
 
     .old-price {
-        font-size: var(--font-size-xs);
+        font-size: clamp(0.6rem, 2.8vw, 0.85rem);
     }
 
     .sticky-discount {
-        font-size: var(--font-size-xs);
+        font-size: clamp(0.6rem, 2.5vw, 0.8rem);
     }
 
     .sticky-deadline {
-        font-size: var(--font-size-sm);
+        font-size: clamp(0.7rem, 3vw, 0.95rem);
     }
 
     .sticky-bottom-label {
-        margin-top: 8px;
-        padding: 6px 0;
-        font-size: var(--font-size-sm);
-        margin-left: -15px;
-        margin-right: -15px;
-        width: calc(100% + 30px);
+        margin-top: clamp(5px, 2vw, 10px);
+        padding: clamp(4px, 1.5vw, 8px) 0;
+        font-size: clamp(0.7rem, 3vw, 0.95rem);
+        margin-left: clamp(-20px, -4vw, -10px);
+        margin-right: clamp(-20px, -4vw, -10px);
+        width: calc(100% + clamp(20px, 8vw, 40px));
     }
 
     .sticky-info h5 {
-        font-size: var(--font-size-base);
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
     }
 
     .sticky-info p {
@@ -2939,12 +3002,12 @@ button {
     }
 
     .sticky-actions {
-        gap: 8px;
+        gap: clamp(5px, 2vw, 10px);
     }
 
     .btn--red {
-        padding: 12px 20px;
-        font-size: var(--font-size-sm);
+        padding: clamp(8px, 2.5vw, 14px) clamp(14px, 5vw, 28px);
+        font-size: clamp(0.7rem, 3vw, 1rem);
         border-radius: 30px;
     }
 
