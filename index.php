@@ -104,7 +104,7 @@
             </button>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Chaos is quietly wasting your time.<br>Move to complete business clarity — now.</h1>
+            <h1 class="hero-title">Learn Fast<br>Execute Faster</h1>
             <p class="hero-subtitle">The ultimate guide to scaling your business online.
             </p>
             <div class="hero-actions">
