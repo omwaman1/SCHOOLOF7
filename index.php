@@ -169,7 +169,7 @@
             <h2 class="curriculum-heading"><span class="heading-bold">COURSE </span><br><span class="heading-bold">CURRICULUM</span> </h2>
             <div class="accordion curriculum-accordion">
                 <div class="accordion-item active">
-                    <button class="accordion-header">MODULE 1: Funneling Startup Ideas <span class="icon-circle">-</span></button>
+                    <button class="accordion-header">MODULE 1: Funneling Startup Ideas <span class="icon-circle">+</span></button>
                     <div class="accordion-body">• How to find ideas in the first place?<br>• 4 categories of startup ideas<br>• How to improve your research abilities?<br>• Your personal assessment as a founder<br>• Home Work</div>
                 </div>
                 <div class="accordion-item">
