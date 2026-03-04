@@ -96,9 +96,9 @@
             <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Funding</h3>
-            <p class="feature-description">8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Let's Build</a>
+            <h3 class="feature-title">The World Needs More Founders. Be One.</h3>
+            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
@@ -109,7 +109,7 @@
 
     <!-- Section 6: Video Course Preview -->
     <section class="section video-help-section">
-        <h2 class="video-help-title">How This Course Will Help You?</h2>
+        <h2 class="video-help-title">How This Masterclass Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
                 <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail_video_image.png"></video>
@@ -122,8 +122,8 @@
 
         <!-- Section 11: Course Pricing (Blue Cards) -->
     <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Choose The Plan</h2>
-        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
+        <h2 class="section-title text-center">Invest in your Future</h2>
+        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
 
         <div class="course-pricing-grid">
             <!-- Advanced Learning Plan - BEST VALUE -->
