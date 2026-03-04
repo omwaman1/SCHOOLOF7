@@ -567,7 +567,7 @@
             </div>
         </div>
         <div class="sticky-actions">
-            <a href="#pricing" class="btn btn--red">ENROLL NOW</a>
+            <a href="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand" class="btn btn--red">ENROLL NOW</a>
         </div>
         <div class="sticky-bottom-label">Business Masterclass</div>
     </div>
