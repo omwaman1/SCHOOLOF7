@@ -106,80 +106,6 @@
         </div>
     </section>
 
-    <!-- Section 5: Pricing Plans -->
-    <section class="section pricing-section">
-        <div class="section-header">
-            <h2 class="section-title">Are You Struggling With?</h2>
-            <p class="section-subtitle">Challenges <em>like</em></p>
-        </div>
-        <div class="pricing-grid" id="pricingCarousel">
-            <!-- Card 1 -->
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">money</span>
-                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Basic Access Hover" class="card-img-hover">
-                        <a href="#pricing" class="buy-btn">Join the Program</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">FUND RAISING</h4>
-                        <span class="price">PREP</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">idea noise</span>
-                    <h3 class="card-big-title">idea<br>validation</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Pro Hover" class="card-img-hover">
-                        <a href="#pricing" class="buy-btn">Let's Validate Ideas</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
-                        <span class="price">GROW</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">product chef</span>
-                    <h3 class="card-big-title">product<br>building</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Elite Hover" class="card-img-hover">
-                        <a href="#pricing" class="buy-btn">Learn to Scale</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">SCALING PRODUCT</h4>
-                        <span class="price">SCALE</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel Dots (visible on mobile) -->
-        <div class="carousel-dots" id="carouselDots"></div>
-    </section>
 
     <!-- Section 6: Video Course Preview -->
     <section class="section video-help-section">
@@ -489,6 +415,81 @@
         <div class="faq-image">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/faq.jpg" alt="Masterclass FAQ">
         </div>
+    </section>
+
+        <!-- Section 5: Pricing Plans -->
+    <section class="section pricing-section">
+        <div class="section-header">
+            <h2 class="section-title">Are You Struggling With?</h2>
+            <p class="section-subtitle">Challenges <em>like</em></p>
+        </div>
+        <div class="pricing-grid" id="pricingCarousel">
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">money</span>
+                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Building Product" class="card-img-default">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Basic Access Hover" class="card-img-hover">
+                        <a href="#pricing" class="buy-btn">Join the Program</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">FUND RAISING</h4>
+                        <span class="price">PREP</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">idea noise</span>
+                    <h3 class="card-big-title">idea<br>validation</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Figuring Startup Idea" class="card-img-default">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Pro Hover" class="card-img-hover">
+                        <a href="#pricing" class="buy-btn">Let's Validate Ideas</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
+                        <span class="price">GROW</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">product chef</span>
+                    <h3 class="card-big-title">product<br>building</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Fund Raising" class="card-img-default">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Elite Hover" class="card-img-hover">
+                        <a href="#pricing" class="buy-btn">Learn to Scale</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">SCALING PRODUCT</h4>
+                        <span class="price">SCALE</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Dots (visible on mobile) -->
+        <div class="carousel-dots" id="carouselDots"></div>
     </section>
 
         <!-- Hero Section -->
