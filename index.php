@@ -165,46 +165,6 @@
         </div>
     </section>
 
-    <!-- Section 7: Testimonials -->
-    <section class="section testimonials-section" id="testimonials">
-        <div class="testimonials-header">
-            <div class="testimonials-title-group">
-                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
-                <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
-            </div>
-            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
-        </div>
-        <div class="ugc-carousel-wrapper">
-            <div class="ugc-carousel" id="ugcCarousel">
-                <!-- UGC Video Item 1 -->
-                <div class="ugc-item" data-index="0">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
-                </div>
-                <!-- UGC Video Item 2 -->
-                <div class="ugc-item" data-index="1">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
-                </div>
-                <!-- UGC Video Item 3 -->
-                <div class="ugc-item" data-index="2">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
-                </div>
-                <!-- UGC Video Item 4 -->
-                <div class="ugc-item" data-index="3">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
-                </div>
-                <!-- UGC Video Item 5 -->
-                <div class="ugc-item" data-index="4">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
-                </div>
-            </div>
-        </div>
-        <div class="ugc-divider"></div>
-        <div class="ugc-nav">
-            <button class="ugc-nav-btn prev" id="ugcPrev">‹</button>
-            <button class="ugc-nav-btn next" id="ugcNext">›</button>
-        </div>
-    </section>
-
     <!-- Section 8: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
@@ -246,6 +206,46 @@
         </div>
         <div class="curriculum-image">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/course-curriculom.png" alt="Course Syllabus">
+        </div>
+    </section>
+
+        <!-- Section 7: Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="testimonials-header">
+            <div class="testimonials-title-group">
+                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
+                <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
+            </div>
+            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
+        </div>
+        <div class="ugc-carousel-wrapper">
+            <div class="ugc-carousel" id="ugcCarousel">
+                <!-- UGC Video Item 1 -->
+                <div class="ugc-item" data-index="0">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
+                </div>
+                <!-- UGC Video Item 2 -->
+                <div class="ugc-item" data-index="1">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
+                </div>
+                <!-- UGC Video Item 3 -->
+                <div class="ugc-item" data-index="2">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
+                </div>
+                <!-- UGC Video Item 4 -->
+                <div class="ugc-item" data-index="3">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
+                </div>
+                <!-- UGC Video Item 5 -->
+                <div class="ugc-item" data-index="4">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
+                </div>
+            </div>
+        </div>
+        <div class="ugc-divider"></div>
+        <div class="ugc-nav">
+            <button class="ugc-nav-btn prev" id="ugcPrev">‹</button>
+            <button class="ugc-nav-btn next" id="ugcNext">›</button>
         </div>
     </section>
 
