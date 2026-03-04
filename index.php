@@ -96,7 +96,7 @@
             <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">The World Needs More Founders. Be One.</h3>
+            <h3 class="feature-title">Building business is an art. Master it. Build your Fortune.</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
         </div>
@@ -132,8 +132,8 @@
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1,899/-</div>
                 <div class="plan-price-original">₹8,899/-</div>
+                <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -150,8 +150,8 @@
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1,499/-</div>
                 <div class="plan-price-original">₹6,899/-</div>
+                <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -318,8 +318,8 @@
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1,899/-</div>
                 <div class="plan-price-original">₹8,899/-</div>
+                <div class="plan-price">₹1,899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -336,8 +336,8 @@
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1,499/-</div>
                 <div class="plan-price-original">₹6,899/-</div>
+                <div class="plan-price">₹1,499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
