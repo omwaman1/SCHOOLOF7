@@ -509,7 +509,7 @@
             <p class="hero-subtitle">The ultimate guide to scaling your business online.
             </p>
             <div class="hero-actions">
-                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
+                <a href="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand" class="btn btn--grey">START LEARNING</a>
             </div>
         </div>
     </section>
