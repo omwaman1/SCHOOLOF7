@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7 | ESOP meaning startup India + co-founder equity split India | startup course for beginners | how to start a startup in India | startup course with certificate India | how to find startup ideas India + how to validate a startup idea | startup marketing strategy India | Entrepreneurship online business course India| best startup course India 2026 | startup course under 2000 rupees </title>
+    <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7 | customer segmentation startup India |  Mr 7 strategy startup course | ESOP meaning startup India + co-founder equity split India | startup course for beginners | how to start a startup in India | startup course with certificate India | how to find startup ideas India + how to validate a startup idea | startup marketing strategy India | Entrepreneurship online business course India| best startup course India 2026 | startup course under 2000 rupees </title>
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
     <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
 
