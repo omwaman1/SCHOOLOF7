@@ -22,7 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Preload the logo font to prevent flash of unstyled text -->
     <link rel="preload" href="https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVvHOtOGkgUQJPPI.woff2" as="font" type="font/woff2" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</noscript>
     <link rel="stylesheet" href="style.css">
 
     <!-- Microsoft Clarity -->
@@ -120,7 +123,7 @@
         <h2 class="video-help-title">How This Masterclass Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
-                <video muted preload="none" id="coursePreviewVideo" playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail_video_image.png"></video>
+                <video muted preload="none" id="coursePreviewVideo" playsinline webkit-playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail_video_image.png"></video>
             </div>
             <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" The cost of waiting is high.<br>Start & Scale your business right<br> - not random. "</h3>
         </div>
@@ -500,7 +503,7 @@
     <section class="hero-section">
         <div class="hero-video-container">
             <!-- Single video element - source loaded by JS based on device -->
-            <video autoplay loop muted playsinline class="hero-video" id="heroVideo" preload="none"></video>
+            <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png"></video>
             <div class="hero-overlay"></div>
             <button class="video-control" id="video-toggle">II</button>
             <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
@@ -1257,15 +1260,20 @@
   </a>
 </div>
 
-<style>
+    <style>
   @keyframes waPop {
     0%, 100% { transform: scale(1); }
     50%       { transform: scale(1.08); }
+  }
+  @-webkit-keyframes waPop {
+    0%, 100% { -webkit-transform: scale(1); }
+    50%       { -webkit-transform: scale(1.08); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; -webkit-animation: none !important; }
   }
 </style>
     
 </body>
 
 </html>
-
-
