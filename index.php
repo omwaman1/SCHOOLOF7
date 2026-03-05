@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Masterclass | School of 7</title>
+    <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7 | ESOP meaning startup India + co-founder equity split India | startup course for beginners | how to start a startup in India | startup course with certificate India | how to find startup ideas India + how to validate a startup idea | startup marketing strategy India | Entrepreneurship online business course India| best startup course India 2026 | startup course under 2000 rupees </title>
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
     <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
 
@@ -400,7 +400,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHERE WILL I GET THE RECEIPT OF THE COURSE?</button>
-                    <div class="accordion-body">You can download the receipt from 'Purchase Histroy' section as you login in your account. </div>
+                    <div class="accordion-body">You can download the receipt from 'Purchase History' section as you login in your account. </div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WILL MORE MODULES BE ADDED?</button>
