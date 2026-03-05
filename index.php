@@ -1242,7 +1242,7 @@
     </script>
 
     <!-- WhatsApp Button -->
-<div id="waWidget" style="position:fixed;bottom:70px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+<div id="waWidget" style="position:fixed;bottom:80px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
 
   <!-- "Chat with us" label -->
   <div id="waLabel" style="background:#fff;color:#111;font-size:14px;font-weight:700;padding:10px 36px 10px 18px;border-radius:50px;box-shadow:0 2px 16px rgba(0,0,0,0.15);position:relative;white-space:nowrap;font-family:sans-serif;">
