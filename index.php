@@ -5,7 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7 | customer segmentation startup India |  Mr 7 strategy startup course | ESOP meaning startup India + co-founder equity split India | startup course for beginners | how to start a startup in India | startup course with certificate India | how to find startup ideas India + how to validate a startup idea | startup marketing strategy India | Entrepreneurship online business course India| best startup course India 2026 | startup course under 2000 rupees </title>
+    <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7</title>
+    <meta name="description" content="Master how to start & scale a startup in 8 hours. India's affordable business masterclass — validate ideas, raise funds, build your team. Enroll for ₹1,899.">
+<meta property="og:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
+<meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹1,899.">
+<meta property="og:image" content="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
+<meta property="og:url" content="https://schoolof7.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="School of 7">
+    
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
     <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
 
@@ -1187,6 +1195,77 @@
         gtag('config', 'G-6QJHLP6W66');
     </script>
     <!-- End Google Analytics 4 -->
+
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Startup Masterclass India",
+      "description": "Learn how to start and scale a startup in 8 modules and 8 hours. Covers idea validation, MVP, pricing, fundraising, co-founder equity split, and ESOPs.",
+      "url": "https://schoolof7.com",
+      "provider": {
+        "@type": "Organization",
+        "name": "School of 7",
+        "url": "https://schoolof7.com",
+        "logo": "https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "1899",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://schoolof7.com/#pricing"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "inLanguage": "en",
+        "courseWorkload": "PT8H"
+      },
+      "teaches": [
+        "How to find and validate startup ideas",
+        "Minimum Viable Product (MVP)",
+        "Startup pricing strategy",
+        "Product Market Fit",
+        "Startup fundraising in India",
+        "Co-founder equity split",
+        "ESOPs",
+        "Startup marketing strategy"
+      ],
+      "educationalLevel": "Beginner to Advanced",
+      "numberOfCredits": 1,
+      "timeRequired": "PT8H"
+    }
+    </script>
+
+    <!-- WhatsApp Button -->
+<div id="waWidget" style="position:fixed;bottom:70px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+
+  <!-- "Chat with us" label -->
+  <div id="waLabel" style="background:#fff;color:#111;font-size:14px;font-weight:700;padding:10px 36px 10px 18px;border-radius:50px;box-shadow:0 2px 16px rgba(0,0,0,0.15);position:relative;white-space:nowrap;font-family:sans-serif;">
+    Chat with us
+    <span onclick="document.getElementById('waLabel').style.display='none'"
+      style="position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:22px;height:22px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;cursor:pointer;line-height:1;">×</span>
+  </div>
+
+  <!-- Circle WhatsApp button -->
+  <a href="https://wa.me/919529245492" target="_blank"
+    style="width:56px;height:56px;background:#436939;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;animation:waPop 2.5s ease-in-out infinite;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+  @keyframes waPop {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.08); }
+  }
+</style>
+    
 </body>
 
 </html>
+
+
