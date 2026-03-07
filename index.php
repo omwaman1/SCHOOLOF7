@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/How%20to%20start%20a%20startup%20in%20India.png" alt="Creatives">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/side%20business%20course%20for%20employees%20India.png" alt="Creatives">
                     <div class="audience-info">
                         <h4> CORPORATE EMPLOYEE</h4>
                         <p> hired as a growth hacker</p>
@@ -268,7 +268,7 @@
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business:startup%20course%20India.png" alt="Digital Workshop">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/IIM%20vs%20online%20startup%20course.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
