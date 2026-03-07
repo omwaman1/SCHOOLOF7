@@ -174,18 +174,53 @@
         </div>
     </section>
 
-                <!-- Feature Section: Why This Course -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
-            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Digital Workshop">
-            <button class="zoom-btn">+</button>
+        <!-- Section 9: Target Audience -->
+    <section class="section audience-section">
+        <h2 class="audience-title">masterclass <em>success</em> stories!</h2>
+        <div class="audience-carousel-wrapper">
+            <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
+            <div class="audience-grid" id="audienceCarousel">
+                <div class="audience-card">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/business%20course%20for%20corporate%20employees%20India.png" alt="Entrepreneurs">
+                    <div class="audience-info">
+                        <h4> CORPORATE EMPLOYEE</h4>
+                        <p> started from scratch</p>
+                    </div>
+                </div>
+                <div class="audience-card">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20under%202000%20rupees.png" alt="Freelancers">
+                    <div class="audience-info">
+                        <h4> BUSINESS OWNER</h4> 
+                        <p> scaled from India & went global</p>
+                    </div>
+                </div>
+                <div class="audience-card">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20better%20than%20MBA%20India.png" alt="Students">
+                    <div class="audience-info">
+                        <h4> STUDENT</h4>
+                        <p> chose to startup against college placement</p>
+                    </div>
+                </div>
+                <div class="audience-card">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/how%20to%20start%20a%20startup%20in%20India.png" alt="Creatives">
+                    <div class="audience-info">
+                        <h4> CORPORATE EMPLOYEE</h4>
+                        <p> hired as a growth hacker</p>
+                    </div>
+                <div class="audience-card">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/best%20business%20course%20for%20beginners%20India.png" alt="Creatives">
+                    <div class="audience-info">
+                        <h4> BUSINESS OWNER</h4>
+                        <p> build systems to scale business</p>
+                    </div>
+                </div>
+            </div>
+            <button class="audience-nav-btn next" id="audienceNext">›</button>
         </div>
     </section>
+            
+
+
 
     <!-- Section 8: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
@@ -231,6 +266,37 @@
         </div>
     </section>
 
+                            <!-- Feature Section: Why This Course -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
+            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
+        </div>
+        <div class="feature-image">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Digital Workshop">
+            <button class="zoom-btn">+</button>
+        </div>
+    </section>
+
+                <!-- Section 10: Mentor -->
+    <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
+        <div class="mentor-content">
+            <h3 class="mentor-label">Your Mentor</h3>
+            <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
+            <p class="mentor-name">Mr 7</p>
+            <button class="btn btn--outline-dark btn--sm">OUR VALUES</button>
+            <div class="mentor-links">
+                <div class="mentor-link active" data-text="To <span class='highlight'>INSPIRE</span>, <span class='highlight'>EDUCATE</span>, and <span class='highlight'>EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.">mission</div>
+                <div class="mentor-link" data-text="We believe that <span class='highlight'>MOST STARTUP LAGS</span>, because the founders were never taught about the fundamentals of building a business. Our philosophy centers on <span class='highlight'>FRAMEWORKS, CASE STUDIES, PROBLEMS & SOLUTIONS</span> which makes the founder BUSINESS READY.">philosophy</div>
+                <div class="mentor-link" data-text="He is an <span class='highlight'>ENTREPRENEUR & INVESTOR </span>and is an MBA graduate from XLRI Jamshedpur. He has 10+ years of experience in CONSULTING & MENTORING Startups. He is the <span class='highlight'>FOUNDER</span> of School of 7.">about</div>
+            </div>
+        </div>
+        <div class="mentor-image">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.png" alt="Mr 7 - Your Mentor">
+        </div>
+    </section>
+
         <!-- Section 7: Testimonials -->
     <section class="section testimonials-section" id="testimonials">
         <div class="testimonials-header">
@@ -271,62 +337,8 @@
         </div>
     </section>
 
-    <!-- Section 9: Target Audience -->
-    <section class="section audience-section">
-        <h2 class="audience-title">who's this <em>masterclass</em> for?</h2>
-        <div class="audience-carousel-wrapper">
-            <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
-            <div class="audience-grid" id="audienceCarousel">
-                <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/1.png" alt="Entrepreneurs">
-                    <div class="audience-info">
-                        <h4> CORPORATE EMPLOYEES</h4>
-                        <p> looking to startup</p>
-                    </div>
-                </div>
-                <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/2.png" alt="Freelancers">
-                    <div class="audience-info">
-                        <h4> BUSINESS OWNERS</h4> 
-                        <p> looking to scale online</p>
-                    </div>
-                </div>
-                <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/3.png" alt="Students">
-                    <div class="audience-info">
-                        <h4> STUDENTS</h4>
-                        <p> building a global brand</p>
-                    </div>
-                </div>
-                <div class="audience-card">
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/4.png" alt="Creatives">
-                    <div class="audience-info">
-                        <h4> FREELANCERS</h4>
-                        <p> artists wanting to sell their work online</p>
-                    </div>
-                </div>
-            </div>
-            <button class="audience-nav-btn next" id="audienceNext">›</button>
-        </div>
-    </section>
 
-    <!-- Section 10: Mentor -->
-    <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
-        <div class="mentor-content">
-            <h3 class="mentor-label">Your Mentor</h3>
-            <h2 class="mentor-headline">To <span class="highlight">INSPIRE</span>, <span class="highlight">EDUCATE</span>, and <span class="highlight">EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.</h2>
-            <p class="mentor-name">Mr 7</p>
-            <button class="btn btn--outline-dark btn--sm">OUR VALUES</button>
-            <div class="mentor-links">
-                <div class="mentor-link active" data-text="To <span class='highlight'>INSPIRE</span>, <span class='highlight'>EDUCATE</span>, and <span class='highlight'>EMPOWER</span> the next generation of BUSINESS leaders for lasting results that reveal themselves over time.">mission</div>
-                <div class="mentor-link" data-text="We believe that <span class='highlight'>MOST STARTUP LAGS</span>, because the founders were never taught about the fundamentals of building a business. Our philosophy centers on <span class='highlight'>FRAMEWORKS, CASE STUDIES, PROBLEMS & SOLUTIONS</span> which makes the founder BUSINESS READY.">philosophy</div>
-                <div class="mentor-link" data-text="He is an <span class='highlight'>ENTREPRENEUR & INVESTOR </span>and is an MBA graduate from XLRI Jamshedpur. He has 10+ years of experience in CONSULTING & MENTORING Startups. He is the <span class='highlight'>FOUNDER</span> of School of 7.">about</div>
-            </div>
-        </div>
-        <div class="mentor-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.png" alt="Mr 7 - Your Mentor">
-        </div>
-    </section>
+
 
     <!-- Section 11: Course Pricing (Blue Cards) -->
     <section class="section course-pricing-section" id="pricing">
