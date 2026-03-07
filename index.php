@@ -174,6 +174,19 @@
         </div>
     </section>
 
+                <!-- Feature Section: Why This Course -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
+            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
+        </div>
+        <div class="feature-image">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Digital Workshop">
+            <button class="zoom-btn">+</button>
+        </div>
+    </section>
+
     <!-- Section 8: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
