@@ -207,12 +207,6 @@
                         <h4> CORPORATE EMPLOYEE</h4>
                         <p> hired as a growth hacker</p>
                     </div>
-                <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/best%20business%20course%20for%20beginners%20India.png" alt="Creatives">
-                    <div class="audience-info">
-                        <h4> BUSINESS OWNER</h4>
-                        <p> build systems to scale business</p>
-                    </div>
                 </div>
             </div>
             <button class="audience-nav-btn next" id="audienceNext">›</button>
