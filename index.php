@@ -112,7 +112,7 @@
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1,899</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png" alt="Digital Workshop">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
@@ -256,7 +256,7 @@
             </div>
         </div>
         <div class="curriculum-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/course-curriculom.png" alt="Course Syllabus">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/how-to-validate-startup-idea-india.png" alt="Course Syllabus">
         </div>
     </section>
 
@@ -287,7 +287,7 @@
             </div>
         </div>
         <div class="mentor-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mr7.png" alt="Mr 7 - Your Mentor">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/online-business-course-business-owners-india.png" alt="Mr 7 - Your Mentor">
         </div>
     </section>
 
@@ -439,7 +439,7 @@
             </div>
         </div>
         <div class="faq-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/faq.jpg" alt="Masterclass FAQ">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/mr7-startup-business-course-india.jpg" alt="Masterclass FAQ">
         </div>
     </section>
 
