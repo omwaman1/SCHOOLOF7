@@ -589,7 +589,7 @@
                     <span class="new-price">Rs 899</span>
                     <span class="old-price">Rs 6999</span>
                 </div>
-                <div class="sticky-deadline"><strong>87% Off</strong>&nbsp </div>
+                <div class="sticky-deadline"><strong>87% Off Today</strong>&nbsp </div>
             </div>
         </div>
         <div class="sticky-actions">
