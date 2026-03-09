@@ -107,7 +107,7 @@
             <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Building business is an art. Master it. Build your Fortune.</h3>
+            <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹899</a>
         </div>
@@ -587,9 +587,9 @@
             <div class="sticky-offer">
                 <div class="sticky-offer-row">
                     <span class="new-price">Rs 899</span>
-                    <span class="old-price">Rs 1899</span>
+                    <span class="old-price">Rs 6999</span>
                 </div>
-                <div class="sticky-deadline"><strong>52% Off Today</strong>&nbsp </div>
+                <div class="sticky-deadline"><strong>87% Off Today</strong>&nbsp </div>
             </div>
         </div>
         <div class="sticky-actions">
