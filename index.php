@@ -418,7 +418,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG DO I HAVE ACCESS TO THIS COURSE?</button>
-                    <div class="accordion-body">You get 3 years access to course content.</div>
+                    <div class="accordion-body">You get 1 year access to course content.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">IS THERE A CERTIFICATE?</button>
