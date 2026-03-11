@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Masterclass India — Learn Business in 8 Hours | School of 7</title>
-    <meta name="description" content="Master how to start & scale a startup in 8 hours. India's affordable business masterclass — validate ideas, raise funds, build your team. Enroll for ₹899.">
+    <meta name="description" content="Master how to start & scale a startup in 8 hours. India's affordable business masterclass — validate ideas, raise funds, build your team. Enroll for ₹2499.">
 <meta property="og:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
-<meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹899.">
+<meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹2499.">
 <meta property="og:image" content="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
 <meta property="og:url" content="https://schoolof7.com/">
 <meta property="og:type" content="website">
@@ -109,7 +109,7 @@
         <div class="feature-content">
             <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹899</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹2,499</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
@@ -143,7 +143,7 @@
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹899/-</div>
+                <div class="plan-price">₹2499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -151,7 +151,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(89900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(249900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -160,7 +160,7 @@
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹599/-</div>
+                <div class="plan-price">₹1899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -168,7 +168,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(59900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(189900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -265,7 +265,7 @@
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹899</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹2499</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/IIM%20vs%20online%20startup%20course.png" alt="Digital Workshop">
@@ -346,7 +346,7 @@
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹899/-</div>
+                <div class="plan-price">₹2499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -354,7 +354,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(89900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(249900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
 
@@ -363,7 +363,7 @@
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹599/-</div>
+                <div class="plan-price">₹1899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -371,7 +371,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(59900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(189900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -586,10 +586,10 @@
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar" style="width: 70px; height: 70px; border: none; border-radius: 0; margin-top: -35px; object-fit: contain; box-shadow: none;">
             <div class="sticky-offer">
                 <div class="sticky-offer-row">
-                    <span class="new-price">Rs 899</span>
-                    <span class="old-price">Rs 6999</span>
+                    <span class="new-price">Rs 2499</span>
+                    <span class="old-price">Rs 12,999</span>
                 </div>
-                <div class="sticky-deadline"><strong>87% Off Today</strong>&nbsp </div>
+                <div class="sticky-deadline"><strong>81% Off Today</strong>&nbsp </div>
             </div>
         </div>
         <div class="sticky-actions">
@@ -771,7 +771,7 @@
                             'content_category': 'Course',
                             'content_type': 'product',
                             'content_ids': ['startup-masterclass-2026'],
-                            'value': 899,
+                            'value': 2499,
                             'currency': 'INR',
                             'eventID': eventID
                         });
@@ -783,7 +783,7 @@
                                 content_category: 'Course',
                                 content_type: 'product',
                                 content_ids: ['startup-masterclass-2026'],
-                                value: 899,
+                                value: 2499,
                                 currency: 'INR'
                             }, {eventID: eventID});
                             console.log('FB Pixel: ViewContent fired with eventID:', eventID);
@@ -795,12 +795,12 @@
                         if (typeof gtag !== 'undefined') {
                             gtag('event', 'view_item', {
                                 currency: 'INR',
-                                value: 899,
+                                value: 2499,
                                 items: [{
                                     item_id: 'startup-masterclass-2026',
                                     item_name: 'Startup Masterclass Pricing',
                                     item_category: 'Course',
-                                    price: 899
+                                    price: 2499
                                 }]
                             });
                         }
@@ -1232,7 +1232,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "899",
+        "price": "2499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "url": "https://schoolof7.com/#pricing"
