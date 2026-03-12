@@ -1187,12 +1187,8 @@
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
 
-        // Initialize with automatic advanced matching enabled
-        fbq('init', '879330084480824', {
-            em: 'enable',  // Enable automatic email matching
-            ph: 'enable',  // Enable automatic phone matching
-            external_id: 'enable'  // Enable external ID tracking
-        });
+        // Initialize pixel - AAM (Automatic Advanced Matching) is enabled by default
+        fbq('init', '879330084480824');
 
         // Track PageView with eventID for deduplication
         fbq('track', 'PageView', {}, {
