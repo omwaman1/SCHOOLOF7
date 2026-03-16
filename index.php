@@ -587,9 +587,9 @@
             <div class="sticky-offer">
                 <div class="sticky-offer-row">
                     <span class="new-price">Rs 1899</span>
-                    <span class="old-price">Rs 12,999</span>
+                    <span class="old-price">Rs 8,999</span>
                 </div>
-                <div class="sticky-deadline"><strong>81% Off Today</strong>&nbsp </div>
+                <div class="sticky-deadline"><strong>79% Off Today</strong>&nbsp </div>
             </div>
         </div>
         <div class="sticky-actions">
