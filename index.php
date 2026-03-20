@@ -280,31 +280,14 @@
         <h2 class="section-title text-center">Invest in your Future</h2>
         <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
 
-                    <!-- Demo Masterclass Learning Plan -->
-            <div class="course-card standard">
-                <div class="card-icon">🕐</div>
-                <h3 class="plan-title">Demo Masterclass</h3>
-                <p class="plan-lang">English</p>
-                <div class="plan-price">₹199/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">Downloadable PDF Course Notes</li>
-                    <li class="cross">Course Virtual Community</li>
-                    <li class="cross">Course Upgrades at Zero Cost</li>
-                    <li class="cross">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-        </div>
-    </section>
+
 
         <div class="course-pricing-grid">
             <!-- Advanced Learning Plan - BEST VALUE -->
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
-                <h3 class="plan-title">Advanced Learning Plan</h3>
+                <h3 class="plan-title">Demo Masterclass</h3>
                 <p class="plan-lang">English | Full Access</p>
                 <div class="plan-price">₹1899/-</div>
                 <ul class="plan-features">
@@ -315,23 +298,6 @@
                     <li class="check">Certificate of Achievement</li>
                 </ul>
                 <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-
-            <!-- Standard Learning Plan -->
-            <div class="course-card standard">
-                <div class="card-icon">🕐</div>
-                <h3 class="plan-title">Standard Learning Plan</h3>
-                <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1499/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">Downloadable PDF Course Notes</li>
-                    <li class="cross">Course Virtual Community</li>
-                    <li class="cross">Course Upgrades at Zero Cost</li>
-                    <li class="cross">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
