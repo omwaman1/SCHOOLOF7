@@ -253,7 +253,7 @@
         <div class="feature-content">
             <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Join the Masterclass at ₹199</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
@@ -275,34 +275,6 @@
 
 
 
-        <!-- Section 11: Course Pricing (Blue Cards) -->
-    <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Invest in your Future</h2>
-        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
-
-
-
-        <div class="course-pricing-grid">
-            <!-- Advanced Learning Plan - BEST VALUE -->
-            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
-                <div class="best-value-badge">BEST VALUE</div>
-                <div class="card-icon">📹</div>
-                <h3 class="plan-title">Demo Masterclass</h3>
-                <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1899/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
-                    <li class="check">Course Virtual Community</li>
-                    <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-        </div>
-        </section>
-    </section>
 
         <!-- Section 9: Target Audience -->
     <section class="section audience-section">
@@ -390,20 +362,7 @@
         </div>
     </section>
 
-                            <!-- Feature Section: Why This Course -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
-            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/IIM%20vs%20online%20startup%20course.png" alt="Digital Workshop">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
-
-                <!-- Section 10: Mentor -->
+                    <!-- Section 10: Mentor -->
     <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
         <div class="mentor-content">
             <h3 class="mentor-label">Your Mentor</h3>
@@ -419,6 +378,48 @@
         <div class="mentor-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/online-business-course-business-owners-india.png" alt="Mr 7 - Your Mentor">
         </div>
+    </section>
+
+                            <!-- Feature Section: Why This Course -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
+            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
+        </div>
+        <div class="feature-image">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/IIM%20vs%20online%20startup%20course.png" alt="Digital Workshop">
+            <button class="zoom-btn">+</button>
+        </div>
+    </section>
+
+
+
+            <!-- Section 11: Course Pricing (Blue Cards) -->
+    <section class="section course-pricing-section" id="pricing">
+        <h2 class="section-title text-center">Invest in your Future</h2>
+        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
+
+        <div class="course-pricing-grid">
+            <!-- Advanced Learning Plan - BEST VALUE -->
+            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
+                <div class="best-value-badge">BEST VALUE</div>
+                <div class="card-icon">📹</div>
+                <h3 class="plan-title">Demo Masterclass</h3>
+                <p class="plan-lang">English | Full Access</p>
+                <div class="plan-price">₹1899/-</div>
+                <ul class="plan-features">
+                    <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">Downloadable PDF Course Notes</li>
+                    <li class="check">Course Virtual Community</li>
+                    <li class="check">Course Upgrades at Zero Cost</li>
+                    <li class="check">Certificate of Achievement</li>
+                </ul>
+                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <p class="refund-policy">Founder Ready in 8 Modules</p>
+            </div>
+        </div>
+        </section>
     </section>
 
         <!-- Section 7: Testimonials -->
