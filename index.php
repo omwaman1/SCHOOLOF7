@@ -267,7 +267,7 @@
         <h2 class="video-help-title">How This Masterclass Will Help You?</h2>
         <div class="video-container-framed">
             <div class="video-wrapper">
-                <video muted preload="none" id="coursePreviewVideo" playsinline webkit-playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/thumbnail_video_image.png"></video>
+                <video muted preload="none" id="coursePreviewVideo" playsinline webkit-playsinline controls poster="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20masterclass%20at%20199%20rupees.png"></video>
             </div>
             <h3 class="video-caption" style="color: #67635f; margin-top: 20px;">" The cost of waiting is high.<br>Start & Scale your business right<br> - not random. "</h3>
         </div>
