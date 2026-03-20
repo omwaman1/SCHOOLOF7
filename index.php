@@ -301,6 +301,7 @@
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
+        </section>
     </section>
 
         <!-- Section 9: Target Audience -->
