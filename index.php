@@ -139,28 +139,28 @@
             <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
             <div class="audience-grid" id="audienceCarousel">
                 <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20for%20corporate%20employees%20India%20.%20png.png" alt="Entrepreneurs">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Best%20startup%20course%20in%20India.png" alt="Entrepreneurs">
                     <div class="audience-info">
                         <h4> CORPORATE EMPLOYEE</h4>
                         <p> started from scratch</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Startup%20course%20under%202000%20rupees.png" alt="Freelancers">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Startup%20course.png" alt="Freelancers">
                     <div class="audience-info">
                         <h4> BUSINESS OWNER</h4> 
                         <p> scaled from India & went global</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Startup%20course%20better%20than%20MBA%20India%20.png" alt="Students">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20success%20course.png" alt="Students">
                     <div class="audience-info">
                         <h4> STUDENT</h4>
                         <p> chose to startup against college placement</p>
                     </div>
                 </div>
                 <div class="audience-card">
-                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/side%20business%20course%20for%20employees%20India.png" alt="Creatives">
+                    <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Creatives">
                     <div class="audience-info">
                         <h4> CORPORATE EMPLOYEE</h4>
                         <p> hired as a growth hacker</p>
