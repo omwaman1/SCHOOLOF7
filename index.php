@@ -239,12 +239,12 @@
                             <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Scaling → Automation → Funding</h3>
+            <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/IIM%20vs%20online%20startup%20course.png" alt="Digital Workshop">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
