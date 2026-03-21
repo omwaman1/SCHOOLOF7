@@ -108,7 +108,7 @@
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-            <p class="feature-description">The Masterclass to Business Success.</p>
+            <p class="feature-description">In 2 Hours. Business Ready.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
         </div>
         <div class="feature-image">
@@ -209,7 +209,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">Consumer's Behavorial & Buying Psychology <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Cost of co-ordination strategy for Founder<br>• How to identify pain points of customers?<br><br>• The customer buying journey analysis<br>• 5 leaders' weapons for growth</div>
+                    <div class="accordion-body">• Cost of co-ordination strategy for Founder<br>• How to identify pain points of customers?<br>• The customer buying journey analysis<br>• 5 leaders' weapons for growth</div>
                 </div>
             </div>
         </div>
@@ -331,7 +331,7 @@
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
-            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <p class="feature-description">The Masterclass to Business Success.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹199</a>
         </div>
         <div class="feature-image">
