@@ -185,7 +185,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">How to Beat Competition? <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• The Generational Fatigue Concept<br>•  Customer Segmentation Strategy<br>• Customer segmentation<br>• Creating USP for your Brand.<br>• The Market Openness Strategy<br>• Case Studies</div>
+                    <div class="accordion-body">• The Generational Fatigue Concept<br>•  Customer Segmentation Strategy<br>• Creating USP for your Brand.<br>• The Market Openness Strategy<br>• Case Studies</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">7 Strategy Case Studies <span class="icon-circle">+</span></button>
@@ -209,7 +209,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">Consumer's Behavorial & Buying Psychology <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Cost of co-ordination strategy for Founder<br>• The customer buying jounrney analysis</div>
+                    <div class="accordion-body">• Cost of co-ordination strategy for Founder<br>• How to identify pain points of customers?<br><br>• The customer buying journey analysis<br>• 5 leaders' weapons for growth</div>
                 </div>
             </div>
         </div>
@@ -543,7 +543,7 @@
             <div class="accordion faq-accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">DO I NEED PRIOR EXPERIENCE? HOW THIS BUSINESS COURSE WILL HELP ME?</button>
-                    <div class="accordion-body">No. The course discusses about the Do's & Dont's. From basic to advanced topics, which will develop founders' business acumen, all are discussed at length substantiated with real life examples.</div>
+                    <div class="accordion-body">No. From basic to advanced topics, which will develop founders' business acumen, all are discussed at length substantiated with real life examples.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW LONG WILL IT TAKE TO GET THE LINK TO THE MASTERCLASS?</button>
@@ -554,7 +554,7 @@
                     <div class="accordion-body">The masterclass will require 2 hours to complete.</div>
                 </div>
                  <div class="accordion-item">
-                    <button class="accordion-header">DOES THE MASTERCLASS COME WITH ANY LIVE INTERACTION?</button>
+                    <button class="accordion-header">DOES THE BUSINESS/STARTUP MASTERCLASS COME WITH ANY LIVE INTERACTION?</button>
                     <div class="accordion-body">YES</div>
                 </div>
                 <div class="accordion-item">
