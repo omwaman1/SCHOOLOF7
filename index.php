@@ -241,7 +241,7 @@
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
             <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹199</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png" alt="Digital Workshop">
@@ -324,7 +324,7 @@
     <div class="top-hero-image-wrap">
       <!-- 🖼️ REPLACE THE src BELOW WITH YOUR IMAGE URL -->
       <img
-        src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png"
+        src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png"
         alt="Banner"
         class="top-hero-img"
       />
@@ -718,10 +718,10 @@
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar" style="width: 70px; height: 70px; border: none; border-radius: 0; margin-top: -35px; object-fit: contain; box-shadow: none;">
             <div class="sticky-offer">
                 <div class="sticky-offer-row">
-                    <span class="new-price">Rs 1899</span>
-                    <span class="old-price">Rs 8,999</span>
+                    <span class="new-price">Rs 199</span>
+                    <span class="old-price">Rs 1299</span>
                 </div>
-                <div class="sticky-deadline"><strong>79% Off Today</strong>&nbsp </div>
+                <div class="sticky-deadline"><strong>84% Off Today</strong>&nbsp </div>
             </div>
         </div>
         <div class="sticky-actions">
