@@ -236,6 +236,73 @@
         </div>
     </section>
 
+                <!-- Section 11: Course Pricing (Blue Cards) -->
+    <section class="section course-pricing-section" id="pricing">
+        <h2 class="section-title text-center">Invest in your Future</h2>
+        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
+
+        <div class="course-pricing-grid">
+            <!-- Advanced Learning Plan - BEST VALUE -->
+            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
+                <div class="best-value-badge">BEST VALUE</div>
+                <div class="card-icon">📹</div>
+                <h3 class="plan-title">Demo Masterclass</h3>
+                <p class="plan-lang">English | Full Access</p>
+                <div class="plan-price">₹1899/-</div>
+                <ul class="plan-features">
+                    <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">Downloadable PDF Course Notes</li>
+                    <li class="check">Course Virtual Community</li>
+                    <li class="check">Course Upgrades at Zero Cost</li>
+                    <li class="check">Certificate of Achievement</li>
+                </ul>
+                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <p class="refund-policy">Founder Ready in 8 Modules</p>
+            </div>
+        </div>
+        </section>
+    </section>
+
+            <!-- Section 7: Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="testimonials-header">
+            <div class="testimonials-title-group">
+                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
+                <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
+            </div>
+            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
+        </div>
+        <div class="ugc-carousel-wrapper">
+            <div class="ugc-carousel" id="ugcCarousel">
+                <!-- UGC Video Item 1 -->
+                <div class="ugc-item" data-index="0">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
+                </div>
+                <!-- UGC Video Item 2 -->
+                <div class="ugc-item" data-index="1">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
+                </div>
+                <!-- UGC Video Item 3 -->
+                <div class="ugc-item" data-index="2">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
+                </div>
+                <!-- UGC Video Item 4 -->
+                <div class="ugc-item" data-index="3">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
+                </div>
+                <!-- UGC Video Item 5 -->
+                <div class="ugc-item" data-index="4">
+                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
+                </div>
+            </div>
+        </div>
+        <div class="ugc-divider"></div>
+        <div class="ugc-nav">
+            <button class="ugc-nav-btn prev" id="ugcPrev">‹</button>
+            <button class="ugc-nav-btn next" id="ugcNext">›</button>
+        </div>
+    </section>
+
                             <!-- Feature Section: Why This Course -->
     <section class="feature-section">
         <div class="feature-content">
@@ -395,217 +462,34 @@
 <!-- ===== END HERO BANNER SECTION ===== -->
 
 
-            <!-- Section 11: Course Pricing (Blue Cards) -->
-    <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Invest in your Future</h2>
-        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
 
-        <div class="course-pricing-grid">
-            <!-- Advanced Learning Plan - BEST VALUE -->
-            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
-                <div class="best-value-badge">BEST VALUE</div>
-                <div class="card-icon">📹</div>
-                <h3 class="plan-title">Demo Masterclass</h3>
-                <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1899/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
-                    <li class="check">Course Virtual Community</li>
-                    <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-        </div>
-        </section>
-    </section>
 
-        <!-- Section 7: Testimonials -->
-    <section class="section testimonials-section" id="testimonials">
-        <div class="testimonials-header">
-            <div class="testimonials-title-group">
-                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
-                <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
-            </div>
-            <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
+            <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-video-container">
+            <!-- Single video element - source loaded by JS based on device -->
+            <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png"></video>
+            <div class="hero-overlay"></div>
+            <button class="video-control" id="video-toggle">II</button>
+            <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
+                <svg class="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+            </button>
         </div>
-        <div class="ugc-carousel-wrapper">
-            <div class="ugc-carousel" id="ugcCarousel">
-                <!-- UGC Video Item 1 -->
-                <div class="ugc-item" data-index="0">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
-                </div>
-                <!-- UGC Video Item 2 -->
-                <div class="ugc-item" data-index="1">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
-                </div>
-                <!-- UGC Video Item 3 -->
-                <div class="ugc-item" data-index="2">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
-                </div>
-                <!-- UGC Video Item 4 -->
-                <div class="ugc-item" data-index="3">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
-                </div>
-                <!-- UGC Video Item 5 -->
-                <div class="ugc-item" data-index="4">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
-                </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
+            <p class="hero-subtitle">The ultimate guide to scaling your business online.
+            </p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
             </div>
-        </div>
-        <div class="ugc-divider"></div>
-        <div class="ugc-nav">
-            <button class="ugc-nav-btn prev" id="ugcPrev">‹</button>
-            <button class="ugc-nav-btn next" id="ugcNext">›</button>
         </div>
     </section>
 
-    <!-- ===== HERO BANNER SECTION - PASTE AT TOP OF BODY ===== -->
-<section class="top-hero-banner">
-  <div class="top-hero-inner">
-    <div class="top-hero-image-wrap">
-      <!-- 🖼️ REPLACE THE src BELOW WITH YOUR IMAGE URL -->
-      <img
-        src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
-        alt="Banner"
-        class="top-hero-img"
-      />
-    </div>
-    <div class="top-hero-body">
-      <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
-      <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
-      <!-- 🔗 REPLACE href BELOW WITH YOUR DESTINATION URL -->
-      <a href="#pricing" class="top-hero-btn">
-        Get Started →
-      </a>
-    </div>
-  </div>
-</section>
 
-<style>
-/* ===== TOP HERO BANNER STYLES ===== */
-.top-hero-banner {
-  width: 100%;
-  background: #0d1f0a;
-  padding: 60px 20px;
-  box-sizing: border-box;
-}
 
-.top-hero-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  flex-wrap: wrap;
-}
 
-.top-hero-image-wrap {
-  flex: 1 1 380px;
-  min-width: 280px;
-  max-width: 560px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-}
-
-.top-hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.top-hero-body {
-  flex: 1 1 300px;
-  min-width: 260px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.top-hero-heading {
-  font-family: 'Barlow Condensed', 'Oswald', sans-serif;
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 800;
-  color: #ffffff;
-  line-height: 1.1;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-.top-hero-sub {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  color: #b5c9ae;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.top-hero-btn {
-  display: inline-block;
-  background: #4e6a47;
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 16px 36px;
-  border-radius: 50px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  align-self: flex-start;
-  box-shadow: 0 4px 20px rgba(78,106,71,0.4);
-}
-
-.top-hero-btn:hover {
-  background: #3a5035;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(78,106,71,0.55);
-}
-
-.top-hero-btn:active {
-  transform: translateY(0);
-}
-
-/* Tablet */
-@media (max-width: 820px) {
-  .top-hero-inner {
-    gap: 32px;
-  }
-  .top-hero-image-wrap {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-  .top-hero-body {
-    flex: 1 1 100%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .top-hero-banner {
-    padding: 40px 16px;
-  }
-  .top-hero-inner {
-    gap: 24px;
-  }
-  .top-hero-btn {
-    width: 100%;
-    text-align: center;
-    padding: 15px 20px;
-  }
-  .top-hero-image-wrap {
-    border-radius: 12px;
-  }
-}
-/* ===== END TOP HERO BANNER STYLES ===== */
-</style>
-<!-- ===== END HERO BANNER SECTION ===== -->
 
 
 
@@ -794,28 +678,153 @@
         <div class="carousel-dots" id="carouselDots"></div>
     </section>
 
-        <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-video-container">
-            <!-- Single video element - source loaded by JS based on device -->
-            <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none" poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png"></video>
-            <div class="hero-overlay"></div>
-            <button class="video-control" id="video-toggle">II</button>
-            <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
-                <svg class="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
-                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                </svg>
-            </button>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
-            <p class="hero-subtitle">The ultimate guide to scaling your business online.
-            </p>
-            <div class="hero-actions">
-                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
-            </div>
-        </div>
-    </section>
+
+
+
+        <!-- ===== HERO BANNER SECTION - PASTE AT TOP OF BODY ===== -->
+<section class="top-hero-banner">
+  <div class="top-hero-inner">
+    <div class="top-hero-image-wrap">
+      <!-- 🖼️ REPLACE THE src BELOW WITH YOUR IMAGE URL -->
+      <img
+        src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
+        alt="Banner"
+        class="top-hero-img"
+      />
+    </div>
+    <div class="top-hero-body">
+      <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
+      <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
+      <!-- 🔗 REPLACE href BELOW WITH YOUR DESTINATION URL -->
+      <a href="#pricing" class="top-hero-btn">
+        Get Started →
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== TOP HERO BANNER STYLES ===== */
+.top-hero-banner {
+  width: 100%;
+  background: #0d1f0a;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.top-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.top-hero-image-wrap {
+  flex: 1 1 380px;
+  min-width: 280px;
+  max-width: 560px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.top-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.top-hero-body {
+  flex: 1 1 300px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-hero-heading {
+  font-family: 'Barlow Condensed', 'Oswald', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.top-hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #b5c9ae;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.top-hero-btn {
+  display: inline-block;
+  background: #4e6a47;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 20px rgba(78,106,71,0.4);
+}
+
+.top-hero-btn:hover {
+  background: #3a5035;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(78,106,71,0.55);
+}
+
+.top-hero-btn:active {
+  transform: translateY(0);
+}
+
+/* Tablet */
+@media (max-width: 820px) {
+  .top-hero-inner {
+    gap: 32px;
+  }
+  .top-hero-image-wrap {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .top-hero-body {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .top-hero-banner {
+    padding: 40px 16px;
+  }
+  .top-hero-inner {
+    gap: 24px;
+  }
+  .top-hero-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .top-hero-image-wrap {
+    border-radius: 12px;
+  }
+}
+/* ===== END TOP HERO BANNER STYLES ===== */
+</style>
+<!-- ===== END HERO BANNER SECTION ===== -->
 
     <!-- Section 13: Promise (Certificate) -->
     <section class="section promise-section">
