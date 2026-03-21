@@ -177,7 +177,7 @@
     <!-- Section 8: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
-            <h2 class="curriculum-heading">What will you Learn <br>In 2 hours Masterclass? </h2>
+            <h2 class="curriculum-heading"><span class="heading-bold">WHAT WILL YOU LEARN</span><br>In 2 hours Masterclass?</h2>
             <div class="accordion curriculum-accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">The Modern ways of Doing Business <span class="icon-circle">+</span></button>
