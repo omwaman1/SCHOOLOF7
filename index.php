@@ -353,7 +353,7 @@
     </div>
     <div class="top-hero-body">
       <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
-      <p class="top-hero-sub">Adapting & Building somethong of your own is the future. — Elon Musk</p>
+      <p class="top-hero-sub">Adapting & Building something of your own is the future. — Elon Musk</p>
       <!-- 🔗 REPLACE href BELOW WITH YOUR DESTINATION URL -->
       <a href="#pricing" class="top-hero-btn">
         Let's Build →
