@@ -108,7 +108,7 @@
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-            <p class="feature-description">In 8 Modules. 8 Hours. Business Ready.</p>
+            <p class="feature-description">The Masterclass to Business Success.</p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
         </div>
         <div class="feature-image">
@@ -142,14 +142,14 @@
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Best%20startup%20course%20in%20India.png" alt="Entrepreneurs">
                     <div class="audience-info">
                         <h4> CORPORATE EMPLOYEE</h4>
-                        <p> started from scratch</p>
+                        <p> scaled from India & went global</p>
                     </div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Startup%20course.png" alt="Freelancers">
                     <div class="audience-info">
                         <h4> BUSINESS OWNER</h4> 
-                        <p> scaled from India & went global</p>
+                        <p> built strategies to scale</p>
                     </div>
                 </div>
                 <div class="audience-card">
@@ -163,7 +163,7 @@
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Creatives">
                     <div class="audience-info">
                         <h4> CORPORATE EMPLOYEE</h4>
-                        <p> hired as a growth hacker</p>
+                        <p> started from scratch</p>
                     </div>
                 </div>
             </div>
@@ -177,39 +177,39 @@
     <!-- Section 8: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
-            <h2 class="curriculum-heading"><span class="heading-bold">COURSE </span><br><span class="heading-bold">CURRICULUM</span> </h2>
+            <h2 class="curriculum-heading"><span class="heading-bold">What will you Learn </span><br><span class="heading-bold">In 2 hours Masterclass?</span> </h2>
             <div class="accordion curriculum-accordion">
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 1: Funneling Startup Ideas <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• How to find ideas in the first place?<br>• 4 categories of startup ideas<br>• How to improve your research abilities?<br>• Your personal assessment as a founder<br>• Home Work</div>
+                    <button class="accordion-header">The Modern ways of Doing Business <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• What is Business?<br>• Why it’s the right time to start Business?<br>• Old vs Modern Business ways?<br>• Automation via AI</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 2: Finalising the Right Startup Idea <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Size - growth - competition framework<br>•  Demand - supply | Demand - value framework<br>• Customer segmentation<br>• Understanding Unit Economics<br>• Demand analysis tools<br>• Live demand analysis via Meta simulation<br>•  Home Work</div>
+                    <button class="accordion-header">How to Beat Competition? <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• The Generational Fatigue Concept<br>•  Customer Segmentation Strategy<br>• Customer segmentation<br>• Creating USP for your Brand.<br>• The Market Openness Strategy<br>• Case Studies</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 3: Creating Your First Product/Service Version <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">•  Minimum Viable Product(MVP): approach & significance<br>•  Unique Selling Point(USP): Analysis for MVP<br>•  Methods for Product/Service manufacturing<br>•  Home Work</div>
+                    <button class="accordion-header">7 Strategy Case Studies <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">•  Bata Nike case study<br>•  Apple case study<br>•  Cadbury case study<br>•  Harpic Apple case study<br>•  Ola-Rapido-Uber case study<br>•  Apple-Tupperware case study<br>•  The Shopkeeper case study </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 4: Pricing Your Product/Service <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">•  5 Levers to decide the right price<br>•  Consumer Surplus analysis for pricing<br>•  Price analysis via customer segmentation<br>•  Home Work</div>
+                    <button class="accordion-header">How to Select the right Business Idea? <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">•  5 Levers to decide the right price<br>•  Consumer Surplus analysis for pricing<br>•  Price analysis via customer segmentation</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 5: Building Your Founding Team <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Co-Founder vs Solopreneur<br>• Product & Team building principles<br>• Best hiring practices<br>• Train yourself to become a CEO<br>• Home Work</div>
+                    <button class="accordion-header">Do's & Dont's of Business <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• Co-Founder vs Solopreneur<br>• Product & Team building principles<br>• Best hiring practices<br>• Train yourself to become a CEO</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 6: Scaling Your Product/Service <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Understanding Product Market Fit(PMF)<br>• Scaling Product via customer segmentation<br>• Product Cannibalisation strategy<br>• Home Work</div>
+                    <button class="accordion-header">Leader's Mindset to Grow & Scale the Business <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• Understanding Product Market Fit(PMF)<br>• Scaling Product via customer segmentation<br>• Product Cannibalisation strategy</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 7: Marketing Your Product/Service <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Organic & Inorganic marketing strategies<br>• Positioning & Perception mapping<br>• How to design ads via customer segmentation<br>• Push - Pull methodology<br>• Brand Generational Fatigue<br>• Home Work</div>
+                    <button class="accordion-header">How to Build System's & Processes to Scale your Business? <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• Troxler's experiment<br>• Organic & Inorganic marketing strategies<br>• Positioning & Perception mapping<br>• How to design ads via customer segmentation<br>• Push - Pull methodology</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">MODULE 8: Fundraising | Co-Founder Equity Split | ESOPs <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• Skepticism around fundraising<br>• Fundraising concepts & principles<br>• When and at which stage should you raise funds?<br>• Analysing company valuation: pre & post fundraising<br>• Fundraising trap/process<br>• Equity split with co-founder<br>• ESOPs sharing/distribution concepts<br>• Home Work</div>
+                    <button class="accordion-header">Consumer's Behavorial & Buying Psychology <span class="icon-circle">+</span></button>
+                    <div class="accordion-body">• Cost of co-ordination strategy for Founder<br>• The customer buying jounrney analysis</div>
                 </div>
             </div>
         </div>
@@ -546,24 +546,20 @@
                     <div class="accordion-body">No. The course discusses about the Do's & Dont's. From basic to advanced topics, which will develop founders' business acumen, all are discussed at length substantiated with real life examples.</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">HOW LONG WILL IT TAKE TO GET ACCESS TO THE COURSE?</button>
-                    <div class="accordion-body">Your credentials to access the course, will be delivered to your email inbox within 5–10 minutes of your purchase. Please check your promotions/updates tab and spam folder as well.</div>
+                    <button class="accordion-header">HOW LONG WILL IT TAKE TO GET THE LINK TO THE MASTERCLASS?</button>
+                    <div class="accordion-body">It will be delivered to your email inbox within 5–10 minutes of your purchase. Please check your promotions/updates tab and spam folder as well.</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">WHAT IS THE TIME COMMITMENT REQUIRED FOR THIS COURSE?</button>
-                    <div class="accordion-body">The course is self-paced and will require 8+ hours to complete, similar to other comprehensive business startup courses.</div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">WHAT IS THE COMMUNITY EXPERIENCE IN THE COURSE?</button>
-                    <div class="accordion-body">The advanced version of this course includes virtual community access, where students can communicate with each other and school of 7 and clear their doubts & queries.</div>
+                    <button class="accordion-header">WHAT IS THE TIME COMMITMENT REQUIRED FOR THIS MASTERCLASS?</button>
+                    <div class="accordion-body">The masterclass will require 2 hours to complete.</div>
                 </div>
                  <div class="accordion-item">
-                    <button class="accordion-header">DOES THE COURSE COME WITH ANY LIVE INTERACTION?</button>
-                    <div class="accordion-body">No, this is a self-paced course and doesn't have any live interaction, making it flexible for learners to complete the course at their own pace.</div>
+                    <button class="accordion-header">DOES THE MASTERCLASS COME WITH ANY LIVE INTERACTION?</button>
+                    <div class="accordion-body">YES</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">WHAT LANGUAGE IS THE COURSE IN?</button>
-                    <div class="accordion-body">The course language is English.</div>
+                    <button class="accordion-header">WHAT LANGUAGE IS THE MASTERCLASS IN?</button>
+                    <div class="accordion-body">The language is English.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">HOW CAN I CONTACT IN CASE OF DOUBTS OR CONCERNS?</button>
@@ -574,24 +570,12 @@
                     <div class="accordion-body">You can mail us your doubts/queries at Mr7@schoolof7.com</div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">HOW LONG DO I HAVE ACCESS TO THIS COURSE?</button>
-                    <div class="accordion-body">You get 1 year access to course content.</div>
-                </div>
-                <div class="accordion-item">
                     <button class="accordion-header">IS THERE A CERTIFICATE?</button>
-                    <div class="accordion-body">Yes, you will receive a verified certificate upon completion from School of 7.</div>
+                    <div class="accordion-body">NO</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHAT IS THE REFUND POLICY?</button>
                     <div class="accordion-body">There is no refund policy for this course.</div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">WHERE WILL I GET THE RECEIPT OF THE COURSE?</button>
-                    <div class="accordion-body">You can download the receipt from 'Purchase History' section as you login in your account. </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">WILL MORE MODULES BE ADDED?</button>
-                    <div class="accordion-body">Yes, we regularly update the course with new content at no extra cost for advanced learning plan. For Standard learning plan there in no course update.</div>
                 </div>
             </div>
         </div>
