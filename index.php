@@ -134,7 +134,7 @@
 
         <!-- Section 9: Target Audience -->
     <section class="section audience-section">
-        <h2 class="audience-title">Masterclass <em>success</em> stories!</h2>
+        <h2 class="audience-title">Masterclass <em>Success</em> Stories!</h2>
         <div class="audience-carousel-wrapper">
             <button class="audience-nav-btn prev" id="audiencePrev">‹</button>
             <div class="audience-grid" id="audienceCarousel">
@@ -249,6 +249,150 @@
         </div>
     </section>
 
+        <!-- ===== HERO BANNER SECTION - PASTE AT TOP OF BODY ===== -->
+<section class="top-hero-banner">
+  <div class="top-hero-inner">
+    <div class="top-hero-image-wrap">
+      <!-- 🖼️ REPLACE THE src BELOW WITH YOUR IMAGE URL -->
+      <img
+        src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png"
+        alt="Banner"
+        class="top-hero-img"
+      />
+    </div>
+    <div class="top-hero-body">
+      <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
+      <p class="top-hero-sub">Adapting & Building somethong of your own is the future. — Elon Musk</p>
+      <!-- 🔗 REPLACE href BELOW WITH YOUR DESTINATION URL -->
+      <a href="#pricing" class="top-hero-btn">
+        Let's Build →
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== TOP HERO BANNER STYLES ===== */
+.top-hero-banner {
+  width: 100%;
+  background: #0d1f0a;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.top-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.top-hero-image-wrap {
+  flex: 1 1 380px;
+  min-width: 280px;
+  max-width: 560px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.top-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.top-hero-body {
+  flex: 1 1 300px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-hero-heading {
+  font-family: 'Barlow Condensed', 'Oswald', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.top-hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #b5c9ae;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.top-hero-btn {
+  display: inline-block;
+  background: #4e6a47;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 20px rgba(78,106,71,0.4);
+}
+
+.top-hero-btn:hover {
+  background: #3a5035;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(78,106,71,0.55);
+}
+
+.top-hero-btn:active {
+  transform: translateY(0);
+}
+
+/* Tablet */
+@media (max-width: 820px) {
+  .top-hero-inner {
+    gap: 32px;
+  }
+  .top-hero-image-wrap {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .top-hero-body {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .top-hero-banner {
+    padding: 40px 16px;
+  }
+  .top-hero-inner {
+    gap: 24px;
+  }
+  .top-hero-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .top-hero-image-wrap {
+    border-radius: 12px;
+  }
+}
+/* ===== END TOP HERO BANNER STYLES ===== */
+</style>
+<!-- ===== END HERO BANNER SECTION ===== -->
 
 
             <!-- Section 11: Course Pricing (Blue Cards) -->
@@ -571,7 +715,7 @@
             </div>
         </div>
         <div class="faq-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png" alt="Masterclass FAQ">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/mr7-startup-business-course-india.jpg" alt="Masterclass FAQ">
         </div>
     </section>
 
