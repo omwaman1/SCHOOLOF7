@@ -112,7 +112,7 @@
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
@@ -244,7 +244,7 @@
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹1899</a>
         </div>
         <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png" alt="Digital Workshop">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png" alt="Digital Workshop">
             <button class="zoom-btn">+</button>
         </div>
     </section>
