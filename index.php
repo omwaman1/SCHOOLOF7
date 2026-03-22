@@ -110,7 +110,7 @@
     <div class="feature-content">
         <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
         <p class="feature-description">
-            <span class="feature-highlight-text">Join the Materclass on<br> 28th March 2026 | 11:00 AM - 1:00 PM IST</span>
+            <span class="feature-highlight-text">Join the Materclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
         </p>
         <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
     </div>
@@ -129,7 +129,7 @@
     border-radius: 6px;
     background: #d4e8ce;
     border-left: 3px solid #4e6a47;
-    -webkit-animation: quietBreathe 3.5s ease-in-out infinite;
+    -webkit-animation: quietBreathe 1.5s ease-in-out infinite;
     animation: quietBreathe 3.5s ease-in-out infinite;
 }
 @-webkit-keyframes quietBreathe {
