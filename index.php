@@ -104,30 +104,13 @@
 
 
     
-            <!-- Feature Section: Why This Course -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-            <p class="feature-description">In 2 Hours. Business Ready.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
 
-    
-
-    Here's the calm version — a soft green background that **slowly breathes** lighter ↔ slightly deeper every 3.5 seconds. No sweeping, no flashing. Here's the updated code to copy-paste:
-
-```html
 <!-- Feature Section: Why This Course -->
 <section class="feature-section">
     <div class="feature-content">
         <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
         <p class="feature-description">
-            <span class="feature-highlight-text">In 2 Hours. Business Ready.</span>
+            <span class="feature-highlight-text">Join the Materclass on<br> 28th March 2026 | 11:00 AM - 1:00 PM IST</span>
         </p>
         <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
     </div>
