@@ -484,20 +484,21 @@
         </div>
     </section>
 
-    <!-- Feature Section 2 -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
-            <p class="feature-description">
-                <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
-            </p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Startup Masterclass India" width="560" height="400" loading="lazy">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
+
+    <!-- Feature Section 1 -->
+<section class="feature-section">
+    <div class="feature-content">
+        <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
+        <p class="feature-description">
+            <span class="feature-highlight-text" style="white-space:nowrap;">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
+        </p>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
+    </div>
+    <div class="feature-image" style="line-height:0; font-size:0;">
+        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop" width="560" height="400" loading="lazy" style="display:block; width:100%; height:auto; vertical-align:middle;">
+        <button class="zoom-btn" style="font-size:14px;">+</button>
+    </div>
+</section>
 
     <!-- ===== HERO BANNER SECTION 2 ===== -->
     <section class="top-hero-banner">
