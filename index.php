@@ -105,51 +105,6 @@
 
     
 
-<!-- Feature Section: Why This Course -->
-<section class="feature-section">
-    <div class="feature-content">
-        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-        <p class="feature-description">
-            <span class="feature-highlight-text">Join the Materclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
-        </p>
-        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
-    </div>
-    <div class="feature-image">
-        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop">
-        <button class="zoom-btn">+</button>
-    </div>
-</section>
-
-<style>
-.feature-highlight-text {
-    display: inline-block;
-    font-weight: 700;
-    color: #0d1f0a;
-    padding: 5px 14px;
-    border-radius: 6px;
-    background: #d4e8ce;
-    border-left: 3px solid #4e6a47;
-    -webkit-animation: quietBreathe 1.5s ease-in-out infinite;
-    animation: quietBreathe 3.5s ease-in-out infinite;
-}
-@-webkit-keyframes quietBreathe {
-    0%   { background: #d4e8ce; border-left-color: #4e6a47; }
-    50%  { background: #b3d4aa; border-left-color: #2d5226; }
-    100% { background: #d4e8ce; border-left-color: #4e6a47; }
-}
-@keyframes quietBreathe {
-    0%   { background: #d4e8ce; border-left-color: #4e6a47; }
-    50%  { background: #b3d4aa; border-left-color: #2d5226; }
-    100% { background: #d4e8ce; border-left-color: #4e6a47; }
-}
-@media (prefers-reduced-motion: reduce) {
-    .feature-highlight-text {
-        -webkit-animation: none;
-        animation: none;
-        background: #d4e8ce;
-    }
-}
-</style>
 
 
     <!-- Section 6: Video Course Preview -->
@@ -361,18 +316,52 @@
     </section>
 
 
-                            <!-- Feature Section: Why This Course -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
-            <p class="feature-description">The Masterclass to Business Success.</p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Invest ₹199</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
+    <!-- Feature Section: Why This Course -->
+<section class="feature-section">
+    <div class="feature-content">
+        <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
+        <p class="feature-description">
+            <span class="feature-highlight-text">Join the Business Materclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
+        </p>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
+    </div>
+    <div class="feature-image">
+        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Digital Workshop">
+        <button class="zoom-btn">+</button>
+    </div>
+</section>
+
+<style>
+.feature-highlight-text {
+    display: inline-block;
+    font-weight: 700;
+    color: #0d1f0a;
+    padding: 5px 14px;
+    border-radius: 6px;
+    background: #d4e8ce;
+    border-left: 3px solid #4e6a47;
+    -webkit-animation: quietBreathe 1.5s ease-in-out infinite;
+    animation: quietBreathe 3.5s ease-in-out infinite;
+}
+@-webkit-keyframes quietBreathe {
+    0%   { background: #d4e8ce; border-left-color: #4e6a47; }
+    50%  { background: #b3d4aa; border-left-color: #2d5226; }
+    100% { background: #d4e8ce; border-left-color: #4e6a47; }
+}
+@keyframes quietBreathe {
+    0%   { background: #d4e8ce; border-left-color: #4e6a47; }
+    50%  { background: #b3d4aa; border-left-color: #2d5226; }
+    100% { background: #d4e8ce; border-left-color: #4e6a47; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .feature-highlight-text {
+        -webkit-animation: none;
+        animation: none;
+        background: #d4e8ce;
+    }
+}
+</style>
+
 
         <!-- ===== HERO BANNER SECTION - PASTE AT TOP OF BODY ===== -->
 <section class="top-hero-banner">
