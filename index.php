@@ -60,17 +60,19 @@
 
         /* ── Feature highlight — quiet breathing animation ── */
         .feature-highlight-text {
-            display: inline-block;
-            font-weight: 700;
-            color: #0d1f0a;
-            padding: 5px 14px;
-            border-radius: 6px;
-            background: #d4e8ce;
-            border-left: 3px solid #4e6a47;
-            line-height: 1.6;
-            -webkit-animation: quietBreathe 2.5s ease-in-out infinite;
-            animation: quietBreathe 2.5s ease-in-out infinite;
-        }
+    display: inline-block;
+    font-weight: 700;
+    color: #0d1f0a;
+    padding: 5px 14px;
+    border-radius: 6px;
+    background: #d4e8ce;
+    border-left: 3px solid #4e6a47;
+    line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -webkit-animation: quietBreathe 2.5s ease-in-out infinite;
+    animation: quietBreathe 2.5s ease-in-out infinite;
+}
         @-webkit-keyframes quietBreathe {
             0%   { background: #d4e8ce; border-left-color: #4e6a47; }
             50%  { background: #b3d4aa; border-left-color: #2d5226; }
@@ -493,7 +495,7 @@
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
             <p class="feature-description">
-                <span class="feature-highlight-text">Join the Business Masterclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
+            <span class="feature-highlight-text">Join the Business Masterclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
             </p>
             <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
         </div>
