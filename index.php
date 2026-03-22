@@ -273,20 +273,24 @@
         </div>
     </section>
 
-    <!-- Feature Section 1 -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-            <p class="feature-description">
-                <span class="feature-highlight-text">Join the Business Masterclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
-            </p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop" width="560" height="400" loading="lazy">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
+<!-- Feature Section 1 -->
+<section class="feature-section">
+    <div class="feature-content">
+        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
+        <p class="feature-description">
+            <span class="feature-highlight-text">Join the Business Masterclass on 28th March 2026 | 11:00 AM - 1:00 PM IST</span>
+        </p>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
+    </div>
+    <div class="feature-image">
+        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" 
+             alt="Digital Workshop" 
+             width="560" height="400" 
+             loading="lazy"
+             style="display:block; width:100%; height:auto; object-fit:cover; vertical-align:middle;">
+        <button class="zoom-btn">+</button>
+    </div>
+</section>
 
     <!-- Section: Video Course Preview -->
     <section class="section video-help-section">
