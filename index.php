@@ -129,8 +129,8 @@
     border-radius: 6px;
     background: #d4e8ce;
     border-left: 3px solid #4e6a47;
-    -webkit-animation: quietBreathe 3.5s ease-in-out infinite;
-    animation: quietBreathe 1.5s ease-in-out infinite;
+    -webkit-animation: quietBreathe 2.5s ease-in-out infinite;
+    animation: quietBreathe 2.5s ease-in-out infinite;
 }
 @-webkit-keyframes quietBreathe {
     0%   { background: #d4e8ce; border-left-color: #4e6a47; }
@@ -385,8 +385,8 @@
     border-radius: 6px;
     background: #d4e8ce;
     border-left: 3px solid #4e6a47;
-    -webkit-animation: quietBreathe 1.5s ease-in-out infinite;
-    animation: quietBreathe 1.5s ease-in-out infinite;
+    -webkit-animation: quietBreathe 2.5s ease-in-out infinite;
+    animation: quietBreathe 2.5s ease-in-out infinite;
 }
 @-webkit-keyframes quietBreathe {
     0%   { background: #d4e8ce; border-left-color: #4e6a47; }
