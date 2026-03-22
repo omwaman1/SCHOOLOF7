@@ -278,7 +278,7 @@
     <div class="feature-content">
         <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
         <p class="feature-description">
-            <span class="feature-highlight-text">Join the Business Masterclass on 28th March 2026 | 11:00 AM - 1:00 PM IST</span>
+            <span class="feature-highlight-text">Join the Business Masterclass on<br> 28th March 2026<br> 11:00 AM - 1:00 PM IST</span>
         </p>
         <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
     </div>
