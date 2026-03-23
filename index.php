@@ -9,6 +9,7 @@
     <meta name="description" content="Master how to start & scale a startup in 8 hours. India's affordable business masterclass — validate ideas, raise funds, build your team. Enroll for ₹199.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://schoolof7.com/">
+    <link rel="preload" as="image" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
@@ -37,9 +38,7 @@
     <link rel="dns-prefetch" href="https://www.clarity.ms">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-    <!-- Preload above-the-fold hero image -->
-    <link rel="preload" as="image" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png">
-
+   
     <!-- Preload logo font to prevent FOUT -->
     <link rel="preload" href="https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVvHOtOGkgUQJPPI.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -279,40 +278,28 @@
         <a href="https://login.schoolof7.com/t/u/activeCourses">LOGIN</a>
     </div>
 
-    <!-- ===== HERO BANNER SECTION 1 ===== -->
-    <section class="top-hero-banner">
-        <div class="top-hero-inner">
-            <div class="top-hero-image-wrap">
-                <img
-                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png"
-                    alt="Startup Masterclass India"
-                    class="top-hero-img"
-                    width="560" height="400"
-                    fetchpriority="high"
-                >
-            </div>
-            <div class="top-hero-body">
-                <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
-                <p class="top-hero-sub">Adapting & Building something of your own is the future. — Elon Musk</p>
-                <a href="#pricing" class="top-hero-btn">Let's Build →</a>
-            </div>
-        </div>
-    </section>
+    <!-- Feature Section 1 — TOP OF PAGE, optimized for fast load -->
+<section class="feature-section">
+    <div class="feature-content">
+        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
+        <p class="feature-description">
+            <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
+        </p>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
+    </div>
+    <div class="feature-image">
+        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png"
+             alt="Digital Workshop"
+             width="560"
+             height="400"
+             fetchpriority="high"
+             decoding="async">
+        <button class="zoom-btn">+</button>
+    </div>
+</section>
 
-    <!-- Feature Section 1 -->
-    <section class="feature-section">
-        <div class="feature-content">
-            <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-            <p class="feature-description">
-                <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
-            </p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
-        </div>
-        <div class="feature-image">
-            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop" width="560" height="400" loading="lazy">
-            <button class="zoom-btn">+</button>
-        </div>
-    </section>
+
+
 
     <!-- Section: Video Course Preview -->
     <section class="section video-help-section">
@@ -487,6 +474,26 @@
         </div>
     </section>
 
+        <!-- ===== HERO BANNER SECTION 1 ===== -->
+    <section class="top-hero-banner">
+        <div class="top-hero-inner">
+            <div class="top-hero-image-wrap">
+                <img
+                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png"
+                    alt="Startup Masterclass India"
+                    class="top-hero-img"
+                    width="560" height="400"
+                    loading="lazy"
+                >
+            </div>
+            <div class="top-hero-body">
+                <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
+                <p class="top-hero-sub">Adapting & Building something of your own is the future. — Elon Musk</p>
+                <a href="#pricing" class="top-hero-btn">Let's Build →</a>
+            </div>
+        </div>
+    </section>
+    
     <!-- Hero Video Section -->
     <section class="hero-section">
         <div class="hero-video-container">
