@@ -282,9 +282,10 @@
 <section class="feature-section">
     <div class="feature-content">
         <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-        <a href="#pricing" class="btn btn--outline-dark btn--sm">Join the Business Masterclass at ₹199</a>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">INVEST ₹199</a>
         <p class="feature-description">
-            <span class="feature-highlight-text">Date: 28th March 2026<br>Time: 11:00 AM - 1:00 PM IST</span>
+         <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
+
         </p>
     </div>
     <div class="feature-image">
@@ -418,10 +419,10 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">CONSUMER BUYING JOURNEY</h4>
+                        <h4 class="product-name">LEARN CONSUMER BUYING JOURNEY</h4>
                         <span class="price">PREP</span>
                     </div>
-                    <p class="product-desc">Learners rated this course</p>
+                    <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
@@ -439,10 +440,10 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">STRATEGIES TO WIN</h4>
+                        <h4 class="product-name">MASTER THE STRATEGIES TO WIN</h4>
                         <span class="price">GROW</span>
                     </div>
-                    <p class="product-desc">Learners rated this course</p>
+                    <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
@@ -459,10 +460,10 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">WORLD CLASS PRODUCT</h4>
+                        <h4 class="product-name">CREATE WORLD CLASS PRODUCT</h4>
                         <span class="price">SCALE</span>
                     </div>
-                    <p class="product-desc">Learners rated this course</p>
+                    <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
@@ -541,7 +542,7 @@
         <div class="testimonials-header">
             <div class="testimonials-title-group">
                 <p class="students-counter"><span class="counter" data-target="63345">0</span> learners enrolled</p>
-                <h3 class="testimonials-title">school of 7 students' testimonials</h3>
+                <h3 class="testimonials-title">school of 7<br>Students' Testimonials</h3>
             </div>
             <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
         </div>
