@@ -397,6 +397,77 @@
         </div>
     </section>
 
+        <!-- Section: Struggling With -->
+    <section class="section pricing-section">
+        <div class="section-header">
+            <h2 class="section-title">Are You Struggling With?</h2>
+            <p class="section-subtitle">Challenges <em>like</em></p>
+        </div>
+        <div class="pricing-grid" id="pricingCarousel">
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">money</span>
+                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Revenue inconsistency" class="card-img-default" width="400" height="400" loading="lazy">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Fund Raising" class="card-img-hover" width="400" height="400" loading="lazy">
+                        <a href="#pricing" class="buy-btn">Join the Program</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">FUND RAISING</h4>
+                        <span class="price">PREP</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">idea noise</span>
+                    <h3 class="card-big-title">idea<br>validation</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Idea validation" class="card-img-default" width="400" height="400" loading="lazy">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Startup Ideas" class="card-img-hover" width="400" height="400" loading="lazy">
+                        <a href="#pricing" class="buy-btn">Let's Validate Ideas</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
+                        <span class="price">GROW</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="badge">product chef</span>
+                    <h3 class="card-big-title">product<br>building</h3>
+                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Product building" class="card-img-default" width="400" height="400" loading="lazy">
+                    <div class="card-hover-overlay">
+                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Scaling product" class="card-img-hover" width="400" height="400" loading="lazy">
+                        <a href="#pricing" class="buy-btn">Learn to Scale</a>
+                    </div>
+                    <span class="swipe-hint">swipe</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-row">
+                        <h4 class="product-name">SCALING PRODUCT</h4>
+                        <span class="price">SCALE</span>
+                    </div>
+                    <p class="product-desc">Learners rated this course</p>
+                    <div class="rating">★★★★½ (15,318)</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
     <!-- Section: Mentor -->
     <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
         <div class="mentor-content">
@@ -412,6 +483,29 @@
         </div>
         <div class="mentor-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/online-business-course-business-owners-india.png" alt="Mr 7 - Your Mentor" width="560" height="560" loading="lazy">
+        </div>
+    </section>
+
+        <!-- Hero Video Section -->
+    <section class="hero-section">
+        <div class="hero-video-container">
+            <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none"
+                poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
+            </video>
+            <div class="hero-overlay"></div>
+            <button class="video-control" id="video-toggle">II</button>
+            <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
+                <svg class="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
+            <p class="hero-subtitle">The ultimate guide to scaling your business online.</p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
+            </div>
         </div>
     </section>
 
@@ -494,28 +588,6 @@
         </div>
     </section>
     
-    <!-- Hero Video Section -->
-    <section class="hero-section">
-        <div class="hero-video-container">
-            <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none"
-                poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
-            </video>
-            <div class="hero-overlay"></div>
-            <button class="video-control" id="video-toggle">II</button>
-            <button class="hero-mute-btn" id="hero-mute-toggle" title="Toggle Sound">
-                <svg class="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
-                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                </svg>
-            </button>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
-            <p class="hero-subtitle">The ultimate guide to scaling your business online.</p>
-            <div class="hero-actions">
-                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Feature Section 2 -->
     <section class="feature-section">
@@ -532,64 +604,8 @@
         </div>
     </section>
 
-    <!-- ===== HERO BANNER SECTION 2 ===== -->
-    <section class="top-hero-banner">
-        <div class="top-hero-inner">
-            <div class="top-hero-image-wrap">
-                <img
-                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
-                    alt="School of 7 Business Course"
-                    class="top-hero-img"
-                    width="560" height="400"
-                    loading="lazy"
-                >
-            </div>
-            <div class="top-hero-body">
-                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
-                <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
-                <a href="#pricing" class="top-hero-btn">Get Started →</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section: Course Pricing 2 (Full Plans) -->
-    <section class="section course-pricing-section">
-        <h2 class="section-title text-center">Choose The Plan</h2>
-        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
-        <div class="course-pricing-grid">
-            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
-                <div class="best-value-badge">BEST VALUE</div>
-                <div class="card-icon">📹</div>
-                <h3 class="plan-title">Advanced Learning Plan</h3>
-                <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1899/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
-                    <li class="check">Course Virtual Community</li>
-                    <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-            <div class="course-card standard">
-                <div class="card-icon">🕐</div>
-                <h3 class="plan-title">Standard Learning Plan</h3>
-                <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1499/-</div>
-                <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="cross">Downloadable PDF Course Notes</li>
-                    <li class="cross">Course Virtual Community</li>
-                    <li class="cross">Course Upgrades at Zero Cost</li>
-                    <li class="cross">Certificate of Achievement</li>
-                </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Section: FAQ -->
     <section class="section faq-section" id="faq">
@@ -640,76 +656,7 @@
         </div>
     </section>
 
-    <!-- Section: Struggling With -->
-    <section class="section pricing-section">
-        <div class="section-header">
-            <h2 class="section-title">Are You Struggling With?</h2>
-            <p class="section-subtitle">Challenges <em>like</em></p>
-        </div>
-        <div class="pricing-grid" id="pricingCarousel">
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">money</span>
-                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Revenue inconsistency" class="card-img-default" width="400" height="400" loading="lazy">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Fund Raising" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Join the Program</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">FUND RAISING</h4>
-                        <span class="price">PREP</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">idea noise</span>
-                    <h3 class="card-big-title">idea<br>validation</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Idea validation" class="card-img-default" width="400" height="400" loading="lazy">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Startup Ideas" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Let's Validate Ideas</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
-                        <span class="price">GROW</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge">product chef</span>
-                    <h3 class="card-big-title">product<br>building</h3>
-                    <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Product building" class="card-img-default" width="400" height="400" loading="lazy">
-                    <div class="card-hover-overlay">
-                        <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Scaling product" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Learn to Scale</a>
-                    </div>
-                    <span class="swipe-hint">swipe</span>
-                </div>
-                <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">SCALING PRODUCT</h4>
-                        <span class="price">SCALE</span>
-                    </div>
-                    <p class="product-desc">Learners rated this course</p>
-                    <div class="rating">★★★★½ (15,318)</div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-dots" id="carouselDots"></div>
-    </section>
+
 
     <!-- Section: Certificate -->
     <section class="section promise-section">
@@ -744,6 +691,66 @@
             </div>
         </div>
     </section>
+
+        <!-- ===== HERO BANNER SECTION 2 ===== -->
+    <section class="top-hero-banner">
+        <div class="top-hero-inner">
+            <div class="top-hero-image-wrap">
+                <img
+                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
+                    alt="School of 7 Business Course"
+                    class="top-hero-img"
+                    width="560" height="400"
+                    loading="lazy"
+                >
+            </div>
+            <div class="top-hero-body">
+                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
+                <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
+                <a href="#pricing" class="top-hero-btn">Get Started →</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section: Course Pricing 2 (Full Plans) -->
+    <section class="section course-pricing-section">
+        <h2 class="section-title text-center">Choose The Plan</h2>
+        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
+        <div class="course-pricing-grid">
+            <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
+                <div class="best-value-badge">BEST VALUE</div>
+                <div class="card-icon">📹</div>
+                <h3 class="plan-title">Advanced Learning Plan</h3>
+                <p class="plan-lang">English | Full Access</p>
+                <div class="plan-price">₹1899/-</div>
+                <ul class="plan-features">
+                    <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">Downloadable PDF Course Notes</li>
+                    <li class="check">Course Virtual Community</li>
+                    <li class="check">Course Upgrades at Zero Cost</li>
+                    <li class="check">Certificate of Achievement</li>
+                </ul>
+                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <p class="refund-policy">Founder Ready in 8 Modules</p>
+            </div>
+            <div class="course-card standard">
+                <div class="card-icon">🕐</div>
+                <h3 class="plan-title">Standard Learning Plan</h3>
+                <p class="plan-lang">English | Limited Access</p>
+                <div class="plan-price">₹1499/-</div>
+                <ul class="plan-features">
+                    <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="cross">Downloadable PDF Course Notes</li>
+                    <li class="cross">Course Virtual Community</li>
+                    <li class="cross">Course Upgrades at Zero Cost</li>
+                    <li class="cross">Certificate of Achievement</li>
+                </ul>
+                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <p class="refund-policy">Founder Ready in 8 Modules</p>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Sticky Enroll Bar -->
     <div class="sticky-bar" style="background-color: #ffffff;">
