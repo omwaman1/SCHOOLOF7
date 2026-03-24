@@ -707,7 +707,7 @@
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹18999/-</div>
+                <div class="plan-price">₹18,999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -722,7 +722,7 @@
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹15999/-</div>
+                <div class="plan-price">₹15,999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
