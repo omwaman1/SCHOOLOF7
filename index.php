@@ -515,24 +515,23 @@
 
     <!-- Section: Course Pricing 1 (Demo Masterclass) -->
     <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Invest in your Future</h2>
-        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
+        <h2 class="section-title text-center">Building Business is an Art</h2>
+        <p class="section-subtitle text-center">Master It. <strong>Start & Scale</strong> <em>your Business.</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
-                <h3 class="plan-title">Demo Masterclass</h3>
-                <p class="plan-lang">English | Full Access</p>
+                <h3 class="plan-title">Business Masterclass</h3>
+                <p class="plan-lang">English</p>
                 <div class="plan-price">₹199/-</div>
                 <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
-                    <li class="check">Course Virtual Community</li>
-                    <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Achievement</li>
+                    <li class="check">For Corporate Professionals</li>
+                    <li class="check">For Business Owners</li>
+                    <li class="check">For Students</li>
+                    <li class="check">For Budding Entrepreneurs</li>
                 </ul>
                 <button onclick="initiatePayment(19900, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
+                <p class="refund-policy">Become Founder Ready.</p>
             </div>
         </div>
     </section>
