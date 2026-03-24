@@ -282,10 +282,10 @@
 <section class="feature-section">
     <div class="feature-content">
         <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
+        <a href="#pricing" class="btn btn--outline-dark btn--sm">Join the Business Masterclass at ₹199</a>
         <p class="feature-description">
-            <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
+            <span class="feature-highlight-text">Date: 28th March 2026<br>Time: 11:00 AM - 1:00 PM IST</span>
         </p>
-        <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
     </div>
     <div class="feature-image">
         <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png"
@@ -400,50 +400,53 @@
         <!-- Section: Struggling With -->
     <section class="section pricing-section">
         <div class="section-header">
-            <h2 class="section-title">Are You Struggling With?</h2>
-            <p class="section-subtitle">Challenges <em>like</em></p>
+            <h2 class="section-title">Become like The Top 1%</h2>
+            <p class="section-subtitle">by mastering <em>the Art of</em></p>
         </div>
         <div class="pricing-grid" id="pricingCarousel">
+            
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">money</span>
-                    <h3 class="card-big-title">revenue<br>inconsistency</h3>
+                    <span class="badge">patterns</span>
+                    <h3 class="card-big-title">behavior<br>psychology</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Revenue inconsistency" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Fund Raising" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Join the Program</a>
+                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
                     </div>
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">FUND RAISING</h4>
+                        <h4 class="product-name">CONSUMER BUYING JOURNEY</h4>
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
+            
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">idea noise</span>
-                    <h3 class="card-big-title">idea<br>validation</h3>
+                    <span class="badge">USP</span>
+                    <h3 class="card-big-title">competitive <br>advantage</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Idea validation" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Startup Ideas" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Let's Validate Ideas</a>
+                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
                     </div>
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">FIGURING STARTUP IDEAS</h4>
+                        <h4 class="product-name">STRATEGIES TO WIN</h4>
                         <span class="price">GROW</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
+            
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
@@ -451,19 +454,19 @@
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Product building" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Scaling product" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">Learn to Scale</a>
+                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
                     </div>
-                    <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">SCALING PRODUCT</h4>
+                        <h4 class="product-name">WORLD CLASS PRODUCT</h4>
                         <span class="price">SCALE</span>
                     </div>
                     <p class="product-desc">Learners rated this course</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
+   
         </div>
         <div class="carousel-dots" id="carouselDots"></div>
     </section>
@@ -504,7 +507,7 @@
             <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
             <p class="hero-subtitle">The ultimate guide to scaling your business online.</p>
             <div class="hero-actions">
-                <a href="#pricing" class="btn btn--grey">START LEARNING</a>
+                <a href="#pricing" class="btn btn--grey">INVEST ₹199</a>
             </div>
         </div>
     </section>
@@ -537,8 +540,8 @@
     <section class="section testimonials-section" id="testimonials">
         <div class="testimonials-header">
             <div class="testimonials-title-group">
-                <h3 class="testimonials-title">school of 7 <span class="plus">+</span> testimonials</h3>
-                <p class="students-counter"><span class="counter" data-target="63345">0</span> students enrolled</p>
+                <p class="students-counter"><span class="counter" data-target="63345">0</span> learners enrolled</p>
+                <h3 class="testimonials-title">school of 7 students' testimonials</h3>
             </div>
             <a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" class="btn btn--outline-dark btn--xs">FIND US ON SOCIAL</a>
         </div>
@@ -583,7 +586,7 @@
             <div class="top-hero-body">
                 <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
                 <p class="top-hero-sub">Adapting & Building something of your own is the future. — Elon Musk</p>
-                <a href="#pricing" class="top-hero-btn">Let's Build →</a>
+                <a href="#pricing" class="top-hero-btn">INVEST ₹199 →</a>
             </div>
         </div>
     </section>
@@ -596,7 +599,7 @@
             <p class="feature-description">
                 <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
             </p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">Book Your Seat At ₹199</a>
+            <a href="#pricing" class="btn btn--outline-dark btn--sm">INVEST ₹199</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Startup Masterclass India" width="560" height="400" loading="lazy">
@@ -692,25 +695,7 @@
         </div>
     </section>
 
-        <!-- ===== HERO BANNER SECTION 2 ===== -->
-    <section class="top-hero-banner">
-        <div class="top-hero-inner">
-            <div class="top-hero-image-wrap">
-                <img
-                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
-                    alt="School of 7 Business Course"
-                    class="top-hero-img"
-                    width="560" height="400"
-                    loading="lazy"
-                >
-            </div>
-            <div class="top-hero-body">
-                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
-                <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
-                <a href="#pricing" class="top-hero-btn">Get Started →</a>
-            </div>
-        </div>
-    </section>
+
 
         <!-- Section: Course Pricing 2 (Full Plans) -->
     <section class="section course-pricing-section">
@@ -747,6 +732,26 @@
                 </ul>
                 <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
+            </div>
+        </div>
+    </section>
+
+            <!-- ===== HERO BANNER SECTION 2 ===== -->
+    <section class="top-hero-banner">
+        <div class="top-hero-inner">
+            <div class="top-hero-image-wrap">
+                <img
+                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
+                    alt="School of 7 Business Course"
+                    class="top-hero-img"
+                    width="560" height="400"
+                    loading="lazy"
+                >
+            </div>
+            <div class="top-hero-body">
+                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
+                <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
+                <a href="#pricing" class="top-hero-btn">Get Started →</a>
             </div>
         </div>
     </section>
