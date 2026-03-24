@@ -690,8 +690,8 @@
             </div>
             <div class="routine-steps">
                 <div class="step active">PREP</div>
-                <div class="step">GROW</div>
-                <div class="step">SCALE</div>
+                <div class="step active">GROW</div>
+                <div class="step active">SCALE</div>
             </div>
         </div>
     </section>
