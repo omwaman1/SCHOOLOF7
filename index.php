@@ -419,7 +419,7 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">LEARN CONSUMER BUYING JOURNEY</h4>
+                        <h4 class="product-name">LEARN CONSUMER BUYING BEHAVIOR</h4>
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Learners rated this CLASS</p>
@@ -515,14 +515,14 @@
 
     <!-- Section: Course Pricing 1 (Demo Masterclass) -->
     <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Building Business is an Art</h2>
+        <h2 class="section-title text-center">Building Business is an Art.</h2>
         <p class="section-subtitle text-center">Master It. <strong>Start & Scale</strong> <em>your Business.</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Business Masterclass</h3>
-                <p class="plan-lang">English</p>
+                <p class="plan-lang">Language | English</p>
                 <div class="plan-price">₹199/-</div>
                 <ul class="plan-features">
                     <li class="check">For Corporate Professionals</li>
@@ -699,15 +699,15 @@
 
         <!-- Section: Course Pricing 2 (Full Plans) -->
     <section class="section course-pricing-section">
-        <h2 class="section-title text-center">Choose The Plan</h2>
-        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
+        <h2 class="section-title text-center">IF COMMITTED</h2>
+        <p class="section-subtitle text-center">Directly <strong>Go for</strong> <em>Advanced Masterclass</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1899/-</div>
+                <div class="plan-price">₹18999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -715,14 +715,14 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(1899900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
             <div class="course-card standard">
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1499/-</div>
+                <div class="plan-price">₹15999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -730,7 +730,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(1599900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
