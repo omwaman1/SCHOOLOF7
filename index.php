@@ -1018,7 +1018,7 @@
                                 email: customerEmail      // <-- ADDED THIS TO PASS EMAIL ON ZOOM MEETING
                             });
                             // Ensure the path matches your exact folder structure
-                            window.location.href = '/schoolof7/masterclass-thankyou/?' + params.toString(); 
+                            window.location.href = 'https://schoolof7.com/masterclass-thankyou/?' + params.toString(); 
                         },
                     modal: { ondismiss: function() { console.log('Checkout closed'); } }
                 };
