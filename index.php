@@ -281,7 +281,7 @@
     <!-- Feature Section 1 — TOP OF PAGE, optimized for fast load -->
 <section class="feature-section">
     <div class="feature-content">
-        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune./\</h3>
+        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
 <a href="#pricing" class="btn btn--outline-dark btn--sm" style="margin-bottom: 16px; display: inline-block;">INVEST ₹199</a>
         <p class="feature-description">
          <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
