@@ -19,7 +19,7 @@ if (isset($_GET['email']) && isset($_GET['name'])) {
         // Fallback for local testing if .env isn't set up yet
         $zoomAccountId = '7c8jVtleQBqSDMvzdFsDBw';
         $zoomClientId = 'WAum4L6OQyqLCRN8a7vYsQ';
-        $zoomClientSecret = '3eR9fZYvyGrtb8mzNr81ofX73UAhc6US';
+        $zoomClientSecret = 'cywXGufK9yZbYlS5l4i5bkZW2PiUq1jK';
         $meetingId = '86519879372'; 
     }
 
