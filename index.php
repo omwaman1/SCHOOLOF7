@@ -531,7 +531,7 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(100, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(19900, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -1018,7 +1018,7 @@
                                 email: customerEmail      // <-- ADDED THIS TO PASS EMAIL ON ZOOM MEETING
                             });
                             // Ensure the path matches your exact folder structure
-                            window.location.href = 'https://schoolof7.com/masterclass-thankyou/?' + params.toString(); 
+                            window.location.href = 'masterclass-thankyou/?' + params.toString(); 
                         },
                     modal: { ondismiss: function() { console.log('Checkout closed'); } }
                 };
