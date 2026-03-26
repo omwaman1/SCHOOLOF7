@@ -281,7 +281,7 @@
     <!-- Feature Section 1 — TOP OF PAGE, optimized for fast load -->
 <section class="feature-section">
     <div class="feature-content">
-        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
+        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune..</h3>
 <a href="#pricing" class="btn btn--outline-dark btn--sm" style="margin-bottom: 16px; display: inline-block;">INVEST ₹199</a>
         <p class="feature-description">
          <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
@@ -419,7 +419,7 @@
                 </div>
                 <div class="card-details">
                     <div class="card-row">
-                        <h4 class="product-name">LEARN CONSUMER BUYING BEHAVIOR</h4>
+                        <h4 class="product-name">LEARN CONSUMER BUYING JOURNEY</h4>
                         <span class="price">PREP</span>
                     </div>
                     <p class="product-desc">Learners rated this CLASS</p>
@@ -515,23 +515,24 @@
 
     <!-- Section: Course Pricing 1 (Demo Masterclass) -->
     <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Building Business is an Art.</h2>
-        <p class="section-subtitle text-center">Master It. <strong>Start & Scale</strong> <em>your Business.</em></p>
+        <h2 class="section-title text-center">Invest in your Future</h2>
+        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
-                <h3 class="plan-title">Business Masterclass</h3>
-                <p class="plan-lang">Language | English</p>
+                <h3 class="plan-title">Demo Masterclass</h3>
+                <p class="plan-lang">English | Full Access</p>
                 <div class="plan-price">₹199/-</div>
                 <ul class="plan-features">
-                    <li class="check">For Corporate Professionals</li>
-                    <li class="check">For Business Owners</li>
-                    <li class="check">For Students</li>
-                    <li class="check">For Budding Entrepreneurs</li>
+                    <li class="check">Pre-recorded Video Lectures</li>
+                    <li class="check">Downloadable PDF Course Notes</li>
+                    <li class="check">Course Virtual Community</li>
+                    <li class="check">Course Upgrades at Zero Cost</li>
+                    <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(19900, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Become Founder Ready.</p>
+                <button onclick="initiatePayment199(19900, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
     </section>
@@ -689,8 +690,8 @@
             </div>
             <div class="routine-steps">
                 <div class="step active">PREP</div>
-                <div class="step active">GROW</div>
-                <div class="step active">SCALE</div>
+                <div class="step">GROW</div>
+                <div class="step">SCALE</div>
             </div>
         </div>
     </section>
@@ -699,15 +700,15 @@
 
         <!-- Section: Course Pricing 2 (Full Plans) -->
     <section class="section course-pricing-section">
-        <h2 class="section-title text-center">IF COMMITTED</h2>
-        <p class="section-subtitle text-center">Directly <strong>Go for</strong> <em>Advanced Masterclass</em></p>
+        <h2 class="section-title text-center">Choose The Plan</h2>
+        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹18,999/-</div>
+                <div class="plan-price">₹1899/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -715,14 +716,14 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(1899900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(189900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
             <div class="course-card standard">
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹15,999/-</div>
+                <div class="plan-price">₹1499/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -730,7 +731,7 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(1599900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
@@ -875,6 +876,25 @@
         </div>
     </div>
 
+    <div id="contactModal199" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
+        <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
+            <h2 style="color: #4e6a47; font-size: 24px; margin-bottom: 8px;">Complete Your Enrollment</h2>
+            <p id="formPlanName199" style="color: #67635f; font-size: 14px; margin-bottom: 20px;"></p>
+            <form id="enrollForm199" onsubmit="return submitEnrollForm199(event)">
+                <input type="text" id="customerName199" placeholder="Full Name" required
+                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="email" id="customerEmail199" placeholder="Email Address" required
+                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="tel" id="customerPhone199" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}"
+                    style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <button type="submit" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">
+                    Proceed to Pay
+                </button>
+            </form>
+            <button onclick="closeContactModal199()" style="background: none; border: none; color: #999; margin-top: 15px; cursor: pointer; font-size: 13px;">Cancel</button>
+        </div>
+    </div>
+
     <div id="successModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #fff; padding: 40px 50px; border-radius: 16px; text-align: center; max-width: 500px; margin: 20px;">
             <div style="font-size: 60px; margin-bottom: 20px;">🎉</div>
@@ -1008,9 +1028,17 @@
                     prefill: { name: customerName, email: customerEmail, contact: customerPhone },
                     theme: { color: '#4e6a47' },
                     handler: async function(response) {
-                        const params = new URLSearchParams({ plan: currentPlanName, amount: (currentAmount / 100), pid: response.razorpay_payment_id, oid: response.razorpay_order_id });
-                        window.location.href = '/thankyou?' + params.toString();
-                    },
+                            const params = new URLSearchParams({ 
+                                plan: currentPlanName, 
+                                amount: (currentAmount / 100), 
+                                pid: response.razorpay_payment_id, 
+                                oid: response.razorpay_order_id,
+                                name: customerName,       // <-- ADDED THIS TO PASS NAME ON ZOOM MEETING
+                                email: customerEmail      // <-- ADDED THIS TO PASS EMAIL ON ZOOM MEETING
+                            });
+                            // Ensure the path matches your exact folder structure
+                            window.location.href = '/masterclass-thankyou/?' + params.toString(); 
+                        },
                     modal: { ondismiss: function() { console.log('Checkout closed'); } }
                 };
 
@@ -1028,6 +1056,87 @@
 
                 rzp.open();
             } catch (error) { alert('Something went wrong: ' + error.message + '\n\nPlease check the browser console (F12) for details.'); }
+            return false;
+        }
+
+
+        // ==========================================
+        // SEPARATE LOGIC FOR 199 MASTERCLASS
+        // ==========================================
+        let currentAmount199 = 0;
+        let currentPlanName199 = '';
+        let currentCourseUrl199 = '';
+
+        function initiatePayment199(amountInPaise, planName, courseUrl) {
+            currentAmount199 = amountInPaise;
+            currentPlanName199 = planName;
+            currentCourseUrl199 = courseUrl || '';
+            const productId = 'demo-plan-2026';
+            
+            document.getElementById('formPlanName199').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
+            document.getElementById('enrollForm199').reset();
+            document.getElementById('contactModal199').style.display = 'flex';
+        }
+
+        function closeContactModal199() {
+            document.getElementById('contactModal199').style.display = 'none';
+        }
+
+        async function submitEnrollForm199(e) {
+            e.preventDefault();
+            customerName = document.getElementById('customerName199').value;
+            customerEmail = document.getElementById('customerEmail199').value;
+            customerPhone = document.getElementById('customerPhone199').value;
+            const productId = 'demo-plan-2026';
+
+            try {
+                const pageUrl = window.location.href;
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                // --> THIS NOW CALLS YOUR SEPARATE WEBHOOK SCRIPT <--
+                await fetch('send-webhook-199.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName199, course_url: currentCourseUrl199, amount: currentAmount199 / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: pageUrl })
+                });
+            } catch (webhookError) { console.error('Lead webhook error:', webhookError); }
+
+            closeContactModal199();
+
+            try {
+                const response = await fetch('create-order.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ amount: currentAmount199, plan_name: currentPlanName199, course_url: currentCourseUrl199, customer_name: customerName, customer_email: customerEmail, customer_phone: customerPhone })
+                });
+                if (!response.ok) { const errorText = await response.text(); alert('Server error (' + response.status + '): ' + errorText); return; }
+                let data = await response.json();
+                if (!data.success) { alert('Error creating order: ' + (data.error || 'Unknown error')); return; }
+
+                const options = {
+                    key: data.key_id, amount: data.amount, currency: data.currency,
+                    name: 'School of 7', description: currentPlanName199, order_id: data.order_id,
+                    prefill: { name: customerName, email: customerEmail, contact: customerPhone },
+                    theme: { color: '#4e6a47' },
+                    handler: async function(response) {
+                            const params = new URLSearchParams({ 
+                                plan: currentPlanName199, 
+                                amount: (currentAmount199 / 100), 
+                                pid: response.razorpay_payment_id, 
+                                oid: response.razorpay_order_id,
+                                name: customerName,
+                                email: customerEmail
+                            });
+                            // Redirects 199 users to the Zoom Thank You page
+                            window.location.href = 'masterclass-thankyou/?' + params.toString(); 
+                        }
+                };
+
+                if (typeof Razorpay === 'undefined') { await loadRazorpay(); }
+                const rzp = new Razorpay(options);
+                rzp.on('payment.failed', function() { alert('Payment failed. Please try again.'); });
+                rzp.open();
+            } catch (error) { alert('Something went wrong: ' + error.message); }
             return false;
         }
     </script>
