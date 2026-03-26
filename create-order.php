@@ -54,18 +54,34 @@ $customerEmail = isset($input['customer_email']) ? $input['customer_email'] : ''
 $customerPhone = isset($input['customer_phone']) ? $input['customer_phone'] : '';
 $currency = 'INR';
 
-// Create Razorpay order
-$orderData = [
-    'amount' => $amount,
-    'currency' => $currency,
-    'receipt' => 'rcpt_' . time() . '_' . rand(1000, 9999),
-    'notes' => [
+// ==========================================
+// 🚨 THE LMS BLINDFOLD TRICK 🚨
+// ==========================================
+// We check the Plan Name instead of the amount. This way, you can test at ₹1 (100)
+// or sell it for ₹199 (19900) later, and it will ALWAYS block the LMS login email!
+if ($planName === 'Demo Masterclass') {
+    $notesArray = [
+        'demo_plan' => $planName,
+        'demo_email' => $customerEmail, // LMS can't read this, so it won't send the class login!
+        'demo_phone' => $customerPhone
+    ];
+} else {
+    // Normal 1499/1899 courses keep the standard keys so the LMS CAN read them and send the login
+    $notesArray = [
         'plan_name' => $planName,
         'course_url' => $courseUrl,
         'customer_name' => $customerName,
         'customer_email' => $customerEmail,
         'customer_phone' => $customerPhone
-    ]
+    ];
+}
+
+// Create Razorpay order
+$orderData = [
+    'amount' => $amount,
+    'currency' => $currency,
+    'receipt' => 'rcpt_' . time() . '_' . rand(1000, 9999),
+    'notes' => $notesArray
 ];
 
 $ch = curl_init('https://api.razorpay.com/v1/orders');
@@ -103,4 +119,3 @@ echo json_encode([
     'currency' => $order['currency'],
     'key_id' => $keyId
 ]);
-
