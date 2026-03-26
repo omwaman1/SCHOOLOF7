@@ -16,11 +16,11 @@ if (isset($_GET['email']) && isset($_GET['name'])) {
         $zoomClientSecret = $envVars['ZOOM_CLIENT_SECRET'] ?? '';
         $meetingId = $envVars['ZOOM_MEETING_ID'] ?? '';
     } else {
-        // Fallback for local testing if .env isn't set up yet
-        $zoomAccountId = '7c8jVtleQBqSDMvzdFsDBw';
-        $zoomClientId = 'WAum4L6OQyqLCRN8a7vYsQ';
-        $zoomClientSecret = 'cywXGufK9yZbYlS5l4i5bkZW2PiUq1jK';
-        $meetingId = '86519879372'; 
+        // FALLBACK - NEVER PUT REAL KEYS HERE ON GITHUB!
+        $zoomAccountId = 'put_in_env_file';
+        $zoomClientId = 'put_in_env_file';
+        $zoomClientSecret = 'put_in_env_file';
+        $meetingId = '86519879372';
     }
 
     // STEP 1: Generate Access Token securely
