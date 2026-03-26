@@ -11,7 +11,6 @@
     <link rel="canonical" href="https://schoolof7.com/">
     <link rel="preload" as="image" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
     <meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹199.">
     <meta property="og:image" content="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
@@ -19,7 +18,6 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="School of 7">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
     <meta name="twitter:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹199.">
@@ -28,7 +26,6 @@
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
     <link rel="apple-touch-icon" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
 
-    <!-- Preconnect to speed up font & image loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev" crossorigin>
@@ -39,10 +36,8 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
    
-    <!-- Preload logo font to prevent FOUT -->
     <link rel="preload" href="https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVvHOtOGkgUQJPPI.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Fonts: non-blocking load -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -50,7 +45,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- ALL CSS in one place — clean, no duplicates -->
     <style>
         /* ── Mentor section ── */
         .mentor-section, #mentor, section.mentor-section, section#mentor {
@@ -227,7 +221,6 @@
         }
     </style>
 
-    <!-- Font load detection -->
     <script>
         if (document.fonts) {
             document.fonts.ready.then(function() {
@@ -238,7 +231,6 @@
         }
     </script>
 
-    <!-- Microsoft Clarity — async so it never blocks render -->
     <script async type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -250,7 +242,6 @@
 
 <body>
 
-    <!-- Sticky Header -->
     <header class="site-header">
         <button class="hamburger-btn" id="hamburgerBtn">
             <span></span>
@@ -270,7 +261,6 @@
         </div>
     </header>
 
-    <!-- Mobile Dropdown Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#curriculum">CURRICULUM</a>
         <a href="#testimonials">TESTIMONIALS</a>
@@ -278,10 +268,9 @@
         <a href="https://login.schoolof7.com/t/u/activeCourses">LOGIN</a>
     </div>
 
-    <!-- Feature Section 1 — TOP OF PAGE, optimized for fast load -->
-<section class="feature-section">
+    <section class="feature-section">
     <div class="feature-content">
-        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune..</h3>
+        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
 <a href="#pricing" class="btn btn--outline-dark btn--sm" style="margin-bottom: 16px; display: inline-block;">INVEST ₹199</a>
         <p class="feature-description">
          <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
@@ -302,7 +291,6 @@
 
 
 
-    <!-- Section: Video Course Preview -->
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Masterclass Will Help You?</h2>
         <div class="video-container-framed">
@@ -315,7 +303,6 @@
         </div>
     </section>
 
-    <!-- Section: Target Audience -->
     <section class="section audience-section">
         <h2 class="audience-title">Masterclass <em>Success</em> Stories!</h2>
         <div class="audience-carousel-wrapper">
@@ -354,7 +341,6 @@
         </div>
     </section>
 
-    <!-- Section: Curriculum -->
     <section class="section curriculum-section" id="curriculum">
         <div class="curriculum-content">
             <h2 class="curriculum-heading"><span class="heading-bold">WHAT WILL YOU LEARN</span><br>In 2 hours Masterclass?</h2>
@@ -398,8 +384,7 @@
         </div>
     </section>
 
-        <!-- Section: Struggling With -->
-    <section class="section pricing-section">
+        <section class="section pricing-section">
         <div class="section-header">
             <h2 class="section-title">Become like The Top 1%</h2>
             <p class="section-subtitle">by mastering <em>the Art of</em></p>
@@ -472,7 +457,6 @@
         <div class="carousel-dots" id="carouselDots"></div>
     </section>
 
-    <!-- Section: Mentor -->
     <section class="mentor-section" id="mentor" style="background-color: #e7eef8; border-radius: 16px; margin: 0 0 1rem 0;">
         <div class="mentor-content">
             <h3 class="mentor-label">Your Mentor</h3>
@@ -490,8 +474,7 @@
         </div>
     </section>
 
-        <!-- Hero Video Section -->
-    <section class="hero-section">
+        <section class="hero-section">
         <div class="hero-video-container">
             <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none"
                 poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
@@ -513,7 +496,6 @@
         </div>
     </section>
 
-    <!-- Section: Course Pricing 1 (Demo Masterclass) -->
     <section class="section course-pricing-section" id="pricing">
         <h2 class="section-title text-center">Invest in your Future</h2>
         <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
@@ -531,13 +513,12 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment199(100, 'Demo Masterclass', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now!</button>
+                <button onclick="initiatePayment199(100, 'Demo Masterclass', 'demo-masterclass-199')" class="btn btn--blue-brand">Enroll Now</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
     </section>
 
-    <!-- Section: Testimonials -->
     <section class="section testimonials-section" id="testimonials">
         <div class="testimonials-header">
             <div class="testimonials-title-group">
@@ -572,8 +553,7 @@
         </div>
     </section>
 
-        <!-- ===== HERO BANNER SECTION 1 ===== -->
-    <section class="top-hero-banner">
+        <section class="top-hero-banner">
         <div class="top-hero-inner">
             <div class="top-hero-image-wrap">
                 <img
@@ -593,7 +573,6 @@
     </section>
     
 
-    <!-- Feature Section 2 -->
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
@@ -611,7 +590,6 @@
 
 
 
-    <!-- Section: FAQ -->
     <section class="section faq-section" id="faq">
         <div class="faq-content">
             <h2 class="faq-title">FAQ</h2>
@@ -662,7 +640,6 @@
 
 
 
-    <!-- Section: Certificate -->
     <section class="section promise-section">
         <div class="promise-image">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.png" alt="Certificate of Completion" width="560" height="400" loading="lazy">
@@ -698,8 +675,7 @@
 
 
 
-        <!-- Section: Course Pricing 2 (Full Plans) -->
-    <section class="section course-pricing-section">
+        <section class="section course-pricing-section">
         <h2 class="section-title text-center">Choose The Plan</h2>
         <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
         <div class="course-pricing-grid">
@@ -737,8 +713,7 @@
         </div>
     </section>
 
-            <!-- ===== HERO BANNER SECTION 2 ===== -->
-    <section class="top-hero-banner">
+            <section class="top-hero-banner">
         <div class="top-hero-inner">
             <div class="top-hero-image-wrap">
                 <img
@@ -758,7 +733,6 @@
     </section>
     
 
-    <!-- Sticky Enroll Bar -->
     <div class="sticky-bar" style="background-color: #ffffff;">
         <div class="sticky-content">
             <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar"
@@ -778,7 +752,6 @@
         <div class="sticky-bottom-label">Business Masterclass</div>
     </div>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-brand" style="width: 100%; padding: 0;">
             <h2 class="footer-logo" style="font-size: 16vw; white-space: nowrap; width: 100%; margin: 0; padding: 0; text-align: center; letter-spacing: 0.02em; text-transform: uppercase;">School of 7</h2>
@@ -850,13 +823,10 @@
         </div>
     </footer>
 
-    <!-- Main site script -->
     <script src="script.js?v=<?php echo time(); ?>"></script>
 
-    <!-- Razorpay — deferred so it never blocks page render -->
     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
 
-    <!-- Modals -->
     <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
             <h2 style="color: #4e6a47; font-size: 24px; margin-bottom: 8px;">Complete Your Enrollment</h2>
@@ -888,7 +858,7 @@
                 <input type="tel" id="customerPhone199" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}"
                     style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
                 <button type="submit" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">
-                    Proceed to Pay
+                    Proceed to Payment
                 </button>
             </form>
             <button onclick="closeContactModal199()" style="background: none; border: none; color: #999; margin-top: 15px; cursor: pointer; font-size: 13px;">Cancel</button>
@@ -906,14 +876,13 @@
         </div>
     </div>
 
-    <!-- Payment & tracking script -->
     <script>
+        // ==========================================
+        // ORIGINAL LOGIC (FOR 1499 & 1899)
+        // ==========================================
         let currentAmount = 0;
         let currentPlanName = '';
         let currentCourseUrl = '';
-        let customerName = '';
-        let customerEmail = '';
-        let customerPhone = '';
         let razorpayLoaded = false;
 
         function loadRazorpay() {
@@ -926,48 +895,19 @@
                 document.body.appendChild(script);
             });
         }
-
         loadRazorpay().catch(err => console.warn('Initial Razorpay load failed:', err.message));
 
         function generateEventID() {
             return 'evt_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
         }
 
-        let pricingViewed = false;
-        const pricingSection = document.getElementById('pricing');
-        if (pricingSection) {
-            const pricingObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !pricingViewed) {
-                        pricingViewed = true;
-                        const eventID = generateEventID();
-                        window.dataLayer = window.dataLayer || [];
-                        window.dataLayer.push({ 'event': 'viewContent', 'content_name': 'Startup Masterclass Pricing', 'content_category': 'Course', 'content_type': 'product', 'content_ids': ['startup-masterclass-2026'], 'value': 199, 'currency': 'INR', 'eventID': eventID });
-                        if (typeof fbq !== 'undefined') { fbq('track', 'ViewContent', { content_name: 'Startup Masterclass Pricing', content_category: 'Course', content_type: 'product', content_ids: ['startup-masterclass-2026'], value: 199, currency: 'INR' }, {eventID: eventID}); }
-                        if (typeof gtag !== 'undefined') { gtag('event', 'view_item', { currency: 'INR', value: 199, items: [{ item_id: 'startup-masterclass-2026', item_name: 'Startup Masterclass Pricing', item_category: 'Course', price: 199 }] }); }
-                    }
-                });
-            }, { threshold: 0.3 });
-            pricingObserver.observe(pricingSection);
-        }
-
         function initiatePayment(amountInPaise, planName, courseUrl) {
             currentAmount = amountInPaise;
             currentPlanName = planName;
             currentCourseUrl = courseUrl || '';
-            const productId = planName.includes('Advanced') ? 'advanced-plan-2026' : 'standard-plan-2026';
-            const eventIDCheckout = generateEventID();
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ 'event': 'initiateCheckout', 'content_name': planName, 'content_ids': [productId], 'content_type': 'product', 'value': amountInPaise / 100, 'currency': 'INR', 'num_items': 1, 'eventID': eventIDCheckout });
-            if (typeof fbq !== 'undefined') { fbq('track', 'InitiateCheckout', { content_name: planName, content_category: 'Course', content_ids: [productId], content_type: 'product', value: amountInPaise / 100, currency: 'INR', num_items: 1 }, {eventID: eventIDCheckout}); }
-            if (typeof gtag !== 'undefined') { gtag('event', 'begin_checkout', { currency: 'INR', value: amountInPaise / 100, items: [{ item_id: productId, item_name: planName, item_category: 'Course', price: amountInPaise / 100, quantity: 1 }] }); }
             document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm').reset();
             document.getElementById('contactModal').style.display = 'flex';
-            const eventIDCart = generateEventID();
-            window.dataLayer.push({ 'event': 'addToCart', 'content_name': planName, 'content_ids': [productId], 'content_type': 'product', 'value': amountInPaise / 100, 'currency': 'INR', 'num_items': 1, 'eventID': eventIDCart });
-            if (typeof fbq !== 'undefined') { fbq('track', 'AddToCart', { content_name: planName, content_category: 'Course', content_ids: [productId], content_type: 'product', value: amountInPaise / 100, currency: 'INR', num_items: 1 }, {eventID: eventIDCart}); }
-            if (typeof gtag !== 'undefined') { gtag('event', 'add_to_cart', { currency: 'INR', value: amountInPaise / 100, items: [{ item_id: productId, item_name: planName, item_category: 'Course', price: amountInPaise / 100, quantity: 1 }] }); }
         }
 
         function closeContactModal() {
@@ -976,36 +916,17 @@
 
         async function submitEnrollForm(e) {
             e.preventDefault();
-            customerName = document.getElementById('customerName').value;
-            customerEmail = document.getElementById('customerEmail').value;
-            customerPhone = document.getElementById('customerPhone').value;
-            const productId = currentPlanName.includes('Advanced') ? 'advanced-plan-2026' : 'standard-plan-2026';
-            const eventIDLead = generateEventID();
-
-            async function hashData(data) {
-                const msgBuffer = new TextEncoder().encode(data.toLowerCase().trim());
-                const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-                return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
-            }
-
-            let hashedEmail = '', hashedPhone = '';
-            try {
-                hashedEmail = await hashData(customerEmail);
-                hashedPhone = await hashData(customerPhone.replace(/\D/g, ''));
-            } catch (err) { console.warn('Hashing error:', err); }
-
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ 'event': 'lead', 'content_name': currentPlanName, 'content_ids': [productId], 'content_type': 'product', 'value': currentAmount / 100, 'currency': 'INR', 'eventID': eventIDLead, 'user_data': { 'em': hashedEmail, 'ph': hashedPhone } });
-            if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: currentPlanName, content_category: 'Course', content_ids: [productId], content_type: 'product', value: currentAmount / 100, currency: 'INR' }, { eventID: eventIDLead, em: hashedEmail, ph: hashedPhone }); }
-            if (typeof gtag !== 'undefined') { gtag('event', 'generate_lead', { currency: 'INR', value: currentAmount / 100, items: [{ item_id: productId, item_name: currentPlanName, item_category: 'Course' }] }); }
+            let customerName = document.getElementById('customerName').value;
+            let customerEmail = document.getElementById('customerEmail').value;
+            let customerPhone = document.getElementById('customerPhone').value;
 
             try {
                 const pageUrl = window.location.href;
-                const urlParams = new URLSearchParams(window.location.search);
+                // SENDS TO ORIGINAL WEBHOOK
                 await fetch('send-webhook.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName, course_url: currentCourseUrl, amount: currentAmount / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: pageUrl, utm_source: urlParams.get('utm_source') || '', utm_medium: urlParams.get('utm_medium') || '', utm_campaign: urlParams.get('utm_campaign') || '', utm_term: urlParams.get('utm_term') || '', utm_content: urlParams.get('utm_content') || '', referrer: document.referrer || '' })
+                    body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName, course_url: currentCourseUrl, amount: currentAmount / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: pageUrl })
                 });
             } catch (webhookError) { console.error('Lead webhook error:', webhookError); }
 
@@ -1017,9 +938,8 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ amount: currentAmount, plan_name: currentPlanName, course_url: currentCourseUrl, customer_name: customerName, customer_email: customerEmail, customer_phone: customerPhone })
                 });
-                if (!response.ok) { const errorText = await response.text(); alert('Server error (' + response.status + '): ' + errorText); return; }
-                let data;
-                try { data = await response.json(); } catch (jsonError) { alert('Invalid server response. Check console for details.'); return; }
+                if (!response.ok) { alert('Server error'); return; }
+                let data = await response.json();
                 if (!data.success) { alert('Error creating order: ' + (data.error || 'Unknown error')); return; }
 
                 const options = {
@@ -1028,40 +948,21 @@
                     prefill: { name: customerName, email: customerEmail, contact: customerPhone },
                     theme: { color: '#4e6a47' },
                     handler: async function(response) {
-                            const params = new URLSearchParams({ 
-                                plan: currentPlanName, 
-                                amount: (currentAmount / 100), 
-                                pid: response.razorpay_payment_id, 
-                                oid: response.razorpay_order_id,
-                                name: customerName,       // <-- ADDED THIS TO PASS NAME ON ZOOM MEETING
-                                email: customerEmail      // <-- ADDED THIS TO PASS EMAIL ON ZOOM MEETING
-                            });
-                            // Ensure the path matches your exact folder structure
-                            window.location.href = '/masterclass-thankyou/?' + params.toString(); 
-                        },
-                    modal: { ondismiss: function() { console.log('Checkout closed'); } }
+                        // Original success logic (Show modal)
+                        document.getElementById('successPlanName').textContent = currentPlanName;
+                        document.getElementById('successModal').style.display = 'flex';
+                    }
                 };
 
-                if (typeof Razorpay === 'undefined') {
-                    try { await loadRazorpay(); } catch (loadError) { alert('Unable to load payment system. Please:\n1. Disable any ad blocker\n2. Check your internet connection\n3. Refresh the page and try again'); return; }
-                }
-
+                if (typeof Razorpay === 'undefined') { await loadRazorpay(); }
                 const rzp = new Razorpay(options);
-                rzp.on('payment.failed', function() { alert('Payment failed. Please try again.'); });
-
-                const eventIDPayment = generateEventID();
-                window.dataLayer.push({ 'event': 'addPaymentInfo', 'content_name': currentPlanName, 'content_ids': [productId], 'content_type': 'product', 'value': currentAmount / 100, 'currency': 'INR', 'order_id': data.order_id, 'eventID': eventIDPayment });
-                if (typeof fbq !== 'undefined') { fbq('track', 'AddPaymentInfo', { content_name: currentPlanName, content_category: 'Course', content_ids: [productId], content_type: 'product', value: currentAmount / 100, currency: 'INR' }, {eventID: eventIDPayment}); }
-                if (typeof gtag !== 'undefined') { gtag('event', 'add_payment_info', { currency: 'INR', value: currentAmount / 100, items: [{ item_id: productId, item_name: currentPlanName, item_category: 'Course', price: currentAmount / 100, quantity: 1 }] }); }
-
                 rzp.open();
-            } catch (error) { alert('Something went wrong: ' + error.message + '\n\nPlease check the browser console (F12) for details.'); }
+            } catch (error) { alert('Something went wrong: ' + error.message); }
             return false;
         }
 
-
         // ==========================================
-        // SEPARATE LOGIC FOR 199 MASTERCLASS
+        // NEW LOGIC (FOR 199 MASTERCLASS ONLY)
         // ==========================================
         let currentAmount199 = 0;
         let currentPlanName199 = '';
@@ -1071,7 +972,6 @@
             currentAmount199 = amountInPaise;
             currentPlanName199 = planName;
             currentCourseUrl199 = courseUrl || '';
-            const productId = 'demo-plan-2026';
             
             document.getElementById('formPlanName199').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm199').reset();
@@ -1084,22 +984,18 @@
 
         async function submitEnrollForm199(e) {
             e.preventDefault();
-            customerName = document.getElementById('customerName199').value;
-            customerEmail = document.getElementById('customerEmail199').value;
-            customerPhone = document.getElementById('customerPhone199').value;
-            const productId = 'demo-plan-2026';
+            let cName = document.getElementById('customerName199').value;
+            let cEmail = document.getElementById('customerEmail199').value;
+            let cPhone = document.getElementById('customerPhone199').value;
 
             try {
-                const pageUrl = window.location.href;
-                const urlParams = new URLSearchParams(window.location.search);
-                
-                // --> THIS NOW CALLS YOUR SEPARATE WEBHOOK SCRIPT <--
+                // SENDS TO SEPARATE SHEET WEBHOOK (DOES NOT TOUCH LMS)
                 await fetch('send-webhook-199.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName199, course_url: currentCourseUrl199, amount: currentAmount199 / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: pageUrl })
+                    body: JSON.stringify({ name: cName, email: cEmail, phone: cPhone, plan_name: currentPlanName199, amount: currentAmount199 / 100 })
                 });
-            } catch (webhookError) { console.error('Lead webhook error:', webhookError); }
+            } catch (webhookError) { console.error('Sheet webhook error:', webhookError); }
 
             closeContactModal199();
 
@@ -1107,16 +1003,15 @@
                 const response = await fetch('create-order.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: currentAmount199, plan_name: currentPlanName199, course_url: currentCourseUrl199, customer_name: customerName, customer_email: customerEmail, customer_phone: customerPhone })
+                    body: JSON.stringify({ amount: currentAmount199, plan_name: currentPlanName199, course_url: currentCourseUrl199, customer_name: cName, customer_email: cEmail, customer_phone: cPhone })
                 });
-                if (!response.ok) { const errorText = await response.text(); alert('Server error (' + response.status + '): ' + errorText); return; }
+                if (!response.ok) { alert('Server error'); return; }
                 let data = await response.json();
-                if (!data.success) { alert('Error creating order: ' + (data.error || 'Unknown error')); return; }
-
+                
                 const options = {
                     key: data.key_id, amount: data.amount, currency: data.currency,
                     name: 'School of 7', description: currentPlanName199, order_id: data.order_id,
-                    prefill: { name: customerName, email: customerEmail, contact: customerPhone },
+                    prefill: { name: cName, email: cEmail, contact: cPhone },
                     theme: { color: '#4e6a47' },
                     handler: async function(response) {
                             const params = new URLSearchParams({ 
@@ -1124,27 +1019,23 @@
                                 amount: (currentAmount199 / 100), 
                                 pid: response.razorpay_payment_id, 
                                 oid: response.razorpay_order_id,
-                                name: customerName,
-                                email: customerEmail
+                                name: cName,
+                                email: cEmail
                             });
-                            // Redirects 199 users to the Zoom Thank You page
+                            // Redirects to Zoom Thank You page automatically
                             window.location.href = 'masterclass-thankyou/?' + params.toString(); 
                         }
                 };
 
                 if (typeof Razorpay === 'undefined') { await loadRazorpay(); }
                 const rzp = new Razorpay(options);
-                rzp.on('payment.failed', function() { alert('Payment failed. Please try again.'); });
                 rzp.open();
-            } catch (error) { alert('Something went wrong: ' + error.message); }
+            } catch (error) { alert('Error: ' + error.message); }
             return false;
         }
     </script>
 
-    <!-- DataLayer init -->
     <script>window.dataLayer = window.dataLayer || [];</script>
-
-    <!-- Facebook Pixel -->
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '879330084480824');
@@ -1152,7 +1043,6 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=879330084480824&ev=PageView&noscript=1"/></noscript>
 
-    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QJHLP6W66"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -1160,47 +1050,5 @@
         gtag('js', new Date());
         gtag('config', 'G-6QJHLP6W66');
     </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "Startup Masterclass India",
-      "description": "Learn how to start and scale a startup in 8 modules and 8 hours. Covers idea validation, MVP, pricing, fundraising, co-founder equity split, and ESOPs.",
-      "url": "https://schoolof7.com",
-      "provider": {
-        "@type": "Organization",
-        "name": "School of 7",
-        "url": "https://schoolof7.com",
-        "logo": "https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "199",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://schoolof7.com/#pricing"
-      },
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "online",
-        "inLanguage": "en",
-        "courseWorkload": "PT2H"
-      },
-      "teaches": [
-        "How to find and validate startup ideas",
-        "Minimum Viable Product (MVP)",
-        "Startup pricing strategy",
-        "Product Market Fit",
-        "Startup fundraising in India",
-        "Co-founder equity split",
-        "ESOPs",
-        "Startup marketing strategy"
-      ],
-      "educationalLevel": "Beginner to Advanced",
-      "timeRequired": "PT2H"
-    }
-    </script>
-
 </body>
 </html>
