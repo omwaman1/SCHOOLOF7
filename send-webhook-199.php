@@ -35,10 +35,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
 // ==========================================
 // 🚨 XAMPP LOCALHOST SSL FIX 🚨
 // ==========================================
-// Keep this UNCOMMENTED while testing on localhost (XAMPP) so it doesn't block the connection.
-// ⚠️ COMMENT THIS OUT (add // to the front) BEFORE PUSHING TO GITHUB / LIVE SERVER! ⚠️
-//curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
-
+// Uncomment the line below while testing on localhost (XAMPP).
+// ⚠️ COMMENT THIS OUT BEFORE PUSHING TO GITHUB / LIVE SERVER! ⚠️
+// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
 
 // 5. Execute the request
 $response = curl_exec($ch);
