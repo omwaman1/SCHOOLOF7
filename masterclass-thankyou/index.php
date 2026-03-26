@@ -3,10 +3,6 @@ if (isset($_GET['email']) && isset($_GET['name'])) {
     $userEmail = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
     $userName = htmlspecialchars($_GET['name']);
 
-    // ==========================================
-    // SECURE ZOOM API CONFIGURATION
-    // ==========================================
-    // This securely reads your keys from the .env file in your main folder
     $envPath = __DIR__ . '/../.env';
     
     if (file_exists($envPath)) {
@@ -20,23 +16,35 @@ if (isset($_GET['email']) && isset($_GET['name'])) {
         $zoomAccountId = 'put_in_env_file';
         $zoomClientId = 'put_in_env_file';
         $zoomClientSecret = 'put_in_env_file';
-        $meetingId = '86519879372';
+        $meetingId = '86519879372'; 
     }
 
-    // STEP 1: Generate Access Token securely
+    // STEP 1: Generate Access Token
     $tokenUrl = "https://zoom.us/oauth/token?grant_type=account_credentials&account_id=" . $zoomAccountId;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $tokenUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_USERPWD, $zoomClientId . ":" . $zoomClientSecret); 
+    
+    // --> XAMPP FIX: Uncomment the line below ONLY if testing locally on XAMPP
+    // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
+    
     $tokenResponse = curl_exec($ch);
+    
+    if(curl_errno($ch)){
+        die('Curl error on Token: ' . curl_error($ch));
+    }
     curl_close($ch);
 
     $tokenData = json_decode($tokenResponse, true);
     $accessToken = $tokenData['access_token'] ?? '';
 
-    // STEP 2: Register the user in Zoom
+    if (!$accessToken) {
+        die("<h2>Zoom Authentication Failed:</h2><pre>" . print_r($tokenData, true) . "</pre>");
+    }
+
+    // STEP 2: Register the user
     if ($accessToken) {
         $registerUrl = "https://api.zoom.us/v2/meetings/" . $meetingId . "/registrants";
         
@@ -61,8 +69,21 @@ if (isset($_GET['email']) && isset($_GET['name'])) {
             "Content-Type: application/json"
         ]);
         
+        // --> XAMPP FIX: Uncomment the line below ONLY if testing locally on XAMPP
+        // curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false);
+        
         $registerResponse = curl_exec($ch2);
+        
+        if(curl_errno($ch2)){
+            die('Curl error on Registration: ' . curl_error($ch2));
+        }
         curl_close($ch2);
+        
+        $registerData = json_decode($registerResponse, true);
+        
+        if (!isset($registerData['join_url'])) {
+            die("<h2>Zoom Registration Failed:</h2><pre>" . print_r($registerData, true) . "</pre>");
+        }
     }
 }
 ?>
