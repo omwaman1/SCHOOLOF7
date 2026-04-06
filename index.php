@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,7 @@
     <link rel="preload" as="image" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png">
 
     <meta property="og:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
-    <meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹199.">
+    <meta property="og:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹9.">
     <meta property="og:image" content="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
     <meta property="og:url" content="https://schoolof7.com/">
     <meta property="og:type" content="website">
@@ -20,7 +22,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Startup Masterclass India — Learn Business in 8 Hours | School of 7">
-    <meta name="twitter:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹199.">
+    <meta name="twitter:description" content="Master how to start & scale a startup in 8 hours. Validate ideas, raise funds, build your team. Enroll for ₹9.">
     <meta name="twitter:image" content="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
 
     <link rel="icon" type="image/webp" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/sof.png">
@@ -30,12 +32,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev" crossorigin>
     <link rel="preconnect" href="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev" crossorigin>
-    <link rel="dns-prefetch" href="https://checkout.razorpay.com">
+
+    <link rel="preconnect" href="https://checkout.razorpay.com">
+    <link rel="preload" href="https://checkout.razorpay.com/v1/checkout.js" as="script">
+    <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
+
     <link rel="dns-prefetch" href="https://connect.facebook.net">
     <link rel="dns-prefetch" href="https://www.clarity.ms">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-   
     <link rel="preload" href="https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVvHOtOGkgUQJPPI.woff2" as="font" type="font/woff2" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -43,16 +48,56 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@500;600;700;800&family=Luckiest+Guy&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     </noscript>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N8255JRV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- ✅ Clarity loads immediately — full session recording from second 1 -->
+    <script async type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vdjpcazphk");
+    </script>
+
+    <!-- ✅ FB Pixel delayed — fires after 3s or first user interaction, whichever comes first -->
+    <script>
+        var _fbLoaded = false;
+
+        function _loadFBPixel() {
+            if (_fbLoaded) return;
+            _fbLoaded = true;
+
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '879330084480824');
+            fbq('track', 'PageView', {}, { eventID: 'pageview_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9) });
+        }
+
+        // Fire after 3 seconds OR on first interaction — whichever comes first
+        setTimeout(_loadFBPixel, 3000);
+        ['mousedown', 'touchstart', 'keydown', 'scroll'].forEach(function(evt) {
+            document.addEventListener(evt, _loadFBPixel, { once: true, passive: true });
+        });
+    </script>
 
     <style>
-        /* ── Mentor section ── */
         .mentor-section, #mentor, section.mentor-section, section#mentor {
             background-color: #e7eef8 !important;
             background: #e7eef8 !important;
         }
-
-        /* ── FOUT prevention for Luckiest Guy logo font ── */
         .logo a, .footer-logo {
             opacity: 0;
             transition: opacity 0.2s ease;
@@ -61,8 +106,6 @@
         .fonts-loaded .footer-logo {
             opacity: 1;
         }
-
-        /* ── Feature highlight — quiet breathing animation ── */
         .feature-highlight-text {
             display: inline-block;
             font-weight: 700;
@@ -87,138 +130,74 @@
             100% { background: #d4e8ce; border-left-color: #4e6a47; }
         }
         @media (prefers-reduced-motion: reduce) {
-            .feature-highlight-text {
-                -webkit-animation: none;
-                animation: none;
-                background: #d4e8ce;
-            }
+            .feature-highlight-text { -webkit-animation: none; animation: none; background: #d4e8ce; }
         }
-
-        /* ── Feature image — remove gap above & below ── */
-        .feature-image {
-            line-height: 0;
-            font-size: 0;
-        }
-        .feature-image img {
-            display: block;
-            width: 100%;
-            height: auto;
-            vertical-align: middle;
-        }
-        .feature-image .zoom-btn {
-            font-size: 14px;
-        }
-
-        /* ── Top hero banner ── */
-        .top-hero-banner {
-            width: 100%;
-            background: #0d1f0a;
-            padding: 60px 20px;
-            box-sizing: border-box;
-        }
-        .top-hero-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            gap: 48px;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-        .top-hero-image-wrap {
-            -webkit-box-flex: 1;
-            -ms-flex: 1 1 380px;
-            flex: 1 1 380px;
-            min-width: 280px;
-            max-width: 560px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        }
-        .top-hero-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-        .top-hero-body {
-            -webkit-box-flex: 1;
-            -ms-flex: 1 1 300px;
-            flex: 1 1 300px;
-            min-width: 260px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .top-hero-heading {
-            font-family: 'Barlow Condensed', 'Oswald', sans-serif;
-            font-size: clamp(2rem, 5vw, 3.4rem);
-            font-weight: 800;
-            color: #ffffff;
-            line-height: 1.1;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-        .top-hero-sub {
-            font-family: 'Inter', sans-serif;
-            font-size: clamp(0.95rem, 2vw, 1.1rem);
-            color: #b5c9ae;
-            line-height: 1.6;
-            margin: 0;
-        }
-        .top-hero-btn {
-            display: inline-block;
-            background: #4e6a47;
-            color: #ffffff;
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            padding: 16px 36px;
-            border-radius: 50px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            -webkit-transition: background 0.2s ease, -webkit-transform 0.2s ease, box-shadow 0.2s ease;
-            transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-            -ms-flex-item-align: start;
-            align-self: flex-start;
-            box-shadow: 0 4px 20px rgba(78,106,71,0.4);
-        }
-        .top-hero-btn:hover {
-            background: #3a5035;
-            -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(78,106,71,0.55);
-        }
-        .top-hero-btn:active {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-
-        /* Tablet */
+        .feature-image { line-height: 0; font-size: 0; }
+        .feature-image img { display: block; width: 100%; height: auto; vertical-align: middle; }
+        .feature-image .zoom-btn { font-size: 14px; }
+        .top-hero-banner { width: 100%; background: #0d1f0a; padding: 60px 20px; box-sizing: border-box; }
+        .top-hero-inner { max-width: 1100px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 48px; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+        .top-hero-image-wrap { -webkit-box-flex: 1; -ms-flex: 1 1 380px; flex: 1 1 380px; min-width: 280px; max-width: 560px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .top-hero-img { width: 100%; height: auto; display: block; object-fit: cover; }
+        .top-hero-body { -webkit-box-flex: 1; -ms-flex: 1 1 300px; flex: 1 1 300px; min-width: 260px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 20px; }
+        .top-hero-heading { font-family: 'Barlow Condensed', 'Oswald', sans-serif; font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; color: #ffffff; line-height: 1.1; margin: 0; text-transform: uppercase; letter-spacing: 0.02em; }
+        .top-hero-sub { font-family: 'Inter', sans-serif; font-size: clamp(0.95rem, 2vw, 1.1rem); color: #b5c9ae; line-height: 1.6; margin: 0; }
+        .top-hero-btn { display: inline-block; background: #4e6a47; color: #ffffff; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; padding: 16px 36px; border-radius: 50px; letter-spacing: 0.04em; text-transform: uppercase; -webkit-transition: background 0.2s ease, -webkit-transform 0.2s ease, box-shadow 0.2s ease; transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; -ms-flex-item-align: start; align-self: flex-start; box-shadow: 0 4px 20px rgba(78,106,71,0.4); cursor: pointer; }
+        .top-hero-btn:hover { background: #3a5035; -webkit-transform: translateY(-2px); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(78,106,71,0.55); }
+        .top-hero-btn:active { -webkit-transform: translateY(0); transform: translateY(0); }
         @media (max-width: 820px) {
             .top-hero-inner { gap: 32px; }
             .top-hero-image-wrap { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; max-width: 100%; }
             .top-hero-body { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; }
         }
-
-        /* Mobile */
         @media (max-width: 480px) {
             .top-hero-banner { padding: 40px 16px; }
             .top-hero-inner { gap: 24px; }
             .top-hero-btn { width: 100%; text-align: center; padding: 15px 20px; -ms-flex-item-align: stretch; align-self: stretch; }
             .top-hero-image-wrap { border-radius: 12px; }
         }
+        .sticky-bar { position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; background: #ffffff !important; display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important; -webkit-box-pack: justify !important; -ms-flex-pack: justify !important; justify-content: space-between !important; padding: 10px 16px 10px 12px !important; box-sizing: border-box !important; border-top: 2px solid #e8e8e8 !important; box-shadow: 0 -4px 20px rgba(0,0,0,0.12) !important; z-index: 9000 !important; gap: 10px !important; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)) !important; }
+        .sticky-content { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important; gap: 10px !important; -webkit-box-flex: 1 !important; -ms-flex: 1 1 auto !important; flex: 1 1 auto !important; min-width: 0 !important; }
+        .sticky-avatar { width: 62px !important; height: 62px !important; margin-top: -34px !important; -ms-flex-negative: 0 !important; flex-shrink: 0 !important; object-fit: contain !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+        .sticky-offer { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; -ms-flex-direction: column !important; flex-direction: column !important; gap: 3px !important; min-width: 0 !important; }
+        .sticky-offer-row { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-align: baseline !important; -ms-flex-align: baseline !important; align-items: baseline !important; gap: 8px !important; -ms-flex-wrap: wrap !important; flex-wrap: wrap !important; }
+        .sticky-bar .new-price { font-size: 22px !important; font-weight: 800 !important; color: #1a1a1a !important; line-height: 1.1 !important; white-space: nowrap !important; font-family: 'Inter', sans-serif !important; }
+        .sticky-bar .old-price { font-size: 14px !important; font-weight: 500 !important; color: #999 !important; text-decoration: line-through !important; white-space: nowrap !important; font-family: 'Inter', sans-serif !important; }
+        .sticky-deadline { font-size: 13px !important; color: #4e6a47 !important; font-family: 'Inter', sans-serif !important; white-space: nowrap !important; }
+        .sticky-deadline strong { font-size: 13px !important; font-weight: 700 !important; color: #4e6a47 !important; }
+        .sticky-actions { -ms-flex-negative: 0 !important; flex-shrink: 0 !important; }
+        .sticky-actions .btn--red { display: -webkit-inline-box !important; display: -ms-inline-flexbox !important; display: inline-flex !important; -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important; -webkit-box-pack: center !important; -ms-flex-pack: center !important; justify-content: center !important; min-width: 120px !important; min-height: 52px !important; padding: 14px 20px !important; font-size: 15px !important; font-weight: 800 !important; letter-spacing: 0.04em !important; border-radius: 10px !important; white-space: nowrap !important; -webkit-tap-highlight-color: transparent !important; touch-action: manipulation !important; font-family: 'Inter', sans-serif !important; text-decoration: none !important; cursor: pointer !important; box-sizing: border-box !important; }
+        .sticky-bottom-label { display: none !important; }
+        @media (max-width: 360px) {
+            .sticky-bar { padding: 8px 10px 8px 8px !important; padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)) !important; gap: 8px !important; }
+            .sticky-avatar { width: 50px !important; height: 50px !important; margin-top: -26px !important; }
+            .sticky-bar .new-price { font-size: 19px !important; }
+            .sticky-bar .old-price { font-size: 12px !important; }
+            .sticky-deadline, .sticky-deadline strong { font-size: 11px !important; }
+            .sticky-actions .btn--red { min-width: 100px !important; min-height: 48px !important; padding: 12px 14px !important; font-size: 13px !important; }
+        }
+        @media (min-width: 361px) and (max-width: 480px) {
+            .sticky-bar .new-price { font-size: 21px !important; }
+            .sticky-actions .btn--red { min-width: 115px !important; font-size: 14px !important; }
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+            .sticky-bar { padding: 12px 24px 12px 16px !important; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)) !important; }
+            .sticky-bar .new-price { font-size: 24px !important; }
+            .sticky-actions .btn--red { min-width: 130px !important; min-height: 54px !important; font-size: 16px !important; }
+        }
+        @media (min-width: 768px) {
+            .sticky-bar { padding: 14px 32px !important; padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px)) !important; }
+            .sticky-content { gap: 16px !important; }
+            .sticky-avatar { width: 72px !important; height: 72px !important; margin-top: -38px !important; }
+            .sticky-bar .new-price { font-size: 26px !important; }
+            .sticky-bar .old-price { font-size: 16px !important; }
+            .sticky-deadline, .sticky-deadline strong { font-size: 14px !important; }
+            .sticky-actions .btn--red { min-width: 150px !important; min-height: 56px !important; padding: 16px 28px !important; font-size: 17px !important; }
+        }
+        @keyframes rzp-spin { to { transform: rotate(360deg); } }
+        #paymentLoader { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.78); z-index: 99999; justify-content: center; align-items: center; flex-direction: column; gap: 18px; }
+        #paymentLoader .rzp-spinner { width: 54px; height: 54px; border: 5px solid rgba(255,255,255,0.18); border-top-color: #4e6a47; border-radius: 50%; animation: rzp-spin 0.75s linear infinite; }
+        #paymentLoader p { color: #fff; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; margin: 0; letter-spacing: 0.02em; }
     </style>
 
     <script>
@@ -231,30 +210,19 @@
         }
     </script>
 
-    <script async type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "vdjpcazphk");
-    </script>
 </head>
 
 <body>
 
     <header class="site-header">
         <button class="hamburger-btn" id="hamburgerBtn">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
         <div class="nav-left">
             <a href="#curriculum">CURRICULUM</a>
             <a href="#testimonials">TESTIMONIALS</a>
         </div>
-        <div class="logo">
-            <a href="#">SCHOOL OF 7</a>
-        </div>
+        <div class="logo"><a href="#">SCHOOL OF 7</a></div>
         <div class="nav-right">
             <a href="https://login.schoolof7.com/contactus">ENQUIRE NOW</a>
             <a href="https://login.schoolof7.com/t/u/activeCourses">LOGIN</a>
@@ -269,27 +237,18 @@
     </div>
 
     <section class="feature-section">
-    <div class="feature-content">
-        <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
-<a href="#pricing" class="btn btn--outline-dark btn--sm" style="margin-bottom: 16px; display: inline-block;">INVEST ₹199</a>
-        <p class="feature-description">
-         <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
-
-        </p>
-    </div>
-    <div class="feature-image">
-        <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png"
-             alt="Digital Workshop"
-             width="560"
-             height="400"
-             fetchpriority="high"
-             decoding="async">
-        <button class="zoom-btn">+</button>
-    </div>
-</section>
-
-
-
+        <div class="feature-content">
+            <h3 class="feature-title">Learn to Build a successful Startup. Build your Fortune.</h3>
+            <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="btn btn--outline-dark btn--sm" style="margin-bottom: 16px; display: inline-block;">INVEST <s>₹199</s> ₹9</a>
+            <p class="feature-description">
+                <span class="feature-highlight-text">Join the Business Masterclass on<br>Date: 11th April 2026<br>Time: 11:00 AM - 1:00 PM IST</span>
+            </p>
+        </div>
+        <div class="feature-image">
+            <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup%20course%20for%20corporate%20employee.png" alt="Digital Workshop" width="560" height="400" fetchpriority="high" decoding="async">
+            <button class="zoom-btn">+</button>
+        </div>
+    </section>
 
     <section class="section video-help-section">
         <h2 class="video-help-title">How This Masterclass Will Help You?</h2>
@@ -310,31 +269,19 @@
             <div class="audience-grid" id="audienceCarousel">
                 <div class="audience-card">
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Best%20startup%20course%20in%20India.png" alt="Corporate Employee success story" width="400" height="400" loading="lazy">
-                    <div class="audience-info">
-                        <h4>CORPORATE EMPLOYEE</h4>
-                        <p>scaled from India & went global</p>
-                    </div>
+                    <div class="audience-info"><h4>CORPORATE EMPLOYEE</h4><p>scaled from India & went global</p></div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Startup%20course.png" alt="Business owner success story" width="400" height="400" loading="lazy">
-                    <div class="audience-info">
-                        <h4>BUSINESS OWNER</h4>
-                        <p>built strategies to scale</p>
-                    </div>
+                    <div class="audience-info"><h4>BUSINESS OWNER</h4><p>built strategies to scale</p></div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20success%20course.png" alt="Student success story" width="400" height="400" loading="lazy">
-                    <div class="audience-info">
-                        <h4>STUDENT</h4>
-                        <p>chose to startup against college placement</p>
-                    </div>
+                    <div class="audience-info"><h4>STUDENT</h4><p>chose to startup against college placement</p></div>
                 </div>
                 <div class="audience-card">
                     <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Mr7%20business%20course.png" alt="Corporate employee success story" width="400" height="400" loading="lazy">
-                    <div class="audience-info">
-                        <h4>CORPORATE EMPLOYEE</h4>
-                        <p>started from scratch</p>
-                    </div>
+                    <div class="audience-info"><h4>CORPORATE EMPLOYEE</h4><p>started from scratch</p></div>
                 </div>
             </div>
             <button class="audience-nav-btn next" id="audienceNext">›</button>
@@ -347,7 +294,7 @@
             <div class="accordion curriculum-accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">The Modern ways of Doing Business <span class="icon-circle">+</span></button>
-                    <div class="accordion-body">• What is Business?<br>• Why it's the right time to start Business?<br>• Old vs Modern Business ways?<br>• Automation via AI</div>
+                    <div class="accordion-body">• Why it's the right time to start Business?<br>• Old vs Modern Business ways?<br>• Automation via AI</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">How to Beat Competition? <span class="icon-circle">+</span></button>
@@ -384,34 +331,29 @@
         </div>
     </section>
 
-        <section class="section pricing-section">
+    <section class="section pricing-section">
         <div class="section-header">
             <h2 class="section-title">Become like The Top 1%</h2>
             <p class="section-subtitle">by mastering <em>the Art of</em></p>
         </div>
         <div class="pricing-grid" id="pricingCarousel">
-            
             <div class="product-card">
                 <div class="card-image-wrapper">
-                    <span class="badge">patterns</span>
-                    <h3 class="card-big-title">behavior<br>psychology</h3>
+                    <span class="badge">BEHAVIORS</span>
+                    <h3 class="card-big-title">buying<br>psychology</h3>
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202.png" alt="Revenue inconsistency" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%202a.png" alt="Fund Raising" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
+                        <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="buy-btn">INVEST ₹9</a>
                     </div>
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">LEARN CONSUMER BUYING JOURNEY</h4>
-                        <span class="price">PREP</span>
-                    </div>
+                    <div class="card-row"><h4 class="product-name">LEARN CONSUMER BUYING BEHAVIORS</h4><span class="price">PREP</span></div>
                     <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
-            
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">USP</span>
@@ -419,20 +361,16 @@
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201.png" alt="Idea validation" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%201a.png" alt="Startup Ideas" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
+                        <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="buy-btn">INVEST ₹9</a>
                     </div>
                     <span class="swipe-hint">swipe</span>
                 </div>
                 <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">MASTER THE STRATEGIES TO WIN</h4>
-                        <span class="price">GROW</span>
-                    </div>
+                    <div class="card-row"><h4 class="product-name">MASTER THE STRATEGIES TO WIN</h4><span class="price">GROW</span></div>
                     <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
-            
             <div class="product-card">
                 <div class="card-image-wrapper">
                     <span class="badge">product chef</span>
@@ -440,19 +378,15 @@
                     <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203.png" alt="Product building" class="card-img-default" width="400" height="400" loading="lazy">
                     <div class="card-hover-overlay">
                         <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/image%203a.png" alt="Scaling product" class="card-img-hover" width="400" height="400" loading="lazy">
-                        <a href="#pricing" class="buy-btn">INVEST ₹199</a>
+                        <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="buy-btn">INVEST ₹9</a>
                     </div>
                 </div>
                 <div class="card-details">
-                    <div class="card-row">
-                        <h4 class="product-name">CREATE WORLD CLASS PRODUCT</h4>
-                        <span class="price">SCALE</span>
-                    </div>
+                    <div class="card-row"><h4 class="product-name">CREATE WORLD CLASS PRODUCT</h4><span class="price">SCALE</span></div>
                     <p class="product-desc">Learners rated this CLASS</p>
                     <div class="rating">★★★★½ (15,318)</div>
                 </div>
             </div>
-   
         </div>
         <div class="carousel-dots" id="carouselDots"></div>
     </section>
@@ -474,7 +408,7 @@
         </div>
     </section>
 
-        <section class="hero-section">
+    <section class="hero-section">
         <div class="hero-video-container">
             <video autoplay loop muted playsinline webkit-playsinline class="hero-video" id="heroVideo" preload="none"
                 poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/yourmasterclasstostartup.png">
@@ -491,30 +425,30 @@
             <h1 class="hero-title">Learn Fast<br>Execute Faster.</h1>
             <p class="hero-subtitle">The ultimate guide to scaling your business online.</p>
             <div class="hero-actions">
-                <a href="#pricing" class="btn btn--grey">INVEST ₹199</a>
+                <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="btn btn--grey">INVEST ₹9</a>
             </div>
         </div>
     </section>
 
     <section class="section course-pricing-section" id="pricing">
-        <h2 class="section-title text-center">Invest in your Future</h2>
-        <p class="section-subtitle text-center">Choose <strong>The</strong> <em>Plan</em></p>
+        <h2 class="section-title text-center">Building Business is an Art!</h2>
+        <p class="section-subtitle text-center">Master It. <strong>Scale </strong> <em>your Business.</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
-                <h3 class="plan-title">Demo Masterclass</h3>
-                <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹199/-</div>
+                <h3 class="plan-title">Startup Masterclass</h3>
+                <p class="plan-lang">Language | English</p>
+                <div class="plan-price">₹9/-</div>
                 <ul class="plan-features">
-                    <li class="check">Pre-recorded Video Lectures</li>
-                    <li class="check">Downloadable PDF Course Notes</li>
-                    <li class="check">Course Virtual Community</li>
-                    <li class="check">Course Upgrades at Zero Cost</li>
-                    <li class="check">Certificate of Achievement</li>
+                    <li class="check">Learn To Beat Competition</li>
+                    <li class="check">Learn To Scale Revenues</li>
+                    <li class="check">Plan Winning Strategies</li>
+                    <li class="check">DO's & DONT's of Business</li>
+                    <li class="check">Learn Modern Ways of Business</li>
                 </ul>
-                <button onclick="initiatePayment199(100, 'Demo Masterclass', 'demo-masterclass-199')" class="btn btn--blue-brand">Enroll Now</button>
-                <p class="refund-policy">Founder Ready in 8 Modules</p>
+                <button onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="btn btn--blue-brand">Enroll Now</button>
+                <p class="refund-policy">DEVELOP AN ENTREPRENEURIAL MINDSET</p>
             </div>
         </div>
     </section>
@@ -529,21 +463,11 @@
         </div>
         <div class="ugc-carousel-wrapper">
             <div class="ugc-carousel" id="ugcCarousel">
-                <div class="ugc-item" data-index="0">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video>
-                </div>
-                <div class="ugc-item" data-index="1">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video>
-                </div>
-                <div class="ugc-item" data-index="2">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video>
-                </div>
-                <div class="ugc-item" data-index="3">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video>
-                </div>
-                <div class="ugc-item" data-index="4">
-                    <video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video>
-                </div>
+                <div class="ugc-item" data-index="0"><video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t1.png"></video></div>
+                <div class="ugc-item" data-index="1"><video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t2.png"></video></div>
+                <div class="ugc-item" data-index="2"><video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t3.png"></video></div>
+                <div class="ugc-item" data-index="3"><video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t4.png"></video></div>
+                <div class="ugc-item" data-index="4"><video preload="none" muted loop playsinline controls poster="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/t5.png"></video></div>
             </div>
         </div>
         <div class="ugc-divider"></div>
@@ -553,42 +477,32 @@
         </div>
     </section>
 
-        <section class="top-hero-banner">
+    <section class="top-hero-banner">
         <div class="top-hero-inner">
             <div class="top-hero-image-wrap">
-                <img
-                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png"
-                    alt="Startup Masterclass India"
-                    class="top-hero-img"
-                    width="560" height="400"
-                    loading="lazy"
-                >
+                <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/MBA%20for%20startup%20course%20India.png" alt="Startup Masterclass India" class="top-hero-img" width="560" height="400" fetchpriority="high" loading="eager">
             </div>
             <div class="top-hero-body">
                 <h1 class="top-hero-heading">AI will eat away most of the Jobs!</h1>
                 <p class="top-hero-sub">Adapting & Building something of your own is the future. — Elon Musk</p>
-                <a href="#pricing" class="top-hero-btn">INVEST ₹199 →</a>
+                <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="top-hero-btn">INVEST ₹9 →</a>
             </div>
         </div>
     </section>
-    
 
     <section class="feature-section">
         <div class="feature-content">
             <h3 class="feature-title">Ideation → Launch → Marketing → Automation → Scaling → Funding</h3>
             <p class="feature-description">
-                <span class="feature-highlight-text">Join the Business Masterclass on<br>28th March 2026<br>11:00 AM - 1:00 PM IST</span>
+                <span class="feature-highlight-text">Join the Business Masterclass on<br>Date: 11th April 2026<br>Time: 11:00 AM - 1:00 PM IST</span>
             </p>
-            <a href="#pricing" class="btn btn--outline-dark btn--sm">INVEST ₹199</a>
+            <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="btn btn--outline-dark btn--sm">INVEST ₹9</a>
         </div>
         <div class="feature-image">
             <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/startup-masterclass-india-school-of-7.png" alt="Startup Masterclass India" width="560" height="400" loading="lazy">
             <button class="zoom-btn">+</button>
         </div>
     </section>
-
-
-
 
     <section class="section faq-section" id="faq">
         <div class="faq-content">
@@ -625,7 +539,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">IS THERE A CERTIFICATE?</button>
-                    <div class="accordion-body">NO</div>
+                    <div class="accordion-body">NO. But if you enroll for Advanced Masterclass, you will get a certification on completion.</div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">WHAT IS THE REFUND POLICY?</button>
@@ -638,53 +552,29 @@
         </div>
     </section>
 
-
-
-    <section class="section promise-section">
-        <div class="promise-image">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.png" alt="Certificate of Completion" width="560" height="400" loading="lazy">
-        </div>
-        <div class="promise-content">
-            <h2 class="promise-title">GET certified</h2>
-            <p class="promise-subtitle">INDUSTRY RECOGNIZED CREDENTIAL</p>
-            <div class="promise-details">
-                <div class="detail-item">
-                    <h4>BENEFITS:</h4>
-                    <p>• Verified Digital Certificate</p>
-                </div>
-                <div class="detail-item">
-                    <h4>WHERE IT FITS IN YOUR CAREER</h4>
-                    <p>• In Business - will help to strategize<br>• In Business - will help to raise funds</p>
-                </div>
-                <div class="detail-item">
-                    <h4>THE IMPACT</h4>
-                    <p>• Develop Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p>
-                </div>
-                <div class="detail-item">
-                    <h4>ACCREDITED BY</h4>
-                    <p>School of 7</p>
-                </div>
+    <section class="top-hero-banner">
+        <div class="top-hero-inner">
+            <div class="top-hero-image-wrap">
+                <img src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png" alt="School of 7 Business Course" class="top-hero-img" width="560" height="400" loading="lazy">
             </div>
-            <div class="routine-steps">
-                <div class="step active">PREP</div>
-                <div class="step">GROW</div>
-                <div class="step">SCALE</div>
+            <div class="top-hero-body">
+                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
+                <p class="top-hero-sub">India's most practical business masterclass — Start & Scale Right, not Random!.</p>
+                <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="top-hero-btn">Get Started →</a>
             </div>
         </div>
     </section>
 
-
-
-        <section class="section course-pricing-section">
-        <h2 class="section-title text-center">Choose The Plan</h2>
-        <p class="section-subtitle text-center">That <strong>Fits You</strong> <em>Best</em></p>
+    <section class="section course-pricing-section">
+        <h2 class="section-title text-center">Committed ENOUGH?</h2>
+        <p class="section-subtitle text-center">Directly <strong>Go for</strong> <em>Advanced Masterclass</em></p>
         <div class="course-pricing-grid">
             <div class="course-card premium" style="background: linear-gradient(to bottom, #36562f, #20331c);">
                 <div class="best-value-badge">BEST VALUE</div>
                 <div class="card-icon">📹</div>
                 <h3 class="plan-title">Advanced Learning Plan</h3>
                 <p class="plan-lang">English | Full Access</p>
-                <div class="plan-price">₹1899/-</div>
+                <div class="plan-price">₹18,999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="check">Downloadable PDF Course Notes</li>
@@ -692,14 +582,14 @@
                     <li class="check">Course Upgrades at Zero Cost</li>
                     <li class="check">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(200, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">Enroll Now</button>
+                <button onclick="initiatePayment(1899900, 'Advanced Learning Plan', 'The-Complete-Guide-To-Starting-Up')" class="btn btn--blue-brand">REGISTER NOW</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
             <div class="course-card standard">
                 <div class="card-icon">🕐</div>
                 <h3 class="plan-title">Standard Learning Plan</h3>
                 <p class="plan-lang">English | Limited Access</p>
-                <div class="plan-price">₹1499/-</div>
+                <div class="plan-price">₹14,999/-</div>
                 <ul class="plan-features">
                     <li class="check">Pre-recorded Video Lectures</li>
                     <li class="cross">Downloadable PDF Course Notes</li>
@@ -707,47 +597,46 @@
                     <li class="cross">Course Upgrades at Zero Cost</li>
                     <li class="cross">Certificate of Achievement</li>
                 </ul>
-                <button onclick="initiatePayment(149900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">Enroll Now</button>
+                <button onclick="initiatePayment(1499900, 'Standard Learning Plan', 'Sub-Variant---The-Complete-Guide-To-Starting-Up-Copy')" class="btn btn--blue-light">REGISTER NOW</button>
                 <p class="refund-policy">Founder Ready in 8 Modules</p>
             </div>
         </div>
     </section>
 
-            <section class="top-hero-banner">
-        <div class="top-hero-inner">
-            <div class="top-hero-image-wrap">
-                <img
-                    src="https://pub-548474bf1ef14b739e232f68668f1f91.r2.dev/images/Business%20course%20by%20school%20of%207.png"
-                    alt="School of 7 Business Course"
-                    class="top-hero-img"
-                    width="560" height="400"
-                    loading="lazy"
-                >
+    <section class="section promise-section">
+        <div class="promise-image">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/certificate.png" alt="Certificate of Completion" width="560" height="400" loading="lazy">
+        </div>
+        <div class="promise-content">
+            <h2 class="promise-title">GET certified</h2>
+            <p class="promise-subtitle">WITH ADVANCED MASTERCLASS</p>
+            <div class="promise-details">
+                <div class="detail-item"><h4>BENEFITS:</h4><p>• Industry Recognized Credentials</p></div>
+                <div class="detail-item"><h4>WHERE IT FITS IN YOUR CAREER</h4><p>• In Business - will help to strategize<br>• In Business - will help to raise funds</p></div>
+                <div class="detail-item"><h4>THE IMPACT</h4><p>• Develop Business Acumen<br>• Validate Startup Ideas Faster<br>• Better Decision Making</p></div>
+                <div class="detail-item"><h4>ACCREDITED BY</h4><p>School of 7</p></div>
             </div>
-            <div class="top-hero-body">
-                <h1 class="top-hero-heading">Ready to Build Your Startup?</h1>
-                <p class="top-hero-sub">India's most practical business masterclass — 8 modules, 8 hours, founder ready.</p>
-                <a href="#pricing" class="top-hero-btn">Get Started →</a>
+            <div class="routine-steps">
+                <div class="step active">PREP</div>
+                <div class="step active">GROW</div>
+                <div class="step active">SCALE</div>
             </div>
         </div>
     </section>
-    
 
     <div class="sticky-bar" style="background-color: #ffffff;">
         <div class="sticky-content">
-            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar"
-                style="width: 70px; height: 70px; border: none; border-radius: 0; margin-top: -35px; object-fit: contain; box-shadow: none;"
-                width="70" height="70" loading="lazy">
+            <img src="https://pub-29a82b1a8c4f45c1a62aa880ed0adcc0.r2.dev/mike.png" alt="Mr 7" class="sticky-avatar" width="70" height="70" loading="lazy">
             <div class="sticky-offer">
                 <div class="sticky-offer-row">
-                    <span class="new-price">Rs 199</span>
-                    <span class="old-price">Rs 1299</span>
+                    <span class="new-price">Rs 9</span>
+                    <span class="old-price">Rs 199</span>
                 </div>
-                <div class="sticky-deadline"><strong>84% Off Today</strong>&nbsp;</div>
+                <div class="sticky-deadline"><strong>94% Off Today</strong>&nbsp;</div>
             </div>
         </div>
         <div class="sticky-actions">
-            <a href="#pricing" class="btn btn--red">ENROLL NOW</a>
+            <a href="javascript:void(0)" onclick="initiatePayment199(900, 'Business Masterclass', 'demo-masterclass-199')" class="btn btn--red">ENROLL NOW</a>
         </div>
         <div class="sticky-bottom-label">Business Masterclass</div>
     </div>
@@ -781,16 +670,16 @@
                 <div class="footer-column">
                     <h4>SOCIAL</h4>
                     <ul>
-                        <li><a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <li><a href="https://www.instagram.com/mr7_strategy?igsh=ODVvMHd1YjRobGpi" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                             <span>Instagram</span>
                         </a></li>
-                        <li><a href="https://youtube.com/@mr7_strategy?si=miYTemnidraRuAUk" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <li><a href="https://youtube.com/@mr7_strategy?si=miYTemnidraRuAUk" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                             <span>YouTube</span>
                         </a></li>
-                        <li><a href="https://www.linkedin.com/in/mr7-286047106" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;" aria-hidden="true"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        <li><a href="https://www.linkedin.com/in/mr7-286047106" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" aria-hidden="true"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                             <span>LinkedIn</span>
                         </a></li>
                     </ul>
@@ -823,90 +712,87 @@
         </div>
     </footer>
 
-    <script src="script.js?v=<?php echo time(); ?>"></script>
+    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
 
-    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <!-- PAYMENT LOADER -->
+    <div id="paymentLoader">
+        <div class="rzp-spinner"></div>
+        <p>Opening secure payment...</p>
+    </div>
 
+    <!-- ENROLLMENT MODAL (₹14,999 & ₹18,999) -->
     <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
             <h2 style="color: #4e6a47; font-size: 24px; margin-bottom: 8px;">Complete Your Enrollment</h2>
             <p id="formPlanName" style="color: #67635f; font-size: 14px; margin-bottom: 20px;"></p>
             <form id="enrollForm" onsubmit="return submitEnrollForm(event)">
-                <input type="text" id="customerName" placeholder="Full Name" required
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="email" id="customerEmail" placeholder="Email Address" required
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="tel" id="customerPhone" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}"
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <button type="submit" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">
-                    Proceed to Payment
-                </button>
+                <input type="text" id="customerName" placeholder="Full Name" required style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="email" id="customerEmail" placeholder="Email Address" required style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="tel" id="customerPhone" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}" style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <button type="submit" id="enrollSubmitBtn" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">Proceed to Payment</button>
             </form>
             <button onclick="closeContactModal()" style="background: none; border: none; color: #999; margin-top: 15px; cursor: pointer; font-size: 13px;">Cancel</button>
         </div>
     </div>
 
+    <!-- ENROLLMENT MODAL (₹9 MASTERCLASS) -->
     <div id="contactModal199" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #fff; padding: 35px 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; margin: 20px;">
             <h2 style="color: #4e6a47; font-size: 24px; margin-bottom: 8px;">Complete Your Enrollment</h2>
             <p id="formPlanName199" style="color: #67635f; font-size: 14px; margin-bottom: 20px;"></p>
             <form id="enrollForm199" onsubmit="return submitEnrollForm199(event)">
-                <input type="text" id="customerName199" placeholder="Full Name" required
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="email" id="customerEmail199" placeholder="Email Address" required
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <input type="tel" id="customerPhone199" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}"
-                    style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
-                <button type="submit" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">
-                    Proceed to Payment
-                </button>
+                <input type="text" id="customerName199" placeholder="Full Name" required style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="email" id="customerEmail199" placeholder="Email Address" required style="width: 100%; padding: 12px 15px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <input type="tel" id="customerPhone199" placeholder="Phone Number (10 digits)" required pattern="[0-9]{10}" style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                <button type="submit" id="enrollSubmitBtn199" style="background: #4e6a47; color: #fff; border: none; padding: 14px 40px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%;">Proceed to Pay</button>
             </form>
             <button onclick="closeContactModal199()" style="background: none; border: none; color: #999; margin-top: 15px; cursor: pointer; font-size: 13px;">Cancel</button>
         </div>
     </div>
 
-    <div id="successModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
-        <div style="background: #fff; padding: 40px 50px; border-radius: 16px; text-align: center; max-width: 500px; margin: 20px;">
-            <div style="font-size: 60px; margin-bottom: 20px;">🎉</div>
-            <h2 style="color: #4e6a47; font-size: 28px; margin-bottom: 15px;">Thank You!</h2>
-            <p style="color: #67635f; font-size: 16px; margin-bottom: 10px;">Your enrollment is successful!</p>
-            <p id="successPlanName" style="color: #333; font-weight: 600; font-size: 18px; margin-bottom: 20px;"></p>
-            <p style="color: #67635f; font-size: 14px; margin-bottom: 25px;">You will receive a confirmation email shortly with your login details.</p>
-            <a href="https://login.schoolof7.com/s/authenticate?url=/t/allcourses" style="display: inline-block; background: #4e6a47; color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none;">Continue</a>
-        </div>
-    </div>
-
     <script>
         // ==========================================
-        // ORIGINAL LOGIC (FOR 1499 & 1899)
+        // RAZORPAY FAST LOADER
         // ==========================================
-        let currentAmount = 0;
-        let currentPlanName = '';
-        let currentCourseUrl = '';
-        let razorpayLoaded = false;
+        let razorpayLoadPromise = null;
 
         function loadRazorpay() {
-            return new Promise((resolve, reject) => {
-                if (typeof Razorpay !== 'undefined') { razorpayLoaded = true; resolve(); return; }
-                const script = document.createElement('script');
-                script.src = 'https://checkout.razorpay.com/v1/checkout.js';
-                script.onload = () => { razorpayLoaded = true; resolve(); };
-                script.onerror = () => reject(new Error('Failed to load payment system. Please disable ad blocker and refresh the page.'));
-                document.body.appendChild(script);
+            if (razorpayLoadPromise) return razorpayLoadPromise;
+            razorpayLoadPromise = new Promise((resolve, reject) => {
+                if (typeof Razorpay !== 'undefined') { resolve(); return; }
+                let waited = 0;
+                const interval = setInterval(() => {
+                    waited += 50;
+                    if (typeof Razorpay !== 'undefined') {
+                        clearInterval(interval);
+                        resolve();
+                    } else if (waited >= 8000) {
+                        clearInterval(interval);
+                        reject(new Error('Payment system timed out. Please refresh the page and try again.'));
+                    }
+                }, 50);
             });
+            return razorpayLoadPromise;
         }
-        loadRazorpay().catch(err => console.warn('Initial Razorpay load failed:', err.message));
 
-        function generateEventID() {
-            return 'evt_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-        }
+        loadRazorpay().catch(e => console.warn('Razorpay pre-check:', e.message));
+
+        function showLoader() { document.getElementById('paymentLoader').style.display = 'flex'; }
+        function hideLoader() { document.getElementById('paymentLoader').style.display = 'none'; }
+
+        // ==========================================
+        // ₹14,999 & ₹18,999 PLANS
+        // ==========================================
+        let currentAmount = 0, currentPlanName = '', currentCourseUrl = '';
 
         function initiatePayment(amountInPaise, planName, courseUrl) {
-            currentAmount = amountInPaise;
-            currentPlanName = planName;
+            currentAmount    = amountInPaise;
+            currentPlanName  = planName;
             currentCourseUrl = courseUrl || '';
             document.getElementById('formPlanName').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm').reset();
+            document.getElementById('enrollSubmitBtn').disabled = false;
+            document.getElementById('enrollSubmitBtn').textContent = 'Proceed to Payment';
             document.getElementById('contactModal').style.display = 'flex';
         }
 
@@ -916,66 +802,107 @@
 
         async function submitEnrollForm(e) {
             e.preventDefault();
-            let customerName = document.getElementById('customerName').value;
-            let customerEmail = document.getElementById('customerEmail').value;
-            let customerPhone = document.getElementById('customerPhone').value;
+            const btn = document.getElementById('enrollSubmitBtn');
+            btn.disabled = true;
+            btn.textContent = 'Please wait...';
 
-            try {
-                const pageUrl = window.location.href;
-                // SENDS TO ORIGINAL WEBHOOK
-                await fetch('send-webhook.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName, course_url: currentCourseUrl, amount: currentAmount / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: pageUrl })
-                });
-            } catch (webhookError) { console.error('Lead webhook error:', webhookError); }
+            const customerName  = document.getElementById('customerName').value;
+            const customerEmail = document.getElementById('customerEmail').value;
+            const customerPhone = document.getElementById('customerPhone').value;
 
             closeContactModal();
+            showLoader();
+
+            fetch('send-webhook.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: customerName, email: customerEmail, phone: customerPhone, plan_name: currentPlanName, course_url: currentCourseUrl, amount: currentAmount / 100, payment_id: 'pending', order_id: 'pending', event_type: 'lead_submitted', page_url: window.location.href })
+            }).catch(err => console.error('Lead webhook error:', err));
 
             try {
-                const response = await fetch('create-order.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: currentAmount, plan_name: currentPlanName, course_url: currentCourseUrl, customer_name: customerName, customer_email: customerEmail, customer_phone: customerPhone })
-                });
-                if (!response.ok) { alert('Server error'); return; }
-                let data = await response.json();
-                if (!data.success) { alert('Error creating order: ' + (data.error || 'Unknown error')); return; }
+                const [, data] = await Promise.all([
+                    loadRazorpay(),
+                    fetch('create-order.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ amount: currentAmount, plan_name: currentPlanName, course_url: currentCourseUrl, customer_name: customerName, customer_email: customerEmail, customer_phone: customerPhone })
+                    }).then(r => { if (!r.ok) throw new Error('Server error'); return r.json(); })
+                ]);
 
-                const options = {
+                hideLoader();
+                if (!data.success) { alert('Error creating order: ' + (data.error || 'Unknown error')); btn.disabled = false; btn.textContent = 'Proceed to Payment'; return; }
+
+                const rzp = new Razorpay({
                     key: data.key_id, amount: data.amount, currency: data.currency,
                     name: 'School of 7', description: currentPlanName, order_id: data.order_id,
                     prefill: { name: customerName, email: customerEmail, contact: customerPhone },
                     theme: { color: '#4e6a47' },
-                    handler: async function(response) {
-                        // Original success logic (Show modal)
-                        document.getElementById('successPlanName').textContent = currentPlanName;
-                        document.getElementById('successModal').style.display = 'flex';
+                    handler: function(response) {
+                        const params = new URLSearchParams({
+                            plan: currentPlanName,
+                            amount: (currentAmount / 100),
+                            pid: response.razorpay_payment_id,
+                            oid: response.razorpay_order_id
+                        });
+                        window.location.href = 'thankyou/?' + params.toString();
                     }
-                };
-
-                if (typeof Razorpay === 'undefined') { await loadRazorpay(); }
-                const rzp = new Razorpay(options);
+                });
+                rzp.on('payment.failed', () => { hideLoader(); btn.disabled = false; btn.textContent = 'Proceed to Payment'; });
                 rzp.open();
-            } catch (error) { alert('Something went wrong: ' + error.message); }
+            } catch (error) {
+                hideLoader();
+                alert('Something went wrong: ' + error.message);
+                btn.disabled = false;
+                btn.textContent = 'Proceed to Payment';
+            }
             return false;
         }
 
         // ==========================================
-        // NEW LOGIC (FOR 199 MASTERCLASS ONLY)
+        // ₹9 MASTERCLASS
         // ==========================================
-        let currentAmount199 = 0;
-        let currentPlanName199 = '';
-        let currentCourseUrl199 = '';
+        let currentAmount199 = 0, currentPlanName199 = '', currentCourseUrl199 = '';
 
         function initiatePayment199(amountInPaise, planName, courseUrl) {
-            currentAmount199 = amountInPaise;
-            currentPlanName199 = planName;
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'enroll_click' });
+
+            currentAmount199    = amountInPaise;
+            currentPlanName199  = planName;
             currentCourseUrl199 = courseUrl || '';
-            
             document.getElementById('formPlanName199').textContent = planName + ' - ₹' + (amountInPaise / 100).toLocaleString('en-IN');
             document.getElementById('enrollForm199').reset();
+            document.getElementById('enrollSubmitBtn199').disabled = false;
+            document.getElementById('enrollSubmitBtn199').textContent = 'Proceed to Pay';
             document.getElementById('contactModal199').style.display = 'flex';
+
+            // ✅ Meta InitiateCheckout — ₹9 flow only
+            // FB Pixel may be delayed but _loadFBPixel ensures fbq is available before calling
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    value: amountInPaise / 100,
+                    currency: 'INR',
+                    content_name: planName,
+                    content_ids: ['masterclass-9'],
+                    content_type: 'product',
+                    num_items: 1
+                });
+            } else {
+                // If user clicks before FB Pixel loaded, load it now then fire
+                _loadFBPixel();
+                setTimeout(function() {
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'InitiateCheckout', {
+                            value: amountInPaise / 100,
+                            currency: 'INR',
+                            content_name: planName,
+                            content_ids: ['masterclass-9'],
+                            content_type: 'product',
+                            num_items: 1
+                        });
+                    }
+                }, 1500);
+            }
         }
 
         function closeContactModal199() {
@@ -984,71 +911,77 @@
 
         async function submitEnrollForm199(e) {
             e.preventDefault();
-            let cName = document.getElementById('customerName199').value;
-            let cEmail = document.getElementById('customerEmail199').value;
-            let cPhone = document.getElementById('customerPhone199').value;
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'proceed_to_pay' });
 
-            try {
-                // SENDS TO SEPARATE SHEET WEBHOOK (DOES NOT TOUCH LMS)
-                await fetch('send-webhook-199.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name: cName, email: cEmail, phone: cPhone, plan_name: currentPlanName199, amount: currentAmount199 / 100 })
-                });
-            } catch (webhookError) { console.error('Sheet webhook error:', webhookError); }
+            const btn = document.getElementById('enrollSubmitBtn199');
+            btn.disabled = true;
+            btn.textContent = 'Please wait...';
+
+            const cName  = document.getElementById('customerName199').value;
+            const cEmail = document.getElementById('customerEmail199').value;
+            const cPhone = document.getElementById('customerPhone199').value;
 
             closeContactModal199();
+            showLoader();
+
+            fetch('send-webhook-199.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: cName, email: cEmail, phone: cPhone, plan_name: currentPlanName199, amount: currentAmount199 / 100 })
+            }).catch(err => console.error('Sheet webhook error:', err));
 
             try {
-                const response = await fetch('create-order.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: currentAmount199, plan_name: currentPlanName199, course_url: currentCourseUrl199, customer_name: cName, customer_email: cEmail, customer_phone: cPhone })
-                });
-                if (!response.ok) { alert('Server error'); return; }
-                let data = await response.json();
-                
-                const options = {
+                const [, data] = await Promise.all([
+                    loadRazorpay(),
+                    fetch('create-order.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ amount: currentAmount199, plan_name: currentPlanName199, course_url: currentCourseUrl199, customer_name: cName, customer_email: cEmail, customer_phone: cPhone })
+                    }).then(r => { if (!r.ok) throw new Error('Server error'); return r.json(); })
+                ]);
+
+                hideLoader();
+                if (!data || data.error) { alert('Error creating order. Please try again.'); btn.disabled = false; btn.textContent = 'Proceed to Pay'; return; }
+
+                const rzp = new Razorpay({
                     key: data.key_id, amount: data.amount, currency: data.currency,
                     name: 'School of 7', description: currentPlanName199, order_id: data.order_id,
                     prefill: { name: cName, email: cEmail, contact: cPhone },
                     theme: { color: '#4e6a47' },
-                    handler: async function(response) {
-                            const params = new URLSearchParams({ 
-                                plan: currentPlanName199, 
-                                amount: (currentAmount199 / 100), 
-                                pid: response.razorpay_payment_id, 
-                                oid: response.razorpay_order_id,
-                                name: cName,
-                                email: cEmail
-                            });
-                            // Redirects to Zoom Thank You page automatically
-                            window.location.href = 'masterclass-thankyou/?' + params.toString(); 
-                        }
-                };
-
-                if (typeof Razorpay === 'undefined') { await loadRazorpay(); }
-                const rzp = new Razorpay(options);
+                    handler: function(response) {
+                        const params = new URLSearchParams({
+                            plan: currentPlanName199, amount: (currentAmount199 / 100),
+                            pid: response.razorpay_payment_id, oid: response.razorpay_order_id,
+                            name: cName, email: cEmail
+                        });
+                        window.location.href = 'masterclass-thankyou/?' + params.toString();
+                    }
+                });
+                rzp.on('payment.failed', () => { hideLoader(); btn.disabled = false; btn.textContent = 'Proceed to Pay'; });
                 rzp.open();
-            } catch (error) { alert('Error: ' + error.message); }
+            } catch (error) {
+                hideLoader();
+                alert('Error: ' + error.message);
+                btn.disabled = false;
+                btn.textContent = 'Proceed to Pay';
+            }
             return false;
         }
+
+        // Close modals on backdrop click
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('contactModal').addEventListener('click', function (e) {
+                if (e.target === this) closeContactModal();
+            });
+            document.getElementById('contactModal199').addEventListener('click', function (e) {
+                if (e.target === this) closeContactModal199();
+            });
+        });
     </script>
 
-    <script>window.dataLayer = window.dataLayer || [];</script>
-    <script>
-        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879330084480824');
-        fbq('track', 'PageView', {}, { eventID: 'pageview_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9) });
-    </script>
+    <!-- noscript FB Pixel fallback -->
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=879330084480824&ev=PageView&noscript=1"/></noscript>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QJHLP6W66"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-6QJHLP6W66');
-    </script>
 </body>
 </html>
